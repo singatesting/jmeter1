@@ -9,7 +9,7 @@ test:
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
    - rm -rf projects/results/*.csv
-   - cd $WORKSPACE/bin
+   - cd bin
    - sh jmeter.sh -v
    - sh jmeter.sh -n -t ../projects/"Asset API.jmx" -l ../projects/results/"Asset API.csv" -Djmeter.sh.save.saveservice.output_format=csv -Jenv=QA
    - sh jmeter.sh -n -t ../projects/"Class API.jmx" -l ../projects/results/"Class API.csv" -Djmeter.sh.save.saveservice.output_format=csv -Jenv=QA
