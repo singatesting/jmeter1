@@ -1,8 +1,8 @@
 machine:
   timezone:
     America/Los_Angeles
-  jmeter:
-    version: 2.3.4-2ubuntu2
+  java:
+    version: openjdk7
 
 test:
   post:
