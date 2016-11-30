@@ -2,7 +2,7 @@ machine:
   timezone:
     America/Los_Angeles
   dpkg -l:
-    version: jmeter: 2.3.4-2ubuntu2
+    version: "jmeter: 2.3.4-2ubuntu2"
 
 test:
   post:
