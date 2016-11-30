@@ -4,6 +4,10 @@ machine:
   java:
     version: openjdk7
 
+general:
+   artifacts:
+     - $CIRCLE_TEST_REPORTS
+
 test:
   post:
   - echo "singa"
