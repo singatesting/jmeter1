@@ -2,12 +2,10 @@ machine:
   timezone:
     America/Los_Angeles
   ruby:
-    version: 1.9.3-p0-falcon
+    version: oraclejdk8
 
 test:
   post:
-
-
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
    - rm -rf projects/results/*.csv
