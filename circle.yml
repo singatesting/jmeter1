@@ -7,7 +7,7 @@ machine:
 test:
   post:
   - sh echo "singa"
-  -
+  -sh echo $PWD
   - sh ../circle_jmeter.sh
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
