@@ -8,7 +8,7 @@ test:
   post:
   - echo "singa"
   - echo $PWD
-  - sh ../circle_jmeter.sh
+  - sh circle_jmeter.sh
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
    - rm -rf projects/results/*.csv
