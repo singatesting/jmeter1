@@ -1,12 +1,12 @@
 machine:
   timezone:
     America/Los_Angeles
-  java:
-    version: oraclejdk8
+  dpkg -l:
+    version: jmeter: 2.3.4-2ubuntu2
 
 test:
   post:
-  - bash cirle_jmeter.sh
+  - bash ./cirle_jmeter.sh
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
    - rm -rf projects/results/*.csv
