@@ -6,8 +6,9 @@ machine:
 
 test:
   post:
-  - bash echo 'singa'
-  - bash ../cirle_jmeter.sh
+  - sh echo "singa"
+  -
+  - sh ../circle_jmeter.sh
    - rm -rf projects/results/*.jtl
    - rm -rf projects/results/*.xml
    - rm -rf projects/results/*.csv
