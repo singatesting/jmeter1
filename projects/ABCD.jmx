@@ -296,7 +296,7 @@ import org.apache.jmeter.util.JMeterUtils;
             </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
             <hashTree>
               <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="Assertion" enabled="true">
-                <stringProp name="JSON_PATH">$.RestResponse.result.country1</stringProp>
+                <stringProp name="JSON_PATH">$.RestResponse.result.country</stringProp>
                 <stringProp name="EXPECTED_VALUE">United States</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
               </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
@@ -359,7 +359,7 @@ import org.apache.jmeter.util.JMeterUtils;
             <bytes>true</bytes>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">C:\Authz\jmeter1\projects\results\Asset API.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
