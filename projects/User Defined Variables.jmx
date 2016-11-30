@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="today" elementType="Argument">
+            <stringProp name="Argument.name">today</stringProp>
+            <stringProp name="Argument.value">${__time(yyyy-MM-dd)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayDayOfWeek" elementType="Argument">
+            <stringProp name="Argument.name">todayDayOfWeek</stringProp>
+            <stringProp name="Argument.value">${__DayOfWeek(${__time(yyyy-MM-dd)})}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayMonthOfYear" elementType="Argument">
+            <stringProp name="Argument.name">todayMonthOfYear</stringProp>
+            <stringProp name="Argument.value">${__MonthOfYear(${__time(yyyy-MM-dd)})}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayPlus20Days" elementType="Argument">
+            <stringProp name="Argument.name">todayPlus20Days</stringProp>
+            <stringProp name="Argument.value">${__PlusDays(${__time(yyyy-MM-dd)},20)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayPlus1Week" elementType="Argument">
+            <stringProp name="Argument.name">todayPlus1Week</stringProp>
+            <stringProp name="Argument.value">${__PlusWeeks(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayPlus1Month" elementType="Argument">
+            <stringProp name="Argument.name">todayPlus1Month</stringProp>
+            <stringProp name="Argument.value">${__PlusMonths(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayPlus1Year" elementType="Argument">
+            <stringProp name="Argument.name">todayPlus1Year</stringProp>
+            <stringProp name="Argument.value">${__PlusYears(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayMinus20Days" elementType="Argument">
+            <stringProp name="Argument.name">todayMinus20Days</stringProp>
+            <stringProp name="Argument.value">${__MinusDays(${__time(yyyy-MM-dd)},20)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayMinus1Week" elementType="Argument">
+            <stringProp name="Argument.name">todayMinus1Week</stringProp>
+            <stringProp name="Argument.value">${__MinusWeeks(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayMinus1Month" elementType="Argument">
+            <stringProp name="Argument.name">todayMinus1Month</stringProp>
+            <stringProp name="Argument.value">${__MinusMonths(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="todayMinus1Year" elementType="Argument">
+            <stringProp name="Argument.name">todayMinus1Year</stringProp>
+            <stringProp name="Argument.value">${__MinusYears(${__time(yyyy-MM-dd)},1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="range" elementType="Argument">
+            <stringProp name="Argument.name">range</stringProp>
+            <stringProp name="Argument.value">${__GenerateDateRange(${__time(yyyy-MM-dd)},${__PlusDays(${__time(yyyy-MM-dd)},20)},day)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="range2" elementType="Argument">
+            <stringProp name="Argument.name">range2</stringProp>
+            <stringProp name="Argument.value">${__GenerateDateRange(${__time(yyyy-MM-dd)},${__PlusDays(${__time(yyyy-MM-dd)},20)},day_,WEDNESDAY)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="range3" elementType="Argument">
+            <stringProp name="Argument.name">range3</stringProp>
+            <stringProp name="Argument.value">${__GenerateDateRange(${__time(yyyy-MM-dd)},${__PlusDays(${__time(yyyy-MM-dd)},20)},_day_,WEDNESDAY,FRIDAY)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="range4" elementType="Argument">
+            <stringProp name="Argument.name">range4</stringProp>
+            <stringProp name="Argument.value">${__GenerateDateRange(2015-01-01,2015-12-01,_non_,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1431952729000</longProp>
+        <longProp name="ThreadGroup.end_time">1431952729000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller " enabled="true"/>
+        <hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="print variables" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

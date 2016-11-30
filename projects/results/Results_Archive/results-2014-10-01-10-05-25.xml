@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="768" it="0" lt="768" ts="1412172325278" s="true" lb="Login API" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="628" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:15:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172325&quot;, oauth_nonce=&quot;520926312373606&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;VjoZs%2BF7Wd450R6Jaj0alHCifyM%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/fb960d1c-e64e-490b-b347-94046806f4bd&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;oauth_token&quot;:&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;,&quot;oauth_token_secret&quot;:&quot;4d918c36-849b-4de0-9b5c-26f5fd820675&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="1692" it="0" lt="1691" ts="1412172326102" s="true" lb="Get Asset" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="1505" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:26 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Wed, 01-Oct-2014 15:15:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172326&quot;, oauth_nonce=&quot;520927135533462&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;x%2Bu4%2BLC612wYDxEPa8JKepQUZck%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;BTB2PBBMZ7O3XCBERVY7D4H2GO&quot;,&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://connected-dev.cdiapps.com/bb/home.do&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;The Building Blocks online management system guides children through activities tied to research-based learning trajectories and helps develop young childrenâ&#x80;&#x99;s mathematical thinking.\r\n\r\nDON&apos;T remove me.  See the table plsql_params&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000015/21/38.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000015/21/38.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000015/21/38.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;CX694CWRV3WF2M9P650Y1S9PZ0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO&quot;},&quot;downloadable&quot;:false,&quot;copyrightYear&quot;:&quot;2010&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO</java.net.URL>
+</httpSample>
+<httpSample t="431" it="0" lt="431" ts="1412172327806" s="true" lb="Get Associated Assets - assetype within Subtree" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="347" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:27 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Wed, 01-Oct-2014 15:15:57 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172327&quot;, oauth_nonce=&quot;520928839354626&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;3RdcalgvHJXB8xxc4IQjWL7W214%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/KO4YC9RP5CRE62Q1K58T2SD28Y/associated?assetType=LESSON&amp;withinSubTree=true</java.net.URL>
+</httpSample>
+<httpSample t="1121" it="0" lt="458" ts="1412172328249" s="true" lb="Get Associated Assets - assetype and reverse" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="12361" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:28 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:15:57 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172328&quot;, oauth_nonce=&quot;520929281833407&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;g%2F0s1fm8t6KVHqtCaRFpHAOatF8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;OHQC98Q9YF8PNC91LOKOJRLKNM&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;6S@F7V7W18WJ4NK94MF7F@C@58&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/OHQC98Q9YF8PNC91LOKOJRLKNM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/OHQC98Q9YF8PNC91LOKOJRLKNM/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/VHCCRY6MH424GBRFB3B5SLV78E&quot;,&quot;childNodes&quot;:&quot;/api/v0.1/asset/OHQC98Q9YF8PNC91LOKOJRLKNM/children?dep=CHILD&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/OHQC98Q9YF8PNC91LOKOJRLKNM&quot;}},{&quot;id&quot;:&quot;GZ3BDWDR2NWD9NK9JSS8RNQVYQ&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Teacher Stuff&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;1W2CSG@8T1C893TV5@T4ZB@5Q8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/GZ3BDWDR2NWD9NK9JSS8RNQVYQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/GZ3BDWDR2NWD9NK9JSS8RNQVYQ/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/2PMEGYB67T4ZROHV1SGKPFY4W4&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/GZ3BDWDR2NWD9NK9JSS8RNQVYQ&quot;}},{&quot;id&quot;:&quot;HNXTJ8FK7Q5WGQ69F82KRCXFBY&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;isbn&quot;:&quot;9789090878651&quot;,&quot;copyrightYear&quot;:2010,&quot;description&quot;:&quot;Test for microsite/content are issues&quot;,&quot;title&quot;:&quot;DLM Early Childhood Express Student  (Scott)&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000019/70/98.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000019/70/98.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000019/70/98.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;MDGYQB2RXYBN@@QRDGKQGBZC98&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/HNXTJ8FK7Q5WGQ69F82KRCXFBY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/HNXTJ8FK7Q5WGQ69F82KRCXFBY/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/HNXTJ8FK7Q5WGQ69F82KRCXFBY&quot;},&quot;teacherBrowseMode&quot;:&quot;ISSA&quot;},{&quot;id&quot;:&quot;OMPB7O636VQRMOC63SCWLJQBD8&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;teachingLevel&quot;:&quot;Approaching Grade Level&quot;,&quot;secureAssetId&quot;:&quot;YP7@GY0M82FKKNG8GHCM54SQ61&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/OMPB7O636VQRMOC63SCWLJQBD8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/OMPB7O636VQRMOC63SCWLJQBD8/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/MC1FRQHVJZX95O4PYBZPKEXXT1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/OMPB7O636VQRMOC63SCWLJQBD8&quot;}},{&quot;id&quot;:&quot;MWJNMSGWTENZDVTD9EHG2RXQGM&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;English Language Learner&quot;,&quot;secureAssetId&quot;:&quot;6DLDD1K6GR@4WQ51H00TY7VSY8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/MWJNMSGWTENZDVTD9EHG2RXQGM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/MWJNMSGWTENZDVTD9EHG2RXQGM/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/8V35DN2RP2S5Y6LWMD3GRKGXW8&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/MWJNMSGWTENZDVTD9EHG2RXQGM&quot;}},{&quot;id&quot;:&quot;WPEKNMEDPGNLHVY9WX5OV89F3Y&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;ZKC5@F6J0Q5BTCBNT21NQBJFB4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/WPEKNMEDPGNLHVY9WX5OV89F3Y/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/WPEKNMEDPGNLHVY9WX5OV89F3Y/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/P4N1XJHVTX9KW8H317CC7XPGQ8&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/WPEKNMEDPGNLHVY9WX5OV89F3Y&quot;}},{&quot;id&quot;:&quot;FFOVX2L3X2PNDCTEV33GBYTR4Q&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;T2D9HM8H7FH5L2GYDKK4XPL@0M&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/FFOVX2L3X2PNDCTEV33GBYTR4Q/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/FFOVX2L3X2PNDCTEV33GBYTR4Q/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/SZ8V7QW9DLVEX45DE156GNQ2TE&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/FFOVX2L3X2PNDCTEV33GBYTR4Q&quot;}},{&quot;id&quot;:&quot;WYJR3Q85TC16RO4PBBRXKSKFCM&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;isbn&quot;:&quot;9785555555555&quot;,&quot;copyrightYear&quot;:2000,&quot;description&quot;:&quot;Number Worlds 2007 Student&quot;,&quot;title&quot;:&quot;Delete&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000024/83/62.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000024/83/62.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000024/83/62.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;D5CZYHGDR1KJRGDWFSH4XZ7G48&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/WYJR3Q85TC16RO4PBBRXKSKFCM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/WYJR3Q85TC16RO4PBBRXKSKFCM/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;childNodes&quot;:&quot;/api/v0.1/asset/WYJR3Q85TC16RO4PBBRXKSKFCM/children?dep=CHILD&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/WYJR3Q85TC16RO4PBBRXKSKFCM&quot;},&quot;teacherBrowseMode&quot;:&quot;ISSA&quot;},{&quot;id&quot;:&quot;J5WNGH8MQ2TDNC75E77PDZHGHY&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000024/83/78.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000024/83/78.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000024/83/78.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;Q@19RW8C9D620KLYXMF7VW7VVQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/J5WNGH8MQ2TDNC75E77PDZHGHY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/J5WNGH8MQ2TDNC75E77PDZHGHY/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/LB9P9LOG6LKSY4VGZWWL9YTN81&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/J5WNGH8MQ2TDNC75E77PDZHGHY&quot;}},{&quot;id&quot;:&quot;6OWCB81W9M174DV5W3FV49HGJO&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;5H3XXMD2JCN70JHL42XQHPHGN@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/6OWCB81W9M174DV5W3FV49HGJO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/JC33LBD8KR23YDVHYCVLRTHTG8&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/6OWCB81W9M174DV5W3FV49HGJO&quot;}},{&quot;id&quot;:&quot;6VP7OFRN2BC2FS33N5Q84TLEH1&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;2LP@HDHF1ZYSPRV75X7H@VDHLM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/6VP7OFRN2BC2FS33N5Q84TLEH1/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/Y9TF6HHE4XWPEZMQBWN73WM6HQ&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/6VP7OFRN2BC2FS33N5Q84TLEH1&quot;}},{&quot;id&quot;:&quot;K923E8KJCWVDEOXPVX5VJEMEV4&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;1ZQT8MFP776BLWZYX8D58JDMDM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/K923E8KJCWVDEOXPVX5VJEMEV4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/DDGC3ZK8OHCKBFKNYBQMCY26K4&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/K923E8KJCWVDEOXPVX5VJEMEV4&quot;}},{&quot;id&quot;:&quot;Z6682T154JXG5V4KJBLM5ESNO8&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;FWVC71C745TQZ9LSX0PFTKPSHQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/Z6682T154JXG5V4KJBLM5ESNO8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/EQKHSVMKP5P3PFHWR3HLVH9BBY&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/Z6682T154JXG5V4KJBLM5ESNO8&quot;}},{&quot;id&quot;:&quot;VJHPOFJ77DST9Z8FQ6FGMHMRGE&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;VGK2QCN@80Q1DDB5YYW@YF3ND8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VJHPOFJ77DST9Z8FQ6FGMHMRGE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/X2N1YE15NPGPS82W2VODMQQW2Q&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VJHPOFJ77DST9Z8FQ6FGMHMRGE&quot;}},{&quot;id&quot;:&quot;3W58FBDVEVOV8DV2Q75GRJFLJ8&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;BZT3XMWS@1V09@PQP9D2W2HQ98&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/3W58FBDVEVOV8DV2Q75GRJFLJ8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/5JWO2V1QCNWHJWTY1G29Z13MHM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/3W58FBDVEVOV8DV2Q75GRJFLJ8&quot;}},{&quot;id&quot;:&quot;KJXLKZQG92GZ2VVKQ675PNPXN4&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;HWW@FRN5Z9XPFZL3YNT9JX41TM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/KJXLKZQG92GZ2VVKQ675PNPXN4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/68OK95QVHCS7EKOQQTJ1VJGROO&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/KJXLKZQG92GZ2VVKQ675PNPXN4&quot;}},{&quot;id&quot;:&quot;GXG7CS29RXETSYC4T8YVQ5QVFQ&quot;,&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Circle Time&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;42CKPMX9F25BGTHLY@XJ0TQRD0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/GXG7CS29RXETSYC4T8YVQ5QVFQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/V4YXSVV9ON196Y8B8BHENXR6Q1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/GXG7CS29RXETSYC4T8YVQ5QVFQ&quot;}},{&quot;id&quot;:&quot;P5ESZ7FQK9EGFP2MDX3MXXVBW8&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Week 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;184K@J2GKCHYHQGNXTT@@703V4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/P5ESZ7FQK9EGFP2MDX3MXXVBW8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/P5ESZ7FQK9EGFP2MDX3MXXVBW8/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/OHQC98Q9YF8PNC91LOKOJRLKNM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/P5ESZ7FQK9EGFP2MDX3MXXVBW8&quot;}},{&quot;id&quot;:&quot;DS2KE12QZSDX3Q5YC86KQXVKT4&quot;,&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;RE_4582fa75-a067-46ad-8944-62e429a04c29&quot;,&quot;title&quot;:&quot;Reading/Literature/Language Arts&quot;,&quot;secureAssetId&quot;:&quot;5Q703SD@W4TBTNQLV81GMKBYH1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/DS2KE12QZSDX3Q5YC86KQXVKT4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;childNodes&quot;:&quot;/api/v0.1/asset/DS2KE12QZSDX3Q5YC86KQXVKT4/children?dep=CHILD&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/DS2KE12QZSDX3Q5YC86KQXVKT4&quot;}},{&quot;id&quot;:&quot;3GTLOT7G497OXVCMKQKWQWWNF1&quot;,&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;MA001000000000000000000000&quot;,&quot;description&quot;:&quot;qqq&quot;,&quot;title&quot;:&quot;Mathematics - 3&quot;,&quot;secureAssetId&quot;:&quot;L7F0T6V7X14M792HVH9PXBRFV1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/3GTLOT7G497OXVCMKQKWQWWNF1/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;childNodes&quot;:&quot;/api/v0.1/asset/3GTLOT7G497OXVCMKQKWQWWNF1/children?dep=CHILD&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/3GTLOT7G497OXVCMKQKWQWWNF1&quot;},&quot;synonym&quot;:[&quot;Mathem Numbers&quot;]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/associated?reverse=true</java.net.URL>
+</httpSample>
+<httpSample t="443" it="0" lt="442" ts="1412172329388" s="true" lb="Get Associated Assets - Assoc type and reverse" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:29 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:15:58 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172329&quot;, oauth_nonce=&quot;520930421550224&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;70b6lTXnD6X2Y1o2959av%2BosIfY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/associated?assocType=LOOKBACK&amp;reverse=true</java.net.URL>
+</httpSample>
+<httpSample t="463" it="0" lt="462" ts="1412172329843" s="true" lb="Get Associated Assets - reverse, withinsubtree and root node id" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="347" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:30 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Wed, 01-Oct-2014 15:15:59 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172329&quot;, oauth_nonce=&quot;520930876320959&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;0xzbkrM5MPnnXYKi5CnOaA9d4NQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/associated?reverse=true&amp;withinSubTree=false&amp;rootNodeId=ZCN2VELSKGXON6Q8Y7KXEKXJT8</java.net.URL>
+</httpSample>
+<httpSample t="454" it="0" lt="454" ts="1412172330319" s="true" lb="Get Associated Assets - Assoc type" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:30 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:15:59 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172330&quot;, oauth_nonce=&quot;520931352261634&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4OTL1R11ygfVMJ1g6QFqfCDDFxE%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/associated?assocType=LOOKBACK</java.net.URL>
+</httpSample>
+<httpSample t="531" it="0" lt="531" ts="1412172330784" s="true" lb="Get Associated Child Assets" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:31 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:16:00 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172330&quot;, oauth_nonce=&quot;520931817070138&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;D4GlsU6WGVKiS3dyVTqWQ%2BrdGqw%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/children?dep=CHILD</java.net.URL>
+</httpSample>
+<httpSample t="413" it="0" lt="412" ts="1412172331326" s="true" lb="Get Associated Child Assets - filtered" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:31 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Wed, 01-Oct-2014 15:16:00 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172331&quot;, oauth_nonce=&quot;520932359314226&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;hI3%2B9eN6qNAxe622PmMZfwN9wek%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/children?dep=CHILD&amp;filter-systemNodeType=HELP&amp;scanTree=true</java.net.URL>
+</httpSample>
+<httpSample t="834" it="0" lt="834" ts="1412172331787" s="true" lb="Get Associated Standards by Asset" rc="200" rm="OK" tn="Asset Test Plan 1-1" dt="text" de="" by="2361" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 01 Oct 2014 14:05:31 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Wed, 01-Oct-2014 15:16:01 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fb960d1c-e64e-490b-b347-94046806f4bd&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412172331&quot;, oauth_nonce=&quot;520932820312286&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;8EODAXYsQvRWP5y05ZvDm00R6eY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;QE6SYS6479OD4TK4WYNE48V9L4&quot;,&quot;standardNum&quot;:&quot;10.1.1&quot;,&quot;text&quot;:&quot;shows a steady increase in listening and speaking vocabulary.&quot;},{&quot;id&quot;:&quot;1TVOLHVS79C8D9E4YK8EXTSS1E&quot;,&quot;standardNum&quot;:&quot;LD 1&quot;,&quot;text&quot;:&quot;Children will develop skills in listening for the purpose of comprehension&quot;},{&quot;id&quot;:&quot;M9BYW5YDQ8S11FX5QMDGMX2CDY&quot;,&quot;text&quot;:&quot;Concepts About Print&quot;},{&quot;id&quot;:&quot;VZWE5SX4PMDFKFL72PY4SLGB98&quot;,&quot;standardNum&quot;:&quot;10.1.2&quot;,&quot;text&quot;:&quot;initiates, listens, and responds appropriately in conversations with peers and caregivers.&quot;},{&quot;id&quot;:&quot;LTO3WNQ4YS4LH8JKD9WNGR3QO1&quot;,&quot;standardNum&quot;:&quot;LD 2&quot;,&quot;text&quot;:&quot;Children will learn to discriminate the sounds of language (phonological awareness)&quot;},{&quot;id&quot;:&quot;F6QS8VPYVQGWZF2BXBM482TOBM&quot;,&quot;standardNum&quot;:&quot;10.1.3&quot;,&quot;text&quot;:&quot;speaks in sentences of increasing length and grammatical complexity.&quot;},{&quot;id&quot;:&quot;N63ES6W27Z6B2CQRFHOSJ7VOVM&quot;,&quot;standardNum&quot;:&quot;LD 3&quot;,&quot;text&quot;:&quot;Children will develop an understanding of new vocabulary introduced in conversations, activities, stories or books&quot;},{&quot;id&quot;:&quot;KL5FJ38Y8SCSGBTVX234DKDFWM&quot;,&quot;standardNum&quot;:&quot;LD 4&quot;,&quot;text&quot;:&quot;Children will develop and expand expressive language skills (speaking)&quot;},{&quot;id&quot;:&quot;M7QJL4EOMQECGDR35SZ94H12Z1&quot;,&quot;standardNum&quot;:&quot;10.1.4&quot;,&quot;text&quot;:&quot;follows simple oral directions that involve several actions.&quot;},{&quot;id&quot;:&quot;9TB3W4VJ83VWDKQP9OK9ERSZDO&quot;,&quot;standardNum&quot;:&quot;LD 5 a&quot;,&quot;text&quot;:&quot;Demonstrates an interest in books or stories&quot;},{&quot;id&quot;:&quot;4J333H7TWWKLXM51HHRH4EF2YE&quot;,&quot;standardNum&quot;:&quot;10.1.5&quot;,&quot;text&quot;:&quot;asks and answers a variety of question types.&quot;},{&quot;id&quot;:&quot;NJX5STZFMVPE46DB2CV1ZV1DQE&quot;,&quot;standardNum&quot;:&quot;LD 5 b&quot;,&quot;text&quot;:&quot;Discusses books or stories read aloud&quot;},{&quot;id&quot;:&quot;B59O1JD7ZKDFKHR374W4E5O3CY&quot;,&quot;standardNum&quot;:&quot;LD 5 c&quot;,&quot;text&quot;:&quot;Exhibits book-handling skills&quot;},{&quot;id&quot;:&quot;JEOMB42ORTGMG9X5HM1QCJW8N1&quot;,&quot;standardNum&quot;:&quot;LD 5 d&quot;,&quot;text&quot;:&quot;Associates symbols with objects, concepts and functions&quot;},{&quot;id&quot;:&quot;S58FDBOCNDHTQM89O3SMBEDGC4&quot;,&quot;standardNum&quot;:&quot;LD 5 e&quot;,&quot;text&quot;:&quot;Recognizes that print represents spoken words&quot;},{&quot;id&quot;:&quot;1K92HDRLNXQG169O3ECXPFL9SM&quot;,&quot;standardNum&quot;:&quot;LD 5 f&quot;,&quot;text&quot;:&quot;Dramatizes, tells and retells poems and stories&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/BTB2PBBMZ7O3XCBERVY7D4H2GO/standards</java.net.URL>
+</httpSample>
+
+</testResults>

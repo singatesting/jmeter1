@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Run Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/gaurav_vishnoi/Downloads/apache-jmeter-2.11/projects</stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="set Environment" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ENVIRONMENT" elementType="Argument">
+            <stringProp name="Argument.name">ENVIRONMENT</stringProp>
+            <stringProp name="Argument.value">qa</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER" elementType="Argument">
+            <stringProp name="Argument.name">SERVER</stringProp>
+            <stringProp name="Argument.value">Apache</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Login Data Set Config" enabled="false">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-login.csv</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.group</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">username,password</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Server Config" enabled="false">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Individual Server Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth-individual.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Set default Accept and Content-Type" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Experience-API-Version</stringProp>
+            <stringProp name="Header.value">1.0.0</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Evaluation Test Plan" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
+        <longProp name="ThreadGroup.start_time">1404242297000</longProp>
+        <longProp name="ThreadGroup.end_time">1404242297000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Self Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">Performance Evaluation API.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Evaluation Flow Test Fragment" enabled="true"/>
+      <hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Login Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/jmeter-login.csv</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">username,password</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - EVALUATION" enabled="true">
+            <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+            <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+            <boolProp name="OAuthSampler.url_encode">false</boolProp>
+            <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+            <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+            <stringProp name="OAuthSampler.oauth_token"></stringProp>
+            <stringProp name="OAuthSampler.token_secret"></stringProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+            <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+  	
+  	</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Evaluation Flow" enabled="true"/>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="From and To Dates Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/FromandToDates.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="District Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/districtID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="School Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/schoolID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Class Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/classID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Teacher Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/teacherID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Student Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/studentIds.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="User Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/users.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Book Id Data Set Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/bookID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Lesson Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/lessonID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Section Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/sectionID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Unit Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/unitID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Activity Id Data Config" enabled="true">
+            <stringProp name="filename">${ENVIRONMENT}/activityID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Standard Id Data Config" enabled="true">
+            <stringProp name="TestPlan.comments">		</stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/standardID.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Evaluation Standard Id Data Config" enabled="true">
+            <stringProp name="TestPlan.comments">		</stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/evaluation_StandardId.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Evaluation Point Data Config" enabled="true">
+            <stringProp name="TestPlan.comments">		</stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/evaluationPoint.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report for students under specific class" enabled="false">
+            <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+            <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+            <boolProp name="OAuthSampler.url_encode">false</boolProp>
+            <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+            <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+            <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+            <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+            <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=XZ1ZGCG1P65GCQCYBNJQG1S4K4&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;classId=BHYQ727XGPGVFC17KN4W7XSTX1&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+          </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Aggregation Report" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report for specific students" enabled="false">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=GY4G8E71P4MGJ4X91QQGGQTKPQ&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by class--All Evaluation Data" enabled="false">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=MM6P27Q1QO3KK8S8GTWJ31SMVY&amp;targetScopeType=classId&amp;includeLessonDetails=true&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by teacher--All Evaluation Data" enabled="false">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=LOWXZ3O6ZXV3W3HSZ4WW1CRQVY&amp;targetScopeType=teacherId&amp;includeLessonDetails=true&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by school--All Evaluation Data" enabled="false">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=KKFS1OE3NLPX9MJ3H6RGO8DR6Y&amp;targetScopeType=schoolId&amp;includeLessonDetails=true&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by District--All Evaluation Data" enabled="false">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=MXKDOPOC8GQNRZ41DMS18WYJL4&amp;targetScopeType=districtId&amp;includeLessonDetails=true&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=57F3H6RYXX883K76OOD59W74QY&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1 student and 1 standard" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=GY4G8E71P4MGJ4X91QQGGQTKPQ&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=6HPXWR18KDFBZSHD6Z5CWQXR81&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1 student and 1 Cluster" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=GY4G8E71P4MGJ4X91QQGGQTKPQ&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=R8FJSTFBPGS84D543YRBQRCJN8&amp;evaluationStandardType=clusterId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1 student and 1 Domain" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=GY4G8E71P4MGJ4X91QQGGQTKPQ&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=JD32O4H3SBZ8O3JQ8F29JQZQZE&amp;evaluationStandardType=domainId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 21 students and 1 standard" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=T9769XXPYLM426CBYNFYF4D5NO&amp;targetScopeId=2V5QN3T8VBMO51OPQWVKDQ3N91&amp;targetScopeId=S7QW8E81KL5ZS95NSTBNTJCNYE&amp;targetScopeId=PT15R7H2OKV7ZTGWX979RJODVQ&amp;targetScopeId=L7QQ739NLYG9JNL5RZNH4GH8L4&amp;targetScopeId=ZZKYV9P9DE9YEQWYVKFTDQWCBY&amp;targetScopeId=H2EGZL8SCYN8JFZMJTCMBV339Y&amp;targetScopeId=XZ1ZGCG1P65GCQCYBNJQG1S4K4&amp;targetScopeId=TB9XEVOF6Y3R82TS5V6GFLGVBY&amp;targetScopeId=7J91BMFOZYGGV472GEEYSEKB1Q&amp;targetScopeId=ZOBGHOVJBT2PMTJQZZWD441DMM&amp;targetScopeId=NL2VVQDZN6CKM2FJDLCSZ9MCR1&amp;targetScopeId=NFQFSKD9N477FZ76DR1OS7Z25E&amp;targetScopeId=PFFRHBXSEKVZB71FGKBCVYW4V4&amp;targetScopeId=JQKW15G1KJC633G5DZ6CQLJG64&amp;targetScopeId=85VNCGBGNK4WXY2D9PKOMH5XQE&amp;targetScopeId=XX5HPHSCC9VF9TZE5ZZM67DW51&amp;targetScopeId=JZC999YDRBC57HQV17PQB1K9O8&amp;targetScopeId=B1CV3P16SWKVHBC3PEVBT33HX4&amp;targetScopeId=3FDS38C96JBYQO8OSOVR67CJK8&amp;targetScopeId=B1K9QDX1RL6ZZ4CKWCFJYEE278&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=6HPXWR18KDFBZSHD6Z5CWQXR81&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 21 students and 1 Cluster" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=T9769XXPYLM426CBYNFYF4D5NO&amp;targetScopeId=2V5QN3T8VBMO51OPQWVKDQ3N91&amp;targetScopeId=S7QW8E81KL5ZS95NSTBNTJCNYE&amp;targetScopeId=PT15R7H2OKV7ZTGWX979RJODVQ&amp;targetScopeId=L7QQ739NLYG9JNL5RZNH4GH8L4&amp;targetScopeId=ZZKYV9P9DE9YEQWYVKFTDQWCBY&amp;targetScopeId=H2EGZL8SCYN8JFZMJTCMBV339Y&amp;targetScopeId=XZ1ZGCG1P65GCQCYBNJQG1S4K4&amp;targetScopeId=TB9XEVOF6Y3R82TS5V6GFLGVBY&amp;targetScopeId=7J91BMFOZYGGV472GEEYSEKB1Q&amp;targetScopeId=ZOBGHOVJBT2PMTJQZZWD441DMM&amp;targetScopeId=NL2VVQDZN6CKM2FJDLCSZ9MCR1&amp;targetScopeId=NFQFSKD9N477FZ76DR1OS7Z25E&amp;targetScopeId=PFFRHBXSEKVZB71FGKBCVYW4V4&amp;targetScopeId=JQKW15G1KJC633G5DZ6CQLJG64&amp;targetScopeId=85VNCGBGNK4WXY2D9PKOMH5XQE&amp;targetScopeId=XX5HPHSCC9VF9TZE5ZZM67DW51&amp;targetScopeId=JZC999YDRBC57HQV17PQB1K9O8&amp;targetScopeId=B1CV3P16SWKVHBC3PEVBT33HX4&amp;targetScopeId=3FDS38C96JBYQO8OSOVR67CJK8&amp;targetScopeId=B1K9QDX1RL6ZZ4CKWCFJYEE278&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=R8FJSTFBPGS84D543YRBQRCJN8&amp;evaluationStandardType=clusterId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 21 students and 1 Domain" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=T9769XXPYLM426CBYNFYF4D5NO&amp;targetScopeId=2V5QN3T8VBMO51OPQWVKDQ3N91&amp;targetScopeId=S7QW8E81KL5ZS95NSTBNTJCNYE&amp;targetScopeId=PT15R7H2OKV7ZTGWX979RJODVQ&amp;targetScopeId=L7QQ739NLYG9JNL5RZNH4GH8L4&amp;targetScopeId=ZZKYV9P9DE9YEQWYVKFTDQWCBY&amp;targetScopeId=H2EGZL8SCYN8JFZMJTCMBV339Y&amp;targetScopeId=XZ1ZGCG1P65GCQCYBNJQG1S4K4&amp;targetScopeId=TB9XEVOF6Y3R82TS5V6GFLGVBY&amp;targetScopeId=7J91BMFOZYGGV472GEEYSEKB1Q&amp;targetScopeId=ZOBGHOVJBT2PMTJQZZWD441DMM&amp;targetScopeId=NL2VVQDZN6CKM2FJDLCSZ9MCR1&amp;targetScopeId=NFQFSKD9N477FZ76DR1OS7Z25E&amp;targetScopeId=PFFRHBXSEKVZB71FGKBCVYW4V4&amp;targetScopeId=JQKW15G1KJC633G5DZ6CQLJG64&amp;targetScopeId=85VNCGBGNK4WXY2D9PKOMH5XQE&amp;targetScopeId=XX5HPHSCC9VF9TZE5ZZM67DW51&amp;targetScopeId=JZC999YDRBC57HQV17PQB1K9O8&amp;targetScopeId=B1CV3P16SWKVHBC3PEVBT33HX4&amp;targetScopeId=3FDS38C96JBYQO8OSOVR67CJK8&amp;targetScopeId=B1K9QDX1RL6ZZ4CKWCFJYEE278&amp;targetScopeType=studentId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=JD32O4H3SBZ8O3JQ8F29JQZQZE&amp;evaluationStandardType=domainId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1class and 1 standard" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=MM6P27Q1QO3KK8S8GTWJ31SMVY&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=6HPXWR18KDFBZSHD6Z5CWQXR81&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1class and 1 Cluster" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=MM6P27Q1QO3KK8S8GTWJ31SMVY&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=R8FJSTFBPGS84D543YRBQRCJN8&amp;evaluationStandardType=clusterId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 1class and 1 Domain" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=MM6P27Q1QO3KK8S8GTWJ31SMVY&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=JD32O4H3SBZ8O3JQ8F29JQZQZE&amp;evaluationStandardType=domainId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 10Classes and 1 standard" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=BHYQ727XGPGVFC17KN4W7XSTX1&amp;targetScopeId=WL4RMP7HH7BE34OEPWC8T36WGO&amp;targetScopeId=WQKWTVD1OG85KPFYJ3NC49OV11&amp;targetScopeId=977X6TRGNVNOMZDRTHF4RP5VV1&amp;targetScopeId=9C82HGVXSJOYMEKWRPK5V2JQ1E&amp;targetScopeId=VL1M9TF786Z65OHOKV1FT75XPM&amp;targetScopeId=Q3VJ2BB6EX1FFZV2XPKMGYRCPQ&amp;targetScopeId=FJQJMG899XW27VWF9QCLMFQWCM&amp;targetScopeId=LBT4C8PTCT3O8CT2VVXDXPFZ5E&amp;targetScopeId=5TK6LNKR5TBEXZRW5Q6KHKGT4Y&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=6HPXWR18KDFBZSHD6Z5CWQXR81&amp;evaluationStandardType=standardId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 10Classes and 1 Cluster" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=BHYQ727XGPGVFC17KN4W7XSTX1&amp;targetScopeId=WL4RMP7HH7BE34OEPWC8T36WGO&amp;targetScopeId=WQKWTVD1OG85KPFYJ3NC49OV11&amp;targetScopeId=977X6TRGNVNOMZDRTHF4RP5VV1&amp;targetScopeId=9C82HGVXSJOYMEKWRPK5V2JQ1E&amp;targetScopeId=VL1M9TF786Z65OHOKV1FT75XPM&amp;targetScopeId=Q3VJ2BB6EX1FFZV2XPKMGYRCPQ&amp;targetScopeId=FJQJMG899XW27VWF9QCLMFQWCM&amp;targetScopeId=LBT4C8PTCT3O8CT2VVXDXPFZ5E&amp;targetScopeId=5TK6LNKR5TBEXZRW5Q6KHKGT4Y&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=R8FJSTFBPGS84D543YRBQRCJN8&amp;evaluationStandardType=clusterId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Aggregation Report by 10Classes and 1 Domain" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/evaluationGroup/aggregationReport?bookId=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;targetScopeId=BHYQ727XGPGVFC17KN4W7XSTX1&amp;targetScopeId=WL4RMP7HH7BE34OEPWC8T36WGO&amp;targetScopeId=WQKWTVD1OG85KPFYJ3NC49OV11&amp;targetScopeId=977X6TRGNVNOMZDRTHF4RP5VV1&amp;targetScopeId=9C82HGVXSJOYMEKWRPK5V2JQ1E&amp;targetScopeId=VL1M9TF786Z65OHOKV1FT75XPM&amp;targetScopeId=Q3VJ2BB6EX1FFZV2XPKMGYRCPQ&amp;targetScopeId=FJQJMG899XW27VWF9QCLMFQWCM&amp;targetScopeId=LBT4C8PTCT3O8CT2VVXDXPFZ5E&amp;targetScopeId=5TK6LNKR5TBEXZRW5Q6KHKGT4Y&amp;targetScopeType=classId&amp;includeLessonDetails=false&amp;fromDate=2015-02-20&amp;toDate=2015-03-07&amp;evaluationStandardId=JD32O4H3SBZ8O3JQ8F29JQZQZE&amp;evaluationStandardType=domainId</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify Aggregation Report returns </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Save Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">../projects/results/results-${__time(yyyy-MM-dd-HH-mm-ss)}.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SplineVisualizer" testclass="ResultCollector" testname="Spline Visualizer" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">10</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="Test Plan" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

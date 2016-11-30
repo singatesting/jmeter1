@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Run Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/gaurav_vishnoi/Downloads/apache-jmeter-2.11/projects</stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="set Environment" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ENVIRONMENT" elementType="Argument">
+            <stringProp name="Argument.name">ENVIRONMENT</stringProp>
+            <stringProp name="Argument.value">${__P(env,dev)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER" elementType="Argument">
+            <stringProp name="Argument.name">SERVER</stringProp>
+            <stringProp name="Argument.value">Apache</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Server Config" enabled="false">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Individual Server Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth-individual.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Set default Accept and Content-Type" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Experience-API-Version</stringProp>
+            <stringProp name="Header.value">1.0.0</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ISBN Test Plan" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1408382324000</longProp>
+        <longProp name="ThreadGroup.end_time">1408382324000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Self Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">ISBN API.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="ISBN Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Product Id Data Config" enabled="true">
+          <stringProp name="filename">${ENVIRONMENT}/productID.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ISBN Test Plan - ROSES EDITOR" enabled="true"/>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="ROSES Editor Login Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/jmeter-login-rosesEditor.csv</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">username,password</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="nonExistentID config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/nonExistentID.csv</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames"></stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Search for ISBNs" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***ISBN*** - ROSES EDITOR - ${ENVIRONMENT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token"></stringProp>
+              <stringProp name="OAuthSampler.token_secret"></stringProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract OAUTHTOKEN" enabled="true">
+                <stringProp name="VAR">OAUTHTOKEN</stringProp>
+                <stringProp name="JSONPATH">$.oauth_token</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract OAUTHTOKENSECRET" enabled="true">
+                <stringProp name="VAR">OAUTHTOKENSECRET</stringProp>
+                <stringProp name="JSONPATH">$.oauth_token_secret</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBNs - by ISBN Title" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=Write</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify &quot;Grade&quot; appears in the ISBNs in the response" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="69062583">Grade</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract Product ID from ISBN Search" enabled="true">
+                <stringProp name="VAR">PRODUCT_ID_EXT</stringProp>
+                <stringProp name="JSONPATH">$.[0].productId</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Product ID just extacted - ${PRODUCT_ID_EXT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/product/${PRODUCT_ID_EXT}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verfify Response is NOT empty" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2914">[]</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBNs &amp; Associated Products - by ISBN Title" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=Write</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.gui.JSONFormatterGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter" testname="jp@gc - JSON Format Post Processor" enabled="true"/>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify productId is in the response of ISBNs" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1051830678">productId</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract ISBN ID from Search" enabled="true">
+                <stringProp name="VAR">ISBN_ID_EXT</stringProp>
+                <stringProp name="JSONPATH">$.[0].id</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBNs NOT Associated to Products - by ISBN Title" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=Math&amp;associatedToProduct=false</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify productId is NOT in the response of ISBNs" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1051830678">productId</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.gui.JSONFormatterGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter" testname="jp@gc - JSON Format Post Processor" enabled="true"/>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract ISBN ID from Search" enabled="true">
+                <stringProp name="VAR">ISBN_ID_NOPRODUCT_EXT</stringProp>
+                <stringProp name="JSONPATH">$.[0].id</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBNs - by ISBN id with product information" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn/${ISBN_ID_EXT}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify &quot;productId&quot; appears in the ISBNs in the response" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1051830678">productId</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBNs - by ISBN id without product information" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn/${ISBN_ID_NOPRODUCT_EXT}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify &quot;productId&quot; does not appear in the ISBNs in the response" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1051830678">productId</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">6</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Extract ISBN Title to Use in ISBN Searches" enabled="true"/>
+          <hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Pre-condition setup" enabled="true"/>
+            <hashTree>
+              <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="*DISABLING TEST - AS OF 7/17/15 RELEASE - SERVICE NOT ALLOWED TO ADD/REMOVE ASSOCIATION A PRODUCT TO ISBN* Associate ISBN To a product" enabled="false">
+                <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+                <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+                <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">api/v0.1/product/${PRODUCT_EM4}/isbn?isbnId=${ISBN_ID}</stringProp>
+                <stringProp name="HTTPSampler.method">PUT</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="We don&apos;t care if this one fails" enabled="true">
+                  <collectionProp name="Asserion.test_strings"/>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Product ${PRODUCT_ID_EXT} - Extract ISBN Title" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/product/${PRODUCT_ID_EXT}/isbn</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract ISBN Title" enabled="true">
+                <stringProp name="VAR">ISBN_TITLE_ANY</stringProp>
+                <stringProp name="JSONPATH">$.[0].title</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Get response is NOT empty" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2914">[]</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBN Title &amp; Associated to Specific Product - by ISBN Title" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=${ISBN_TITLE_ANY}&amp;productId=${PRODUCT_ID_EXT}&amp;associatedToProduct=true</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.gui.JSONFormatterGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter" testname="jp@gc - JSON Format Post Processor" enabled="true"/>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Specific Product is in the ISBN Search response " enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-311726567">${PRODUCT_ID_EXT}</stringProp>
+                  <stringProp name="1596576010">${ISBN_TITLE_ANY}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Search for ISBN Title for a Specific Product ID - Not Associated Filter ignored (Product Id overrides flag value) " enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=${ISBN_TITLE_ANY}&amp;productId=${PRODUCT_ID_EXT}&amp;associatedToProduct=false</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify that if Product ID is passed and associatedToProduct = false, that the Product Id overrides flag value and returns Product Details </stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.gui.JSONFormatterGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter" testname="jp@gc - JSON Format Post Processor" enabled="true"/>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Product ID Details appear in results " enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-311726567">${PRODUCT_ID_EXT}</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify if Filter to NOT show associated products is passed, that the Product Id overrides flag value and returns Product Details anyway (per Tools team, they do not want an error message)</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ISBN Clean-up" enabled="true"/>
+            <hashTree>
+              <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="*DISABLING TEST - AS OF 7/17/15 RELEASE - SERVICE NOT ALLOWED TO ADD/REMOVE ASSOCIATION A PRODUCT TO ISBN* Remove ISBN from a product" enabled="false">
+                <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+                <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+                <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">api/v0.1/product/${PRODUCT_ID_EXT}/isbn?isbnId=${ISBN_ID}</stringProp>
+                <stringProp name="HTTPSampler.method">DELETE</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="We don&apos;t care if this one fails" enabled="true">
+                  <collectionProp name="Asserion.test_strings"/>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">16</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Error Conditions" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Error Condition: Search for ISBNs without ISBN title - Verify error" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify error occurs if required parms are not provided as input</stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify error occurs if required parms are not provided as input" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1787048437">You must provide</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Error Condition: Search for ISBNs without Product ID - Verify error" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?productId=</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify error occurs if required parms are not provided as input</stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify error occurs if required parms are not provided as input" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1787048437">You must provide</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Error Condition: Search for ISBNs with INVALID Product ID - Verify error" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn?productId=NOHNK3EXGNQ7XXHJ33NZ4MYODx</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="TestPlan.comments">Verify error occurs if required parms are not provided as input</stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify error occurs if required parms are not provided as input" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1359160030">is not valid for</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Error Condition: Search for ISBNs -  ISBN id not fund - Verify Error" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/isbn/${NON_EXISTENT_ID}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify isbn not found message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-191848180">Unable to locate ISBN</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ISBN Test Plan - CMS EDITOR (Non-Roses Editor)" enabled="true"/>
+            <hashTree>
+              <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller - CMS Editor" enabled="true"/>
+              <hashTree>
+                <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CMS Editor Login Data Set Config" enabled="true">
+                  <stringProp name="delimiter">,</stringProp>
+                  <stringProp name="fileEncoding"></stringProp>
+                  <stringProp name="filename">${ENVIRONMENT}/jmeter-login-cmsEditor.csv</stringProp>
+                  <boolProp name="quotedData">false</boolProp>
+                  <boolProp name="recycle">true</boolProp>
+                  <stringProp name="shareMode">shareMode.group</stringProp>
+                  <boolProp name="stopThread">false</boolProp>
+                  <stringProp name="variableNames">username,password</stringProp>
+                </CSVDataSet>
+                <hashTree/>
+                <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***ISBN*** - CMS EDITOR - ${ENVIRONMENT}" enabled="true">
+                  <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+                  <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                  <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                  <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                  <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                  <stringProp name="OAuthSampler.oauth_token"></stringProp>
+                  <stringProp name="OAuthSampler.token_secret"></stringProp>
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                  <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <boolProp name="HTTPSampler.monitor">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+                <hashTree>
+                  <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract OAUTHTOKEN" enabled="true">
+                    <stringProp name="VAR">OAUTHTOKEN</stringProp>
+                    <stringProp name="JSONPATH">$.oauth_token</stringProp>
+                    <stringProp name="DEFAULT"></stringProp>
+                  </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                  <hashTree/>
+                  <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="JSON Path Extractor - Extract OAUTHTOKENSECRET" enabled="true">
+                    <stringProp name="VAR">OAUTHTOKENSECRET</stringProp>
+                    <stringProp name="JSONPATH">$.oauth_token_secret</stringProp>
+                    <stringProp name="DEFAULT"></stringProp>
+                  </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                  <hashTree/>
+                </hashTree>
+              </hashTree>
+              <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Error Condition: Search for ISBNs - by ISBN Title - Verify NON-Rosees NOT Allowed" enabled="true">
+                <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+                <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+                <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">api/v0.1/isbn?title=Grade</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Non-Roses Editor does NOT have persmission" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1662219396">login.required</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Save Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">../projects/results/results-${__time(yyyy-MM-dd-HH-mm-ss)}.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SplineVisualizer" testclass="ResultCollector" testname="Spline Visualizer" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">10</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="Test Plan" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

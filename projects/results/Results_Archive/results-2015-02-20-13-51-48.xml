@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="104" it="0" lt="104" ts="1424458308688" s="true" lb="LOGIN API - ASSETS" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="628" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458308&quot;, oauth_nonce=&quot;99568155241942&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;YMjNFK5GThu%2BJSQKPb2GUbID16U%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;id&quot;:&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;,&quot;oauth_token&quot;:&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;,&quot;oauth_token_secret&quot;:&quot;b02fbbee-f11b-4dda-afb3-c1a4ac51b0e3&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="74" it="0" lt="74" ts="1424458308814" s="true" lb="Get Asset" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1355" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458308&quot;, oauth_nonce=&quot;99568281102764&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;v96jSDEdHLkwgE2f7mx2NJ2u4k4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;isbn&quot;:&quot;9780021111111&quot;,&quot;copyrightYear&quot;:2015,&quot;systemNodeType&quot;:&quot;BOOK&quot;,&quot;description&quot;:&quot;Everyday Math 4 test course&quot;,&quot;title&quot;:&quot;EM4 Grade 1 Test Course&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000026/75/98.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000026/75/98.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000026/75/98.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;26Y04ZPN0ZHHXK51RTVK820MHQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;childNodes&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O/children?dep=CHILD&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O&quot;},&quot;id&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;thumbExtension&quot;:&quot;png&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O</java.net.URL>
+</httpSample>
+<httpSample t="83" it="0" lt="83" ts="1424458308897" s="true" lb="Get Asset SINGLE UUID" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1305" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify Search Results contains an asset</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify Search Results contains UUID</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458308&quot;, oauth_nonce=&quot;99568363704784&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;jn846ssG0EeDMl3Ij02phvq8E54%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;DOC&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/2Z01T5284J683YJQX@LYDQRZHY&quot;,&quot;fileExt&quot;:&quot;pdf&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Used for testing UUID for an asset&quot;,&quot;title&quot;:&quot;Services Asset&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000043/43/48.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000043/43/48.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000043/43/48.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;uuid&quot;:&quot;ba4cf777-9d38-4ac4-9495-a5f997bdf1a2&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;2Z01T5284J683YJQX@LYDQRZHY&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/2TP8CWYB5HZNBB6WDTW3Y8WNYE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/2TP8CWYB5HZNBB6WDTW3Y8WNYE&quot;},&quot;id&quot;:&quot;2TP8CWYB5HZNBB6WDTW3Y8WNYE&quot;,&quot;displayCredits&quot;:&quot;DISPLAY_ON_OPEN&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset?filter-uuid=ba4cf777-9d38-4ac4-9495-a5f997bdf1a2</java.net.URL>
+</httpSample>
+<httpSample t="68" it="0" lt="68" ts="1424458308993" s="true" lb="Get Asset MULTIPLE UUIDs" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="2266" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify Search Results contains Assets and UUIDs</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458308&quot;, oauth_nonce=&quot;99568459512439&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ILnkRpG7O1wInU2UVbBfQwakrU0%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;IMG&quot;,&quot;height&quot;:299,&quot;width&quot;:400,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/FXKK8130LWNH7BZ3PST60TX118&quot;,&quot;fileExt&quot;:&quot;jpeg&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;test&quot;,&quot;title&quot;:&quot;test image for UUID&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000043/42/37.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000043/42/37.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000043/42/37.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;uuid&quot;:&quot;02fc52f3-15e7-49d1-84b6-5743c9c3fd10&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;FXKK8130LWNH7BZ3PST60TX118&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/73665OHXC1RSVYYR7N7S7SXJQ8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/73665OHXC1RSVYYR7N7S7SXJQ8&quot;},&quot;id&quot;:&quot;73665OHXC1RSVYYR7N7S7SXJQ8&quot;,&quot;displayCredits&quot;:&quot;DISPLAY_ON_OPEN&quot;},{&quot;assetType&quot;:&quot;DOC&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/2Z01T5284J683YJQX@LYDQRZHY&quot;,&quot;fileExt&quot;:&quot;pdf&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Used for testing UUID for an asset&quot;,&quot;title&quot;:&quot;Services Asset&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000043/43/48.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000043/43/48.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000043/43/48.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;uuid&quot;:&quot;ba4cf777-9d38-4ac4-9495-a5f997bdf1a2&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;2Z01T5284J683YJQX@LYDQRZHY&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/2TP8CWYB5HZNBB6WDTW3Y8WNYE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/2TP8CWYB5HZNBB6WDTW3Y8WNYE&quot;},&quot;id&quot;:&quot;2TP8CWYB5HZNBB6WDTW3Y8WNYE&quot;,&quot;displayCredits&quot;:&quot;DISPLAY_ON_OPEN&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset?filter-uuid=ba4cf777-9d38-4ac4-9495-a5f997bdf1a2&amp;filter-uuid=02fc52f3-15e7-49d1-84b6-5743c9c3fd10</java.net.URL>
+</httpSample>
+<httpSample t="71" it="0" lt="71" ts="1424458309069" s="true" lb="Get Asset by UUID - not found - empty response" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify Search Results contains an asset</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568535911335&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Kr7gxMf9tkipeVAz4cxCP%2FGlmYc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset?filter-uuid=UUID-THAT-DOES-NOT-EXIST</java.net.URL>
+</httpSample>
+<httpSample t="89" it="0" lt="88" ts="1424458309148" s="true" lb="Get Associated Assets with specific Assoc types-FEATURED" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="2744" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568614725112&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;51N%2BEf5UYrMiBAsKmYcxLN3CO8c%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://yellowfish.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;description of link yellow&quot;,&quot;title&quot;:&quot;dew test linkyellow&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000014/45/2.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000014/45/2.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000014/45/2.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;FL@LLR9N@V3M1117C2JB@M8@L4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VC1Y3HMFHW87ES2E3G786WVTS1/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VC1Y3HMFHW87ES2E3G786WVTS1&quot;},&quot;id&quot;:&quot;VC1Y3HMFHW87ES2E3G786WVTS1&quot;},{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://bluefish.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;description of link red&quot;,&quot;title&quot;:&quot;dew test link blue&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000014/45/1.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000014/45/1.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000014/45/1.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;SXWV0RJNCGDTY3C657XCVP75S1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/OK1R1BLGPWD74CZ5GDMZS8TZTM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/OK1R1BLGPWD74CZ5GDMZS8TZTM&quot;},&quot;id&quot;:&quot;OK1R1BLGPWD74CZ5GDMZS8TZTM&quot;},{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://google.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;descirption &quot;,&quot;title&quot;:&quot;dew test audio flv&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000013/94/99.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000013/94/99.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000013/94/99.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;41099QF60L7VBLJQD7NN@MFKW4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/B4X7C4NFO1DY4K2DX2NF4J2PKO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/B4X7C4NFO1DY4K2DX2NF4J2PKO&quot;},&quot;id&quot;:&quot;B4X7C4NFO1DY4K2DX2NF4J2PKO&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/E4XN5YMLXR9D1NNG57CLB3EXFM/associated?assocType=FEATURED</java.net.URL>
+</httpSample>
+<httpSample t="89" it="0" lt="89" ts="1424458309247" s="true" lb="Get Associated Assets with specific Assoc types-LOOKBACK" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="878" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568713504900&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;S51IjS6z38cbafMHqwILh7SIKvM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;ITERATN&quot;,&quot;entryPoint&quot;:&quot;data.json&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/5DKR3Y8Z03WWSBBN2VZ9SKGD@Y&quot;,&quot;description&quot;:&quot;Description for extra 2&quot;,&quot;title&quot;:&quot;Extra Iteration 2&quot;,&quot;secureAssetId&quot;:&quot;5DKR3Y8Z03WWSBBN2VZ9SKGD@Y&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/BDEBOTL2H124JG31BG29T1FB2O/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/RP8PYLCKKTH3GVCZSC2GN6RPSM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/BDEBOTL2H124JG31BG29T1FB2O&quot;},&quot;id&quot;:&quot;BDEBOTL2H124JG31BG29T1FB2O&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/DRXQSF7DSHEGOPRK1GJ34NE17Y/associated?assocType=LOOKBACK</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="80" ts="1424458309345" s="true" lb="Get Associated Assets with specific Assoc types-MOBILE" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1020" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:51 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568811829687&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;dHcxockrNQQ7nPUUtIJTnyGRy0s%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;MOB_BOOK&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/RYRDYFFT@8Z01GMLDW4H7T3F@M&quot;,&quot;fileExt&quot;:&quot;zip&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;&lt;B&gt; Do not delete this Mobile Book, Actual sample sent by Hurix; To be used for iAtlas Testing&lt;/B&gt;&quot;,&quot;title&quot;:&quot;Mobile Book - 5555&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;RYRDYFFT@8Z01GMLDW4H7T3F@M&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/5WNVB6P3R8W3VRDFZ5BCSGFK24/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/5WNVB6P3R8W3VRDFZ5BCSGFK24&quot;},&quot;id&quot;:&quot;5WNVB6P3R8W3VRDFZ5BCSGFK24&quot;,&quot;targetOs&quot;:[&quot;OSX&quot;,&quot;IOS&quot;]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/RYM9P3V8BF3JNCJBH8OR31QGXE/associated?assocType=MOBILE</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="79" ts="1424458309434" s="true" lb="Get Associated Assets with specific Assoc types-NORMAL" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1258" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:23 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568900170330&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Z%2F49ovyCr02HeHIfDFYf3PIEyx4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;IMG&quot;,&quot;height&quot;:400,&quot;width&quot;:400,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/P@MZG@70FXZ1450VPT5LN5HXZM&quot;,&quot;fileExt&quot;:&quot;gif&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Florida Image Asset&quot;,&quot;title&quot;:&quot;SV Florida Image Asset&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000027/50/58.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000027/50/58.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000027/50/58.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;FL&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;P@MZG@70FXZ1450VPT5LN5HXZM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/MNYQFRKRJB1CTZVSFVXB73F9FM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/MNYQFRKRJB1CTZVSFVXB73F9FM&quot;},&quot;id&quot;:&quot;MNYQFRKRJB1CTZVSFVXB73F9FM&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/MSH2ZNXVPMS8VNLJ6N28X1MVLM/associated?assocType=NORMAL</java.net.URL>
+</httpSample>
+<httpSample t="69" it="0" lt="69" ts="1424458309522" s="true" lb="Get Associated Assets with specific Assoc types-OPTOUT" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1326" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99568988423925&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;6RuNsN8ySydJyUAP34t62b8xMEI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;MOB_BOOK&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/HBNSJC7PYF3WJ3PDYR8DK0MZQ4&quot;,&quot;fileExt&quot;:&quot;zip&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Vital Source Test book with android support and xml file\r\n&lt;b&gt;Please do not delete this asset.&lt;/b&gt;&quot;,&quot;group&quot;:[&quot;A&quot;],&quot;title&quot;:&quot;VS_Test_Book&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000024/86/18.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000024/86/18.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000024/86/18.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;HBNSJC7PYF3WJ3PDYR8DK0MZQ4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/OJBGE9WGSKXYEV33SS1Z23H5CY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/OJBGE9WGSKXYEV33SS1Z23H5CY&quot;},&quot;id&quot;:&quot;OJBGE9WGSKXYEV33SS1Z23H5CY&quot;,&quot;targetOs&quot;:[&quot;IOS&quot;,&quot;ANDROID&quot;],&quot;tag&quot;:[572]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/Q1S9WRW7MORN87QWV2OEEMYBSQ/associated?assocType=OPTOUT</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="61" ts="1424458309600" s="true" lb="Get Associated Assets with specific Assoc types-PERSISTENT_LINK1" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1350" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569066381680&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;gk5eCeFV6dYR4dpP2yrEFrKEsQM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;SWF&quot;,&quot;height&quot;:436,&quot;width&quot;:600,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/V303RL8@42SSV05F9RGJR7T1BM&quot;,&quot;fileExt&quot;:&quot;swf&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;&lt;b&gt;Lesson Animations&lt;/b&gt; bring math concepts to life and invite students to explore the concepts more deeply.&quot;,&quot;title&quot;:&quot;Animation: Same, More, Fewer&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000007/3/45.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000007/3/45.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000007/3/45.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;K&quot;,&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;V303RL8@42SSV05F9RGJR7T1BM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VKNK91XGYOHMRW3M1TN59X8KFE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VKNK91XGYOHMRW3M1TN59X8KFE&quot;},&quot;id&quot;:&quot;VKNK91XGYOHMRW3M1TN59X8KFE&quot;,&quot;tag&quot;:[496]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/2BMFL2KFCDTLWQWDG2E56KZRRQ/associated?assocType=PERSISTENT_LINK1</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ts="1424458309671" s="true" lb="Get Associated Assets with specific Assoc types-PERSISTENT_LINK2" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1348" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569137503036&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ej1yPD3sb4NfzgsVFrNSwtjcS%2F0%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;DOC&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/P2GW8QTQLGNG@9MKW@VXHSZ5@0&quot;,&quot;fileExt&quot;:&quot;pdf&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;&lt;b&gt;Explore Worksheets&lt;/b&gt; provide students with extra hands-on practice following the concepts taught in the Explore sections.&quot;,&quot;title&quot;:&quot;Explore Same, More, Fewer&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000007/3/46.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000007/3/46.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000007/3/46.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;K&quot;,&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;P2GW8QTQLGNG@9MKW@VXHSZ5@0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/53KREZD1LQ47L81JGPTF9CZTFQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/53KREZD1LQ47L81JGPTF9CZTFQ&quot;},&quot;id&quot;:&quot;53KREZD1LQ47L81JGPTF9CZTFQ&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/2BMFL2KFCDTLWQWDG2E56KZRRQ/associated?assocType=PERSISTENT_LINK2</java.net.URL>
+</httpSample>
+<httpSample t="64" it="0" lt="64" ts="1424458309741" s="true" lb="Get Associated Assets with specific Assoc types-PERSISTENT_LINK3" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1185" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569207733398&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;wHANQiH8ATQx8%2F9TcyweY2V4Plg%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;N_LPLAN&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;dew test resource list description&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;dew resource list test&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000011/18/38.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000011/18/38.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000011/18/38.jpg&quot;},&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;Y41Y30YTLX31H21W8B3KNZ7@G1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8LCM4S4Q7QTOTR1C8JK7FZ7MPY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8LCM4S4Q7QTOTR1C8JK7FZ7MPY&quot;},&quot;id&quot;:&quot;8LCM4S4Q7QTOTR1C8JK7FZ7MPY&quot;,&quot;copyrightYear&quot;:&quot;2009&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/VCKB2HQ788PHJLT25Z69YO1QQ8/associated?assocType=PERSISTENT_LINK3</java.net.URL>
+</httpSample>
+<httpSample t="64" it="0" lt="64" ts="1424458309814" s="true" lb="Get Associated Assets with specific Assoc types-TEMPLATE_MEDIA1" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569280179840&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;9CZJTxDDyeYSiHwVpWoGd6t4GfU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/XSCTEJ4WXEF12VZLY18MY6ZONO/associated?assocType=TEMPLATE_MEDIA1</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="60" ts="1424458309887" s="true" lb="Get Associated Assets with specific Assoc types-TEMPLATE_MEDIA2" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1344" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569353449616&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;VUOGoZN2M3%2BtH96lZ11T3TIVIBc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;SWF&quot;,&quot;height&quot;:436,&quot;width&quot;:600,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/KWP3R46NZS4C846M90X2BCY0C0&quot;,&quot;fileExt&quot;:&quot;swf&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;&lt;b&gt;Lesson Animations&lt;/b&gt; bring math concepts to life and invite students to explore the concepts more deeply.&quot;,&quot;title&quot;:&quot;Divide by One-Digit Numbers&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000010/51/72.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000010/51/72.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000010/51/72.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;KWP3R46NZS4C846M90X2BCY0C0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/7BESN5ESBW42GJXZ26OEHKJOQ4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/7BESN5ESBW42GJXZ26OEHKJOQ4&quot;},&quot;id&quot;:&quot;7BESN5ESBW42GJXZ26OEHKJOQ4&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/M4JHQ6XC91EXR2ON3R9LM1W588/associated?assocType=TEMPLATE_MEDIA2</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ts="1424458309956" s="true" lb="Get Associated Assets with specific Assoc types-FEATURED" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="2744" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458309&quot;, oauth_nonce=&quot;99569422991966&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;f3EW1PhK1MVY2d8HE4xXi4ElpLA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://yellowfish.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;description of link yellow&quot;,&quot;title&quot;:&quot;dew test linkyellow&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000014/45/2.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000014/45/2.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000014/45/2.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;FL@LLR9N@V3M1117C2JB@M8@L4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VC1Y3HMFHW87ES2E3G786WVTS1/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VC1Y3HMFHW87ES2E3G786WVTS1&quot;},&quot;id&quot;:&quot;VC1Y3HMFHW87ES2E3G786WVTS1&quot;},{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://bluefish.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;description of link red&quot;,&quot;title&quot;:&quot;dew test link blue&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000014/45/1.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000014/45/1.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000014/45/1.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;SXWV0RJNCGDTY3C657XCVP75S1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/OK1R1BLGPWD74CZ5GDMZS8TZTM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/OK1R1BLGPWD74CZ5GDMZS8TZTM&quot;},&quot;id&quot;:&quot;OK1R1BLGPWD74CZ5GDMZS8TZTM&quot;},{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://google.com&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;descirption &quot;,&quot;title&quot;:&quot;dew test audio flv&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000013/94/99.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000013/94/99.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000013/94/99.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;41099QF60L7VBLJQD7NN@MFKW4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/B4X7C4NFO1DY4K2DX2NF4J2PKO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/B4X7C4NFO1DY4K2DX2NF4J2PKO&quot;},&quot;id&quot;:&quot;B4X7C4NFO1DY4K2DX2NF4J2PKO&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/E4XN5YMLXR9D1NNG57CLB3EXFM/associated?assocType=FEATURED</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="61" ts="1424458310030" s="true" lb="Get Associated Assets with specific Assoc types-LOOKBACK" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="878" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569496442677&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;CAcyBUg6%2F1IUHmK7BwlQglVwV0w%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;ITERATN&quot;,&quot;entryPoint&quot;:&quot;data.json&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/5DKR3Y8Z03WWSBBN2VZ9SKGD@Y&quot;,&quot;description&quot;:&quot;Description for extra 2&quot;,&quot;title&quot;:&quot;Extra Iteration 2&quot;,&quot;secureAssetId&quot;:&quot;5DKR3Y8Z03WWSBBN2VZ9SKGD@Y&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/BDEBOTL2H124JG31BG29T1FB2O/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/RP8PYLCKKTH3GVCZSC2GN6RPSM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/BDEBOTL2H124JG31BG29T1FB2O&quot;},&quot;id&quot;:&quot;BDEBOTL2H124JG31BG29T1FB2O&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/DRXQSF7DSHEGOPRK1GJ34NE17Y/associated?assocType=LOOKBACK</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="61" ts="1424458310099" s="true" lb="Get Associated Assets with specific Assoc types-MOBILE" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1020" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569566027221&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;WPoiubyL5xT8xnSXjdFp1ixpgAA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;MOB_BOOK&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/RYRDYFFT@8Z01GMLDW4H7T3F@M&quot;,&quot;fileExt&quot;:&quot;zip&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;&lt;B&gt; Do not delete this Mobile Book, Actual sample sent by Hurix; To be used for iAtlas Testing&lt;/B&gt;&quot;,&quot;title&quot;:&quot;Mobile Book - 5555&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;RYRDYFFT@8Z01GMLDW4H7T3F@M&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/5WNVB6P3R8W3VRDFZ5BCSGFK24/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/5WNVB6P3R8W3VRDFZ5BCSGFK24&quot;},&quot;id&quot;:&quot;5WNVB6P3R8W3VRDFZ5BCSGFK24&quot;,&quot;targetOs&quot;:[&quot;OSX&quot;,&quot;IOS&quot;]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/RYM9P3V8BF3JNCJBH8OR31QGXE/associated?assocType=MOBILE</java.net.URL>
+</httpSample>
+<httpSample t="105" it="0" lt="83" ts="1424458310169" s="true" lb="Get Associated Assets with specific Asset types-COMPOSIT" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="4586" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569635874426&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;hEm%2BTW%2FaIZn8P%2FDeT46LEmO0Mtw%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;m4v&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;M4V video&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000023/49/19.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000023/49/19.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000023/49/19.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;6PJGCC9Y3SG7CV@ZVMH@CVMYP1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/34QFKZL8XFHVT6REXCJDGSJS6E/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/34QFKZL8XFHVT6REXCJDGSJS6E&quot;},&quot;id&quot;:&quot;34QFKZL8XFHVT6REXCJDGSJS6E&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;targetOs&quot;:[&quot;OSX&quot;,&quot;IOS&quot;,&quot;ANDROID&quot;],&quot;downloadable&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;showAllMedia&quot;:false,&quot;tag&quot;:[530]},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;AD composite to ilink with parameters&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;AD composite to ilink with parameters&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;TQ2Y0HC7Y2N5P66R2G3MXS7F1@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8KW9B139V4H9PXTTEEFL82XTVQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8KW9B139V4H9PXTTEEFL82XTVQ&quot;},&quot;id&quot;:&quot;8KW9B139V4H9PXTTEEFL82XTVQ&quot;,&quot;effectiveAssetType&quot;:&quot;DOC&quot;,&quot;downloadable&quot;:false,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;AD composite for ilink to composite with parameters&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;AD composite for ilink to composite with parameters&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000023/57/2.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000023/57/2.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000023/57/2.jpg&quot;},&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;TX&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;SCF4YBXKL7382FZ61SQS9YPSN@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/XJSZNT5CWSWDZL75WTW8V4LMEE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/XJSZNT5CWSWDZL75WTW8V4LMEE&quot;},&quot;id&quot;:&quot;XJSZNT5CWSWDZL75WTW8V4LMEE&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;isbn&quot;:&quot;9780123456789&quot;,&quot;downloadable&quot;:false,&quot;copyrightYear&quot;:&quot;2000&quot;,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=960&amp;height=720&amp;chromeless=N&amp;resizable=Y&quot;},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;sdf&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;blessan&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000028/60/18.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000028/60/18.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000028/60/18.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;G44NGJ5ZX77Z882TYHVCTZTQXQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/N5HOGT53WXOQBZGDQ45CPY52CY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/N5HOGT53WXOQBZGDQ45CPY52CY&quot;},&quot;id&quot;:&quot;N5HOGT53WXOQBZGDQ45CPY52CY&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;downloadable&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;showAllMedia&quot;:false},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Test CEDPLT-2723 &lt;br/&gt;\r\nTE: 62QX-JQ3G-5PD5-CC34&lt;br/&gt;\r\nSE: V5RX-L3R4-Z7LY-17KJ&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Test CEDPLT-2723&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;WW7BXNP2N6MWKWQKXPC102W39Q&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/BPBZGDXQ3ML2FV354RJNV338TQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/BPBZGDXQ3ML2FV354RJNV338TQ&quot;},&quot;id&quot;:&quot;BPBZGDXQ3ML2FV354RJNV338TQ&quot;,&quot;targetOs&quot;:[&quot;WINDOWS&quot;,&quot;OSX&quot;,&quot;ANDROID&quot;],&quot;effectiveAssetType&quot;:&quot;IMG&quot;,&quot;downloadable&quot;:false,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/SRGHSBN1C3YZL32QQSWH218D24/associated?assetType=COMPOSIT</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="59" ts="1424458310285" s="true" lb="Get Associated Assets with specific Asset types-COMPOUND" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569751834348&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;EmsX%2BSLzWj87vSiybgh4W1vBZac%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/VR4T37XNGZ8O8D988PTZWQ797Y/associated?assetType=COMPOUND</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="60" ts="1424458310354" s="true" lb="Get Associated Assets with specific Asset types-ITERATN" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:52 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569820274360&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;uK2gUVbHNra%2Fi2rx3pJYJRBnzss%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/RYM9P3V8BF3JNCJBH8OR31QGXE/associated?assetType=ITERATN</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ts="1424458310426" s="true" lb="Get Associated Assets with specific Asset types-VOCAB" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:24 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569892209166&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;3rB%2Fj5fWm2H9uDu5TP1Tjs%2Fg%2Bck%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/MSH2ZNXVPMS8VNLJ6N28X1MVLM/associated?assetType=VOCAB</java.net.URL>
+</httpSample>
+<httpSample t="69" it="0" lt="69" ts="1424458310493" s="true" lb="Get Associated Assets with specific Asset types-TUPLE" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="753" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99569959594354&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;e9amOWluUgsp984ZvNz55iZ7GEs%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;TUPLE&quot;,&quot;description&quot;:&quot;AD Test Tuple Studio&quot;,&quot;group&quot;:[&quot;B&quot;],&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;AD Test Tuple Studio&quot;,&quot;secureAssetId&quot;:&quot;@LMFB@F569G8971LJ9DTBZBVKM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VHZ9EX1B6X6HQD9CXLD6H2OS64/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VHZ9EX1B6X6HQD9CXLD6H2OS64&quot;},&quot;id&quot;:&quot;VHZ9EX1B6X6HQD9CXLD6H2OS64&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/HH6TZVZJKPJJRYTHO8DFHFRC8Y/associated?assetType=TUPLE</java.net.URL>
+</httpSample>
+<httpSample t="67" it="0" lt="67" ts="1424458310572" s="true" lb="Get Associated Assets with specific Asset types-INSTRGRP" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99570038157635&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;XrGjeIabeDLIqmiYRWSsUFupDKc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/2BMFL2KFCDTLWQWDG2E56KZRRQ/associated?assetType=INSTRGRP</java.net.URL>
+</httpSample>
+<httpSample t="136" it="0" lt="86" ts="1424458310648" s="true" lb="Get Associated Assets with specific Asset types-ILINK" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="12189" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99570114742408&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;U8TXtmJ0%2F4euocvonIZoUEeiLUQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;546&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 546&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;0J6P67MRKLZ@S5WRM0W05KJFS0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/YFOHNPB5NX8T1FBJPLC695RJ9Q/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/YFOHNPB5NX8T1FBJPLC695RJ9Q&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;YFOHNPB5NX8T1FBJPLC695RJ9Q&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;548&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 548&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;9DG0H6R6BR14SX1LYX6H9NHDS4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/RJKXBDVK55GOOG8P66ZTYWC89O/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/RJKXBDVK55GOOG8P66ZTYWC89O&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;RJKXBDVK55GOOG8P66ZTYWC89O&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;550&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 550&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;7WYS4CP4H2R7PXMDTMGYNBZ801&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/4YG75KF6RNTMHFP81MGH4GNXGY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/4YG75KF6RNTMHFP81MGH4GNXGY&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;4YG75KF6RNTMHFP81MGH4GNXGY&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;552&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 552&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;08P8DHQ9L4WJVRC@N7FQX2XYP8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/PZS9O8JW9HYELFPNVE4MGOTN68/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/PZS9O8JW9HYELFPNVE4MGOTN68&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;PZS9O8JW9HYELFPNVE4MGOTN68&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;554&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;group&quot;:[&quot;B&quot;],&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 554&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;4KRDZ0LCYKHT6Y0ZMH12W@8HP1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/88Y54H2LMYR6B7YHJ5QF5DVFTQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/88Y54H2LMYR6B7YHJ5QF5DVFTQ&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;88Y54H2LMYR6B7YHJ5QF5DVFTQ&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;556&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 556&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;FTRTFX1S4T5MVR6RVR9GR@2MZQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/3ZK156KNY54D4GQS14GDY95ZC4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/3ZK156KNY54D4GQS14GDY95ZC4&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;3ZK156KNY54D4GQS14GDY95ZC4&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;558&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 558&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;92231W7ZT71FQL3N6ZHGQ0L4PY&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/5OEVMH5SLFWPETRFOGN3QVRH7O/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/5OEVMH5SLFWPETRFOGN3QVRH7O&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;5OEVMH5SLFWPETRFOGN3QVRH7O&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;560&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;group&quot;:[&quot;C&quot;],&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 560&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;25HJXKKC1NN597S766DQSZHF@0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/CD6M1DRX2MHJ6X26EVVXML7NL1/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/CD6M1DRX2MHJ6X26EVVXML7NL1&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;CD6M1DRX2MHJ6X26EVVXML7NL1&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;562&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;title&quot;:&quot;Grade 4 Reading Wonders Anthology iLink 562&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;GD3Z50WPB8@MVNB02RWG9ZKP9@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/LNLXOMF4HKWV4R875BJKNDEFWY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/LNLXOMF4HKWV4R875BJKNDEFWY&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;LNLXOMF4HKWV4R875BJKNDEFWY&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;560&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;group&quot;:[&quot;C&quot;],&quot;title&quot;:&quot;MW Composite-To-iLink Media 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;OH&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;5YTW75J5ZW59B@XSG3YM266@ZM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/14214C1VBMB1KWROJ2REW84ESO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/KE3LTWCF1SZ95G736OGL1Y5QZO&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/14214C1VBMB1KWROJ2REW84ESO&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;14214C1VBMB1KWROJ2REW84ESO&quot;,&quot;targetOs&quot;:[&quot;WINDOWS&quot;],&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;42&quot;,&quot;linkType&quot;:&quot;EBOOK&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4 Reading Wonders Anthology iLink&quot;,&quot;group&quot;:[&quot;C&quot;],&quot;title&quot;:&quot;MW Composite-To-iLink Media 2&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;8W3VHF6JGFVHVZJ56N2WXCV2R@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/17GMS5DH3SM4H5H1DQ8BBPG244/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/KE3LTWCF1SZ95G736OGL1Y5QZO&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/17GMS5DH3SM4H5H1DQ8BBPG244&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/7X9FBRF4B8WQN3TCYEC7NCR4D4&quot;},&quot;id&quot;:&quot;17GMS5DH3SM4H5H1DQ8BBPG244&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;100000220200&quot;,&quot;linkType&quot;:&quot;WW&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4--&gt;Unit 2---&gt;Explanatory Essay&quot;,&quot;group&quot;:[&quot;E&quot;],&quot;title&quot;:&quot;RD14 WWS Link, Grade 4: Explanatory Essay&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;5PL09S7JZV482WZZZ30LGNJ09Y&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/499TSHQB3LT1BM3LQP18XX1W2Y/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/499TSHQB3LT1BM3LQP18XX1W2Y&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/CYC8OGOQNP2ST7MRQ9F4541KQE&quot;},&quot;id&quot;:&quot;499TSHQB3LT1BM3LQP18XX1W2Y&quot;,&quot;credits&quot;:&quot;Test-10/13/2014&quot;,&quot;tag&quot;:[549]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;100000220200&quot;,&quot;linkType&quot;:&quot;WW&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Grade 4--&gt;Unit 2---&gt;How-to Writing&quot;,&quot;group&quot;:[&quot;E&quot;],&quot;title&quot;:&quot;RD14 WWS Link, Grade 4: How-to Writing&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;KFK8@D1BJF@XG@H14B2FMQCDR8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/CMONBF5785VT3B1XPPVYZS7FME/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/CMONBF5785VT3B1XPPVYZS7FME&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/CYC8OGOQNP2ST7MRQ9F4541KQE&quot;},&quot;id&quot;:&quot;CMONBF5785VT3B1XPPVYZS7FME&quot;,&quot;tag&quot;:[549]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;page=3&quot;,&quot;linkType&quot;:&quot;PDF&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Composite w iLinks for NT&quot;,&quot;title&quot;:&quot;Composite w iLinks - NT&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;HZ@WGQ@9DMPN4WK3H0TD8P1FWY&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/T566JMD68Z9NLNB97KY936Q6X4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/7VOK3Q5JCGJNJ2DVGQJDWRNYL1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/T566JMD68Z9NLNB97KY936Q6X4&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/HF4OWWMHHWLMSQBBBYJPZT9B5M&quot;},&quot;id&quot;:&quot;T566JMD68Z9NLNB97KY936Q6X4&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;page=4&quot;,&quot;linkType&quot;:&quot;PDF&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Composite w iLink - FL&quot;,&quot;title&quot;:&quot;Composite w iLink - FL&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;FL&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;B7B6VBNZJSK5DJFQS9CT965MB@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/2QYDVTH38TMBSSHBH5MLPV5MNY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/7VOK3Q5JCGJNJ2DVGQJDWRNYL1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/2QYDVTH38TMBSSHBH5MLPV5MNY&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/B49OBCS4DNEHFW9LCTFV9LYF9O&quot;},&quot;id&quot;:&quot;2QYDVTH38TMBSSHBH5MLPV5MNY&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;page=3&quot;,&quot;linkType&quot;:&quot;PDF&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Composite w iLink - NM&quot;,&quot;title&quot;:&quot;Composite w iLink - NM&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;NM&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;Z0VSGD9QBZ1SP31Z327GHZB0M0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/2SOMGCXX3RHWZN1J4H36V1SMKM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/7VOK3Q5JCGJNJ2DVGQJDWRNYL1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/2SOMGCXX3RHWZN1J4H36V1SMKM&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/873R2EBXGY5GHYVJSV9SJQSPQM&quot;},&quot;id&quot;:&quot;2SOMGCXX3RHWZN1J4H36V1SMKM&quot;,&quot;tag&quot;:[498]},{&quot;assetType&quot;:&quot;ILINK&quot;,&quot;launchParam&quot;:&quot;page=4&quot;,&quot;linkType&quot;:&quot;PDF&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Composite w iLinks - CA&quot;,&quot;title&quot;:&quot;Composite w iLinks - CA&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;CA&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;X5RFBMN9MM9D7R640V40372J60&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8BCDCJ66OTK3JRXD1MQ6J4MQLY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/7VOK3Q5JCGJNJ2DVGQJDWRNYL1&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8BCDCJ66OTK3JRXD1MQ6J4MQLY&quot;,&quot;linked&quot;:&quot;/api/v0.1/asset/B49OBCS4DNEHFW9LCTFV9LYF9O&quot;},&quot;id&quot;:&quot;8BCDCJ66OTK3JRXD1MQ6J4MQLY&quot;,&quot;tag&quot;:[498]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/DS2KE12QZSDX3Q5YC86KQXVKT4/associated?assetType=ILINK</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ts="1424458310794" s="true" lb="Get Associated Assets with specific Asset types-ETOOL" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99570260390585&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;m0vlIAT6t5AZnXGNd3YhnFQOdFs%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/C3QRX3DOQ7LTEWPTK7NTEZ9MRE/associated?assetType=ETOOL</java.net.URL>
+</httpSample>
+<httpSample t="72" it="0" lt="71" ts="1424458310865" s="true" lb="Get Associated Assets with specific Asset types-EVLPOINT" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="3728" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99570332076794&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;sFRXVUWDHNc%2FKws6yU%2BqwFMXE0w%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;There are 4 questions...&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;1&quot;,&quot;secureAssetId&quot;:&quot;CF8VPQSPGY8J19L93Q0M2B5TWM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/9RKV56Q4XXWS78H79R4V4F6OT8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/9WFTTB3FFKTEN7PGNGE9BCSSF4&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/9RKV56Q4XXWS78H79R4V4F6OT8&quot;},&quot;id&quot;:&quot;9RKV56Q4XXWS78H79R4V4F6OT8&quot;,&quot;evaluationType&quot;:&quot;FORMAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;EP2&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;EP2 1.OA.2&quot;,&quot;secureAssetId&quot;:&quot;JTQ8Z7YDS@386P4X656VBD0484&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/EHB4B3MCP1YESPXV6PXD98ZEJE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/9WFTTB3FFKTEN7PGNGE9BCSSF4&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/EHB4B3MCP1YESPXV6PXD98ZEJE&quot;},&quot;id&quot;:&quot;EHB4B3MCP1YESPXV6PXD98ZEJE&quot;,&quot;evaluationType&quot;:&quot;FORMAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;EP AP 1&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;EP AP 1&quot;,&quot;secureAssetId&quot;:&quot;NYDKKJB175P0RXBFRDDY0BKZX4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/VPDESNVH771WEP75MXSYMB43QY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/9WFTTB3FFKTEN7PGNGE9BCSSF4&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/VPDESNVH771WEP75MXSYMB43QY&quot;},&quot;id&quot;:&quot;VPDESNVH771WEP75MXSYMB43QY&quot;,&quot;evaluationType&quot;:&quot;OBSERVATIONAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;This is my EP&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;EP Michelle solomon grade 2&quot;,&quot;secureAssetId&quot;:&quot;F4Z9Z@1NL0PG76H3068NL3X8G@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/KSW76YBCFZW3JK5PM32VJ5WOPO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/GREQOOQ5C9QGMY3GPVOEZ5QRHM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/KSW76YBCFZW3JK5PM32VJ5WOPO&quot;},&quot;id&quot;:&quot;KSW76YBCFZW3JK5PM32VJ5WOPO&quot;,&quot;evaluationType&quot;:&quot;FORMAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;I am the description field of this first evaluation point. I don&apos;t rightly know what I&apos;m for at the moment.&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;What is the first evaluation point?&quot;,&quot;secureAssetId&quot;:&quot;STXM1L5M4TJ67D5JCLGX82MV71&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/POMGST6MDEDZNJD2SY3DDJ9TN4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/VD5G8FG57T373K1OFPZ4T1OM6Y&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/POMGST6MDEDZNJD2SY3DDJ9TN4&quot;},&quot;id&quot;:&quot;POMGST6MDEDZNJD2SY3DDJ9TN4&quot;,&quot;evaluationType&quot;:&quot;OBSERVATIONAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;1.nbt.1 gmp1.5 gmp1.2&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Prob 4 1.NBT.1 GMP1.5 GMP1.2&quot;,&quot;secureAssetId&quot;:&quot;8XYQV26L5TYM4QCHB449GMTBTY&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8W14RWK8T1W2M7FOE2X9PZBTLY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/OW3R5VY3MOCX2VPGR73RY5XWK8&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8W14RWK8T1W2M7FOE2X9PZBTLY&quot;},&quot;id&quot;:&quot;8W14RWK8T1W2M7FOE2X9PZBTLY&quot;,&quot;evaluationType&quot;:&quot;OBSERVATIONAL&quot;},{&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;description&quot;:&quot;EP 1 description&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;EP 1&quot;,&quot;secureAssetId&quot;:&quot;V3W68VY2BBQP8YTBPDKRVHY5RM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/PS9GXKM8FHY1GCTMQ2YWBDMP68/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/JTP6HZ182GZHOJ78KL6749HRJM&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/PS9GXKM8FHY1GCTMQ2YWBDMP68&quot;},&quot;id&quot;:&quot;PS9GXKM8FHY1GCTMQ2YWBDMP68&quot;,&quot;evaluationType&quot;:&quot;FORMAL&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/E38LO9894S4GMYL42YC5NQNTPO/associated?assetType=EVLPOINT</java.net.URL>
+</httpSample>
+<httpSample t="67" it="0" lt="66" ts="1424458310946" s="true" lb="Get Associated Assets with specific Asset types-LINK" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458310&quot;, oauth_nonce=&quot;99570412763786&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;y8f6RQAlCcWyAbdqb5n6j7RVeZg%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/VR4T37XNGZ8O8D988PTZWQ797Y/associated?assetType=LINK</java.net.URL>
+</httpSample>
+<httpSample t="63" it="0" lt="62" ts="1424458311022" s="true" lb="Get Associated Assets with specific Asset types-LSNSECTN" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570488933472&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;X4hyTb1PHwfdSokYCF%2FYa10cQwM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/M4JHQ6XC91EXR2ON3R9LM1W588/associated?assetType=LSNSECTN</java.net.URL>
+</httpSample>
+<httpSample t="64" it="0" lt="64" ts="1424458311094" s="true" lb="Get Associated Assets with specific Asset types-LSNBLADE" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570561157546&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;TgoX4vCx%2FIjSMHwExk1evr6M0GY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/M4JHQ6XC91EXR2ON3R9LM1W588/associated?assetType=LSNBLADE</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ts="1424458311168" s="true" lb="Get Associated Assets with specific Asset types-EBOOK" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570634556561&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4jlPdTAv3ZIrOiMKCnWgftGxYfI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/8FSEHQ7XJ7Y2HVH4VBNZ16TS4Q/associated?assetType=EBOOK</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="58" ts="1424458311239" s="true" lb="Get Associated Assets with specific Asset types-IWB_RESC" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570705559320&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Mg0Z9lrL9FSQDHUg%2BTdmQBkYU%2Fo%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/K35VXSMY4YQSGHW3LX5B5JO59Y/associated?assetType=IWB_RESC</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ts="1424458311308" s="true" lb="Get Associated Assets with specific Asset types-LRNOBJCT" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1108" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:53 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570774252110&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;I9CtomsVtWMc43c0g8MNi1yXE9o%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;LRNOBJCT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Gr 2: Lesson 1-1: Warm Up: Mental Math and Fluency: Teacher Presentation Slide&quot;,&quot;title&quot;:&quot;Mental Math and Fluency&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;,&quot;K&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;7PWC3FNGW5XVFBZ0RQ3D6Y3QJQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/P18QFOVVEX81HGS248517LDCCY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;iterations&quot;:&quot;/api/v0.1/asset/P18QFOVVEX81HGS248517LDCCY/children?dep=CHILD&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/P18QFOVVEX81HGS248517LDCCY/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/P18QFOVVEX81HGS248517LDCCY&quot;},&quot;id&quot;:&quot;P18QFOVVEX81HGS248517LDCCY&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/K35VXSMY4YQSGHW3LX5B5JO59Y/associated?assetType=LRNOBJCT</java.net.URL>
+</httpSample>
+<httpSample t="124" it="0" lt="92" ts="1424458311383" s="true" lb="Get Associated Assets with specific Asset types-COMPOSIT" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="4586" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570849886212&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;eBCxkrfieSlRo2t3kQ8qUYz0lFQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;m4v&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;M4V video&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000023/49/19.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000023/49/19.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000023/49/19.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;6PJGCC9Y3SG7CV@ZVMH@CVMYP1&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/34QFKZL8XFHVT6REXCJDGSJS6E/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/34QFKZL8XFHVT6REXCJDGSJS6E&quot;},&quot;id&quot;:&quot;34QFKZL8XFHVT6REXCJDGSJS6E&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;targetOs&quot;:[&quot;OSX&quot;,&quot;IOS&quot;,&quot;ANDROID&quot;],&quot;downloadable&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;showAllMedia&quot;:false,&quot;tag&quot;:[530]},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;AD composite to ilink with parameters&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;AD composite to ilink with parameters&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;TQ2Y0HC7Y2N5P66R2G3MXS7F1@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8KW9B139V4H9PXTTEEFL82XTVQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8KW9B139V4H9PXTTEEFL82XTVQ&quot;},&quot;id&quot;:&quot;8KW9B139V4H9PXTTEEFL82XTVQ&quot;,&quot;effectiveAssetType&quot;:&quot;DOC&quot;,&quot;downloadable&quot;:false,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;AD composite for ilink to composite with parameters&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;AD composite for ilink to composite with parameters&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000023/57/2.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000023/57/2.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000023/57/2.jpg&quot;},&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;,&quot;province&quot;:&quot;TX&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;SCF4YBXKL7382FZ61SQS9YPSN@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/XJSZNT5CWSWDZL75WTW8V4LMEE/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/XJSZNT5CWSWDZL75WTW8V4LMEE&quot;},&quot;id&quot;:&quot;XJSZNT5CWSWDZL75WTW8V4LMEE&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;isbn&quot;:&quot;9780123456789&quot;,&quot;downloadable&quot;:false,&quot;copyrightYear&quot;:&quot;2000&quot;,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=960&amp;height=720&amp;chromeless=N&amp;resizable=Y&quot;},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;sdf&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;blessan&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000028/60/18.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000028/60/18.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000028/60/18.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;G44NGJ5ZX77Z882TYHVCTZTQXQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/N5HOGT53WXOQBZGDQ45CPY52CY/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/N5HOGT53WXOQBZGDQ45CPY52CY&quot;},&quot;id&quot;:&quot;N5HOGT53WXOQBZGDQ45CPY52CY&quot;,&quot;effectiveAssetType&quot;:&quot;COMPOUND&quot;,&quot;downloadable&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;showAllMedia&quot;:false},{&quot;assetType&quot;:&quot;COMPOSIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Test CEDPLT-2723 &lt;br/&gt;\r\nTE: 62QX-JQ3G-5PD5-CC34&lt;br/&gt;\r\nSE: V5RX-L3R4-Z7LY-17KJ&quot;,&quot;resourceType&quot;:&quot;asset&quot;,&quot;title&quot;:&quot;Test CEDPLT-2723&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;WW7BXNP2N6MWKWQKXPC102W39Q&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/BPBZGDXQ3ML2FV354RJNV338TQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/BPBZGDXQ3ML2FV354RJNV338TQ&quot;},&quot;id&quot;:&quot;BPBZGDXQ3ML2FV354RJNV338TQ&quot;,&quot;targetOs&quot;:[&quot;WINDOWS&quot;,&quot;OSX&quot;,&quot;ANDROID&quot;],&quot;effectiveAssetType&quot;:&quot;IMG&quot;,&quot;downloadable&quot;:false,&quot;showAllMedia&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/SRGHSBN1C3YZL32QQSWH218D24/associated?assetType=COMPOSIT</java.net.URL>
+</httpSample>
+<httpSample t="77" it="0" lt="76" ts="1424458311520" s="true" lb="Get Asset - Sketchpad" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1055" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - verify sketchpadVersion is returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99570986816412&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;wQ33mEdFQdzcT5Avjt0V58Uv0TM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;assetType&quot;:&quot;SKETCHPAD&quot;,&quot;entryPoint&quot;:&quot;G1U2L04_Apples.json&quot;,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/CC8S7F9LFXJQZGTLKH6J4VJHQ4&quot;,&quot;browserSettings&quot;:&quot;width=960&amp;height=720&amp;chromeless=N&amp;resizable=Y&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;G1U2L04_Apples\r\n\r\nuploaded by j chen 2014.11.05&quot;,&quot;title&quot;:&quot;G1U2L04_Apples&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;CC8S7F9LFXJQZGTLKH6J4VJHQ4&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/W5J9K51JYTVMJR8X7DRO817JZQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/W5J9K51JYTVMJR8X7DRO817JZQ&quot;},&quot;id&quot;:&quot;W5J9K51JYTVMJR8X7DRO817JZQ&quot;,&quot;sketchpadVersion&quot;:&quot;1.2.0&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/W5J9K51JYTVMJR8X7DRO817JZQ</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ts="1424458311607" s="true" lb="Get Associated Assets reverse" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="2978" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571073816002&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lT386eiMuECKn0o1URJJx45jq30%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;state&quot;:&quot;XX&quot;,&quot;nodeType&quot;:&quot;Unit&quot;,&quot;nodeNumber&quot;:&quot;1&quot;,&quot;systemNodeType&quot;:&quot;UNIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Number Theory&quot;,&quot;title&quot;:&quot;Unit 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;H5@MJ4F6V1XM4HHYDY967J3JGM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/VG2V228RGR4EHWROZ83CYKW1EE&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;},&quot;id&quot;:&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;},{&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;CNCPT_DEF_b9c87a32-59c1-4b63-9169-7801a3bf8cf1&quot;,&quot;description&quot;:&quot;Know all sums of two 1-digit numbers automatically.&quot;,&quot;title&quot;:&quot;2.OA.2_2&quot;,&quot;secureAssetId&quot;:&quot;@20ZG125SZ@MBJCLN8RMWSYMG8&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/7CFL93S3JHWZE6GOHLSGZ3YZN8/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/4Q17EZZD5H28KGQS2MRC7CKHHE&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/7CFL93S3JHWZE6GOHLSGZ3YZN8&quot;},&quot;id&quot;:&quot;7CFL93S3JHWZE6GOHLSGZ3YZN8&quot;},{&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;CNCPT_DEF_d28e0fad-3eb9-4fcc-9907-74566d1fd722&quot;,&quot;description&quot;:&quot;Keep trying when your problem is hard.&quot;,&quot;title&quot;:&quot;GMP 1.3&quot;,&quot;secureAssetId&quot;:&quot;GT@CN@M1XQJSKWDB76W5TG5G4@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/ZCETXJKZLGYDEQQC8CYM3HO2FM/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/O117JXKJM9QQ46WDNKXQWEPK91&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/ZCETXJKZLGYDEQQC8CYM3HO2FM&quot;},&quot;id&quot;:&quot;ZCETXJKZLGYDEQQC8CYM3HO2FM&quot;},{&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;CNCPT_DEF_ee3a478b-52cf-418c-a718-f04ee71e97bb&quot;,&quot;description&quot;:&quot;Reflect on your thinking as you solve your problem.&quot;,&quot;title&quot;:&quot;GMP 1.2&quot;,&quot;secureAssetId&quot;:&quot;B2GGTY5NDL0TMKW051FXHRQ5B0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/E38LO9894S4GMYL42YC5NQNTPO/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/O117JXKJM9QQ46WDNKXQWEPK91&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/E38LO9894S4GMYL42YC5NQNTPO&quot;},&quot;id&quot;:&quot;E38LO9894S4GMYL42YC5NQNTPO&quot;},{&quot;assetType&quot;:&quot;N_CONCPT&quot;,&quot;guid&quot;:&quot;CNCPT_DEF_e924f044-e4d2-4060-8c14-343dee3e021c&quot;,&quot;description&quot;:&quot;Make sense of your problem.&quot;,&quot;title&quot;:&quot;GMP 1.1&quot;,&quot;secureAssetId&quot;:&quot;MNQQPH7T5N519VW90YZRQ43LZ@&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/KMV81WG7ELYQLRPG6ZMSYZ3M71/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/O117JXKJM9QQ46WDNKXQWEPK91&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/KMV81WG7ELYQLRPG6ZMSYZ3M71&quot;},&quot;id&quot;:&quot;KMV81WG7ELYQLRPG6ZMSYZ3M71&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/QSLERLNSH35YWEHR3DRD1GG9S8/associated?reverse=true</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ts="1424458311682" s="true" lb="Get Associated Assets - reverse, withinsubtree and root node id" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1006" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571148928964&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;OISUsTiXAMHQzsIqcd2WLxUktIs%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;state&quot;:&quot;XX&quot;,&quot;nodeType&quot;:&quot;Unit&quot;,&quot;nodeNumber&quot;:&quot;1&quot;,&quot;systemNodeType&quot;:&quot;UNIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Number Theory&quot;,&quot;title&quot;:&quot;Unit 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;H5@MJ4F6V1XM4HHYDY967J3JGM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/VG2V228RGR4EHWROZ83CYKW1EE&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;},&quot;id&quot;:&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/QSLERLNSH35YWEHR3DRD1GG9S8/associated?reverse=true&amp;withinSubTree=false&amp;rootNodeId=1OGLMH9XQGWYKHHLSGKO5CS59O</java.net.URL>
+</httpSample>
+<httpSample t="88" it="0" lt="88" ts="1424458311754" s="true" lb="Get Associated Assets - reverse, withinsubtree - filter by Unit" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1006" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571220876313&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;xATuCG85x46LUcnPKBFbBQUet2k%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;state&quot;:&quot;XX&quot;,&quot;nodeType&quot;:&quot;Unit&quot;,&quot;nodeNumber&quot;:&quot;1&quot;,&quot;systemNodeType&quot;:&quot;UNIT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Number Theory&quot;,&quot;title&quot;:&quot;Unit 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;H5@MJ4F6V1XM4HHYDY967J3JGM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/VG2V228RGR4EHWROZ83CYKW1EE&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;},&quot;id&quot;:&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/QSLERLNSH35YWEHR3DRD1GG9S8/associated?reverse=true&amp;withinSubTree=false&amp;filter-systemNodeType=UNIT</java.net.URL>
+</httpSample>
+<httpSample t="69" it="0" lt="68" ts="1424458311852" s="true" lb="Get Associated Assets - Assoc type" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="2090" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571318949083&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;kjZ7eMtjo8MbhTFmG95%2FdV44xYk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;LINK&quot;,&quot;url&quot;:&quot;http://www.youtube.com/watch?v=xoVK340ME78&quot;,&quot;passUserInfo&quot;:false,&quot;browserSettings&quot;:&quot;width=&amp;height=&amp;chromeless=&amp;resizable=&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Beavis rules&quot;,&quot;title&quot;:&quot;The Great Cornholio&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000028/47/98.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000028/47/98.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000028/47/98.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;HB0MCCFYB6YKZZZ17VNCDH7D00&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/CW9B2JSLMK5BN6MCN5VYS9M4QQ/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/CW9B2JSLMK5BN6MCN5VYS9M4QQ&quot;},&quot;id&quot;:&quot;CW9B2JSLMK5BN6MCN5VYS9M4QQ&quot;},{&quot;assetType&quot;:&quot;IMG&quot;,&quot;height&quot;:320,&quot;width&quot;:320,&quot;secureURL&quot;:&quot;http://connected-dev.cdiapps.com/secure/CMKRM6QV9BG38F1WFC9YWG6BBQ&quot;,&quot;fileExt&quot;:&quot;jpg&quot;,&quot;downloadable&quot;:false,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Motorhead&quot;,&quot;title&quot;:&quot;Lemmy&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000028/78/38.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000028/78/38.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000028/78/38.jpg&quot;},&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;CMKRM6QV9BG38F1WFC9YWG6BBQ&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/XEKSHQ6N32B9Q3DKFP9H6D5PS4/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/XEKSHQ6N32B9Q3DKFP9H6D5PS4&quot;},&quot;id&quot;:&quot;XEKSHQ6N32B9Q3DKFP9H6D5PS4&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/PLLMZ3J3PO7K9G1G1ZXD27RF5E/associated?assocType=NORMAL</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="58" ts="1424458311931" s="true" lb="Get Associated Assets - Asset type" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="346" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571397301019&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;oNrpkYOfRrRYV75z5Cz0IZxO5FE%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/PLLMZ3J3PO7K9G1G1ZXD27RF5E/associated?assetType=COMPOUND</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ts="1424458312000" s="true" lb="Get Associated Child Assets" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="932" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458311&quot;, oauth_nonce=&quot;99571466770767&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;U0E2bLowqxRD1JTBvmRws9JzTPA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;LSNBLADE&quot;,&quot;em4BladeType&quot;:&quot;REGULAR&quot;,&quot;title&quot;:&quot;Focus&quot;,&quot;secureAssetId&quot;:&quot;91HWVYWRGRMTB61VXW2YQZLKRM&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/46NWCBZQGMXYGYO4YKL1NKBT1M/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/46NWCBZQGMXYGYO4YKL1NKBT1M/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/PLLMZ3J3PO7K9G1G1ZXD27RF5E&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/46NWCBZQGMXYGYO4YKL1NKBT1M&quot;,&quot;lessonSections&quot;:&quot;/api/v0.1/asset/46NWCBZQGMXYGYO4YKL1NKBT1M/children?dep=CHILD&quot;},&quot;id&quot;:&quot;46NWCBZQGMXYGYO4YKL1NKBT1M&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/PLLMZ3J3PO7K9G1G1ZXD27RF5E/children?dep=CHILD</java.net.URL>
+</httpSample>
+<httpSample t="73" it="0" lt="73" ts="1424458312073" s="true" lb="Get Associated Child Assets - filtered" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="952" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571539202005&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;oVnReULQsClntlPLOkqJj5Qmn%2F0%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;state&quot;:&quot;XX&quot;,&quot;systemNodeType&quot;:&quot;HELP&quot;,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;EM4 G1 Help Links&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;secureAssetId&quot;:&quot;NBFCSQDF2W4ZPXF5VPDBRLXZ@0&quot;,&quot;_links&quot;:{&quot;allConcepts&quot;:&quot;/api/v0.1/asset/68PETZ82LGHB3EX5VCXP4TFJ9Q/associated?reverse=true&amp;assocType=NORMAL&amp;assetType=N_CONCPT&amp;withinSubTree=false&quot;,&quot;associations&quot;:&quot;/api/v0.1/asset/68PETZ82LGHB3EX5VCXP4TFJ9Q/associated?reverse=false&amp;withinSubTree=false&quot;,&quot;parent&quot;:&quot;/api/v0.1/asset/PLYZWGMCO65H5BXKM2QNHNECDY&quot;,&quot;self&quot;:&quot;/api/v0.1/asset/68PETZ82LGHB3EX5VCXP4TFJ9Q&quot;},&quot;id&quot;:&quot;68PETZ82LGHB3EX5VCXP4TFJ9Q&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O/children?dep=CHILD&amp;filter-systemNodeType=HELP&amp;scanTree=true</java.net.URL>
+</httpSample>
+<httpSample t="107" it="0" lt="107" ts="1424458312157" s="true" lb="Get Associated Standards by Asset" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1528" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571624068761&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;pdVtRZcOLi36djQFaFhyw20HLHQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;standardNum&quot;:&quot;5.MD.3.a&quot;,&quot;text&quot;:&quot;A cube with side length 1 unit, called a &amp;#147;unit cube,&amp;#148; is said to have &amp;#147;one cubic unit&amp;#148; of volume, and can be used to measure volume.&quot;,&quot;id&quot;:&quot;ZEGFKC8CL3WXR43J52C8N19CXQ&quot;},{&quot;standardNum&quot;:&quot;IV.a&quot;,&quot;text&quot;:&quot;describe personal changes over time, such as those related to physical development and personal interests;&quot;,&quot;id&quot;:&quot;1H4X4SV5EWZEMBE767H537MYJO&quot;},{&quot;standardNum&quot;:&quot;X.a&quot;,&quot;text&quot;:&quot;identify key ideals of the United States&apos; democratic republican form of government, such as individual human dignity, liberty, justice, equality, and the rule of law, and discuss their application in specific situations;&quot;,&quot;id&quot;:&quot;CVEO1GWEKRM9DSKBO58YJ3XXFY&quot;},{&quot;standardNum&quot;:&quot;GOV.CP.9&quot;,&quot;text&quot;:&quot;Individuals have shared responsibilities toward the achievement of common goals in homes, schools and communities.&quot;,&quot;id&quot;:&quot;QFRGLZECKWO4NPKWZZPBVSHWWY&quot;},{&quot;standardNum&quot;:&quot;VII.A.1.1&quot;,&quot;text&quot;:&quot;draws, paints, or colors a body outline of herself and adds colors for clothing, hair, and eyes that match her own.&quot;,&quot;id&quot;:&quot;2FY27TV67BTPSW7NRJ3BMWVO8M&quot;},{&quot;standardNum&quot;:&quot;5.A.1&quot;,&quot;text&quot;:&quot;Identify authority figures in the home, school and community.&quot;,&quot;id&quot;:&quot;TO5JHEGCK8P18KOC92CRKJJE11&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/CW9B2JSLMK5BN6MCN5VYS9M4QQ/standards</java.net.URL>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ts="1424458312276" s="true" lb="Get Parent Assets of a Child - BookID" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="456" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book ID is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571742789471&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;X8gqPbjVjNUBze9LJ1oBV3X2jDU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Grade 1 Test Course&quot;,&quot;id&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=1OGLMH9XQGWYKHHLSGKO5CS59O</java.net.URL>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ts="1424458312344" s="true" lb="Get Parent Assets of a Child - TOC" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="531" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book and TOC/Syllabus IDs are in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:54 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571810366238&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;UNO%2BKB15cOsIoniJs%2FKsgjtjOuQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;VG2V228RGR4EHWROZ83CYKW1EE&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Grade 1 Test Course&quot;,&quot;id&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Teacher TOC&quot;,&quot;id&quot;:&quot;VG2V228RGR4EHWROZ83CYKW1EE&quot;}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=VG2V228RGR4EHWROZ83CYKW1EE</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ts="1424458312410" s="true" lb="Get Parent Assets of a Child - Unit" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="601" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus and Unit IDs are in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571876235521&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;3kBGkxqhT77pF7x0anY%2B%2FseW1A4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Grade 1 Test Course&quot;,&quot;id&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Teacher TOC&quot;,&quot;id&quot;:&quot;VG2V228RGR4EHWROZ83CYKW1EE&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Unit 1&quot;,&quot;id&quot;:&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=8V5KC31EGZWCCFKMK4Y5DZ9ZE4</java.net.URL>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ts="1424458312478" s="true" lb="Get Parent Assets of a Child - Lesson " rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="443" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Topic/Lesson ID are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that  Book, TOC/syllabus and  Unit are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99571944165417&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Is87oPXBbYBoxNMmepc9cfxhPDA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;QSLERLNSH35YWEHR3DRD1GG9S8&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Lesson 1-1&quot;,&quot;id&quot;:&quot;QSLERLNSH35YWEHR3DRD1GG9S8&quot;}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=QSLERLNSH35YWEHR3DRD1GG9S8</java.net.URL>
+</httpSample>
+<httpSample t="56" it="0" lt="55" ts="1424458312544" s="true" lb="Get Parent Assets of a Child - Lesson Blade" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="514" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Topic/Lesson and Lesson Blade IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus and Unit are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572010117946&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;EN59yhE2bTIx%2BxEuzfgwFakN1tM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;83MBYJ5T5DL9JT1JRB1WYROH9Q&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Lesson 1-1&quot;,&quot;id&quot;:&quot;QSLERLNSH35YWEHR3DRD1GG9S8&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Warm Up&quot;,&quot;id&quot;:&quot;83MBYJ5T5DL9JT1JRB1WYROH9Q&quot;}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=83MBYJ5T5DL9JT1JRB1WYROH9Q</java.net.URL>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ts="1424458312611" s="true" lb="Get Parent Assets of a Child - Lesson Section" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="601" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus and Unit are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that Lesson, Lesson Blade and Section IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572077734245&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;o0kTc4oJ0KkjwPIujgXx6UxBnS4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;ZLGJJZDLM3KRGOZ7FJKB6K3SHM&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Lesson 1-1&quot;,&quot;id&quot;:&quot;QSLERLNSH35YWEHR3DRD1GG9S8&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Warm Up&quot;,&quot;id&quot;:&quot;83MBYJ5T5DL9JT1JRB1WYROH9Q&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Mental Math and Fluency&quot;,&quot;id&quot;:&quot;ZLGJJZDLM3KRGOZ7FJKB6K3SHM&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=ZLGJJZDLM3KRGOZ7FJKB6K3SHM</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ts="1424458312679" s="true" lb="Get Parent Assets of a Child - Activity" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="469" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus, Unit, Lesson, Blade and Section are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that Activity ID is returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572145864083&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;jEDtpFcvvu3PF%2FljfLcc6qZKhQk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;CN5BMJPKZ7ECJ7HR9D412GGZ7O&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Learning Activity (Full Content)&quot;,&quot;id&quot;:&quot;CN5BMJPKZ7ECJ7HR9D412GGZ7O&quot;}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=CN5BMJPKZ7ECJ7HR9D412GGZ7O</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="54" ts="1424458312749" s="true" lb="Get Parent Assets of a Child - Iteration" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="544" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus, Unit, Lesson, Blade and Section are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that Activity and Iteration IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572215483217&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;V%2FSMhf2ibSFz6I0lO3hRiLqXYE0%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;WLKXSPV3CRZXB8XV1TFQSDE6MO&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Learning Activity (Full Content)&quot;,&quot;id&quot;:&quot;CN5BMJPKZ7ECJ7HR9D412GGZ7O&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Iteration 1&quot;,&quot;id&quot;:&quot;WLKXSPV3CRZXB8XV1TFQSDE6MO&quot;}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=WLKXSPV3CRZXB8XV1TFQSDE6MO</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ts="1424458312817" s="true" lb="Get Parent Assets of a Child - Evaluation Point" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="649" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Book, TOC/Syllabus, Unit, Lesson, Blade and Section are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that Activity, Iteration and Evalulation Point IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572283535511&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Opo4EQJ28JdTNATnCW3aRVfMTIw%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;POMGST6MDEDZNJD2SY3DDJ9TN4&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;EM4 Learning Activity (Full Content)&quot;,&quot;id&quot;:&quot;CN5BMJPKZ7ECJ7HR9D412GGZ7O&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Evaluation Points&quot;,&quot;id&quot;:&quot;VD5G8FG57T373K1OFPZ4T1OM6Y&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;What is the first evaluation point?&quot;,&quot;id&quot;:&quot;POMGST6MDEDZNJD2SY3DDJ9TN4&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=POMGST6MDEDZNJD2SY3DDJ9TN4</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="54" ts="1424458312892" s="true" lb="Get Parent Assets of a Child - BookID" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="472" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Child ID passed is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572358210197&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;aDIDMw%2BoClIDT92gK69HE0NSDUk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=TK34S4QVKROJ8BQT6HRMB63741</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ts="1424458312960" s="true" lb="Get Parent Assets of a Child - TOC" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="555" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Child ID passed is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458312&quot;, oauth_nonce=&quot;99572426439625&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;czUZ%2Bk4FBSBRsGCUEkgp4KetA%2B4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;H6KLN2R4B88X4R8N1JGQVF1RXM&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;TOC Node - Syllabus&quot;,&quot;id&quot;:&quot;H6KLN2R4B88X4R8N1JGQVF1RXM&quot;}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=H6KLN2R4B88X4R8N1JGQVF1RXM</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ts="1424458313032" s="true" lb="Get Parent Assets of a Child - Unit" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="625" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Child ID and Parents passed is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572498716916&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;JEmWd9i2JsiGn93796vzJg39re8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;TF95WH43PP1TEDYBYDG92Q3VJQ&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;TOC Node - Syllabus&quot;,&quot;id&quot;:&quot;H6KLN2R4B88X4R8N1JGQVF1RXM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Unit 1&quot;,&quot;id&quot;:&quot;TF95WH43PP1TEDYBYDG92Q3VJQ&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=TF95WH43PP1TEDYBYDG92Q3VJQ</java.net.URL>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ts="1424458313100" s="true" lb="Get Parent Assets of a Child - Week" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="697" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Child ID and Parents passed is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572566604999&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;uk7H3IaeHx5qF6sjqjfC3%2Fwq%2Fq4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;YEST1HH6X33BXS8O2QTOFCT84Y&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;TOC Node - Syllabus&quot;,&quot;id&quot;:&quot;H6KLN2R4B88X4R8N1JGQVF1RXM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Unit 1&quot;,&quot;id&quot;:&quot;TF95WH43PP1TEDYBYDG92Q3VJQ&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Lesson 1&quot;,&quot;id&quot;:&quot;YEST1HH6X33BXS8O2QTOFCT84Y&quot;}]}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=YEST1HH6X33BXS8O2QTOFCT84Y</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="61" ts="1424458313168" s="true" lb="Get Parent Assets of a Child - Day" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="766" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Child ID and Parents passed is in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572635122175&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ilg8mLmp%2FP6ekHJ%2B7j8cgojuxTI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;CFTV122BWQ7FBEEFGD5P3DVBK4&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;TOC Node - Syllabus&quot;,&quot;id&quot;:&quot;H6KLN2R4B88X4R8N1JGQVF1RXM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Unit 1&quot;,&quot;id&quot;:&quot;TF95WH43PP1TEDYBYDG92Q3VJQ&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Lesson 1&quot;,&quot;id&quot;:&quot;YEST1HH6X33BXS8O2QTOFCT84Y&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Day 1&quot;,&quot;id&quot;:&quot;CFTV122BWQ7FBEEFGD5P3DVBK4&quot;}]}]}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=CFTV122BWQ7FBEEFGD5P3DVBK4</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ts="1424458313242" s="true" lb="Get Parent Assets of a Child - Topic" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="467" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Topic/Lesson ID is returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that book, toc/syllabus, unit, lesson/week and day are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572707993968&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;8NfJ9EtHSyXd8XZmfSwM5CVXqkY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;CMF41XJQ6R6GY5CXLM6RRQK3BM&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Test Lesson, Getting Started, Day1&quot;,&quot;id&quot;:&quot;CMF41XJQ6R6GY5CXLM6RRQK3BM&quot;}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=CMF41XJQ6R6GY5CXLM6RRQK3BM</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ts="1424458313313" s="true" lb="Get Parent Assets of a Child - Lesson Blade" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="538" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Topic/Lesson and Lesson Blade IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that book, toc/syllabus, unit, lesson/week and day are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:55 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572779957282&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;M3KLRgrJ7A474laV9q3xq2vFGuA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;SLK5DDFPJ47JEFMQ18NDCSJLFQ&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Test Lesson, Getting Started, Day1&quot;,&quot;id&quot;:&quot;CMF41XJQ6R6GY5CXLM6RRQK3BM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Warm Up&quot;,&quot;id&quot;:&quot;SLK5DDFPJ47JEFMQ18NDCSJLFQ&quot;}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=SLK5DDFPJ47JEFMQ18NDCSJLFQ</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ts="1424458313385" s="true" lb="Get Parent Assets of a Child - Lesson Section" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="623" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Topic/Lesson, Lesson Blade and Section IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that book, toc/syllabus, unit, lesson/week and day are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:56 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572851192293&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;0W1%2BG1c1GlpL8pBTGkU1seP0atA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;DZMMFTKFGHWQCJOH1EECZSPEK4&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Test Lesson, Getting Started, Day1&quot;,&quot;id&quot;:&quot;CMF41XJQ6R6GY5CXLM6RRQK3BM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Warm Up&quot;,&quot;id&quot;:&quot;SLK5DDFPJ47JEFMQ18NDCSJLFQ&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;All Functional Styles&quot;,&quot;id&quot;:&quot;DZMMFTKFGHWQCJOH1EECZSPEK4&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=DZMMFTKFGHWQCJOH1EECZSPEK4</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ts="1424458313457" s="true" lb="Get Parent Assets of a Child - Teacher Resource Center" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="639" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify that Teacher Resource Center, System Resource and Book IDs are returned in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify that TOC/Syllabus, unit, lesson/week and day are NOT returned</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 Feb 2015 18:51:28 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-Feb-2015 19:52:56 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;85937a3a-61b7-4d60-ab23-ae73aef72e5e&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424458313&quot;, oauth_nonce=&quot;99572923902536&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Bb%2B1%2BWCo3Y6kDGjKt96mFB4PCHo%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;KNX37CW6YLG5346S8R8553LP2Q&quot;:{&quot;rootNode&quot;:{&quot;name&quot;:&quot;Open Court Reading Services Test Course&quot;,&quot;id&quot;:&quot;TK34S4QVKROJ8BQT6HRMB63741&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;System Resources&quot;,&quot;id&quot;:&quot;PT3E8MHTVCMSEGMFK7YODZHGOM&quot;,&quot;childrenNodes&quot;:[{&quot;name&quot;:&quot;Teacher Resource Center&quot;,&quot;id&quot;:&quot;KNX37CW6YLG5346S8R8553LP2Q&quot;}]}]}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/asset/parents?childId=KNX37CW6YLG5346S8R8553LP2Q</java.net.URL>
+</httpSample>
+
+</testResults>

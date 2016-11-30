@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="474" it="0" lt="474" ts="1407718918935" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-6" dt="text" de="" by="509" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918935556000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;08PMc4mjsjurSFVOPaMtfeZHvl8%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;7a368d6b-4065-473b-880c-c5b4185894be&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/7a368d6b-4065-473b-880c-c5b4185894be&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;7a368d6b-4065-473b-880c-c5b4185894be&quot;,&quot;oauth_token_secret&quot;:&quot;a6f11013-dcad-47c7-a609-49f5ad62d0aa&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="619" it="0" lt="619" ts="1407718918792" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918792409000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;VnxftpsoPcCPFwQ%2FlZ7Qw4cyZdA%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;bc1004cd-3f39-492e-9cff-4200011e4c5f&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/bc1004cd-3f39-492e-9cff-4200011e4c5f&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;bc1004cd-3f39-492e-9cff-4200011e4c5f&quot;,&quot;oauth_token_secret&quot;:&quot;a532270b-f114-423a-aae9-d7f24a66258b&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="455" it="0" lt="455" ts="1407718918970" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-7" dt="text" de="" by="509" sc="1" ec="0" ng="20" na="20" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918969739000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;HRKlXfG%2Bx4yYRWHWDhv1Wekc7ec%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;bce35291-df58-4051-8f2f-6d191c9dfc6e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/bce35291-df58-4051-8f2f-6d191c9dfc6e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;bce35291-df58-4051-8f2f-6d191c9dfc6e&quot;,&quot;oauth_token_secret&quot;:&quot;b1ef80f7-55d3-4959-a39f-27dd92c6180f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="608" it="0" lt="608" ts="1407718918819" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-2" dt="text" de="" by="509" sc="1" ec="0" ng="20" na="20" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918819250000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;sfcn9la9WBMtLzHbXHlUGWYzrQA%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;edfe6ba9-8c95-458b-9f78-46147b515869&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/edfe6ba9-8c95-458b-9f78-46147b515869&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;edfe6ba9-8c95-458b-9f78-46147b515869&quot;,&quot;oauth_token_secret&quot;:&quot;9c390fa1-6999-4691-b133-054227059c5a&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="612" it="0" lt="611" ts="1407718918848" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-3" dt="text" de="" by="509" sc="1" ec="0" ng="19" na="19" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 5
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918848036000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;xNmHtVn4XYVmDbh5jcUkJU%2FZpbQ%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw5.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;040868de-844c-4f13-bf84-51636de60155&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/040868de-844c-4f13-bf84-51636de60155&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;040868de-844c-4f13-bf84-51636de60155&quot;,&quot;oauth_token_secret&quot;:&quot;dc512b22-751b-4ba2-936c-95b7d57b48a4&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw5.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="472" it="0" lt="470" ts="1407718919001" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-8" dt="text" de="" by="509" sc="1" ec="0" ng="19" na="19" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 5
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919001004000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;EQ%2BB7DarkHEprMhqv1GU0nsVDto%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw5.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;2f7587a5-b847-4def-8f98-e4c3fc27364c&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/2f7587a5-b847-4def-8f98-e4c3fc27364c&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;2f7587a5-b847-4def-8f98-e4c3fc27364c&quot;,&quot;oauth_token_secret&quot;:&quot;69955b2e-0f98-49ae-99a0-28977ffe65df&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw5.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="607" it="0" lt="607" ts="1407718918877" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-4" dt="text" de="" by="509" sc="1" ec="0" ng="18" na="18" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918876700000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;T%2FplwTqi%2F%2BmB53tebX8%2BcVee5mo%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw1.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;4a21307c-526a-47be-925a-8a4b41f38c9a&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/4a21307c-526a-47be-925a-8a4b41f38c9a&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;4a21307c-526a-47be-925a-8a4b41f38c9a&quot;,&quot;oauth_token_secret&quot;:&quot;f2763c75-c1db-4fb1-ba5e-39ab8cd2aba5&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw1.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="583" it="0" lt="583" ts="1407718919060" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-10" dt="text" de="" by="509" sc="1" ec="0" ng="23" na="23" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 7
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919060131000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;7Y%2FGfizHMbhooZIGDhQZGWYgUPY%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw7.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;c54b8034-a4c3-480b-a842-083bebcaa14e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/c54b8034-a4c3-480b-a842-083bebcaa14e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;c54b8034-a4c3-480b-a842-083bebcaa14e&quot;,&quot;oauth_token_secret&quot;:&quot;3fd4cab4-5757-43f5-82e5-87f4d7d4bd5f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw7.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="626" it="0" lt="625" ts="1407718919031" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-9" dt="text" de="" by="509" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 6
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919031270000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;X%2B1ZBgj4XBcIQn%2BCAte9s2XLGu0%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw6.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;047d64e0-1d77-48d6-9c6e-e331a37a40ea&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/047d64e0-1d77-48d6-9c6e-e331a37a40ea&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;047d64e0-1d77-48d6-9c6e-e331a37a40ea&quot;,&quot;oauth_token_secret&quot;:&quot;2e766a34-3b8f-44bd-8169-9656f0f99589&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw6.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="581" it="0" lt="581" ts="1407718919089" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-11" dt="text" de="" by="509" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 8
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919089282000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;wZwiB0JEbDAggUaqad2RjBRw8sc%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw8.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;8492a3d3-50a8-4d31-865e-5e692f4ebfca&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/8492a3d3-50a8-4d31-865e-5e692f4ebfca&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;8492a3d3-50a8-4d31-865e-5e692f4ebfca&quot;,&quot;oauth_token_secret&quot;:&quot;74fa3390-7ecb-4985-9855-8c72185f42c8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw8.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="591" it="0" lt="590" ts="1407718919118" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-12" dt="text" de="" by="509" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 9
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919118232000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;yRU06u4Q48J0iAhGkPni%2FTg%2FPt8%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw9.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;02d5c350-4848-477a-80fa-3e7b186e0e70&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/02d5c350-4848-477a-80fa-3e7b186e0e70&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;02d5c350-4848-477a-80fa-3e7b186e0e70&quot;,&quot;oauth_token_secret&quot;:&quot;6173d392-0044-4aa4-a401-6f4ebc4b5543&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw9.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="589" it="0" lt="588" ts="1407718919147" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-13" dt="text" de="" by="510" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 10
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919147538000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;3Qxy%2B8Jq%2BxE81MFx%2F6o7mAodk9c%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw10.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;d799f324-f640-4b57-a03c-00856bd9f3fd&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/d799f324-f640-4b57-a03c-00856bd9f3fd&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;d799f324-f640-4b57-a03c-00856bd9f3fd&quot;,&quot;oauth_token_secret&quot;:&quot;5c29cd30-2d9d-4620-a230-3ded902dfa5d&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw10.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="593" it="0" lt="593" ts="1407718919177" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-14" dt="text" de="" by="510" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 11
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919177329000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;vmD1DA6pZ%2Bob75kVuVlEl9IRFp8%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw11.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;56c9eab3-f90f-4dd8-b953-f28b4d9b10dd&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/56c9eab3-f90f-4dd8-b953-f28b4d9b10dd&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;56c9eab3-f90f-4dd8-b953-f28b4d9b10dd&quot;,&quot;oauth_token_secret&quot;:&quot;342cd6ed-6149-4e5e-87cc-28532c6af100&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw11.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="870" it="0" lt="869" ts="1407718918905" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-5" dt="text" de="" by="509" sc="1" ec="0" ng="21" na="21" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718918&quot;, oauth_nonce=&quot;1407718918905606000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;1udHWX%2F5OIFZA3l7wjGx3iPKrBY%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;f99abe41-4892-4b4a-9b49-48d62e65305a&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/f99abe41-4892-4b4a-9b49-48d62e65305a&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;f99abe41-4892-4b4a-9b49-48d62e65305a&quot;,&quot;oauth_token_secret&quot;:&quot;8ab48a93-7ff5-48f2-9c40-980d8201d41a&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw2.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="600" it="0" lt="598" ts="1407718919206" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-15" dt="text" de="" by="510" sc="1" ec="0" ng="21" na="21" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 12
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919206544000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;XX4hoIUCyPWoHvklmz12i38y2fM%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw12.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;81b9c6f3-c1f0-4a20-a58e-d248dab93a8b&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/81b9c6f3-c1f0-4a20-a58e-d248dab93a8b&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;81b9c6f3-c1f0-4a20-a58e-d248dab93a8b&quot;,&quot;oauth_token_secret&quot;:&quot;ab2b913f-7586-4894-9d66-2fd1d27cd750&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw12.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="581" it="0" lt="579" ts="1407718919237" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-16" dt="text" de="" by="510" sc="1" ec="0" ng="21" na="21" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 13
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919237222000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;hr2KrIgC8V8%2BKFmB1Ai%2BKX6H3J4%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw13.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;0bd64bba-cc3d-418b-917a-38da25a9c1e5&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/0bd64bba-cc3d-418b-917a-38da25a9c1e5&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;0bd64bba-cc3d-418b-917a-38da25a9c1e5&quot;,&quot;oauth_token_secret&quot;:&quot;bb0f8f1c-b051-4c38-821f-097dd16b049e&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw13.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="575" it="0" lt="575" ts="1407718919265" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-17" dt="text" de="" by="510" sc="1" ec="0" ng="21" na="21" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 14
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919264742000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;8NQkmMDdg354oNJrp8TVQ7s2yEk%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw14.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;305cf163-47a0-4768-9a46-e87ac1e0a0a0&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/305cf163-47a0-4768-9a46-e87ac1e0a0a0&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;305cf163-47a0-4768-9a46-e87ac1e0a0a0&quot;,&quot;oauth_token_secret&quot;:&quot;dffed63a-b53a-4d89-b4f6-3e77a8d41aa4&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw14.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="597" it="0" lt="597" ts="1407718919294" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-18" dt="text" de="" by="510" sc="1" ec="0" ng="21" na="21" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 15
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919294437000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;zgEY5iujiuDYtSBLDK0z5ctkrlo%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw15.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;323b67f1-5a51-4bcb-a73f-57de6abc8fbe&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/323b67f1-5a51-4bcb-a73f-57de6abc8fbe&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;323b67f1-5a51-4bcb-a73f-57de6abc8fbe&quot;,&quot;oauth_token_secret&quot;:&quot;2c82a734-9955-4be1-b9b0-e66ac2ccb23a&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw15.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="609" it="0" lt="609" ts="1407718919323" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-19" dt="text" de="" by="510" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 16
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919322777000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;erlgOGhXek4zOFcoCYhynctfAhY%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw16.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;e33d57e0-50f6-4b00-a011-97fbf0cf771b&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/e33d57e0-50f6-4b00-a011-97fbf0cf771b&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;e33d57e0-50f6-4b00-a011-97fbf0cf771b&quot;,&quot;oauth_token_secret&quot;:&quot;e6b04c7a-22e4-42e5-a41c-26a9473fc893&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw16.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="694" it="0" lt="693" ts="1407718919380" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-21" dt="text" de="" by="510" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 18
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919380095000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;GoAi9wlS8g9DZDfJaFXMMolahnk%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw18.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;95a940c0-2581-4a83-bcb8-5dc8eb2d29c4&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/95a940c0-2581-4a83-bcb8-5dc8eb2d29c4&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;95a940c0-2581-4a83-bcb8-5dc8eb2d29c4&quot;,&quot;oauth_token_secret&quot;:&quot;a3d85486-ab0d-42a2-ad7e-b161f026960f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw18.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="731" it="0" lt="730" ts="1407718919350" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-20" dt="text" de="" by="510" sc="1" ec="0" ng="22" na="22" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:01:59 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 17
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919350272000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;w1vzBCJpD61rPJswuWUuJ5GKqC0%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw17.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;e3ea935c-47f2-41d2-83e5-37e6de7e14d0&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/e3ea935c-47f2-41d2-83e5-37e6de7e14d0&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;e3ea935c-47f2-41d2-83e5-37e6de7e14d0&quot;,&quot;oauth_token_secret&quot;:&quot;f530edbb-c799-416e-b1ce-a1ba437617e0&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw17.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="706" it="0" lt="705" ts="1407718919409" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-22" dt="text" de="" by="510" sc="1" ec="0" ng="19" na="19" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 19
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919409298000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;1xHEV9JVIsQ%2FjeSfjtcBjqso%2BCE%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw19.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;618766e7-29cf-4b53-8692-4c98d2ee99e9&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/618766e7-29cf-4b53-8692-4c98d2ee99e9&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;618766e7-29cf-4b53-8692-4c98d2ee99e9&quot;,&quot;oauth_token_secret&quot;:&quot;092bf199-b85f-4c92-9fd1-0ab578bc24f1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw19.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="624" it="0" lt="623" ts="1407718919494" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-25" dt="text" de="" by="510" sc="1" ec="0" ng="19" na="19" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 22
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919494334000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;2NoeKqp52q%2F4vRdkMsMmukKyrqw%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw22.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;72a42cd5-46a1-4a3c-b0ad-14f4494518f2&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/72a42cd5-46a1-4a3c-b0ad-14f4494518f2&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;72a42cd5-46a1-4a3c-b0ad-14f4494518f2&quot;,&quot;oauth_token_secret&quot;:&quot;335eebf7-5cbd-4ae3-8c19-413c79cfb41c&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw22.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="662" it="0" lt="662" ts="1407718919466" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-24" dt="text" de="" by="510" sc="1" ec="0" ng="17" na="17" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 21
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919465835000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;H8pvpvpWpZJs56j1gKlsGot%2BiYQ%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw21.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;26493369-24c3-4584-871f-b0a8555e72ec&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/26493369-24c3-4584-871f-b0a8555e72ec&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;26493369-24c3-4584-871f-b0a8555e72ec&quot;,&quot;oauth_token_secret&quot;:&quot;84cc20e6-8c38-4856-b31d-676a25f81920&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw21.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="705" it="0" lt="705" ts="1407718919437" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-23" dt="text" de="" by="510" sc="1" ec="0" ng="16" na="16" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 20
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919436909000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;TdDJfza7ZCv2BPn%2By%2B1BTQjFYz8%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw20.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;43a6c8c6-7c4f-4102-ba45-b828b2f3d26c&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/43a6c8c6-7c4f-4102-ba45-b828b2f3d26c&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;43a6c8c6-7c4f-4102-ba45-b828b2f3d26c&quot;,&quot;oauth_token_secret&quot;:&quot;0e518d00-baeb-4437-bf16-ce0e0ab84d4e&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw20.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="586" it="0" lt="585" ts="1407718919580" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-28" dt="text" de="" by="510" sc="1" ec="0" ng="15" na="15" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 25
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919580064000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;PvHZ8ts4ek8x2yIQNQcj%2Bx5l2xg%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw25.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;7a09ec47-d0b3-4ecb-a4bb-f475fdc7e8ff&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/7a09ec47-d0b3-4ecb-a4bb-f475fdc7e8ff&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;7a09ec47-d0b3-4ecb-a4bb-f475fdc7e8ff&quot;,&quot;oauth_token_secret&quot;:&quot;d3c33bbb-9c11-469a-932f-738290ed7d65&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw25.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="629" it="0" lt="629" ts="1407718919552" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-27" dt="text" de="" by="510" sc="1" ec="0" ng="14" na="14" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 24
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919551924000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2Bq%2FtYTGvrQ0a0GxuGgzY4SKFZ3U%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw24.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;242c2be1-bce3-490c-ab92-93d7da872e6a&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/242c2be1-bce3-490c-ab92-93d7da872e6a&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;242c2be1-bce3-490c-ab92-93d7da872e6a&quot;,&quot;oauth_token_secret&quot;:&quot;7f5177a4-9764-41ec-9d3e-56705988791f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw24.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="602" it="0" lt="601" ts="1407718919610" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-29" dt="text" de="" by="510" sc="1" ec="0" ng="13" na="13" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 26
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919610527000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;bpL09YoLf0oVhcv%2BRIey%2Be%2BXc%2BA%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw26.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;6a3a9dd8-2f37-46e1-a62d-e73d79109347&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/6a3a9dd8-2f37-46e1-a62d-e73d79109347&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;6a3a9dd8-2f37-46e1-a62d-e73d79109347&quot;,&quot;oauth_token_secret&quot;:&quot;76dee230-6032-4bc4-98c0-780d3cd29abd&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw26.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="587" it="0" lt="586" ts="1407718919638" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-30" dt="text" de="" by="510" sc="1" ec="0" ng="12" na="12" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 27
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919638084000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;FF%2FNmXLd%2Bhn%2FYvtRLhA8osdZMF0%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw27.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;b73a15e6-0102-4493-9c62-8a2fc4b12f7a&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/b73a15e6-0102-4493-9c62-8a2fc4b12f7a&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;b73a15e6-0102-4493-9c62-8a2fc4b12f7a&quot;,&quot;oauth_token_secret&quot;:&quot;d7a72cdf-a509-4cc5-a965-d7793cf31b75&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw27.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="611" it="0" lt="611" ts="1407718919667" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-31" dt="text" de="" by="510" sc="1" ec="0" ng="11" na="11" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 28
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919667427000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;XTx0AaJ91UWx9HYN1XNVJMTRl4Q%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw28.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;ba01f83a-0bdc-4940-83e9-8500b9116328&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/ba01f83a-0bdc-4940-83e9-8500b9116328&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;ba01f83a-0bdc-4940-83e9-8500b9116328&quot;,&quot;oauth_token_secret&quot;:&quot;392cf26f-ea7f-4a00-9829-6ff8f8ba08e1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw28.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="621" it="0" lt="620" ts="1407718919723" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-33" dt="text" de="" by="510" sc="1" ec="0" ng="10" na="10" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 30
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919723539000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;F4rJQVhqx2FsO5aRX00pGyt0LDA%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw30.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;53242681-9661-4ec8-a3c3-ef15fb66629e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/53242681-9661-4ec8-a3c3-ef15fb66629e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;53242681-9661-4ec8-a3c3-ef15fb66629e&quot;,&quot;oauth_token_secret&quot;:&quot;ce0d3bc1-4c2a-4d89-90bb-9c67de621b3f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw30.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="600" it="0" lt="600" ts="1407718919752" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-34" dt="text" de="" by="510" sc="1" ec="0" ng="9" na="9" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 31
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919751756000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;NRdyRVK6RU55kHqPDlmT3%2FcRj8Y%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw31.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;a6fe63f8-89b2-48e4-99d1-be1034e6818a&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/a6fe63f8-89b2-48e4-99d1-be1034e6818a&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;a6fe63f8-89b2-48e4-99d1-be1034e6818a&quot;,&quot;oauth_token_secret&quot;:&quot;a8999942-dbc6-487c-a74d-8ca293b3f755&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw31.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="577" it="0" lt="577" ts="1407718919781" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-35" dt="text" de="" by="510" sc="1" ec="0" ng="8" na="8" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 32
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919781139000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;t9lbQOs3qAvhS%2BLx2SdaOHf%2B9Mo%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw32.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;b32086c6-9a0c-48c8-bb0c-2acba5bf029d&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/b32086c6-9a0c-48c8-bb0c-2acba5bf029d&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;b32086c6-9a0c-48c8-bb0c-2acba5bf029d&quot;,&quot;oauth_token_secret&quot;:&quot;1056ab4e-84b5-4432-89ea-d971bc89da75&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw32.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="897" it="0" lt="612" ts="1407718919527" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-26" dt="text" de="" by="510" sc="1" ec="0" ng="7" na="7" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 23
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919527546000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;fFI1JB4DyN9%2FEUD2W%2FDyOqWzXeY%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw23.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;3534e7a5-4766-4c33-83c9-2defae9101b1&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/3534e7a5-4766-4c33-83c9-2defae9101b1&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;3534e7a5-4766-4c33-83c9-2defae9101b1&quot;,&quot;oauth_token_secret&quot;:&quot;f7b7a2c1-12b2-4903-a5db-0dac674f2d16&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw23.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="640" it="0" lt="640" ts="1407718919810" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-36" dt="text" de="" by="510" sc="1" ec="0" ng="6" na="6" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 33
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919810007000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;RRXJEtYZl8OxkBYFAbKfC%2FLU5L0%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw33.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;206afb7f-ec01-42b3-9698-0193217e2609&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/206afb7f-ec01-42b3-9698-0193217e2609&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;206afb7f-ec01-42b3-9698-0193217e2609&quot;,&quot;oauth_token_secret&quot;:&quot;ef3c1f0f-e8b8-4548-8e48-b698a771bddb&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw33.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="633" it="0" lt="632" ts="1407718919841" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-37" dt="text" de="" by="510" sc="1" ec="0" ng="5" na="5" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 34
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919840057000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;vPPugcj2yuiPoSEWwZ%2FDlsT%2BwLQ%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw34.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;d7ad1aef-5b0e-47ff-bdb8-fb239e7e3b2f&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/d7ad1aef-5b0e-47ff-bdb8-fb239e7e3b2f&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;d7ad1aef-5b0e-47ff-bdb8-fb239e7e3b2f&quot;,&quot;oauth_token_secret&quot;:&quot;6be5e600-4600-4d31-9da4-49352c7e471f&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw34.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="622" it="0" lt="622" ts="1407718919868" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-38" dt="text" de="" by="510" sc="1" ec="0" ng="4" na="4" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 35
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919868140000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;elgLMJIFbv5pQpOT3o%2Ff8JeujHk%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw35.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;4e4cc2f8-aa28-4257-8a65-0d367f41b293&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/4e4cc2f8-aa28-4257-8a65-0d367f41b293&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;4e4cc2f8-aa28-4257-8a65-0d367f41b293&quot;,&quot;oauth_token_secret&quot;:&quot;0a3edca6-d980-487e-99a1-a84b1453c794&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw35.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="580" it="0" lt="580" ts="1407718919926" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-40" dt="text" de="" by="510" sc="1" ec="0" ng="3" na="3" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 37
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919926461000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;hE%2B6vEbur%2F1LwUe3EtFjHFtOxUA%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw37.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;a3438e39-0ca1-4ce2-9cc6-2bf46cb2639e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/a3438e39-0ca1-4ce2-9cc6-2bf46cb2639e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;a3438e39-0ca1-4ce2-9cc6-2bf46cb2639e&quot;,&quot;oauth_token_secret&quot;:&quot;858c1d39-769b-48dd-8753-3e166f9400a7&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw37.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="620" it="0" lt="620" ts="1407718919898" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-39" dt="text" de="" by="510" sc="1" ec="0" ng="2" na="2" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:00 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 36
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919898558000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;OhHcf2RFE2y1DEYNQZOf1cSN4Rk%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw36.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;516b55fc-e40c-48b4-9ab5-e29759d9896e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/516b55fc-e40c-48b4-9ab5-e29759d9896e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;516b55fc-e40c-48b4-9ab5-e29759d9896e&quot;,&quot;oauth_token_secret&quot;:&quot;5e6abf23-84b5-478e-bda7-87433e5b3882&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw36.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="1693" it="0" lt="1693" ts="1407718919695" s="true" lb="Login API" rc="200" rm="OK" tn="Asset API Test Plan -INDIVIDAUL SERVERS 1-32" dt="text" de="" by="510" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 11 Aug 2014 01:02:01 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 29
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407718919&quot;, oauth_nonce=&quot;1407718919695590000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;yKQhXKoyQWN5Uyn%2FbGcMMVhS1ig%3D&quot;
+Content-Length: 42
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw29.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;b727cf61-6108-457d-8f06-34bb54cf8011&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/b727cf61-6108-457d-8f06-34bb54cf8011&quot;,&quot;user&quot;:&quot;/api/v0.1/user/FS761B66D3N7L1DX6R4PE6OR68&quot;},&quot;oauth_token&quot;:&quot;b727cf61-6108-457d-8f06-34bb54cf8011&quot;,&quot;oauth_token_secret&quot;:&quot;73fbd816-0ca8-42da-ba73-a19e6c26bcfe&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;ayand2&quot;,&quot;password&quot;:&quot;ayan726&quot;}</queryString>
+  <java.net.URL>http://prod-cw29.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+
+</testResults>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1141" it="0" lt="1141" ts="1412273798970" s="true" lb="Login API" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="628" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:11 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273798&quot;, oauth_nonce=&quot;20163616068126&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;7rph9JCambkDQSGGJZGiV4v0dWc%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/280243fa-e046-4f66-bc02-f379a9522d2d&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;oauth_token&quot;:&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;,&quot;oauth_token_secret&quot;:&quot;3a235b34-32b4-430f-afb6-310a0252b2d0&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="114" it="0" lt="114" ts="1412273800118" s="true" lb="Lookup Course Node" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="1363" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:11 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20164764254525&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;JWKi0VAgKpEs%2Bm3rv6Vv4rOPz8s%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;programId&quot;:&quot;48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;,&quot;productId&quot;:&quot;6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;,&quot;isbn&quot;:&quot;9780021111111&quot;,&quot;copyrightYear&quot;:2015,&quot;systemNodeType&quot;:&quot;BOOK&quot;,&quot;description&quot;:&quot;Everyday Math 4 test course&quot;,&quot;title&quot;:&quot;EM4 Grade 1 Test Course&quot;,&quot;thumbnails&quot;:{&quot;LARGE&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/large/10000026/75/98.jpg&quot;,&quot;MEDIUM&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/medium/10000026/75/98.jpg&quot;,&quot;SMALL&quot;:&quot;http://media2-dev.cdiapps.com/repository/data/thumbs/small/10000026/75/98.jpg&quot;},&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;26Y04ZPN0ZHHXK51RTVK820MHQ&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/product/6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;,&quot;program&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;,&quot;resource&quot;:&quot;/api/v0.1/course/1OGLMH9XQGWYKHHLSGKO5CS59O/resource&quot;,&quot;syllabus&quot;:&quot;/api/v0.1/course/1OGLMH9XQGWYKHHLSGKO5CS59O/syllabus&quot;,&quot;self&quot;:&quot;/api/v0.1/course/1OGLMH9XQGWYKHHLSGKO5CS59O&quot;},&quot;thumbExtension&quot;:&quot;png&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/course/1OGLMH9XQGWYKHHLSGKO5CS59O</java.net.URL>
+</httpSample>
+<httpSample t="109" it="0" lt="109" ts="1412273800234" s="true" lb="Find TOC_Syllabus within a Course" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="724" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:11 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20164880103513&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;MXnf%2BzrwKLiDllHKcNT9oDayTN8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;VG2V228RGR4EHWROZ83CYKW1EE&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;childCount&quot;:10,&quot;sequenceNum&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Teacher TOC&quot;,&quot;targetAudience&quot;:&quot;TEACHERS&quot;,&quot;secureAssetId&quot;:&quot;2KQHRF348JHPJ23F8SNB@1SBF0&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;unit&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE&quot;},&quot;sshNodeType&quot;:&quot;SYLLABUS&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/course/1OGLMH9XQGWYKHHLSGKO5CS59O/syllabus</java.net.URL>
+</httpSample>
+<httpSample t="146" it="0" lt="112" ts="1412273800350" s="true" lb="Find Units within a TOC (Syllabus)" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="4655" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:11 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20164995173259&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;n57YqytPUB7%2FHu3P3zG1Lm7VUDI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;8V5KC31EGZWCCFKMK4Y5DZ9ZE4&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Number Theory&quot;,&quot;title&quot;:&quot;Unit 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;H5@MJ4F6V1XM4HHYDY967J3JGM&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/1/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/1&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;1&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;Q8VFV66YBRTQEWGRDJLX2SYPHQ&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Estimation and Computation&quot;,&quot;title&quot;:&quot;Unit 2&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;7TDCPF53G6R@PK47SMQ5RNRZ81&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;2&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;FRC87XYM8BGTWLM58BY23LWEPE&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:3,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 3&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;2VM6M8DNQLB9YHZY@BYTWK87Q4&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/3/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/3&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;3&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;J6WL9LGN7P7K23WDGGBKHKXOE8&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:4,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;I am a really really really really long title for a Unit, but I&apos;m still a title please word wrap me. Thank you very very much.&quot;,&quot;title&quot;:&quot;Unit 4&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;BVXD7WRGN3NFBZGPDY4S1X2YYM&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/4/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/4&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;4&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;K2SOSVKOZWX6ZEE1881ZOGXQKY&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:5,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Hello I&apos;m a short title&quot;,&quot;title&quot;:&quot;Unit 5&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;9K8@8@RWF43QZVV6QSSD68VRGY&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/5/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/5&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;5&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;SWFXGT7JXB9S7P6C6YSM9JX6D4&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:6,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 6&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;B092F25C7VJ4V2V7QQWNR7HGV4&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/6/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/6&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;6&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;H5365QK4ZM5ZW2M3N1GDTNYLFY&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:7,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 7&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;6YPLM@7CT4FTVMR9D7XH@DQ75@&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/7/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/7&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;7&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;9SQ52S623SNE4T8D42SE1Y2NGY&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:8,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 8&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;D5RW58TJTVMTXG3272DPNB3DTQ&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/8/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/8&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;8&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;18QY7F6KGJ81H4O5MLMPEE2PHO&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:9,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;Unit 9&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;TF37LYY8YLW0Z393DYR58BCJV@&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/9/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/9&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;9&quot;,&quot;nodeType&quot;:&quot;Unit&quot;},{&quot;id&quot;:&quot;NFW8OMV5NST39BV7FPVPTPKJZO&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:10,&quot;language&quot;:&quot;en&quot;,&quot;title&quot;:&quot;GLR - Grade 1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;Z8SQPXY7D6F18XL72SJGKFLYP1&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/10/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/10&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeType&quot;:&quot;Unit&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit</java.net.URL>
+</httpSample>
+<httpSample t="124" it="0" lt="124" ts="1412273800503" s="true" lb="Find Specific Unit within a TOC (Syllabus)" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="792" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:12 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20165148329323&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;3qgxZYYP8J%2BjzUHa6nhOBfoP9O4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;Q8VFV66YBRTQEWGRDJLX2SYPHQ&quot;,&quot;assetType&quot;:&quot;N_COURSE&quot;,&quot;sequenceNum&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Estimation and Computation&quot;,&quot;title&quot;:&quot;Unit 2&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;7TDCPF53G6R@PK47SMQ5RNRZ81&quot;,&quot;teachingLevel&quot;:&quot;On Grade Level&quot;,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2/lesson&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2&quot;},&quot;sshNodeType&quot;:&quot;UNIT&quot;,&quot;nodeNumber&quot;:&quot;2&quot;,&quot;nodeType&quot;:&quot;Unit&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2</java.net.URL>
+</httpSample>
+<httpSample t="226" it="0" lt="185" ts="1412273800635" s="true" lb="Find Lessons within a Unit" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="5919" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:12 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20165279980203&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;73onIEuSAMV4ZhVFt7O1Eo9cwf4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;KKQFP9DH9FX78FGR9H3QC6BSE4&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Section 2 Organizer&quot;,&quot;title&quot;:&quot;Unit Organizer&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;S9HPJ3TK5DFNH3XV9D0DBJC5GM&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/KKQFP9DH9FX78FGR9H3QC6BSE4/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/KKQFP9DH9FX78FGR9H3QC6BSE4&quot;},&quot;extraFlags&quot;:[&quot;UNSCHEDULED&quot;],&quot;em4LessonType&quot;:&quot;UNIT_ORGANIZER&quot;},{&quot;id&quot;:&quot;PLLMZ3J3PO7K9G1G1ZXD27RF5E&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Introducing the Strategy Wall&quot;,&quot;title&quot;:&quot;Lesson 2-1&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;SVF2WZN@FLS2QC2HR94JTD0YH@&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;KG9D3ODWE3SKKP4BDY5STRG1JY&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Decomposing Numbers Within 10&quot;,&quot;title&quot;:&quot;Lesson 2-2&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;G1JPGVH6BX1Q35@TPJ04PHR720&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/KG9D3ODWE3SKKP4BDY5STRG1JY/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/KG9D3ODWE3SKKP4BDY5STRG1JY&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;119NS8RJKFRFFS8C9MYRZH6DGY&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Exploring Subtraction, Pairs of Numbers that Add to 10, and Data&quot;,&quot;title&quot;:&quot;Lesson 2-4&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;21S7M395LN82ZHNNX8SG0S7V5@&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/119NS8RJKFRFFS8C9MYRZH6DGY/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/119NS8RJKFRFFS8C9MYRZH6DGY&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;3DJWNRBRVW7RYRO7WYYD7MM7YO&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;10 Apples&quot;,&quot;title&quot;:&quot;Lesson 2-5&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;@XHQPMQK@12J9FZG3Q7WGZPNQ@&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/3DJWNRBRVW7RYRO7WYYD7MM7YO/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/3DJWNRBRVW7RYRO7WYYD7MM7YO&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;4LQ2NJDVNMX6JELHG62EN7XVD8&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;10 Apples&quot;,&quot;title&quot;:&quot;Lesson 2-5&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;M48GV5NT8CF@0FGHBGYFPD7N61&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/4LQ2NJDVNMX6JELHG62EN7XVD8/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/4LQ2NJDVNMX6JELHG62EN7XVD8&quot;},&quot;dayNumber&quot;:&quot;2&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;PGG412CD3KEFX2ZBVYKKPP3G1O&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;More Counting On to Add&quot;,&quot;title&quot;:&quot;Lesson 2-6&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;07@V10XB@DPF4H6M520KWDGZD0&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/PGG412CD3KEFX2ZBVYKKPP3G1O/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/PGG412CD3KEFX2ZBVYKKPP3G1O&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;52PMFQJ5DQ7PPYSGGMRN5YBN74&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Labeling Counts&quot;,&quot;title&quot;:&quot;Lesson 2-7&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;J3S9QX1SG1QBJQS9JVXCKSK1MM&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/52PMFQJ5DQ7PPYSGGMRN5YBN74/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/52PMFQJ5DQ7PPYSGGMRN5YBN74&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;HSQ6NQWCGEZMW4TV7KEKTMKC9E&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Change-to-More Number Stories&quot;,&quot;title&quot;:&quot;Lesson 2-8&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;R9X@1LDL17WTB9BTYVFYVMZWL8&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/HSQ6NQWCGEZMW4TV7KEKTMKC9E/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/HSQ6NQWCGEZMW4TV7KEKTMKC9E&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;3HDNXRNV5YH1OPF5EWBNGJTQ14&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Change-to-Less Number Stories&quot;,&quot;title&quot;:&quot;Lesson 2-9&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;RW7JVP6HG0@JV1JF0G@WQG2TB8&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/3HDNXRNV5YH1OPF5EWBNGJTQ14/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/3HDNXRNV5YH1OPF5EWBNGJTQ14&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;K335W6WNGS5B6G4WPZ3X3GTQFM&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Number Models&quot;,&quot;title&quot;:&quot;Lesson 2-10&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;NG@XZ0CYMJZN9GG2RDW8MJFSFM&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/K335W6WNGS5B6G4WPZ3X3GTQFM/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/K335W6WNGS5B6G4WPZ3X3GTQFM&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;HXLGQXKHL8EWQ77WRDXS1PQ9N1&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Finding Unknowns&quot;,&quot;title&quot;:&quot;Lesson 2-11&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;V51110CPHNDL5DZWXF3RWPMTDY&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/HXLGQXKHL8EWQ77WRDXS1PQ9N1/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/HXLGQXKHL8EWQ77WRDXS1PQ9N1&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;45OJ2CT4TJY82DSLO2M2NO2DX1&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Unit 2 Progress Check&quot;,&quot;title&quot;:&quot;Lesson 2-12&quot;,&quot;gradeLevels&quot;:[&quot;1&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;T010WK047TPKQ2Z33DNY4ZMZD1&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/45OJ2CT4TJY82DSLO2M2NO2DX1/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/45OJ2CT4TJY82DSLO2M2NO2DX1&quot;},&quot;shortTitle&quot;:&quot;Short title&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;},{&quot;id&quot;:&quot;C6FFOJXRCLJLPXX5H366T91EJO&quot;,&quot;assetType&quot;:&quot;LESSON&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;Unit 2 Progress Check&quot;,&quot;title&quot;:&quot;Lesson 2-12&quot;,&quot;gradeLevels&quot;:[&quot;PK&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;W81R4NQKKH@BBXGY56@YCBP@@Y&quot;,&quot;_links&quot;:{&quot;blade&quot;:&quot;/api/v0.1/tree/C6FFOJXRCLJLPXX5H366T91EJO/blade&quot;,&quot;self&quot;:&quot;/api/v0.1/tree/C6FFOJXRCLJLPXX5H366T91EJO&quot;},&quot;dayNumber&quot;:&quot;2&quot;,&quot;em4LessonType&quot;:&quot;REGULAR&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/VG2V228RGR4EHWROZ83CYKW1EE/unit/2/lesson</java.net.URL>
+</httpSample>
+<httpSample t="121" it="0" lt="121" ts="1412273800865" s="true" lb="Find Blades within a Lesson" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="647" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:40 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:12 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20165510501714&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;eiKHv3xcJL%2FieVDqRJwNflmZAPo%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;46NWCBZQGMXYGYO4YKL1NKBT1M&quot;,&quot;assetType&quot;:&quot;LSNBLADE&quot;,&quot;sequenceNum&quot;:1,&quot;title&quot;:&quot;Focus&quot;,&quot;secureAssetId&quot;:&quot;91HWVYWRGRMTB61VXW2YQZLKRM&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1&quot;,&quot;section&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section&quot;},&quot;em4BladeType&quot;:&quot;REGULAR&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade</java.net.URL>
+</httpSample>
+<httpSample t="116" it="0" lt="116" ts="1412273800989" s="true" lb="Find Specific Blade within a Lesson" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="659" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:41 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:12 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273800&quot;, oauth_nonce=&quot;20165634930729&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;fc%2B5BCEqD8%2BXiBeAXYI7QEEhTSM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;46NWCBZQGMXYGYO4YKL1NKBT1M&quot;,&quot;assetType&quot;:&quot;LSNBLADE&quot;,&quot;childCount&quot;:1,&quot;sequenceNum&quot;:1,&quot;title&quot;:&quot;Focus&quot;,&quot;secureAssetId&quot;:&quot;91HWVYWRGRMTB61VXW2YQZLKRM&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1&quot;,&quot;section&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section&quot;},&quot;em4BladeType&quot;:&quot;REGULAR&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1</java.net.URL>
+</httpSample>
+<httpSample t="3141" it="0" lt="3106" ts="1412273801108" s="true" lb="Find Sections within a Blade" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="1999" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:15 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273801&quot;, oauth_nonce=&quot;20165753740077&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2ByE8eGyPjRqQnLJZP0XFNoYeZRk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;MMV2Q43HVHZZR4VOQL8Y5FVKL8&quot;,&quot;assetType&quot;:&quot;LSNSECTN&quot;,&quot;fullText&quot;:&quot;&lt;p&gt;&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum laoreet libero in varius. Nunc id sem ut massa mattis dignissim sed eget orci. Nam quam nibh, euismod interdum porta vitae, convallis in ante. Maecenas rutrum odio vitae lorem convallis malesuada. Curabitur bibendum nulla sapien, ut blandit nulla laoreet quis. Integer sit amet tempus arcu. Sed tincidunt lectus vulputate, euismod arcu non, luctus tortor.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;Mauris vehicula ipsum lectus, id auctor mi bibendum ac. Praesent tortor tortor, vehicula ut ultrices quis, gravida non libero. Etiam at dui enim. Donec imperdiet ac elit ac molestie. Praesent non eleifend lacus. Sed pretium dui eget ipsum viverra, at blandit sem faucibus. Sed pulvinar convallis condimentum. Nunc tempor augue quis venenatis ullamcorper. Suspendisse in posuere risus. Nam velit odio, mollis a pellentesque non, ultrices vel justo. Proin ut tincidunt orci, quis laoreet lacus. Aenean congue ornare quam, sed vestibulum orci rhoncus vitae.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&quot;,&quot;sequenceNum&quot;:1,&quot;description&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum laoreet libero in varius. Nunc id sem ut massa mattis dignissim sed eget orci. Nam quam nibh, euismod interdum porta vitae, convallis in ante.&quot;,&quot;title&quot;:&quot;Section 1 for Lesson 2-1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;XT2XL9K4X45FXS0D@ZZL2L85T0&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1&quot;,&quot;activity&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1/activity&quot;},&quot;sectionType&quot;:&quot;CORE_CONTENT&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section</java.net.URL>
+</httpSample>
+<httpSample t="108" it="0" lt="108" ts="1412273804256" s="true" lb="Find Specific Section within a Blade" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="1997" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:15 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20168901301562&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;N5syNNAGzue31sqhkarq8qlFUsc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;MMV2Q43HVHZZR4VOQL8Y5FVKL8&quot;,&quot;assetType&quot;:&quot;LSNSECTN&quot;,&quot;fullText&quot;:&quot;&lt;p&gt;&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum laoreet libero in varius. Nunc id sem ut massa mattis dignissim sed eget orci. Nam quam nibh, euismod interdum porta vitae, convallis in ante. Maecenas rutrum odio vitae lorem convallis malesuada. Curabitur bibendum nulla sapien, ut blandit nulla laoreet quis. Integer sit amet tempus arcu. Sed tincidunt lectus vulputate, euismod arcu non, luctus tortor.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span&gt;&lt;span&gt;Mauris vehicula ipsum lectus, id auctor mi bibendum ac. Praesent tortor tortor, vehicula ut ultrices quis, gravida non libero. Etiam at dui enim. Donec imperdiet ac elit ac molestie. Praesent non eleifend lacus. Sed pretium dui eget ipsum viverra, at blandit sem faucibus. Sed pulvinar convallis condimentum. Nunc tempor augue quis venenatis ullamcorper. Suspendisse in posuere risus. Nam velit odio, mollis a pellentesque non, ultrices vel justo. Proin ut tincidunt orci, quis laoreet lacus. Aenean congue ornare quam, sed vestibulum orci rhoncus vitae.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&quot;,&quot;sequenceNum&quot;:1,&quot;description&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum laoreet libero in varius. Nunc id sem ut massa mattis dignissim sed eget orci. Nam quam nibh, euismod interdum porta vitae, convallis in ante.&quot;,&quot;title&quot;:&quot;Section 1 for Lesson 2-1&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;secureAssetId&quot;:&quot;XT2XL9K4X45FXS0D@ZZL2L85T0&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1&quot;,&quot;activity&quot;:&quot;/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1/activity&quot;},&quot;sectionType&quot;:&quot;CORE_CONTENT&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1</java.net.URL>
+</httpSample>
+<httpSample t="107" it="0" lt="106" ts="1412273804367" s="true" lb="Find Activities within a Section" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="793" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:15 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20169012874981&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;dEvqFtyZ1E9S%2B%2BrFypOpjy0zXzU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;N9P5BMLG3L7TJY34OO196XVBSM&quot;,&quot;assetType&quot;:&quot;LRNOBJCT&quot;,&quot;language&quot;:&quot;en&quot;,&quot;description&quot;:&quot;To test evaluation_group across units.&quot;,&quot;title&quot;:&quot;SV Print Activity for Unit 2&quot;,&quot;targetAudience&quot;:&quot;STUDENTS&quot;,&quot;gradeLevels&quot;:[&quot;7&quot;],&quot;region&quot;:{&quot;country&quot;:&quot;us&quot;},&quot;secureAssetId&quot;:&quot;TRJM4SYQM54TRBTL3511KYG4JY&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM&quot;,&quot;iteration&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration&quot;},&quot;extraFlags&quot;:[&quot;GROUP_ACTIVITY&quot;]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/PLLMZ3J3PO7K9G1G1ZXD27RF5E/blade/1/section/1/activity</java.net.URL>
+</httpSample>
+<httpSample t="95" it="0" lt="95" ts="1412273804486" s="true" lb="Find Iteration within an Activity" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="995" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 02-Oct-2014 19:27:15 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20169130814999&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2BMHzX3nz5N1M67oe0p7Lk2E0BXA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;GP5QWPPD8X1J8RFPQ9F2KGL6SY&quot;,&quot;assetType&quot;:&quot;TUPLE&quot;,&quot;sequenceNum&quot;:1,&quot;title&quot;:&quot;Print Activity&quot;,&quot;secureAssetId&quot;:&quot;60DKFT9T@ZL8V2ZWCYJWSY0BD1&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/1&quot;,&quot;evaluation&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/1/evaluation&quot;},&quot;tupleType&quot;:&quot;PRINT_ACTIVITY&quot;},{&quot;id&quot;:&quot;1ZCLSBZVXQEODQO8N7CQ1LKMFM&quot;,&quot;assetType&quot;:&quot;TUPLE&quot;,&quot;sequenceNum&quot;:2,&quot;title&quot;:&quot;Evaluation Points&quot;,&quot;secureAssetId&quot;:&quot;Z28C4XNK7SCMBQCKKFDXNRLWHM&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2&quot;,&quot;evaluation&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2/evaluation&quot;},&quot;tupleType&quot;:&quot;EVAL_POINTS&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration</java.net.URL>
+</httpSample>
+<httpSample t="107" it="0" lt="106" ts="1412273804592" s="true" lb="Find Specific Iteration within an Activity" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="684" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:16 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20169236485944&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;HcczHi5LTFfyo14Zw9ciJL0FtCk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;GP5QWPPD8X1J8RFPQ9F2KGL6SY&quot;,&quot;assetType&quot;:&quot;TUPLE&quot;,&quot;childCount&quot;:0,&quot;sequenceNum&quot;:1,&quot;title&quot;:&quot;Print Activity&quot;,&quot;secureAssetId&quot;:&quot;60DKFT9T@ZL8V2ZWCYJWSY0BD1&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/1&quot;,&quot;evaluation&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/1/evaluation&quot;},&quot;tupleType&quot;:&quot;PRINT_ACTIVITY&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/1</java.net.URL>
+</httpSample>
+<httpSample t="101" it="0" lt="101" ts="1412273804710" s="true" lb="Find Evaluations within an Iteration" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="752" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:16 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20169354277716&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;hmwqzE%2FGRI4GkBiklh9FJo1OUaU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;86OWDPRG9OY31MQYJRF77XKK1E&quot;,&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;sequenceNum&quot;:1,&quot;description&quot;:&quot;One and Only Evaluation Point rubric or Expectation or ACI which will never show up since it is obesrvational&quot;,&quot;title&quot;:&quot;One and Only Evaluation Point&quot;,&quot;secureAssetId&quot;:&quot;@JSKCW4DVN8GC9NFQWZ87YCD4Q&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2/evaluation/1&quot;},&quot;evaluationType&quot;:&quot;OBSERVATIONAL&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2/evaluation</java.net.URL>
+</httpSample>
+<httpSample t="106" it="0" lt="106" ts="1412273804831" s="true" lb="Find Specific Evaluations within an Iteration" rc="200" rm="OK" tn="Tree Test Plan 1-1" dt="text" de="" by="750" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 02 Oct 2014 18:16:44 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 02-Oct-2014 19:27:16 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;280243fa-e046-4f66-bc02-f379a9522d2d&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1412273804&quot;, oauth_nonce=&quot;20169475994588&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;zhej31yWw1ogjHN6ukywsJReSWc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;86OWDPRG9OY31MQYJRF77XKK1E&quot;,&quot;assetType&quot;:&quot;EVLPOINT&quot;,&quot;sequenceNum&quot;:1,&quot;description&quot;:&quot;One and Only Evaluation Point rubric or Expectation or ACI which will never show up since it is obesrvational&quot;,&quot;title&quot;:&quot;One and Only Evaluation Point&quot;,&quot;secureAssetId&quot;:&quot;@JSKCW4DVN8GC9NFQWZ87YCD4Q&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2/evaluation/1&quot;},&quot;evaluationType&quot;:&quot;OBSERVATIONAL&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/tree/N9P5BMLG3L7TJY34OO196XVBSM/iteration/2/evaluation/1</java.net.URL>
+</httpSample>
+
+</testResults>

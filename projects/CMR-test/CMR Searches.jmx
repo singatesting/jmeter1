@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="set Environment" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="env" elementType="Argument">
+            <stringProp name="Argument.name">env</stringProp>
+            <stringProp name="Argument.value">qa</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Precondition Setup" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1408552334000</longProp>
+        <longProp name="ThreadGroup.end_time">1408552334000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler guiclass="org.apache.jmeter.protocol.spring.control.gui.SpringBeanShellSamplerGui" testclass="org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler" testname="Load CMR Objects" enabled="true">
+          <stringProp name="context">testContext.xml</stringProp>
+          <stringProp name="BeanShellSampler.query">  
+import com.mgh.cm_common.LoadCMRObjects;
+import com.mgh.cmi.TOCService;
+import com.mgh.cmr.CMRService;
+
+
+props = (Properties) sCtx.getBean(&quot;external&quot;);
+for(Object key : props.keySet()) {
+  System.setProperty(key.toString(), props.get(key).toString());
+}
+LoadCMRObjects loadCMRObjects = new LoadCMRObjects();
+loadCMRObjects.setCmr((CMRService) sCtx.getBean(&quot;cmr&quot;));
+loadCMRObjects.setToc((TOCService) sCtx.getBean(&quot;toc&quot;));
+loadCMRObjects.reloadAll();</stringProp>
+        </org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CMR Search by Standard" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
+        <longProp name="ThreadGroup.start_time">1408552339000</longProp>
+        <longProp name="ThreadGroup.end_time">1408552339000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="filename">${env}/bookID_and_standardID_CMR.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler guiclass="org.apache.jmeter.protocol.spring.control.gui.SpringBeanShellSamplerGui" testclass="org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler" testname="CMR Search by Standard - ${BOOK_TITLE}" enabled="true">
+          <stringProp name="context">testContext.xml</stringProp>
+          <stringProp name="BeanShellSampler.query">import com.mgh.cmr.colorado.networks.NETworksService;
+import com.mgh.cmr.colorado.networks.SSBrowseRequest;
+import com.mgh.cmr.colorado.ContentAreaEnum;
+import com.mgh.cmr.colorado.LocateAssetsRequest;
+import com.mgh.cmr.colorado.ShowInSearchEnum;
+import com.mgh.cmr.colorado.BrowseResults;
+
+
+        networks = (NETworksService) sCtx.getBean(&quot;networks&quot;);
+
+	   SSBrowseRequest request = new SSBrowseRequest();
+
+
+System.out.println(vars.get(&quot;BOOK_TITLE&quot;));
+System.out.println(vars.get(&quot;BOOK_ID_CMR&quot;));
+System.out.println(vars.get(&quot;STANDARD_ID_CMR&quot;));
+	   	   	   
+	   Long bookId = Long.parseLong(vars.get(&quot;BOOK_ID_CMR&quot;));
+	   Long standardId = Long.parseLong(vars.get(&quot;STANDARD_ID_CMR&quot;));
+	   ContentAreaEnum contentArea = ContentAreaEnum.valueOf(vars.get(&quot;CONTENT_AREA&quot;));
+
+	   request.setProgramAssetId(bookId); 
+	   request.setSsAssetId(standardId); 
+	   request.setContentArea(contentArea);
+       
+//EM4 - Everyday Math 4
+		//request.setProgramAssetId(100000267598L); //Dev Book Id 1OGLMH9XQGWYKHHLSGKO5CS59O 
+		//request.setSsAssetId(10444101L); //Standard Id 1.A
+       	//request.setContentArea(ContentAreaEnum.EM4); // Program Content Area
+
+//C2J - EDK My Math MathML
+       	//request.setProgramAssetId(100000181538L); // Dev - Book Id 100000181538 / JT6QEY26V7N8V93XK2FX98GQCM 
+       	//request.setSsAssetId(10444552L); // Standard K.G.1 - Id 10444552 / 6DZVNWBCG6TC3VE21TTO7NQFK4
+       	//request.setContentArea(ContentAreaEnum.MATH); // Program Content Area
+
+//SSH - Geography - The United States Its Regions and Neighbors 
+		//request.setProgramAssetId(100000182924L); // Dev - Book Id 100000182924 / Q2RLPOXQKF712XMVVOPN8OSMJ4 
+       	//request.setSsAssetId(10444107L); // Standard 4.A - Id 10444107
+		//request.setContentArea(ContentAreaEnum.SSH); // Program Content Area
+
+//Reading 2014
+		//request.setProgramAssetId(100000199638L); // Dev - Book Id 100000199638 / Y85ETM2EXY2EK72HWTE7RV1YB1 
+       	//request.setSsAssetId(10445308L); // Standard 1.1 - Id 10445308 / SRZG3YGF2TRBSMEYSTPS8FTNGQ
+		//request.setContentArea(ContentAreaEnum.RD14); // Program Content Area
+
+//ssh - CT-World History
+		//request.setProgramAssetId(100000211164L); // Dev - Book Id 100000211164 / 79G42O1KBLLYTEM3E42Y5XCXJ8 
+       	//request.setSsAssetId(10445308L); // Standard 1.1 - Id 10445308 / SRZG3YGF2TRBSMEYSTPS8FTNGQ
+		//request.setContentArea(ContentAreaEnum.SSH); // Program Content Area
+
+//Number Worlds / Building Blocks
+		//request.setProgramAssetId(100000275978L); // Dev - Book Id 100000275978 / ORBR1D7VSJBK1KDE17WFQ1J4G4 
+       	//request.setSsAssetId(10444581L); // Standard 1.NBT.1_1  &gt; 1.NBT.1 - Id 10444581 / V5VPLEDE4WKBTH6KXFN94RJFJQ
+		//request.setContentArea(ContentAreaEnum.NWBB); // Program Content Area
+
+ //User Id
+        request.setUserId(null); // User Id
+     // request.setUserId(-1); // Invalid User Id
+        request.setTargetAudience(null); //Teacher or Students        
+
+        request.setAssetCategory(ShowInSearchEnum.ALL); // Look for PUBLIC, CMS or ALL Assets
+        
+                
+        request.setRetrieveAllAttributes(true); // Details?
+
+        Set facets = new HashSet();
+        facets.add(&quot;asset_type_name&quot;);
+        facets.add(&quot;TAG&quot;); 
+        request.setFacetsToReturn(facets);
+        
+        //request.setFastFirstN(false);
+        request.setInit(LocateAssetsRequest.InitEnum.HITS_AND_FACETS);
+        //Pagination -- limited to 100 rows for initial result-set; additional code would be needed to return more rows
+        request.setFromRow(1);
+        request.setToRow(100);
+
+        Map filters = new HashMap();
+        List types = new ArrayList();
+//        types.add(&quot;LESSON&quot;);  // use to filter on a specific asset type
+        filters.put(&quot;asset_type_name&quot;,types);
+//	   request.setFacets(filters); 
+        
+        //request.setFacets(null);
+        request.setSortOrder(null);
+        request.setAccessType(null);        
+        request.setMinFacetsPerGroup(2);
+        request.setForceUpdateCache(false); //If true Retrieve from DB refreshing cache
+                
+
+        // The search results
+        BrowseResults result = networks.searchByStateStd(request);
+
+        return result;</stringProp>
+        </org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify response received" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1672484670">Count=0</stringProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">Error if count=0</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CMR Search by Tag" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
+        <longProp name="ThreadGroup.start_time">1408552339000</longProp>
+        <longProp name="ThreadGroup.end_time">1408552339000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="filename">${env}/bookID_and_tagID_CMR.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler guiclass="org.apache.jmeter.protocol.spring.control.gui.SpringBeanShellSamplerGui" testclass="org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler" testname="CMR Search by Tag - ${BOOK_TITLE} - ${TAG_DESC}" enabled="true">
+          <stringProp name="context">testContext.xml</stringProp>
+          <stringProp name="BeanShellSampler.query">import com.mgh.cmr.colorado.networks.NETworksService;
+import com.mgh.cmr.colorado.networks.ResLibFindRequest;
+import com.mgh.cmr.colorado.ContentAreaEnum;
+import com.mgh.cmr.colorado.LocateAssetsRequest;
+import com.mgh.cmr.colorado.ShowInSearchEnum;
+import com.mgh.cmr.colorado.networks.ResLibFindResults;
+import com.mgh.mt.commons.vo.StateEnum; 
+import com.mgh.cmr.vo.Asset; 
+
+
+        networks = (NETworksService) sCtx.getBean(&quot;networks&quot;);
+
+
+        Long bookId = Long.parseLong(vars.get(&quot;BOOK_ID_CMR&quot;));
+	   Long resourceLibraryId = Long.parseLong(vars.get(&quot;RESOURCE_LIBRARY_NODE_ID&quot;));
+	   	   
+	   ContentAreaEnum contentArea = ContentAreaEnum.valueOf(vars.get(&quot;CONTENT_AREA&quot;));
+
+        ResLibFindRequest request = new ResLibFindRequest();
+        Set nodes = new HashSet();
+        nodes.add(resourceLibraryId); // QA - OCR Grade 1 - Teacher Resource Center node Id 
+        request.setNodeIDs(nodes);
+        request.setRetrieveAllAttributes(false);
+        request.setContentArea(contentArea);
+        request.setProgramAssetId(bookId); // book Id in QA - OCR Grade 1
+        
+        
+        Set facetsToReturn = new HashSet();
+        facetsToReturn.add(&quot;asset_type_name&quot;);
+        facetsToReturn.add(&quot;TAG&quot;);
+	   facetsToReturn.add(&quot;GROUP&quot;);   // c2j/math     
+        request.setFacetsToReturn(facetsToReturn);
+        
+        
+        request.setFastFirstN(false);
+        request.setInit(LocateAssetsRequest.InitEnum.HITS_AND_FACETS);
+  //Pagination -- limited to 100 rows for initial result-set; additional code would be needed to return more rows
+        request.setFromRow(1);
+        request.setToRow(100);
+        Map facets = new HashMap();
+ 
+ // Filters Tag by tag id
+        List tags = new ArrayList();
+        tags.add(vars.get(&quot;TAG_ID_CMR&quot;));
+        
+        facets.put(&quot;TAG&quot;,tags);
+        request.setFacets(facets); 
+        request.setAssetCategory(ShowInSearchEnum.ALL);
+        request.setLocale(StateEnum.OH);
+        request.setMinFacetsPerGroup(2);
+        request.setForceUpdateCache(false);
+
+        ResLibFindResults results = networks.findWithin(request);	
+
+Map values = new HashMap();
+
+for(Asset asset : results.getAssets()) {
+	values.put(asset.getId(),asset.getAttributesMap());	
+	}
+
+        
+        return values;   
+
+/* ContentAreaEnum =
+MATH (c2j)
+SSH
+EM4
+NWBB / STUDIO
+RD14
+*/</stringProp>
+        </org.apache.jmeter.protocol.spring.sampler.SpringBeanShellSampler>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify tag id returned" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1494022141">${TAG_ID_CMR}</stringProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">Verify tag id passed in is included in the response</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

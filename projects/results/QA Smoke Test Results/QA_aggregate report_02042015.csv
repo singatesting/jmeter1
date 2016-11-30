@@ -1,0 +1,460 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth
+Driver Script Thread Group:LOGIN API - FAVORITES,1,235,235,235,235,235,0.0,4.25531914893617,2.6138630319148937
+Driver Script Thread Group:Create Favorite - Asset,4,176,155,211,144,211,0.0,0.3824091778202677,0.35850860420650094
+Driver Script Thread Group:Get Favorite - Asset,2,152,124,181,124,181,0.0,4.024144869215292,2.1771252515090542
+Driver Script Thread Group:Create Favorite Again - Asset,1,163,163,163,163,163,0.0,6.134969325153374,5.751533742331288
+Driver Script Thread Group:Delete Favorite - Asset,1,149,149,149,149,149,0.0,6.7114093959731544,2.0645448825503356
+Driver Script Thread Group:Get Deleted Favorite - Asset,1,133,133,133,133,133,0.0,7.518796992481203,2.5478735902255636
+Driver Script Thread Group:Delete Favorite by Product and Asset ID - Verify error,1,168,168,168,168,168,0.0,5.952380952380952,2.7204241071428568
+Driver Script Thread Group:Create Favorite - Product,1,160,160,160,160,160,0.0,6.25,5.8837890625
+Driver Script Thread Group:Get Favorite - Product,2,133,129,138,129,138,0.0,4.608294930875576,2.4931595622119818
+Driver Script Thread Group:Create Favorite Again - Product,1,139,139,139,139,139,0.0,7.194244604316547,6.772706834532373
+Driver Script Thread Group:Delete Favorite by Product and Annotation ID - Product,1,160,160,160,160,160,0.0,6.25,1.922607421875
+Driver Script Thread Group:Get Deleted Favorite - Product,2,139,135,143,135,143,0.0,0.32388663967611336,0.10975455465587045
+Driver Script Thread Group:Create Favorite - User,1,144,144,144,144,144,0.0,6.944444444444444,6.130642361111112
+Driver Script Thread Group:Get Favorite - User,2,140,138,143,138,143,0.0,4.5662100456621,2.47039098173516
+Driver Script Thread Group:Create Favorite Again - User,1,136,136,136,136,136,0.0,7.352941176470588,6.491268382352941
+Driver Script Thread Group:Delete Favorite - User,1,159,159,159,159,159,0.0,6.289308176100629,1.9346992924528301
+Driver Script Thread Group:Get Deleted Favorite - User,1,136,136,136,136,136,0.0,7.352941176470588,2.4916704963235294
+Driver Script Thread Group:LOGIN API - NOTES,1,163,163,163,163,163,0.0,6.134969325153374,3.768452837423313
+Driver Script Thread Group:Create Note - Asset,4,155,153,164,147,164,0.0,0.5976393246675631,0.5707922456297625
+Driver Script Thread Group:Get Note - Asset,2,148,143,153,143,153,0.0,4.282655246252677,2.4759100642398284
+Driver Script Thread Group:Update Note- Asset,1,152,152,152,152,152,0.0,6.578947368421052,3.867701480263158
+Driver Script Thread Group:Delete Note - Asset,4,158,146,197,139,197,0.0,0.40261701056869653,0.1238519124308002
+Driver Script Thread Group:Get Deleted Note - Asset,1,122,122,122,122,122,0.0,8.196721311475411,2.7775998975409837
+Driver Script Thread Group:Create Note - Product,1,169,169,169,169,169,0.0,5.9171597633136095,5.645571375739644
+Driver Script Thread Group:Get Note - Product,2,1656,164,3149,164,3149,0.0,0.5694760820045558,0.3278380374430524
+Driver Script Thread Group:Update Note - Product,1,180,180,180,180,180,0.0,5.555555555555555,3.2660590277777777
+Driver Script Thread Group:Delete Note - Product,1,161,161,161,161,161,0.0,6.211180124223602,1.9106657608695652
+Driver Script Thread Group:Create Note - User,1,172,172,172,172,172,0.0,5.813953488372093,5.23482921511628
+Driver Script Thread Group:Get Note - User,2,143,143,144,143,144,0.0,4.3383947939262475,2.5081344902386116
+Driver Script Thread Group:Update Note - User,1,151,151,151,151,151,0.0,6.622516556291391,3.8933153973509933
+Driver Script Thread Group:Delete Note - User,1,139,139,139,139,139,0.0,7.194244604316547,2.2130732913669062
+Driver Script Thread Group:Get Deleted Note - User,1,131,131,131,131,131,0.0,7.633587786259541,2.586772423664122
+Driver Script Thread Group:LOGIN API - USER ANNOTATIONS,1,165,165,165,165,165,0.0,6.0606060606060606,3.722774621212121
+Driver Script Thread Group:Get All Annotations for user - User,1,136,136,136,136,136,0.0,7.352941176470588,2.4916704963235294
+Driver Script Thread Group:Get Annotations (Favorite & Note) - User,1,149,149,149,149,149,0.0,6.7114093959731544,10.958473154362416
+Driver Script Thread Group:Get Annotations (Favorite & Note) - User - by Asset ID,1,145,145,145,145,145,0.0,6.896551724137931,5.307112068965518
+Driver Script Thread Group:Get Annotations (Favorite & Note) - User - by Product ID,1,172,172,172,172,172,0.0,5.813953488372093,9.49309593023256
+Driver Script Thread Group:Get Annotations (Favorite) - User,1,138,138,138,138,138,0.0,7.246376811594203,6.864243659420289
+Driver Script Thread Group:Get Annotations (Note) - User,1,147,147,147,147,147,0.0,6.802721088435374,6.962159863945579
+Driver Script Thread Group:Get Annotations (Favorite) - User for Multiple asset ids,1,137,137,137,137,137,0.0,7.299270072992701,5.431683394160584
+Driver Script Thread Group:Get Annotations  - User for Multiple asset ids  by Product,1,141,141,141,141,141,0.0,7.092198581560283,8.518949468085108
+Driver Script Thread Group:Get Annotations  - User for Multiple asset ids  by Product and type,1,140,140,140,140,140,0.0,7.142857142857142,5.678013392857142
+Driver Script Thread Group:Get Annotations  - User for Multiple asset ids  by Product and type (One Invalid Asset Id),1,142,142,142,142,142,0.0,7.042253521126761,3.3010563380281694
+Driver Script Thread Group:Get Annotations (Favorite & Note) - Product,1,129,129,129,129,129,0.0,7.751937984496124,12.657461240310077
+Driver Script Thread Group:Get Annotations (Favorite) - Product,1,134,134,134,134,134,0.0,7.462686567164179,7.06914645522388
+Driver Script Thread Group:Get Annotations (Note) - Product,1,137,137,137,137,137,0.0,7.299270072992701,7.470346715328467
+Driver Script Thread Group:Get Annotations (Favorite & Note) - Asset,1,125,125,125,125,125,0.0,8.0,6.15625
+Driver Script Thread Group:Get Annotations (Favorite) - Asset,1,131,131,131,131,131,0.0,7.633587786259541,4.129890267175572
+Driver Script Thread Group:Get Annotations (Note) - Asset,1,152,152,152,152,152,0.0,6.578947368421052,3.7263569078947367
+Driver Script Thread Group:Delete Favorite - Product,3,159,144,191,142,191,0.0,6.0,1.845703125
+Driver Script Thread Group:LOGIN API - ASSETS,1,170,170,170,170,170,0.0,5.88235294117647,3.6132812499999996
+Driver Script Thread Group:Get Asset,1,148,148,148,148,148,0.0,6.756756756756757,8.881440033783784
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-FEATURED,2,139,137,142,137,142,0.0,0.869187309865276,3.0582830834419816
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-LOOKBACK,2,221,216,226,216,226,0.0,0.8385744234800838,0.28416535639413
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-MOBILE,2,154,143,166,143,166,0.0,0.8654262224145391,1.1899610558199913
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-NORMAL,1,529,529,529,529,529,0.0,1.890359168241966,44.42528650756144
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-OPTOUT,1,144,144,144,144,144,0.0,6.944444444444444,23.87152777777778
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-PERSISTENT_LINK1,1,142,142,142,142,142,0.0,7.042253521126761,2.3863886443661975
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-PERSISTENT_LINK2,1,174,174,174,174,174,0.0,5.747126436781609,1.9475125718390807
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-PERSISTENT_LINK3,1,172,172,172,172,172,0.0,5.813953488372093,1.9701580668604652
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-TEMPLATE_MEDIA1,1,188,188,188,188,188,0.0,5.319148936170213,1.802485039893617
+Driver Script Thread Group:Get Associated Assets with specific Assoc types-VOCAB,1,162,162,162,162,162,0.0,6.172839506172839,2.0917727623456788
+Driver Script Thread Group:Get Associated Assets with specific Asset types-COMPOSIT,2,312,221,404,221,404,0.0,0.24639645189109277,7.821643618331895
+Driver Script Thread Group:Get Associated Assets with specific Asset types-COMPOUND,1,150,150,150,150,150,0.0,6.666666666666667,16.959635416666668
+Driver Script Thread Group:Get Associated Assets with specific Asset types-ITERATN,1,150,150,150,150,150,0.0,6.666666666666667,24.264322916666668
+Driver Script Thread Group:Get Associated Assets with specific Asset types-VOCAB,1,205,205,205,205,205,0.0,4.878048780487805,42.54001524390244
+Driver Script Thread Group:Get Associated Assets with specific Asset types-TUPLE,1,756,756,756,756,756,0.0,1.3227513227513228,38.59488673941799
+Driver Script Thread Group:Get Associated Assets with specific Asset types-ILINK,1,893,893,893,893,893,0.0,1.1198208286674132,158.33654115341545
+Driver Script Thread Group:Get Associated Assets with specific Asset types-ETOOL,1,150,150,150,150,150,0.0,6.666666666666667,13.69140625
+Driver Script Thread Group:Get Associated Assets with specific Asset types-EVLPOINT,1,747,747,747,747,747,0.0,1.3386880856760375,124.59342578647924
+Driver Script Thread Group:Get Associated Assets with specific Asset types-LINK,1,513,513,513,513,513,0.0,1.949317738791423,86.83601364522417
+Driver Script Thread Group:Get Associated Assets with specific Asset types-LSNSECTN,1,131,131,131,131,131,0.0,7.633587786259541,14.447161259541984
+Driver Script Thread Group:Get Associated Assets with specific Asset types-LSNBLADE,1,140,140,140,140,140,0.0,7.142857142857142,6.0267857142857135
+Driver Script Thread Group:Get Associated Assets with specific Asset types-EBOOK,1,475,475,475,475,475,0.0,2.1052631578947367,76.29111842105263
+Driver Script Thread Group:Get Associated Assets with specific Asset types-IWB_RESC,1,2603,2603,2603,2603,2603,0.0,0.384172109104879,312.1525943622743
+Driver Script Thread Group:Get Associated Assets with specific Asset types-LRNOBJCT,1,156,156,156,156,156,0.0,6.41025641025641,8.519881810897436
+Driver Script Thread Group:Get Associated Assets with specific Asset types-SKETCHPAD,1,183,183,183,183,183,0.0,5.46448087431694,5.549863387978142
+Driver Script Thread Group:Get Asset - Sketchpad,1,134,134,134,134,134,0.0,7.462686567164179,7.535564365671641
+Driver Script Thread Group:Get Associated Assets reverse,1,464,464,464,464,464,0.0,2.155172413793103,2.1088698814655173
+"Driver Script Thread Group:Get Associated Assets - reverse, withinsubtree and root node id",1,142,142,142,142,142,0.0,7.042253521126761,6.890955105633804
+"Driver Script Thread Group:Get Associated Assets - reverse, withinsubtree - filter by Unit",1,137,137,137,137,137,0.0,7.299270072992701,7.142449817518248
+Driver Script Thread Group:Get Associated Assets - Assoc type,1,158,158,158,158,158,0.0,6.329113924050633,2.1447290348101267
+Driver Script Thread Group:Get Associated Assets - Asset type,1,135,135,135,135,135,0.0,7.407407407407407,2.5101273148148144
+Driver Script Thread Group:Get Associated Child Assets,1,151,151,151,151,151,0.0,6.622516556291391,29.199865480132452
+Driver Script Thread Group:Get Associated Child Assets - filtered,1,135,135,135,135,135,0.0,7.407407407407407,2.5101273148148144
+Driver Script Thread Group:Get Associated Standards by Asset,1,159,159,159,159,159,0.0,6.289308176100629,3.9001080974842766
+Driver Script Thread Group:Get Parent Assets of a Child - BookID,2,149,141,157,141,157,0.0,1.2894906511927788,0.5868189877498389
+Driver Script Thread Group:Get Parent Assets of a Child - TOC,2,165,141,190,141,190,0.0,1.2554927809165097,0.6682066070307596
+Driver Script Thread Group:Get Parent Assets of a Child - Unit,2,150,147,153,147,153,0.0,1.2461059190031154,0.7483936915887851
+Driver Script Thread Group:Get Parent Assets of a Child - Lesson ,1,129,129,129,129,129,0.0,7.751937984496124,3.3611918604651163
+Driver Script Thread Group:Get Parent Assets of a Child - Lesson Blade,2,167,137,197,137,197,0.0,1.0152284263959392,0.5532201776649747
+Driver Script Thread Group:Get Parent Assets of a Child - Lesson Section,2,141,138,145,138,145,0.0,1.0152284263959392,0.6320391814720813
+Driver Script Thread Group:Get Parent Assets of a Child - Activity,1,169,169,169,169,169,0.0,5.9171597633136095,2.6407636834319526
+Driver Script Thread Group:Get Parent Assets of a Child - Iteration,1,131,131,131,131,131,0.0,7.633587786259541,3.9435233778625953
+Driver Script Thread Group:Get Parent Assets of a Child - Evaluation Point,1,144,144,144,144,144,0.0,6.944444444444444,4.143608940972222
+Driver Script Thread Group:Get Parent Assets of a Child - Week,1,151,151,151,151,151,0.0,6.622516556291391,4.540045529801325
+Driver Script Thread Group:Get Parent Assets of a Child - Day,1,134,134,134,134,134,0.0,7.462686567164179,5.618878264925373
+Driver Script Thread Group:Get Parent Assets of a Child - Topic,1,142,142,142,142,142,0.0,7.042253521126761,3.252915933098592
+Driver Script Thread Group:Get Parent Assets of a Child - Teacher Resource Center,1,138,138,138,138,138,0.0,7.246376811594203,4.507755887681159
+Driver Script Thread Group:LOGIN API - ASSIGNMENTS,1,192,192,192,192,192,0.0,5.208333333333333,3.1992594401041665
+Driver Script Thread Group:Get Assignments for Logged in user,1,170,170,170,170,170,0.0,5.88235294117647,1.9933363970588234
+Driver Script Thread Group:Get Assignment details,2,147,143,152,143,152,0.0,1.9455252918287937,1.2368525048638133
+Driver Script Thread Group:Get Students for an Assignment ,1,159,159,159,159,159,0.0,6.289308176100629,2.131240172955975
+Driver Script Thread Group:Create Assignment- with missing Data,1,157,157,157,157,157,0.0,6.369426751592357,2.8301652070063694
+Driver Script Thread Group:Create Assignment,1,205,205,205,205,205,0.0,4.878048780487805,4.801829268292683
+Driver Script Thread Group:Create Assignment-With same details,1,160,160,160,160,160,0.0,6.25,6.15234375
+Driver Script Thread Group:Edit Assignment  Details,1,141,141,141,141,141,0.0,7.092198581560283,2.1816821808510642
+Driver Script Thread Group:Edit Assignment  Details-with same details,1,134,134,134,134,134,0.0,7.462686567164179,2.2956506529850746
+Driver Script Thread Group:Get Edited Assignment  Details,1,145,145,145,145,145,0.0,6.896551724137931,6.808997844827586
+Driver Script Thread Group:Delete Assignment ,1,140,140,140,140,140,0.0,7.142857142857142,2.197265625
+Driver Script Thread Group:Get Deleted Assignment  Details,1,428,428,428,428,428,0.0,2.336448598130841,1.067830023364486
+Driver Script Thread Group:LOGIN API - CLASS / OCR Student,1,479,479,479,479,479,0.0,2.08768267223382,1.3618867432150314
+Driver Script Thread Group:Get Class - Student Role,1,82,82,82,82,82,0.0,12.195121951219512,11.849752286585366
+Driver Script Thread Group:LOGIN API - CLASS / TEACHER,1,178,178,178,178,178,0.0,5.617977528089887,3.6648525280898876
+Driver Script Thread Group:Get Existing Class,1,89,89,89,89,89,0.0,11.235955056179774,10.91774929775281
+Driver Script Thread Group:Get Planner associated to a Class,1,134,134,134,134,134,0.0,7.462686567164179,7.127448694029851
+Driver Script Thread Group:Create Class,2,148,148,149,148,149,0.0,0.03953663068833274,0.0412933852745819
+Driver Script Thread Group:Add Students Request,1,215,215,215,215,215,0.0,4.651162790697675,1.4307776162790697
+Driver Script Thread Group:Delete Students Request,2,152,141,163,141,163,0.0,6.451612903225806,1.9846270161290323
+Driver Script Thread Group:Get Students,1,157,157,157,157,157,0.0,6.369426751592357,31.5734474522293
+Driver Script Thread Group:Update Class,1,146,146,146,146,146,0.0,6.8493150684931505,6.9563356164383565
+Driver Script Thread Group:Get Class,1,135,135,135,135,135,0.0,7.407407407407407,7.523148148148148
+Driver Script Thread Group:Get Password,2,176,171,181,171,181,0.0,3.0959752321981426,8.610681114551083
+Driver Script Thread Group:Update Password,1,282,282,282,282,282,0.0,3.5460992907801416,1.0908410904255321
+Driver Script Thread Group:Delete Class,2,161,150,173,150,173,0.0,0.04062811058971702,0.010117351758181486
+Driver Script Thread Group:Get Class - verify deleted,1,599,599,599,599,599,0.0,1.669449081803005,0.7548387938230384
+Driver Script Thread Group:CMR Health Check,1,224,224,224,224,224,0.0,4.464285714285714,1.1945452008928572
+Driver Script Thread Group:LOGIN API - CONTEXT SERVICE,1,163,163,163,163,163,0.0,6.134969325153374,3.0495111196319016
+Driver Script Thread Group:Create New Context,1,231,231,231,231,231,0.0,4.329004329004329,1.6910173160173159
+Driver Script Thread Group:Get Context by custom Key & Value,1,138,138,138,138,138,0.0,7.246376811594203,2.8447690217391304
+Driver Script Thread Group:Get New Context by ID,1,132,132,132,132,132,0.0,7.575757575757576,2.9592803030303028
+Driver Script Thread Group:Create New Context - Initial Text,1,133,133,133,133,133,0.0,7.518796992481203,2.533188439849624
+Driver Script Thread Group:Create New Context - Updated Text,1,123,123,123,123,123,0.0,8.130081300813009,2.73119918699187
+Driver Script Thread Group:Get New Context - Verify Context Text Updated,1,147,147,147,147,147,0.0,6.802721088435374,2.2852891156462585
+Driver Script Thread Group:LOGIN API - COURSE,1,170,170,170,170,170,0.0,5.88235294117647,2.9239430147058822
+Driver Script Thread Group:Lookup Course Node (Course Service),1,168,168,168,168,168,0.0,5.952380952380952,7.2312127976190474
+Driver Script Thread Group:Find TOC_Syllabus within a Course (Course Service),1,157,157,157,157,157,0.0,6.369426751592357,3.750746417197452
+Driver Script Thread Group:Resource Nodes of Multiple Course Nodes,1,205,205,205,205,205,0.0,4.878048780487805,14.253048780487806
+Driver Script Thread Group:Resource Nodes for Invalid and Valid Course Nodes,1,139,139,139,139,139,0.0,7.194244604316547,2.4870728417266186
+Driver Script Thread Group:Resource Nodes for Asset id which is not Course id,1,175,175,175,175,175,0.0,5.714285714285714,1.2667410714285716
+Driver Script Thread Group:LOGIN API - ROSES ADMIN - CLEAN-UP,4,187,174,235,160,235,0.0,0.41588687876897484,0.20672502079434393
+Driver Script Thread Group:Get Disciplines - Environment Check,1,144,144,144,144,144,0.0,6.944444444444444,30.40228949652778
+Driver Script Thread Group:Delete a discipline - JMRA,1,161,161,161,161,161,0.0,6.211180124223602,1.1827930900621118
+Driver Script Thread Group:Delete a discipline - JMRB,1,151,151,151,151,151,0.0,6.622516556291391,1.2611237582781458
+Driver Script Thread Group:Delete Associated Programs with Discipline - JMRA,1,148,148,148,148,148,0.0,6.756756756756757,2.1510768581081083
+Driver Script Thread Group:Delete Associated Programs with Discipline - JMRB,1,151,151,151,151,151,0.0,6.622516556291391,2.1083402317880795
+Driver Script Thread Group:Delete Associated Programs with Discipline - EMD,2,146,141,151,141,151,0.0,0.3585514521333812,0.11082181113302259
+Driver Script Thread Group:Delete Associated Programs with Discipline - JMRD,1,149,149,149,149,149,0.0,6.7114093959731544,1.2780515939597317
+Driver Script Thread Group:Delete Associated Programs with Discipline - JMRE,1,134,134,134,134,134,0.0,7.462686567164179,2.3758162313432836
+Driver Script Thread Group:Delete Associated Programs with Discipline - JCED,2,150,138,163,138,163,0.0,0.24721878862793575,0.06289110784919653
+Driver Script Thread Group:Get Disciplines - CLEAN-UP,2,145,127,163,127,163,0.0,0.25176233635448136,1.1337910293932527
+Driver Script Thread Group:LOGIN API - DISCIPLINE / ROSES ADMIN,2,188,177,199,177,199,0.0,0.312256049960968,0.15521321233411398
+Driver Script Thread Group:Get All available Disciplines,4,137,135,143,135,143,0.0,0.5792064871126557,2.5720670884013903
+Driver Script Thread Group:Create a New Discipline - ROSES ADMIN - JMRC,1,173,173,173,173,173,0.0,5.780346820809248,3.003070809248555
+Driver Script Thread Group:Get New Discipline,1,143,143,143,143,143,0.0,6.993006993006993,3.134560751748252
+Driver Script Thread Group:Update Discipline - Code CanNOT be Updated,1,129,129,129,129,129,0.0,7.751937984496124,2.732860949612403
+Driver Script Thread Group:Update Discipline,2,124,114,134,114,134,0.0,0.40691759918616477,0.09994118769074263
+Driver Script Thread Group:Get Discpline - Verify Updates,1,133,133,133,133,133,0.0,7.518796992481203,3.6492598684210527
+Driver Script Thread Group:Delete a discipline - JMRC,1,135,135,135,135,135,0.0,7.407407407407407,1.4105902777777777
+Driver Script Thread Group:Delete a discipline - ROSES ADMIN - JMRD,1,174,174,174,174,174,0.0,5.747126436781609,1.0944234913793105
+Driver Script Thread Group:Create a New Discipline - ROSES ADMIN - JMRD,1,178,178,178,178,178,0.0,5.617977528089887,2.419461025280899
+Driver Script Thread Group:Associate Programs to Discipline - JMRD**Remove once the Create Program is updated to give a discipline code**,1,174,174,174,174,174,0.0,5.747126436781609,1.0944234913793105
+Driver Script Thread Group:Verify cannot Delete a Discipline tied to a Program - JMRD,1,162,162,162,162,162,0.0,6.172839506172839,2.272617669753086
+Driver Script Thread Group:Get Programs for the Discipline,1,134,134,134,134,134,0.0,7.462686567164179,3.6876166044776117
+Driver Script Thread Group:LOGIN API - DISCIPLINE / CMS EDITOR,1,156,156,156,156,156,0.0,6.41025641025641,3.186348157051282
+Driver Script Thread Group:Delete Associated Programs with Discipline - JMTR,2,131,128,135,128,135,0.0,0.9306654257794323,0.27992671009771986
+Driver Script Thread Group:Delete AssociatedPrograms with Discipline - EMD - Not Allowed,1,119,119,119,119,119,0.0,8.403361344537815,2.527573529411765
+Driver Script Thread Group:Delete a discipline - JMTR - CMS EDITOR Not Allowed,1,136,136,136,136,136,0.0,7.352941176470588,2.211626838235294
+Driver Script Thread Group:Create a New Discipline - JMTR - CMS EDITOR - not allowed,1,122,122,122,122,122,0.0,8.196721311475411,2.465420081967213
+Driver Script Thread Group:Update Discipline - JMRZ - CMS EDITOR - Not Allowed,1,120,120,120,120,120,0.0,8.333333333333334,2.506510416666667
+Driver Script Thread Group:Delete Associated Programs with Discipline - Not Allowed,1,125,125,125,125,125,0.0,8.0,2.40625
+Driver Script Thread Group:Associate Programs to Discipline - Not Allowed,1,118,118,118,118,118,0.0,8.474576271186441,2.5489936440677967
+Driver Script Thread Group:Get Associated Programs for Discipline - CMS EDITOR - JMRD = JMRD,1,136,136,136,136,136,0.0,7.352941176470588,3.6333869485294117
+Driver Script Thread Group:Update Discipline - CMS Editor - Not Allowed,1,135,135,135,135,135,0.0,7.407407407407407,2.228009259259259
+Driver Script Thread Group:Remove Specific Associated Programs from Discipline,1,121,121,121,121,121,0.0,8.264462809917356,2.4857954545454546
+Driver Script Thread Group:Remove All Associated Programs from a Discipline,1,129,129,129,129,129,0.0,7.751937984496124,2.331637596899225
+Driver Script Thread Group:Delete a discipline - CMS Not Allowed,1,117,117,117,117,117,0.0,8.547008547008549,2.5707799145299144
+Driver Script Thread Group:LOGIN API - DISCIPLINE / ROSES EDITOR,1,183,183,183,183,183,0.0,5.46448087431694,2.7162312158469946
+Driver Script Thread Group:Delete a discipline - EDITOR NOT ALLOWED,1,124,124,124,124,124,0.0,8.064516129032258,2.425655241935484
+Driver Script Thread Group:Create a New Discipline - EDITOR - not allowed,1,117,117,117,117,117,0.0,8.547008547008549,2.5707799145299144
+Driver Script Thread Group:Update Discipline - not allowed,1,127,127,127,127,127,0.0,7.874015748031496,2.3683562992125986
+Driver Script Thread Group:Delete Associated Programs with Discipline,2,130,129,131,129,131,0.0,2.9154518950437316,0.8769132653061223
+Driver Script Thread Group:Associate Programs to Discipline,1,141,141,141,141,141,0.0,7.092198581560283,2.1332003546099294
+Driver Script Thread Group:Get Associated Programs for Discipline,1,133,133,133,133,133,0.0,7.518796992481203,3.715343045112782
+Driver Script Thread Group:Delete All Associated Programs with Discipline,1,130,130,130,130,130,0.0,7.6923076923076925,2.313701923076923
+Driver Script Thread Group:Delete a discipline - Not Allowed,1,162,162,162,162,162,0.0,6.172839506172839,1.8506462191358024
+Driver Script Thread Group:Create a New Discipline - ROSES ADMIN - JCED,1,156,156,156,156,156,0.0,6.41025641025641,3.468048878205128
+Driver Script Thread Group:Associate Programs to Discipline - JCED ,1,173,173,173,173,173,0.0,5.780346820809248,1.1007496387283238
+Driver Script Thread Group:LOGIN API - DISCIPLINE / CED USER,1,175,175,175,175,175,0.0,5.714285714285714,2.840401785714286
+Driver Script Thread Group:Get Associated Programs for Discipline - JCED ,1,138,138,138,138,138,0.0,7.246376811594203,3.531193387681159
+Driver Script Thread Group:Delete a Test Discipline  - CLEAN-UP,1,130,130,130,130,130,0.0,7.6923076923076925,1.46484375
+Driver Script Thread Group:LOGIN API - EVALUATION,1,175,175,175,175,175,0.0,5.714285714285714,2.840401785714286
+Driver Script Thread Group:Return error when bookId missing from Evaluation Group,1,446,446,446,446,446,0.0,2.242152466367713,0.6962934417040358
+Driver Script Thread Group:Return error when school id missing from Evaluation Group,1,127,127,127,127,127,0.0,7.874015748031496,2.26070374015748
+Driver Script Thread Group:Return error when sectionId missing from Evaluation Group,1,133,133,133,133,133,0.0,7.518796992481203,2.356966635338346
+Driver Script Thread Group:Create an Evaluation Group,1,171,171,171,171,171,0.0,5.847953216374268,4.899945175438596
+Driver Script Thread Group:Add Evlauation Point to Evaluation Group,1,197,197,197,197,197,1.0,5.076142131979695,1.9134676395939085
+Driver Script Thread Group:Get Evaluation Group,1,139,139,139,139,139,1.0,7.194244604316547,5.255170863309352
+Driver Script Thread Group:Get Aggregation Report by book and teacher,1,166,166,166,166,166,0.0,6.024096385542169,2.0943147590361444
+Driver Script Thread Group:Get Aggregation Report by book and student,1,158,158,158,158,158,0.0,6.329113924050633,2.200356012658228
+Driver Script Thread Group:Get Aggregation Report for specific students,1,143,143,143,143,143,0.0,6.993006993006993,8.058347902097903
+Driver Script Thread Group:Get Aggregation Report for students under specific class,1,443,443,443,443,443,0.0,2.257336343115124,2.601227426636569
+Driver Script Thread Group:Get Aggregation Report by class--All Evaluation Data,1,145,145,145,145,145,0.0,6.896551724137931,7.953933189655173
+Driver Script Thread Group:Get Aggregation Report by class--Active Data,1,175,175,175,175,175,0.0,5.714285714285714,6.5904017857142865
+Driver Script Thread Group:Get Aggregation Report by teacher--All Evaluation Data,1,149,149,149,149,149,0.0,6.7114093959731544,2.333263422818792
+Driver Script Thread Group:Get Aggregation Report by teacher--Active Data,1,197,197,197,197,197,0.0,5.076142131979695,1.764752538071066
+Driver Script Thread Group:Get Aggregation Report by school--All Evaluation Data,1,139,139,139,139,139,0.0,7.194244604316547,2.5011241007194243
+Driver Script Thread Group:Get Aggregation Report by school--Active Data,1,160,160,160,160,160,0.0,6.25,2.1728515625
+Driver Script Thread Group:Get Aggregation Report by District--All Evaluation Data,1,160,160,160,160,160,0.0,6.25,2.1728515625
+Driver Script Thread Group:Get Aggregation Report by District--Active Data,1,192,192,192,192,192,0.0,5.208333333333333,1.8107096354166665
+Driver Script Thread Group:Get Active Student Count for a Teacher,1,138,138,138,138,138,0.0,7.246376811594203,1.818670742753623
+Driver Script Thread Group:Get Active Student Count for a School,1,223,223,223,223,223,0.0,4.484304932735426,1.125455437219731
+Driver Script Thread Group:Get Active Student Count for a District,1,206,206,206,206,206,0.0,4.854368932038835,1.218332827669903
+Driver Script Thread Group:Get totalPossibleEvaluationOpportunities,1,3194,3194,3194,3194,3194,0.0,0.31308703819661865,13.491788803224797
+Driver Script Thread Group:Get totalPossibleEvaluationOpportunities with Unit Id,1,2715,2715,2715,2715,2715,0.0,0.3683241252302026,1.8132049953959486
+Driver Script Thread Group:Get totalPossibleEvaluationOpportunities with multiple Unit Id,1,2661,2661,2661,2661,2661,0.0,0.37579857196542654,7.584965708380308
+Driver Script Thread Group:LOGIN API - CMS EDITOR - PRE-TEST DATA CLEAN-UP - GROUP,1,167,167,167,167,167,0.0,5.9880239520958085,2.9764689371257482
+Driver Script Thread Group:Get Groups - PRE-TEST DATA CLEAN-UP,1,138,138,138,138,138,0.0,7.246376811594203,24.173460144927535
+Driver Script Thread Group:Clean-up - Delete Test Groups,5,133,131,139,125,146,0.0,6.963788300835654,1.3261120299442897
+Driver Script Thread Group:LOGIN API - GROUP,1,166,166,166,166,166,0.0,6.024096385542169,2.994399472891566
+Driver Script Thread Group:Create Group,1,154,154,154,154,154,0.0,6.493506493506494,6.227171266233766
+Driver Script Thread Group:Update Group,1,153,153,153,153,153,0.0,6.5359477124183005,5.77639910130719
+Driver Script Thread Group:Get Group - Verify Updates to Group,1,169,169,169,169,169,0.0,5.9171597633136095,5.229521079881656
+Driver Script Thread Group:Get Tag by Specified Group - Empty Response,1,127,127,127,127,127,0.0,7.874015748031496,1.7455093503937007
+Driver Script Thread Group:Create two Tag,1,186,186,186,186,186,0.0,5.376344086021506,2.1946404569892475
+Driver Script Thread Group:Add Tag - Verify Error if Invalid Tag ID used,1,133,133,133,133,133,0.0,7.518796992481203,2.5478735902255636
+Driver Script Thread Group:Add Tag - Verify Error if Group ID does not exist,1,143,143,143,143,143,0.0,6.993006993006993,2.4106752622377625
+Driver Script Thread Group:** Verify in QA on 2/5 ** Get Group by Tag - Verify Error if Missing parms,1,211,211,211,211,211,1.0,4.739336492890995,1.6615447274881516
+Driver Script Thread Group:Get Group by Tag - Verify Error if Missing parms,1,135,135,135,135,135,0.0,7.407407407407407,2.416087962962963
+Driver Script Thread Group:Get Group by Specified Tag - Empty Response,1,124,124,124,124,124,0.0,8.064516129032258,1.7877394153225807
+Driver Script Thread Group:Add Multiple Tags to a Group,1,142,142,142,142,142,0.0,7.042253521126761,1.3410541373239437
+Driver Script Thread Group:Get Tag tied to the Specified Group,1,436,436,436,436,436,0.0,2.293577981651376,0.9362456995412844
+Driver Script Thread Group:Get Group by Specified Tag,1,148,148,148,148,148,1.0,6.756756756756757,1.4978357263513513
+Driver Script Thread Group:Remove Multiple Tags from a Group,1,131,131,131,131,131,0.0,7.633587786259541,1.4536617366412212
+Driver Script Thread Group:Remove A Tag from a Group that is already removed,1,213,213,213,213,213,0.0,4.694835680751174,0.8940360915492958
+Driver Script Thread Group:Remove A Tag from a Group - 8HV3RLSJDM2X599WC42NZRLZ78,1,135,135,135,135,135,0.0,7.407407407407407,1.4105902777777777
+Driver Script Thread Group:Get Tags for Group - Verify Tags Removed,1,124,124,124,124,124,0.0,8.064516129032258,1.7877394153225807
+Driver Script Thread Group:Add Users,1,153,153,153,153,153,0.0,6.5359477124183005,6.516799428104576
+Driver Script Thread Group:Delete Users,1,144,144,144,144,144,0.0,6.944444444444444,6.530761718750001
+Driver Script Thread Group:Get Users of a Group,1,191,191,191,191,191,0.0,5.235602094240838,21.509939463350786
+Driver Script Thread Group:Search Group By User,1,135,135,135,135,135,0.0,7.407407407407407,16.688368055555554
+Driver Script Thread Group:Search Group By Class,1,122,122,122,122,122,0.0,8.196721311475411,1.817046618852459
+Driver Script Thread Group:Search Group By Asset,1,127,127,127,127,127,0.0,7.874015748031496,7.420337106299212
+Driver Script Thread Group:Search Group By Class and Asset,1,128,128,128,128,128,0.0,7.8125,1.73187255859375
+Driver Script Thread Group:Search Group By Combination,1,153,153,153,153,153,0.0,6.5359477124183005,1.4488868464052287
+Driver Script Thread Group:LOGIN API - CMS EDITOR - GROUP MOVES,1,218,218,218,218,218,0.0,4.587155963302752,2.280139048165138
+Driver Script Thread Group:Create Group - GroupIdX_0,1,137,137,137,137,137,0.0,7.299270072992701,5.709682937956204
+Driver Script Thread Group:Get Group - Verify Group 0 id = 2YZPOB2564JH2QQFLG6SXWTKJ8,1,149,149,149,149,149,0.0,6.7114093959731544,4.659972734899329
+Driver Script Thread Group:Create Group - GroupIdX_1,1,143,143,143,143,143,0.0,6.993006993006993,5.4701158216783226
+Driver Script Thread Group:Get Group - Verify Group 1 id = 3GKX8S4QRJ8HLH66NGT3C6YLVQ,1,135,135,135,135,135,0.0,7.407407407407407,5.143229166666666
+Driver Script Thread Group:Remove User 6CRMLROEK1HH7VEXTMH28WRBRY from Group 0 = 2YZPOB2564JH2QQFLG6SXWTKJ8,1,178,178,178,178,178,0.0,5.617977528089887,3.900763693820225
+Driver Script Thread Group:Add User 6CRMLROEK1HH7VEXTMH28WRBRY to Group 0 = 2YZPOB2564JH2QQFLG6SXWTKJ8,1,160,160,160,160,160,0.0,6.25,4.57763671875
+Driver Script Thread Group:Move User FROM Group 0 = 2YZPOB2564JH2QQFLG6SXWTKJ8 TO Group 1 = 3GKX8S4QRJ8HLH66NGT3C6YLVQ,1,141,141,141,141,141,0.0,7.092198581560283,4.92436835106383
+Driver Script Thread Group:Get Group - Verify User Moved TO Group 1 = 3GKX8S4QRJ8HLH66NGT3C6YLVQ,1,138,138,138,138,138,0.0,7.246376811594203,5.307404891304348
+Driver Script Thread Group:Move User FROM Group 1 =  3GKX8S4QRJ8HLH66NGT3C6YLVQ BACK TO Group 0 = 2YZPOB2564JH2QQFLG6SXWTKJ8,1,137,137,137,137,137,0.0,7.299270072992701,5.06814552919708
+Driver Script Thread Group:Get Group - Verify User Moved BACK TO Group 0 = 2YZPOB2564JH2QQFLG6SXWTKJ8,1,184,184,184,184,184,0.0,5.434782608695652,3.9805536684782608
+Driver Script Thread Group:Create Group - GroupIdX_2,1,176,176,176,176,176,0.0,5.681818181818182,5.465420809659091
+Driver Script Thread Group:Get Group - Verify Group 2 id = 6WM68TWOX8OPQB8VODROQDHVGE,1,135,135,135,135,135,0.0,7.407407407407407,6.474247685185185
+Driver Script Thread Group:Create Group - GroupIdX_3,1,168,168,168,168,168,0.0,5.952380952380952,5.7256789434523805
+Driver Script Thread Group:Get Group - Verify Group 3 id = XZGGYLPTFHMSN87YX1XP3CPQNY,1,134,134,134,134,134,0.0,7.462686567164179,6.52256296641791
+Driver Script Thread Group:Add User = 4FCQG24MLBZDJ1L6BJD35DYZ24 to Group 2 - 6WM68TWOX8OPQB8VODROQDHVGE,1,140,140,140,140,140,0.0,7.142857142857142,6.445312499999999
+Driver Script Thread Group:Move User = 4FCQG24MLBZDJ1L6BJD35DYZ24 FROM Group 2 = 6WM68TWOX8OPQB8VODROQDHVGE TO Group 3 = XZGGYLPTFHMSN87YX1XP3CPQNY,1,142,142,142,142,142,0.0,7.042253521126761,6.155094630281691
+Driver Script Thread Group:Get Group - Verify User = 4FCQG24MLBZDJ1L6BJD35DYZ24 Moved TO Group 3 = XZGGYLPTFHMSN87YX1XP3CPQNY,1,134,134,134,134,134,0.0,7.462686567164179,6.733908582089552
+Driver Script Thread Group:Move User = 4FCQG24MLBZDJ1L6BJD35DYZ24 FROM Group 3 = XZGGYLPTFHMSN87YX1XP3CPQNY BACK TO Group 2 = 6WM68TWOX8OPQB8VODROQDHVGE,1,153,153,153,153,153,0.0,6.5359477124183005,5.712571486928105
+Driver Script Thread Group:Get Group - Verify User = 4FCQG24MLBZDJ1L6BJD35DYZ24 Moved BACK TO Group 2 = 6WM68TWOX8OPQB8VODROQDHVGE,1,140,140,140,140,140,0.0,7.142857142857142,6.445312499999999
+Driver Script Thread Group:Add User = 4FCQG24MLBZDJ1L6BJD35DYZ24 to Group 2 = 6WM68TWOX8OPQB8VODROQDHVGE,1,166,166,166,166,166,0.0,6.024096385542169,5.435805722891566
+Driver Script Thread Group:Try to Move User = 4FCQG24MLBZDJ1L6BJD35DYZ24 FROM Group 2 = 6WM68TWOX8OPQB8VODROQDHVGE TO Group 1 = 3GKX8S4QRJ8HLH66NGT3C6YLVQ,1,138,138,138,138,138,0.0,7.246376811594203,2.660778985507246
+Driver Script Thread Group:Create Group - GroupIdX_4,1,138,138,138,138,138,0.0,7.246376811594203,5.668308423913043
+Driver Script Thread Group:Add User to Group 4 = POJDN24RWRW6ZLCPQD9YVX6KZQ,1,171,171,171,171,171,0.0,5.847953216374268,4.060444078947368
+Driver Script Thread Group:Get Group - Verify Group 4 id = POJDN24RWRW6ZLCPQD9YVX6KZQ,1,159,159,159,159,159,0.0,6.289308176100629,4.366892688679245
+Driver Script Thread Group:Create Group - GroupIdX_5,1,142,142,142,142,142,0.0,7.042253521126761,5.508637764084508
+Driver Script Thread Group:Get Group - Verify Group 5 id = KPX3JO4Y4LFS2O9S43PMVZY5PM,1,126,126,126,126,126,0.0,7.936507936507936,5.510602678571429
+Driver Script Thread Group:Try to Move User = 6CRMLROEK1HH7VEXTMH28WRBRY FROM Group 4 = POJDN24RWRW6ZLCPQD9YVX6KZQ TO Group 5 = KPX3JO4Y4LFS2O9S43PMVZY5PM,1,144,144,144,144,144,0.0,6.944444444444444,2.529568142361111
+Driver Script Thread Group:User Not in From Group - Try to Move User FROM Group 0 = POJDN24RWRW6ZLCPQD9YVX6KZQ TO Group 1 = KPX3JO4Y4LFS2O9S43PMVZY5PM,1,144,144,144,144,144,0.0,6.944444444444444,2.529568142361111
+Driver Script Thread Group:LOGIN API - PRODUCT / ROSES EDITOR,4,176,168,189,165,189,0.0,0.2035416242621616,0.10117449877875025
+Driver Script Thread Group:Search for ISBNs - by ISBN Title,2,1117,128,2107,128,2107,0.0,0.31201248049922,264.18041877925117
+Driver Script Thread Group:Search for ISBNs & Associated Products - by ISBN Title,1,580,580,580,580,580,0.0,1.7241379310344827,118.78367456896552
+Driver Script Thread Group:Search for ISBNs & Associated to Specific Product - by ISBN Title,1,133,133,133,133,133,0.0,7.518796992481203,23.687147556390975
+Driver Script Thread Group:Search for ISBN Title for a Specific Product ID - Not Associated Filter ignored (Product Id overrides flag value) ,1,146,146,146,146,146,0.0,6.8493150684931505,21.578017979452056
+Driver Script Thread Group:Search for ISBNs NOT Associated to Products - by ISBN Title,1,2035,2035,2035,2035,2035,0.0,0.4914004914004914,798.2417076167076
+Driver Script Thread Group:Search for ISBNs & Products - by ISBN Title & Product Id,1,134,134,134,134,134,0.0,7.462686567164179,23.510377798507463
+Driver Script Thread Group:Search for ISBNs without ISBN title - Verify error,1,117,117,117,117,117,0.0,8.547008547008549,2.6542467948717947
+Driver Script Thread Group:Search for ISBNs without Product ID - Verify error,1,133,133,133,133,133,0.0,7.518796992481203,2.327596334586466
+Driver Script Thread Group:Search for ISBNs with INVALID Product ID - Verify error,1,492,492,492,492,492,0.0,2.032520325203252,0.7205125762195123
+Driver Script Thread Group:LOGIN API - CMS EDITOR,2,175,174,176,174,176,0.0,0.10279076938890888,0.05109423986226037
+Driver Script Thread Group:LOGIN API - PLANNER,1,197,197,197,197,197,0.0,5.076142131979695,2.5231995558375635
+Driver Script Thread Group:Create Planner - Verify error if missing request body,1,130,130,130,130,130,0.0,7.6923076923076925,2.7193509615384612
+Driver Script Thread Group:Create Planner,1,513,513,513,513,513,0.0,1.949317738791423,1.5838206627680311
+Driver Script Thread Group:Add Curriculam,1,623,623,623,623,623,0.0,1.6051364365971108,0.30566563001605135
+Driver Script Thread Group:Exclude Unit Organizers from planner events,1,224,224,224,224,224,0.0,4.464285714285714,151.49797712053572
+Driver Script Thread Group:Exclude Unit Organizers from lesson search for EM4 Spiral Tracker,1,849,849,849,849,849,0.0,1.1778563015312131,168.48176163133098
+Driver Script Thread Group:Create Event,1,200,200,200,200,200,0.0,5.0,0.9521484375
+Driver Script Thread Group:Create Event again,1,153,153,153,153,153,0.0,6.5359477124183005,1.2446384803921569
+Driver Script Thread Group:Push Event,1,234,234,234,234,234,0.0,4.273504273504274,0.8138020833333333
+Driver Script Thread Group:Pull  Event,1,199,199,199,199,199,0.0,5.025125628140704,0.9569331030150753
+Driver Script Thread Group:Update Planner_startDate,1,133,133,133,133,133,0.0,7.518796992481203,1.4318021616541352
+Driver Script Thread Group:Update Planner_start and endDate,1,225,225,225,225,225,0.0,4.444444444444445,0.8463541666666666
+Driver Script Thread Group:Get Planner Events - One Planner & Date Range,1,471,471,471,471,471,0.0,2.1231422505307855,73.9616507430998
+Driver Script Thread Group:Get Planner Events - Multple Planner IDs & Date Range,1,518,518,518,518,518,0.0,1.9305019305019306,134.30750784266408
+Driver Script Thread Group:Get Planner - One Planner ID,1,134,134,134,134,134,0.0,7.462686567164179,6.537138526119403
+Driver Script Thread Group:Tie the created class to Planner,1,144,144,144,144,144,0.0,6.944444444444444,1.3224283854166667
+Driver Script Thread Group:Get Planner Classes,1,140,140,140,140,140,0.0,7.142857142857142,6.487165178571428
+Driver Script Thread Group:Create Event with Lesson ID,1,186,186,186,186,186,0.0,5.376344086021506,1.0238155241935485
+Driver Script Thread Group:Get Event,1,141,141,141,141,141,0.0,7.092198581560283,7.403867464539008
+Driver Script Thread Group:Create PARENT Planner,1,174,174,174,174,174,0.0,5.747126436781609,4.708827227011494
+Driver Script Thread Group:Create CHILD Planner,1,204,204,204,204,204,0.0,4.901960784313726,4.279641544117648
+Driver Script Thread Group:Try to Delete Planner which has child Planner associated to it - Verify Error,1,133,133,133,133,133,0.0,7.518796992481203,3.0251409774436087
+Driver Script Thread Group:Create OCR Planner - verify error if missing request body,1,141,141,141,141,141,0.0,7.092198581560283,2.5072030141843973
+Driver Script Thread Group:Create Planner - OCR,1,159,159,159,159,159,0.0,6.289308176100629,5.110062893081761
+Driver Script Thread Group:Add Curriculam - OCR,1,426,426,426,426,426,0.0,2.347417840375587,0.4470180457746479
+Driver Script Thread Group:Get Event - OCR,1,131,131,131,131,131,0.0,7.633587786259541,6.8135734732824424
+Driver Script Thread Group:Delete Curriculum - OCR,1,169,169,169,169,169,0.0,5.9171597633136095,1.1268028846153846
+Driver Script Thread Group:LOGIN API - PRODUCT / ROSES ADMIN,2,167,163,171,163,171,0.0,0.5557099194220616,0.276226903306474
+Driver Script Thread Group:Get root courses associated with product,4,155,156,165,144,165,0.0,1.1114198388441232,1.4359457488191163
+Driver Script Thread Group:Create a New Product,2,161,159,163,159,163,0.0,0.5555555555555556,0.3624131944444444
+Driver Script Thread Group:Get New Product,3,139,134,149,134,149,0.0,1.2170385395537524,0.6917152636916836
+Driver Script Thread Group:Update Product,1,131,131,131,131,131,0.0,7.633587786259541,1.4536617366412212
+Driver Script Thread Group:Get Product - Verify title updated,1,138,138,138,138,138,0.0,7.246376811594203,4.132699275362318
+Driver Script Thread Group:Delete a Product,1,135,135,135,135,135,0.0,7.407407407407407,1.4105902777777777
+Driver Script Thread Group:Create a New Product - Not Allowed,2,139,122,156,122,156,0.0,1.4524328249818446,0.4354461692084241
+Driver Script Thread Group:Update Product - Not Allowed,2,122,116,128,116,128,0.0,1.4760147601476015,0.4439575645756458
+Driver Script Thread Group:Get Product - Verify title NOT updated,2,140,128,152,128,152,0.0,1.465201465201465,0.8370535714285714
+Driver Script Thread Group:Delete a Product - V2173LZRVL4VTJHKPMJSVE1ODQ,1,128,128,128,128,128,0.0,7.8125,2.349853515625
+Driver Script Thread Group:Remove ISBN,1,145,145,145,145,145,0.0,6.896551724137931,1.3133081896551726
+Driver Script Thread Group:LOGIN API - PRODUCT / CMS EDITOR,1,159,159,159,159,159,0.0,6.289308176100629,3.1262283805031448
+Driver Script Thread Group:Delete Product - Not Allowed,1,122,122,122,122,122,0.0,8.196721311475411,2.4574154713114753
+Driver Script Thread Group:Create a New Product for ISBN double association,1,146,146,146,146,146,0.0,6.8493150684931505,4.468107876712329
+Driver Script Thread Group:Get 1st New Product - EE4J3OKB8JHL9OTPQFSL55VMZE - verify exists,1,145,145,145,145,145,0.0,6.896551724137931,3.8793103448275863
+Driver Script Thread Group:Associate ISBN to Product,1,170,170,170,170,170,1.0,5.88235294117647,2.2173713235294117
+Driver Script Thread Group:Get 2nd New Product - X2H2JRKEY1N915O27GCJ45956Q - verify exists,1,135,135,135,135,135,0.0,7.407407407407407,4.166666666666666
+Driver Script Thread Group:Associate ISBN twice,1,163,163,163,163,163,0.0,6.134969325153374,2.3125958588957056
+Driver Script Thread Group:LOGIN API - PRODUCT CLEAN-UP / ROSES ADMIN,1,162,162,162,162,162,0.0,6.172839506172839,3.0683352623456788
+Driver Script Thread Group:Get Test Products For Clean-up,1,151,151,151,151,151,0.0,6.622516556291391,77.78870033112582
+Driver Script Thread Group:Get ISBNs for EE4J3OKB8JHL9OTPQFSL55VMZE,1,440,440,440,440,440,0.0,2.2727272727272725,0.5038174715909091
+Driver Script Thread Group:Delete a Test Product EE4J3OKB8JHL9OTPQFSL55VMZE,1,135,135,135,135,135,0.0,7.407407407407407,1.4105902777777777
+Driver Script Thread Group:Get ISBNs for X2H2JRKEY1N915O27GCJ45956Q,1,128,128,128,128,128,0.0,7.8125,1.73187255859375
+Driver Script Thread Group:Delete a Test Product X2H2JRKEY1N915O27GCJ45956Q,1,171,171,171,171,171,0.0,5.847953216374268,1.1136239035087718
+Driver Script Thread Group:Get ISBNs for FWOM9PH33EFHNXW7BBG4FXFN7O,1,138,138,138,138,138,1.0,7.246376811594203,2.44140625
+Driver Script Thread Group:Delete a Test Product FWOM9PH33EFHNXW7BBG4FXFN7O,1,138,138,138,138,138,0.0,7.246376811594203,1.3799252717391304
+Driver Script Thread Group:Get ISBNs for EVVFVWFQF6F8F697K7XQDR8631,1,131,131,131,131,131,1.0,7.633587786259541,2.571863072519084
+Driver Script Thread Group:Delete a Test Product EVVFVWFQF6F8F697K7XQDR8631,1,125,125,125,125,125,0.0,8.0,1.5234375
+Driver Script Thread Group:Get ISBNs for K8DQYZVDJGHMMK6YFLH923D274,1,144,144,144,144,144,1.0,6.944444444444444,2.3396809895833335
+Driver Script Thread Group:Delete a Test Product K8DQYZVDJGHMMK6YFLH923D274,1,152,152,152,152,152,0.0,6.578947368421052,1.2528268914473684
+Driver Script Thread Group:LOGIN API - ROSES ADMIN,4,184,181,193,174,193,0.0,0.6586530545035403,0.32739687963115427
+Driver Script Thread Group:Create a New Program,2,150,139,162,139,162,0.0,1.3089005235602096,0.5279061681937173
+Driver Script Thread Group:Create a New Program optinal URL,1,153,153,153,153,153,0.0,6.5359477124183005,2.5148080065359477
+Driver Script Thread Group:Get Program by Program ID,1,131,131,131,131,131,0.0,7.633587786259541,3.8167938931297707
+Driver Script Thread Group:Get Program - filtering on Content Area,3,142,137,159,131,159,0.0,0.5933544303797469,0.788628300534019
+Driver Script Thread Group:Get active Programs - without filtering ,2,131,125,138,125,138,0.0,0.5489980785067252,2.615246706011529
+Driver Script Thread Group:Update Program,1,140,140,140,140,140,0.0,7.142857142857142,1.3602120535714284
+Driver Script Thread Group:Get All Programs for a given user,2,153,153,153,153,153,0.0,0.5494505494505495,2.622767857142857
+Driver Script Thread Group:Delete a Program,1,141,141,141,141,141,0.0,7.092198581560283,1.3505651595744683
+Driver Script Thread Group:Get Program - Verify Program deleted,1,128,128,128,128,128,0.0,7.8125,2.63214111328125
+Driver Script Thread Group:Create a Product and tie to new Program,1,147,147,147,147,147,0.0,6.802721088435374,4.431069302721089
+Driver Script Thread Group:Delete Program by Program ID - Not Allowed,1,138,138,138,138,138,0.0,7.246376811594203,2.7456974637681157
+Driver Script Thread Group:Get JMeter Test Products to Delete - CLEAN-UP,1,145,145,145,145,145,0.0,6.896551724137931,3.88604525862069
+Driver Script Thread Group:Delete a Test Product - CLEAN-UP,5,141,139,155,124,157,0.0,6.747638326585696,1.284950657894737
+Driver Script Thread Group:Create a New Program to be used by Other Roles,1,439,439,439,439,439,0.0,2.277904328018223,0.9187250854214123
+Driver Script Thread Group:Create a New Program - Not Allowed,1,129,129,129,129,129,0.0,7.751937984496124,2.331637596899225
+Driver Script Thread Group:Update Program - Not Allowed,1,125,125,125,125,125,0.0,8.0,2.40625
+Driver Script Thread Group:Delete a Program - Not Allowed,1,131,131,131,131,131,0.0,7.633587786259541,2.2960400763358777
+Driver Script Thread Group:LOGIN API - ROSES NON-EDITOR,1,177,177,177,177,177,0.0,5.649717514124294,2.808306850282486
+Driver Script Thread Group:Get Program - Non-Editor cannot get programs,1,117,117,117,117,117,0.0,8.547008547008549,2.5707799145299144
+Driver Script Thread Group:LOGIN API - ROSES EDITOR,1,167,167,167,167,167,0.0,5.9880239520958085,2.9764689371257482
+Driver Script Thread Group:Get Program - ROSES editor gets Program info,1,128,128,128,128,128,0.0,7.8125,3.90625
+Driver Script Thread Group:Get Program - without filtering ,1,151,151,151,151,151,0.0,6.622516556291391,32.47878725165563
+Driver Script Thread Group:Get Programs - CLEAN-UP,1,152,152,152,152,152,0.0,6.578947368421052,32.26511101973684
+Driver Script Thread Group:Delete a Test Program - CLEAN-UP,5,135,137,138,125,139,0.0,6.954102920723227,1.3242676460361613
+Driver Script Thread Group:LOGIN API - RESOURCE,1,177,177,177,177,177,0.0,5.649717514124294,2.808306850282486
+Driver Script Thread Group:Get Resource by Book ID,1,140,140,140,140,140,0.0,7.142857142857142,6.947544642857142
+Driver Script Thread Group:Get Standards tied to Resources within Resource Library,1,2779,2779,2779,2779,2779,0.0,0.3598416696653472,7.842369669845269
+Driver Script Thread Group:LOGIN API - RESOURCE LIBRARY,1,181,181,181,181,181,0.0,5.524861878453039,2.746244820441989
+Driver Script Thread Group:Get list of Resources browse,1,240,240,240,240,240,0.0,4.166666666666667,22.684733072916668
+Driver Script Thread Group:Get list of Resources-specific number of resources,1,224,224,224,224,224,0.0,4.464285714285714,35.70120675223214
+Driver Script Thread Group:Get list of Resources by a type - Compound,1,215,215,215,215,215,0.0,4.651162790697675,25.18168604651163
+Driver Script Thread Group:Get list of Resources by a tag,1,185,185,185,185,185,0.0,5.405405405405405,1.4199746621621623
+Driver Script Thread Group:Get list of Resources by a group,1,162,162,162,162,162,0.0,6.172839506172839,1.6215760030864197
+Driver Script Thread Group:Get list of Resources by a query,1,309,309,309,309,309,0.0,3.236245954692557,17.53071905339806
+Driver Script Thread Group:Get list of Resources by from and group,1,162,162,162,162,162,0.0,6.172839506172839,1.6215760030864197
+Driver Script Thread Group:Get list of Resources by from and query,1,456,456,456,456,456,0.0,2.1929824561403506,28.73363829495614
+Driver Script Thread Group:Get list of Resources by from and tag,1,206,206,206,206,206,0.0,4.854368932038835,34.55893507281554
+Driver Script Thread Group:Get list of Resources by from and type,1,216,216,216,216,216,0.0,4.62962962962963,40.916160300925924
+Driver Script Thread Group:Get list of Resources by type and group,1,154,154,154,154,154,0.0,6.493506493506494,1.7058137175324675
+Driver Script Thread Group:Get list of Resources by type and tag,1,166,166,166,166,166,0.0,6.024096385542169,1.5825018825301205
+Driver Script Thread Group:Get list of Resources by type and query,1,278,278,278,278,278,0.0,3.5971223021582737,19.485583408273378
+Driver Script Thread Group:Get list of Resources by group and tag,1,160,160,160,160,160,0.0,6.25,1.641845703125
+Driver Script Thread Group:Get list of Resources by group and query,1,248,248,248,248,248,0.0,4.032258064516129,1.0592552923387097
+Driver Script Thread Group:Get list of Resources by tag and query,1,179,179,179,179,179,0.0,5.58659217877095,1.4675715782122907
+Driver Script Thread Group:Get list of Resources standards,1,2734,2734,2734,2734,2734,0.0,0.365764447695684,7.971450370336504
+Driver Script Thread Group:Get list of Resources to which the specified standards are associated,1,2296,2296,2296,2296,2296,0.0,0.4355400696864111,1.1305327199477353
+Driver Script Thread Group:Get list of specified number of Resources to which the specified standards are associated,1,1365,1365,1365,1365,1365,0.0,0.7326007326007326,1.901614010989011
+Driver Script Thread Group:LOGIN API - RESOURCE LIBRARY / MULTIPLE / BROWSE,1,214,214,214,214,214,0.0,4.672897196261682,2.322758469626168
+Driver Script Thread Group:Get list of Resources browse-Multiple,1,192,192,192,192,192,0.0,5.208333333333333,28.1982421875
+Driver Script Thread Group:Get list of Resources-Multiple,1,231,231,231,231,231,0.0,4.329004329004329,34.48829816017316
+Driver Script Thread Group:Get list of Resources by a type-Multiple,1,193,193,193,193,193,0.0,5.181347150259067,28.052137305699482
+Driver Script Thread Group:Get list of Resources by a tag-Multiple,1,178,178,178,178,178,0.0,5.617977528089887,1.4758163623595506
+Driver Script Thread Group:Get list of Resources by a group-Multiple,1,168,168,168,168,168,0.0,5.952380952380952,1.5636625744047619
+Driver Script Thread Group:Get list of Resources by from and group-Multiple,1,166,166,166,166,166,0.0,6.024096385542169,1.5825018825301205
+Driver Script Thread Group:Get list of Resources by from and tag-Multiple,1,176,176,176,176,176,0.0,5.681818181818182,1.4925870028409092
+Driver Script Thread Group:Get list of Resources by from and type-Multiple,1,233,233,233,233,233,0.0,4.291845493562231,37.93086105150214
+Driver Script Thread Group:Get list of Resources by type and group-Multiple,1,173,173,173,173,173,0.0,5.780346820809248,1.5184700144508672
+Driver Script Thread Group:Get list of Resources by type and tag-Multiple,1,179,179,179,179,179,0.0,5.58659217877095,1.4675715782122907
+Driver Script Thread Group:Get list of Resources by group and tag-Multiple,1,157,157,157,157,157,0.0,6.369426751592357,1.673218550955414
+Driver Script Thread Group:LOGIN API - RESOURCE LIBRARY / SEARCH,1,195,195,195,195,195,0.0,5.128205128205129,2.5490785256410255
+Driver Script Thread Group:Get list of Resources by a query-Multiple,1,308,308,308,308,308,0.0,3.246753246753247,17.5876369724026
+Driver Script Thread Group:Get list of Resources by from and query-Multiple,1,429,429,429,429,429,0.0,2.331002331002331,30.542049096736598
+Driver Script Thread Group:Get list of Resources by type and query-Multiple,1,287,287,287,287,287,0.0,3.484320557491289,18.87453723867596
+Driver Script Thread Group:Get list of Resources by group and query-Multiple,1,211,211,211,211,211,0.0,4.739336492890995,1.2450014810426542
+Driver Script Thread Group:Get list of Resources by tag and query-Multiple,1,183,183,183,183,183,0.0,5.46448087431694,1.4354935109289617
+Driver Script Thread Group:Create State New,1,516,516,516,516,516,0.0,1.937984496124031,1.1033642199612403
+Driver Script Thread Group:Get State New,1,74,74,74,74,74,0.0,13.513513513513514,9.646853885135135
+Driver Script Thread Group:SEG Health Check,1,208,208,208,208,208,0.0,4.807692307692308,1.2864332932692308
+Driver Script Thread Group:LOGIN API - STANDARD,1,164,164,164,164,164,0.0,6.097560975609756,3.030916539634146
+Driver Script Thread Group:Get Standard,1,158,158,158,158,158,0.0,6.329113924050633,3.6961036392405062
+Driver Script Thread Group:LOGIN API - TAG,1,166,166,166,166,166,0.0,6.024096385542169,2.994399472891566
+Driver Script Thread Group:Attempt to Create Tag with missing parameter,1,119,119,119,119,119,0.0,8.403361344537815,2.4701286764705883
+Driver Script Thread Group:Attempt to Create Tag with WRONG Content Area Name,1,131,131,131,131,131,0.0,7.633587786259541,2.586772423664122
+Driver Script Thread Group:Create Tag,1,123,123,123,123,123,0.0,8.130081300813009,3.048780487804878
+Driver Script Thread Group:Create Same Tag Again Without Error,1,132,132,132,132,132,0.0,7.575757575757576,2.840909090909091
+Driver Script Thread Group:Get Tag,1,167,167,167,167,167,0.0,5.9880239520958085,115.32209019461077
+Driver Script Thread Group:Get Tag - Verify error if  invalid content area,1,128,128,128,128,128,0.0,7.8125,2.58636474609375
+Driver Script Thread Group:Get Tag - Verify error if missing content area,1,129,129,129,129,129,0.0,7.751937984496124,2.2786458333333335
+Driver Script Thread Group:Get Tag - Verify error if passing in Tag name alone,1,149,149,149,149,149,0.0,6.7114093959731544,1.972787332214765
+Driver Script Thread Group:LOGIN API - TREE,1,159,159,159,159,159,0.0,6.289308176100629,3.1262283805031448
+Driver Script Thread Group:Syllabus Node,1,199,199,199,199,199,0.0,5.025125628140704,20.26735238693467
+Driver Script Thread Group:Topic Node,1,192,192,192,192,192,0.0,5.208333333333333,56.6558837890625
+Driver Script Thread Group:Find Units within a TOC (Syllabus),1,157,157,157,157,157,0.0,6.369426751592357,26.678194665605094
+Driver Script Thread Group:Find Specific Unit within a TOC (Syllabus),1,152,152,152,152,152,0.0,6.578947368421052,4.253186677631579
+Driver Script Thread Group:Find Lessons within a Unit,1,179,179,179,179,179,0.0,5.58659217877095,68.16297136871509
+Driver Script Thread Group:Find Blades within a Lesson,1,157,157,157,157,157,0.0,6.369426751592357,17.994874601910826
+Driver Script Thread Group:Find Specific Blade within a Lesson,1,162,162,162,162,162,0.0,6.172839506172839,3.33960262345679
+Driver Script Thread Group:Find Sections within a Blade,1,158,158,158,158,158,0.0,6.329113924050633,13.838755933544304
+Driver Script Thread Group:Find Specific Section within a Blade,1,171,171,171,171,171,0.0,5.847953216374268,9.468658625730994
+Driver Script Thread Group:Find Activities within a Section,1,151,151,151,151,151,0.0,6.622516556291391,1.4680774006622517
+Driver Script Thread Group:Find Iterations within an Activity,1,146,146,146,146,146,0.0,6.8493150684931505,12.273919092465754
+Driver Script Thread Group:Find Specific Iteration within an Activity,1,180,180,180,180,180,0.0,5.555555555555555,3.016493055555556
+Driver Script Thread Group:Find Evaluations within an Iteration,1,161,161,161,161,161,0.0,6.211180124223602,5.980687111801242
+Driver Script Thread Group:Find Specific Evaluations within an Iteration,1,167,167,167,167,167,0.0,5.9880239520958085,2.8010385479041915
+Driver Script Thread Group:Find Lesson Blades via Link Expansion (as of 10/2/14 - not yet required/requested for EM4),1,3981,3981,3981,3981,3981,0.0,0.25119316754584275,102.17699109834213
+Driver Script Thread Group:LOGIN API - USER,1,186,186,186,186,186,0.0,5.376344086021506,2.6724210349462365
+Driver Script Thread Group:Get User,1,137,137,137,137,137,0.0,7.299270072992701,4.9184534671532845
+Driver Script Thread Group:Get All Accounts for Logged-In User,1,138,138,138,138,138,0.0,7.246376811594203,1.9814311594202896
+Driver Script Thread Group:Get All Icons for Logged-In User,1,125,125,125,125,125,0.0,8.0,83.484375
+Driver Script Thread Group:Get All Classes for User,1,128,128,128,128,128,0.0,7.8125,1.73187255859375
+Driver Script Thread Group:Get Classes for User - for ONE Course,1,148,148,148,148,148,0.0,6.756756756756757,1.4978357263513513
+Driver Script Thread Group:Get Classes for User - for MULTIPLE Courses,1,0,0,0,0,0,0.0,Infinity,0.0
+Driver Script Thread Group:Get Classes for User - for ONE Course and withPlanner flag,2,168,126,210,126,210,0.0,5.730659025787966,1.614546024355301
+Driver Script Thread Group:Get All Planners for User,1,127,127,127,127,127,0.0,7.874015748031496,1.7455093503937007
+Driver Script Thread Group:Get Planners for User - for ONE Course,1,147,147,147,147,147,0.0,6.802721088435374,1.5080250850340138
+Driver Script Thread Group:Get Planners for User - for MULTIPLE Courses,1,125,125,125,125,125,0.0,8.0,1.7734375
+Driver Script Thread Group:Get Annotations of Note for User,1,136,136,136,136,136,0.0,7.352941176470588,1.6299977022058822
+Driver Script Thread Group:Get Annotations of Favorite for User,1,152,152,152,152,152,0.0,6.578947368421052,1.4584189967105263
+Driver Script Thread Group:Create New Context for User,1,262,262,262,262,262,0.0,3.8167938931297707,1.4909351145038168
+Driver Script Thread Group:Get Context for User,1,187,187,187,187,187,0.0,5.347593582887701,159.61835728609626
+Driver Script Thread Group:LOGIN API - XAPI,1,196,196,196,196,196,0.0,5.1020408163265305,2.5360730229591835
+Driver Script Thread Group:Create State,1,290,290,290,290,290,0.0,3.4482758620689653,0.6566540948275863
+Driver Script Thread Group:Get State,1,155,155,155,155,155,0.0,6.451612903225806,2.4193548387096775
+Driver Script Thread Group:Delete State,1,153,153,153,153,153,0.0,6.5359477124183005,1.2446384803921569
+TOTAL,539,229,151,226,0,3981,0.014842300556586271,4.104665153753598,45.80720222615258

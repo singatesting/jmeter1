@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="88" it="0" lt="88" ts="1463777640470" s="true" lb="LOGIN API - ***STANDARD*** - dev" rc="200" rm="OK" tn="Standard Test Plan 1-1" dt="text" de="" by="629" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 May 2016 20:54:00 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Fri, 20-May-2016 21:27:32 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_nonce=&quot;ca2b695f-a39c-48c9-8e43-b42855961188&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1463777640&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;83K7ISNEQ57oE9wVn%2FQhLXZnmgU%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/45b3bee9-6201-430a-8c9f-fcd912916eda&quot;,&quot;user&quot;:&quot;/api/v0.1/user/LETS3M8M1CBDQT3XHW2C6QCXRY&quot;},&quot;id&quot;:&quot;45b3bee9-6201-430a-8c9f-fcd912916eda&quot;,&quot;oauth_token&quot;:&quot;45b3bee9-6201-430a-8c9f-fcd912916eda&quot;,&quot;oauth_token_secret&quot;:&quot;65675854-347f-45a8-a093-d4497ba720b8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;DEVRDC&quot;,&quot;password&quot;:&quot;devrd204&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="72" it="0" lt="72" ts="1463777640567" s="true" lb="JWT_Authorize" rc="200" rm="OK" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="1206" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 May 2016 20:54:00 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Fri, 20-May-2016 21:27:32 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_nonce=&quot;ca2b695f-a39c-48c9-8e43-b42855961188&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1463777640&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;83K7ISNEQ57oE9wVn%2FQhLXZnmgU%3D&quot;
+Content-Length: 160
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;result&quot;:&quot;eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+   &quot;ssoToken&quot; : &quot;45b3bee9-6201-430a-8c9f-fcd912916eda&quot;,&#xd;
+    &quot;issuerId&quot;:&quot;1&quot;,&#xd;
+    &quot;payload&quot;:&quot;{&apos;fizzzzzzzzzzzzzzzzzzzzzzzzz&apos;:&apos;buzzzzzzzzzzzzzzzzzzzzzz&apos;}&quot;&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/jwt-service/authorize/</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ts="1463777643642" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Standard Test Plan 1-1" dt="text" de="windows-1252" by="9852" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+BUZZ=buzzzzzzzzzzzzzzzzzzzzzz
+CLASS_ID_WAIT=3000
+ENVIRONMENT=dev
+FIZZ=fizzzzzzzzzzzzzzzzzzzzzzzzz
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@48bbf1a5
+JWT_TOKEN=eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+OAUTHTOKEN=45b3bee9-6201-430a-8c9f-fcd912916eda
+OAUTHTOKENSECRET=65675854-347f-45a8-a093-d4497ba720b8
+PAY_LOAD={\&quot;fizzzzzzzzzzzzzzzzzzzzzzzzz\&quot;:\&quot;buzzzzzzzzzzzzzzzzzzzzzz\&quot;}
+SERVER=Apache
+START.HMS=151508
+START.MS=1463598908239
+START.YMD=20160518
+TESTSTART.MS=1463777640342
+VIZ_REPORT_WAIT=5000
+basePort=
+baseURL=connected-dev.cdiapps.com
+consumerKey=5x33u1FXargdynkK
+consumerSecret=jMktuEQiJJKw9TO7
+password=devrd204
+username=DEVRDC
+
+JMeterProperties:
+HTTPResponse.parsers=htmlParser wmlParser
+START.HMS=151508
+START.MS=1463598908239
+START.YMD=20160518
+TESTSTART.MS=1463777640342
+beanshell.server.file=../extras/startup.bsh
+classfinder.functions.contain=.functions.
+classfinder.functions.notContain=.gui.
+cookies=cookies
+htmlParser.types=text/html application/xhtml+xml application/xml text/xml
+jmeter.laf.mac=System
+jmeter.version=2.11 r1554548
+log_level.jmeter=INFO
+log_level.jmeter.junit=DEBUG
+log_level.jorphan=INFO
+not_in_menu=org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui, HTTP User Parameter Modifier, org.apache.jmeter.protocol.http.control.gui.WebServiceSamplerGui
+remote_hosts=127.0.0.1
+sampleresult.timestamp.start=true
+system.properties=system.properties
+upgrade_properties=/bin/upgrade.properties
+user.classpath=../lib/mhe;
+user.properties=user.properties
+wmlParser.className=org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+wmlParser.types=text/vnd.wap.wml 
+xml.parser=org.apache.xerces.parsers.SAXParser
+
+SystemProperties:
+awt.toolkit=sun.awt.windows.WToolkit
+file.encoding=Cp1252
+file.encoding.pkg=sun.io
+file.separator=\
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+java.class.path=ApacheJMeter.jar;C:\Jmeter\lib\antisamy-1.4.3.jar;C:\Jmeter\lib\aopalliance-1.0.jar;C:\Jmeter\lib\avalon-framework-4.1.4.jar;C:\Jmeter\lib\batik-css-1.7.jar;C:\Jmeter\lib\batik-ext-1.7.jar;C:\Jmeter\lib\batik-util-1.7.jar;C:\Jmeter\lib\bsf-2.4.0.jar;C:\Jmeter\lib\bsh-2.0b5.jar;C:\Jmeter\lib\bsh-core-2.0b4.jar;C:\Jmeter\lib\bshclient.jar;C:\Jmeter\lib\commons-beanutils-1.8.3.jar;C:\Jmeter\lib\commons-codec-1.8.jar;C:\Jmeter\lib\commons-collections-3.2.1.jar;C:\Jmeter\lib\commons-configuration-1.5.jar;C:\Jmeter\lib\commons-digester-1.8.jar;C:\Jmeter\lib\commons-exec-1.1.jar;C:\Jmeter\lib\commons-fileupload-1.2.1.jar;C:\Jmeter\lib\commons-httpclient-3.1.jar;C:\Jmeter\lib\commons-io-2.4.jar;C:\Jmeter\lib\commons-jexl-2.1.1.jar;C:\Jmeter\lib\commons-lang-2.6.jar;C:\Jmeter\lib\commons-lang3-3.1.jar;C:\Jmeter\lib\commons-logging-1.1.3.jar;C:\Jmeter\lib\commons-net-3.3.jar;C:\Jmeter\lib\commons-pool-1.6.jar;C:\Jmeter\lib\dnsjava-2.0.6.jar;C:\Jmeter\lib\esapi-2.1.0.jar;C:\Jmeter\lib\excalibur-datasource-1.1.1.jar;C:\Jmeter\lib\excalibur-instrument-1.0.jar;C:\Jmeter\lib\excalibur-logger-1.1.jar;C:\Jmeter\lib\excalibur-pool-1.2.jar;C:\Jmeter\lib\ezmorph-1.0.6.jar;C:\Jmeter\lib\geronimo-jms_1.1_spec-1.1.1.jar;C:\Jmeter\lib\htmllexer-2.1.jar;C:\Jmeter\lib\htmlparser-2.1.jar;C:\Jmeter\lib\httpclient-4.2.6.jar;C:\Jmeter\lib\httpcore-4.2.5.jar;C:\Jmeter\lib\httpmime-4.2.6.jar;C:\Jmeter\lib\jackson-core-asl-1.9.11.jar;C:\Jmeter\lib\jackson-mapper-asl-1.9.11.jar;C:\Jmeter\lib\jcharts-0.7.5.jar;C:\Jmeter\lib\jdom-1.1.3.jar;C:\Jmeter\lib\jedis-2.2.1.jar;C:\Jmeter\lib\joda-time-2.1.jar;C:\Jmeter\lib\joda-time-2.7.jar;C:\Jmeter\lib\jodd-core-3.4.10.jar;C:\Jmeter\lib\jodd-lagarto-3.4.10.jar;C:\Jmeter\lib\jorphan.jar;C:\Jmeter\lib\json-lib-2.4-jdk15.jar;C:\Jmeter\lib\json-path-0.8.1.jar;C:\Jmeter\lib\json-smart-1.1.1.jar;C:\Jmeter\lib\jsoup-1.7.3.jar;C:\Jmeter\lib\jtidy-r938.jar;C:\Jmeter\lib\junit-4.11.jar;C:\Jmeter\lib\junit-4.8.2.jar;C:\Jmeter\lib\log4j-1.2.15.jar;C:\Jmeter\lib\logkit-2.0.jar;C:\Jmeter\lib\mail-1.5.0-b01.jar;C:\Jmeter\lib\minimal-json-0.9.1.jar;C:\Jmeter\lib\mongo-java-driver-2.11.3.jar;C:\Jmeter\lib\nekohtml-1.9.12.jar;C:\Jmeter\lib\oauth-20100527.jar;C:\Jmeter\lib\oro-2.0.8.jar;C:\Jmeter\lib\qpid-client-0.20.jar;C:\Jmeter\lib\qpid-common-0.20.jar;C:\Jmeter\lib\rhino-1.7R4.jar;C:\Jmeter\lib\rsyntaxtextarea-2.5.1.jar;C:\Jmeter\lib\serializer-2.7.1.jar;C:\Jmeter\lib\servlet-api-2.5.jar;C:\Jmeter\lib\slf4j-api-1.7.5.jar;C:\Jmeter\lib\slf4j-nop-1.7.5.jar;C:\Jmeter\lib\soap-2.3.1.jar;C:\Jmeter\lib\spring-aop-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-asm-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-beans-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-context-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-core-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-expression-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-jms-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-test-3.1.3.RELEASE.jar;C:\Jmeter\lib\spring-web-3.1.3.RELEASE.jar;C:\Jmeter\lib\tika-core-1.4.jar;C:\Jmeter\lib\tika-parsers-1.4.jar;C:\Jmeter\lib\trove4j-3.0.3.jar;C:\Jmeter\lib\xalan-2.7.1.jar;C:\Jmeter\lib\xercesImpl-2.9.1.jar;C:\Jmeter\lib\xml-apis-1.3.04.jar;C:\Jmeter\lib\xml-apis-ext-1.3.04.jar;C:\Jmeter\lib\xmlgraphics-commons-1.5.jar;C:\Jmeter\lib\xmlpull-1.1.3.1.jar;C:\Jmeter\lib\xom-1.2.10.jar;C:\Jmeter\lib\xpp3_min-1.1.4c.jar;C:\Jmeter\lib\xstream-1.4.4.jar;C:\Jmeter\lib\ext\ApacheJMeter_components.jar;C:\Jmeter\lib\ext\ApacheJMeter_core.jar;C:\Jmeter\lib\ext\ApacheJMeter_ftp.jar;C:\Jmeter\lib\ext\ApacheJMeter_functions.jar;C:\Jmeter\lib\ext\ApacheJMeter_http.jar;C:\Jmeter\lib\ext\ApacheJMeter_java.jar;C:\Jmeter\lib\ext\ApacheJMeter_jdbc.jar;C:\Jmeter\lib\ext\ApacheJMeter_jms.jar;C:\Jmeter\lib\ext\ApacheJMeter_joda-0.0.1b.jar;C:\Jmeter\lib\ext\ApacheJMeter_junit.jar;C:\Jmeter\lib\ext\ApacheJMeter_ldap.jar;C:\Jmeter\lib\ext\ApacheJMeter_mail.jar;C:\Jmeter\lib\ext\ApacheJMeter_mongodb.jar;C:\Jmeter\lib\ext\ApacheJMeter_monitors.jar;C:\Jmeter\lib\ext\ApacheJMeter_native.jar;C:\Jmeter\lib\ext\ApacheJMeter_oauth-v2.jar;C:\Jmeter\lib\ext\ApacheJMeter_report.jar;C:\Jmeter\lib\ext\ApacheJMeter_spring-1.2-SNAPSHOT.jar;C:\Jmeter\lib\ext\ApacheJMeter_tcp.jar;C:\Jmeter\lib\ext\JMeterPlugins-ExtrasLibs.jar;C:\Jmeter\lib\ext\JMeterPlugins-Standard.jar;C:\Jmeter\lib\junit\test.jar;../lib/mhe;..\lib\mhe\cmr-api-3.32-SNAPSHOT.jar;..\lib\mhe\common.system-tests.jar;..\lib\mhe\mt-commons-1.39-SNAPSHOT.jar;..\lib\mhe\mt-web-commons-1.31-SNAPSHOT.jar;..\lib\mhe\rri-1.27-SNAPSHOT.jar
+java.class.version=51.0
+java.endorsed.dirs=C:\Program Files\Java\jre7\lib\endorsed
+java.ext.dirs=C:\Program Files\Java\jre7\lib\ext;C:\windows\Sun\Java\lib\ext
+java.home=C:\Program Files\Java\jre7
+java.io.tmpdir=C:\Users\SINGAR~1\AppData\Local\Temp\
+java.library.path=C:\windows\system32;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Ruby193\bin;C:\Program Files (x86)\RSA SecurID Token Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files\CREDANT\Shield v7.3\;C:\Program Files (x86)\nodejs\;c:\Program Files\TortoiseSVN\bin;c:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\WebEx\Productivity Tools;C:\jruby-1.7.17\lib\libs;C:\Phantomjs\phantomjs-2.0.0-windows\bin;C:\Users\singaraju_kusampudi\AppData\Local\Programs\Git\bin;C:\Program Files (x86)\Java\jre7\bin;.
+java.runtime.name=Java(TM) SE Runtime Environment
+java.runtime.version=1.7.0_75-b13
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=1.7
+java.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+java.version=1.7.0_75
+java.vm.info=mixed mode
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.7
+java.vm.vendor=Oracle Corporation
+java.vm.version=24.75-b04
+line.separator=&#xd;
+
+log4j.configuration=file:C:\Jmeter\bin\log4j.conf
+org.apache.commons.logging.Log=org.apache.commons.logging.impl.LogKitLogger
+os.arch=amd64
+os.name=Windows 7
+os.version=6.1
+path.separator=;
+sun.arch.data.model=64
+sun.awt.enableExtraMouseButtons=true
+sun.boot.class.path=C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes
+sun.boot.library.path=C:\Program Files\Java\jre7\bin
+sun.cpu.endian=little
+sun.cpu.isalist=amd64
+sun.desktop=windows
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ApacheJMeter.jar
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=Cp1252
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.net.http.allowRestrictedHeaders=true
+sun.os.patch.level=Service Pack 1
+user.country=US
+user.dir=C:\Jmeter\bin
+user.home=C:\Users\singaraju_kusampudi
+user.language=en
+user.name=singaraju_kusampudi
+user.script=
+user.timezone=America/New_York
+user.variant=
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+JMeterProperties
+SystemProperties
+</samplerData>
+</sample>
+<httpSample t="34" it="0" lt="34" ts="1463777643644" s="true" lb="LES_Create_Context" rc="201" rm="Created" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="814" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Fri, 20 May 2016 20:54:03 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Fri, 20-May-2016 21:27:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Content-Length: 412
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;contextId&quot;:&quot;16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;contextUrl&quot;:&quot;https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;sensorUrl&quot;:&quot;https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events&quot;,&quot;sensorUri&quot;:&quot;/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;edAppName&quot;: &quot;ReadingWonders2.0&quot;,&#xd;
+  &quot;edAppId&quot;: &quot;reading-wonders-2&quot;,&#xd;
+  &quot;activityId&quot;: &quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&#xd;
+    &quot;classId&quot;: &quot;KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&#xd;
+  &quot;instructorIds&quot;: [&#xd;
+    &quot;instructorId&quot;&#xd;
+  ],&#xd;
+  &quot;userId&quot;: &quot;QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&#xd;
+  &quot;courseId&quot;: &quot;Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&#xd;
+  &quot;activityType&quot;: &quot;assessment&quot;,&#xd;
+  &quot;activityVendor&quot;: &quot;VSM&quot;,&#xd;
+&#xd;
+  &quot;gradeLevel&quot;: &quot;4&quot;,&#xd;
+  &quot;subject&quot;: &quot;lang&quot;&#xd;
+ }</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/learning-event-service/contexts</java.net.URL>
+</httpSample>
+<httpSample t="119" it="0" lt="118" ts="1463777643684" s="true" lb="LES_Check_Context_Url" rc="200" rm="OK" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="1303" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Fri, 20 May 2016 20:54:03 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=363272876.43023.0000; expires=Fri, 20-May-2016 21:27:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;contextUrl&quot;:&quot;https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;contextCreationDate&quot;:&quot;2016-05-20T20:54:03.508Z&quot;,&quot;edAppName&quot;:&quot;ReadingWonders2.0&quot;,&quot;edAppId&quot;:&quot;reading-wonders-2&quot;,&quot;activityId&quot;:&quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;description&quot;:null,&quot;assignmentId&quot;:null,&quot;districtId&quot;:null,&quot;schoolId&quot;:null,&quot;classId&quot;:&quot;KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;instructorIds&quot;:[&quot;instructorId&quot;],&quot;userId&quot;:&quot;QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;courseId&quot;:&quot;Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&quot;activityType&quot;:&quot;assessment&quot;,&quot;activityVendor&quot;:&quot;VSM&quot;,&quot;gradeLevel&quot;:&quot;4&quot;,&quot;classGradeLevel&quot;:null,&quot;subject&quot;:&quot;lang&quot;,&quot;totalQuestions&quot;:null,&quot;baseUrl&quot;:&quot;http://mheducation.com/connected&quot;,&quot;activityStartTime&quot;:null,&quot;activityTitle&quot;:null,&quot;activityMaxScore&quot;:null,&quot;questionTaxonomyItems&quot;:[],&quot;section&quot;:null,&quot;subsection&quot;:null,&quot;valid&quot;:true}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85</java.net.URL>
+</httpSample>
+<httpSample t="207" it="0" lt="207" ts="1463777643805" s="true" lb="LES_Create_activityStarted_Event" rc="201" rm="Created" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="4746" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <assertionResult>
+    <name>eventType</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>assessmenStarted</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Fri, 20 May 2016 20:54:03 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=3517389484.43023.0000; expires=Fri, 20-May-2016 21:27:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Content-Length: 357
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;eventIds&quot;:[&quot;351c3274-f695-252e-f22b-30c06456a9f5&quot;],&quot;eventType&quot;:&quot;activityStarted&quot;,&quot;events&quot;:{&quot;assessmentStarted&quot;:{&quot;$schema&quot;:&quot;http://schemas.mheducation.com/caliper/1.0.0/assessmentevent-started.json&quot;,&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;351c3274-f695-252e-f22b-30c06456a9f5&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentEvent&quot;,&quot;action&quot;:&quot;http://purl.imsglobal.org/vocab/caliper/v1/action#Started&quot;,&quot;federatedSession&quot;:null,&quot;eventTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;actor&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Person&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;edApp&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/SoftwareApplication&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;membership&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;membership-connected-reading-wonders-2-KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Membership&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;member&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;organization&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;roles&quot;:[&quot;http://purl.imsglobal.org/vocab/lis/v2/membership#Learner&quot;],&quot;status&quot;:&quot;http://purl.imsglobal.org/vocab/lis/v2/status#Active&quot;,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;group&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseSection&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;classGradeLevel&quot;:null,&quot;learnerGradeLevel&quot;:&quot;4&quot;,&quot;program&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;instructor&quot;:[&quot;http://mheducation.com/connected/users/instructorId&quot;]}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/course/Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseOffering&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:null}},&quot;object&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Assessment&quot;,&quot;name&quot;:&quot;ASS-0512991-Singa&quot;,&quot;description&quot;:&quot;Dev Test using the user: FIONAW&quot;,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;activityType&quot;:&quot;assessment&quot;,&quot;sourceSystem&quot;:&quot;VSM&quot;,&quot;totalQuestions&quot;:1,&quot;section&quot;:null,&quot;subsection&quot;:null,&quot;assessmentTemplateId&quot;:&quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;},{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;}],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isPartOf&quot;:null},&quot;generated&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Attempt&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;count&quot;:1,&quot;startedAtTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;endedAtTime&quot;:null,&quot;duration&quot;:null,&quot;isPartOf&quot;:null}}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;verb&quot;: &quot;activityStarted&quot;,&#xd;
+  &quot;payload&quot;: {&#xd;
+  &quot;title&quot;: &quot;ASS-0512991-Singa&quot;,&#xd;
+  &quot;description&quot;: &quot;Dev Test using the user: FIONAW&quot;,&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-05-12T16:32:41.099Z&quot;,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;totalQuestions&quot;: 1,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;&#xd;
+  ]&#xd;
+  &#xd;
+}&#xd;
+}</queryString>
+  <java.net.URL>https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events?returnEvents=false</java.net.URL>
+</httpSample>
+<httpSample t="317" it="0" lt="296" ts="1463777644015" s="true" lb="LES_Create_activityItem_Event_FillinBlankResponse" rc="201" rm="Created" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="19172" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <assertionResult>
+    <name>eventType</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>assessmentItemStarted</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>assessmentItemCompleted</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>assessmentItemGraded</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Fri, 20 May 2016 20:54:03 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=1999
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=363272876.43023.0000; expires=Fri, 20-May-2016 21:27:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Content-Length: 1560
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;eventIds&quot;:[&quot;12c1bdc6-e2a2-d270-2cfc-dee89c6f53ea&quot;,&quot;9e2ecd8b-32c5-0246-bd5a-b0e935507357&quot;,&quot;758b3fd6-c272-05be-00bf-77fa41ca0c5a&quot;],&quot;eventType&quot;:&quot;activityItem&quot;,&quot;events&quot;:{&quot;assessmentItemCompleted&quot;:{&quot;$schema&quot;:&quot;http://schemas.mheducation.com/caliper/1.0.0/assessmentitemevent-completed.json&quot;,&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;12c1bdc6-e2a2-d270-2cfc-dee89c6f53ea&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentItemEvent&quot;,&quot;action&quot;:&quot;http://purl.imsglobal.org/vocab/caliper/v1/action#Completed&quot;,&quot;federatedSession&quot;:null,&quot;eventTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;actor&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Person&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;edApp&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/SoftwareApplication&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;membership&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;membership-connected-reading-wonders-2-KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Membership&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;member&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;organization&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;roles&quot;:[&quot;http://purl.imsglobal.org/vocab/lis/v2/membership#Learner&quot;],&quot;status&quot;:&quot;http://purl.imsglobal.org/vocab/lis/v2/status#Active&quot;,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;group&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseSection&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;classGradeLevel&quot;:null,&quot;learnerGradeLevel&quot;:&quot;4&quot;,&quot;program&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;instructor&quot;:[&quot;http://mheducation.com/connected/users/instructorId&quot;]}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/course/Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseOffering&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:null}},&quot;object&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentItem&quot;,&quot;name&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;content&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;correctResponsePattern&quot;:[],&quot;difficulty&quot;:[{&quot;type&quot;:&quot;blooms&quot;,&quot;content&quot;:&quot;Blooms&quot;,&quot;value&quot;:500},{&quot;type&quot;:&quot;lexile&quot;,&quot;content&quot;:&quot;Lexile&quot;,&quot;value&quot;:1000}],&quot;itemNumber&quot;:1,&quot;itemType&quot;:&quot;http://purl.imsglobal.org/caliper/v1/FillinBlankResponse&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;},{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;}],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isTimeDependent&quot;:false,&quot;isPartOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Assessment&quot;,&quot;name&quot;:&quot;ASS-0512991-Singa&quot;,&quot;description&quot;:&quot;Dev Test using the user: FIONAW&quot;,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;activityType&quot;:&quot;assessment&quot;,&quot;sourceSystem&quot;:&quot;VSM&quot;,&quot;totalQuestions&quot;:1,&quot;section&quot;:null,&quot;subsection&quot;:null,&quot;assessmentTemplateId&quot;:&quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isPartOf&quot;:null}},&quot;generated&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85/itemAttempt/06c4b7cd-575a-4ce7-80cc-3417486b3c86/sequence/1/response&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/FillinBlankResponse&quot;,&quot;name&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;assessmentAttemptId&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;displaySequence&quot;:1}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;startedAtTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;endedAtTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;duration&quot;:&quot;PT1M&quot;,&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;attempt&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85/itemAttempt/06c4b7cd-575a-4ce7-80cc-3417486b3c86/sequence/1&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Attempt&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;assessmentAttemptId&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;displaySequence&quot;:1}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;count&quot;:1,&quot;startedAtTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;endedAtTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;duration&quot;:&quot;PT1M&quot;,&quot;isPartOf&quot;:null},&quot;values&quot;:[&quot;25&quot;]}},&quot;assessmentItemStarted&quot;:{&quot;$schema&quot;:&quot;http://schemas.mheducation.com/caliper/1.0.0/assessmentitemevent-started.json&quot;,&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;9e2ecd8b-32c5-0246-bd5a-b0e935507357&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentItemEvent&quot;,&quot;action&quot;:&quot;http://purl.imsglobal.org/vocab/caliper/v1/action#Started&quot;,&quot;federatedSession&quot;:null,&quot;eventTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;actor&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Person&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;edApp&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/SoftwareApplication&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;membership&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;membership-connected-reading-wonders-2-KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Membership&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;member&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;organization&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;roles&quot;:[&quot;http://purl.imsglobal.org/vocab/lis/v2/membership#Learner&quot;],&quot;status&quot;:&quot;http://purl.imsglobal.org/vocab/lis/v2/status#Active&quot;,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;group&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseSection&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;classGradeLevel&quot;:null,&quot;learnerGradeLevel&quot;:&quot;4&quot;,&quot;program&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;instructor&quot;:[&quot;http://mheducation.com/connected/users/instructorId&quot;]}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/course/Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseOffering&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:null}},&quot;object&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentItem&quot;,&quot;name&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;content&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;correctResponsePattern&quot;:[],&quot;difficulty&quot;:[{&quot;type&quot;:&quot;blooms&quot;,&quot;content&quot;:&quot;Blooms&quot;,&quot;value&quot;:500},{&quot;type&quot;:&quot;lexile&quot;,&quot;content&quot;:&quot;Lexile&quot;,&quot;value&quot;:1000}],&quot;itemNumber&quot;:1,&quot;itemType&quot;:&quot;http://purl.imsglobal.org/caliper/v1/FillinBlankResponse&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;},{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;}],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isTimeDependent&quot;:false,&quot;isPartOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Assessment&quot;,&quot;name&quot;:&quot;ASS-0512991-Singa&quot;,&quot;description&quot;:&quot;Dev Test using the user: FIONAW&quot;,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;activityType&quot;:&quot;assessment&quot;,&quot;sourceSystem&quot;:&quot;VSM&quot;,&quot;totalQuestions&quot;:1,&quot;section&quot;:null,&quot;subsection&quot;:null,&quot;assessmentTemplateId&quot;:&quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isPartOf&quot;:null}},&quot;generated&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85/itemAttempt/06c4b7cd-575a-4ce7-80cc-3417486b3c86/sequence/1&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Attempt&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;assessmentAttemptId&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;displaySequence&quot;:1}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;count&quot;:1,&quot;startedAtTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;endedAtTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;duration&quot;:&quot;PT1M&quot;,&quot;isPartOf&quot;:null}},&quot;assessmentItemGraded&quot;:{&quot;$schema&quot;:&quot;http://schemas.mheducation.com/caliper/1.0.0/outcomeevent-graded.json&quot;,&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;758b3fd6-c272-05be-00bf-77fa41ca0c5a&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/OutcomeEvent&quot;,&quot;action&quot;:&quot;http://purl.imsglobal.org/vocab/caliper/v1/action#Graded&quot;,&quot;federatedSession&quot;:null,&quot;eventTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;actor&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Person&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;edApp&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/SoftwareApplication&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;membership&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;membership-connected-reading-wonders-2-KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/Membership&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;member&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;organization&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;roles&quot;:[&quot;http://purl.imsglobal.org/vocab/lis/v2/membership#Learner&quot;],&quot;status&quot;:&quot;http://purl.imsglobal.org/vocab/lis/v2/status#Active&quot;,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;group&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/classes/KGXLJ5Q90H3RKSU63S3TT3QGQR&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseSection&quot;,&quot;name&quot;:&quot;ReadingWonders2.0&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;classGradeLevel&quot;:null,&quot;learnerGradeLevel&quot;:&quot;4&quot;,&quot;program&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;instructor&quot;:[&quot;http://mheducation.com/connected/users/instructorId&quot;]}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/course/Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/lis/CourseOffering&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;subOrganizationOf&quot;:null}},&quot;object&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85/itemAttempt/06c4b7cd-575a-4ce7-80cc-3417486b3c86/sequence/1&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Attempt&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;assessmentAttemptId&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85&quot;,&quot;displaySequence&quot;:1}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;count&quot;:1,&quot;startedAtTime&quot;:&quot;2016-05-12T16:32:41.099Z&quot;,&quot;endedAtTime&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;duration&quot;:&quot;PT1M&quot;,&quot;isPartOf&quot;:null},&quot;target&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/AssessmentItem&quot;,&quot;name&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;content&quot;:&quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&quot;correctResponsePattern&quot;:[],&quot;difficulty&quot;:[{&quot;type&quot;:&quot;blooms&quot;,&quot;content&quot;:&quot;Blooms&quot;,&quot;value&quot;:500},{&quot;type&quot;:&quot;lexile&quot;,&quot;content&quot;:&quot;Lexile&quot;,&quot;value&quot;:1000}],&quot;itemNumber&quot;:1,&quot;itemType&quot;:&quot;http://purl.imsglobal.org/caliper/v1/FillinBlankResponse&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;},{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/LearningObjective&quot;}],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isTimeDependent&quot;:false,&quot;isPartOf&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Assessment&quot;,&quot;name&quot;:&quot;ASS-0512991-Singa&quot;,&quot;description&quot;:&quot;Dev Test using the user: FIONAW&quot;,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;activityType&quot;:&quot;assessment&quot;,&quot;sourceSystem&quot;:&quot;VSM&quot;,&quot;totalQuestions&quot;:1,&quot;section&quot;:null,&quot;subsection&quot;:null,&quot;assessmentTemplateId&quot;:&quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null,&quot;alignedLearningObjective&quot;:[],&quot;datePublished&quot;:null,&quot;dateToActivate&quot;:null,&quot;dateToShow&quot;:null,&quot;dateToStartOn&quot;:null,&quot;dateToSubmit&quot;:null,&quot;keywords&quot;:null,&quot;maxAttempts&quot;:null,&quot;maxScore&quot;:10,&quot;maxSubmits&quot;:null,&quot;objectType&quot;:null,&quot;version&quot;:&quot;1.0 BETA&quot;,&quot;isPartOf&quot;:null}},&quot;generated&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/attempt/16066d65-0620-0a6c-02bc-0d3e42f46c85/itemAttempt/06c4b7cd-575a-4ce7-80cc-3417486b3c86/sequence/1/result&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/Result&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:{&quot;com&quot;:{&quot;mheducation&quot;:{&quot;results&quot;:[{&quot;id&quot;:&quot;RESPONSE1&quot;,&quot;value&quot;:[&quot;25&quot;]}]}}},&quot;dateCreated&quot;:null,&quot;dateModified&quot;:&quot;2016-05-12T16:33:41.099Z&quot;,&quot;scoredBy&quot;:{&quot;@context&quot;:&quot;http://purl.imsglobal.org/ctx/caliper/v1/Context&quot;,&quot;@id&quot;:&quot;http://mheducation.com/connected/application/reading-wonders-2&quot;,&quot;@type&quot;:&quot;http://purl.imsglobal.org/caliper/v1/SoftwareApplication&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;extensions&quot;:null,&quot;dateCreated&quot;:null,&quot;dateModified&quot;:null},&quot;assignable&quot;:&quot;http://mheducation.com/connected/reading-wonders-2/8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&quot;actor&quot;:&quot;http://mheducation.com/connected/users/QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;normalScore&quot;:10,&quot;penaltyScore&quot;:0.0,&quot;extraCreditScore&quot;:0,&quot;totalScore&quot;:10,&quot;curvedTotalScore&quot;:10,&quot;curveFactor&quot;:0.0,&quot;comment&quot;:&quot;Pattern driven&quot;,&quot;isPartOf&quot;:null}}}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{  &quot;verb&quot;: &quot;activityItem&quot;,&#xd;
+ &quot;sequence&quot;: &quot;1&quot;,&#xd;
+&quot;payload&quot;: {&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-05-12T16:32:41.099Z&quot;,&#xd;
+  &quot;endedAtTime&quot;: &quot;2016-05-12T16:33:41.099Z&quot;,&#xd;
+  &quot;resultTime&quot;: &quot;2016-05-12T16:33:41.099Z&quot;,&#xd;
+  &quot;duration&quot;: 60000,&#xd;
+  &quot;itemId&quot;: &quot;06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_ddbd9d44-9537-49c9-8726-d56a879acdaa&quot;&#xd;
+  ],&#xd;
+  &quot;correctResponsePattern&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;FillinBlankResponse&quot;,&#xd;
+      &quot;mapped&quot;: true,&#xd;
+      &quot;caseSensitive&quot;: true,&#xd;
+      &quot;prompt&quot;: &quot;Which number should come next in the pattern? 37, 34, 31, 28, &lt;entry responseId=&apos;&lt;responseId&gt;&apos;/&gt;&quot;,&#xd;
+      &quot;indicatorFormat&quot;: &quot;&lt;entry responseId=&apos;([A-z0-9]{1,10})&apos;/&gt;&quot;,&#xd;
+      &quot;answers&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;value&quot;: [&#xd;
+            &quot;25&quot;&#xd;
+          ]&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;score&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;results&quot;: [&#xd;
+            {&#xd;
+              &quot;value&quot;: &quot;25&quot;,&#xd;
+              &quot;points&quot;: 10&#xd;
+            }&#xd;
+          ]&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;studentResponse&quot;: [&#xd;
+    {&#xd;
+      &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+      &quot;value&quot;: [&#xd;
+        &quot;25&quot;&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;itemNumber&quot;: 1,&#xd;
+  &quot;displaySequence&quot;: 1,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;normalScore&quot;: 10,&#xd;
+  &quot;scoredBy&quot;: &quot;SoftwareApplication&quot;,&#xd;
+  &quot;difficulty&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;blooms&quot;,&#xd;
+      &quot;content&quot;: &quot;Blooms&quot;,&#xd;
+      &quot;value&quot;: 500&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;lexile&quot;,&#xd;
+      &quot;content&quot;: &quot;Lexile&quot;,&#xd;
+      &quot;value&quot;: 1000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;comment&quot;: &quot;Pattern driven&quot;,&#xd;
+  &quot;answered&quot;: true&#xd;
+ &#xd;
+}&#xd;
+}</queryString>
+  <java.net.URL>https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events</java.net.URL>
+</httpSample>
+<httpSample t="30" it="0" lt="30" ts="1463777644335" s="true" lb="LES_Create_activityCompleted_Event" rc="400" rm="Bad Request" tn="Standard Test Plan 1-1" dt="text" de="UTF-8" by="852" sc="1" ec="0" ng="1" na="1" hn="OH05-JPPYN12">
+  <assertionResult>
+    <name>400 Error</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response of fields</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>status</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>errorMessages</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>has Errors</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 400 Bad Request
+Date: Fri, 20 May 2016 20:54:04 GMT
+X-Application-Context: application
+Content-Type: application/json;charset=UTF-8
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+X-Cnection: close
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=3517389484.43023.0000; expires=Fri, 20-May-2016 21:27:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJraWQiOiJiNWMzZDY1Zi01YzQwLTQxZjgtOWJjMS0zOTI5OWI2NDg2NTkiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJNSEUuUlciLCJhdWQiOiJMRVMiLCJzdWIiOiI0NWIzYmVlOS02MjAxLTQzMGEtOGM5Zi1mY2Q5MTI5MTZlZGEiLCJleHAiOjE0NjM3NzgyNDAsImp0aSI6Ii1MNGdVWGlXX1ppRXpvY2xYd3hqRmciLCJpYXQiOjE0NjM3Nzc2NDAsIm5iZiI6MTQ2Mzc3NzUyMCwicGF5bG9hZCI6IntcImZpenp6enp6enp6enp6enp6enp6enp6enp6elwiOlwiYnV6enp6enp6enp6enp6enp6enp6enp6XCJ9In0.lU5jNn8_w6bun9cpSSAFbfKX0KMhSLhsfmefdNsRltqgEbOeYq5Gu5OQbH9BowzF_nblku7s6jMRUwTeUxF1ZKAWvVuBAPWU_VMFjkjmAcEtAsH_3p3_ZdJBydzSlfHHk84v4duDlmLvZGO2gjrhNOk_uVSK_5ulI9nmlC1Nv-TGl9p9bWWLUu68DM2SCtrqZGPoZ5HEdXSvAo5ac-yrrTHaix3UyB3-Fvrr8RRx8vWdVHPlkC3Us4yVEtN7efnr_FdC91lAgXEDJEjL17LQn_mRZXFBNiLZcJjrGdxMB-ZC-p13V2qrfBb3T0j_2bHk3xI5ndhsAggk7i1KN_4gPw
+Accept: application/json
+X-Experience-API-Version: 1.0.0
+Content-Length: 69
+Host: connected-dev.cdiapps.com
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;ec4eb3bd-80d3-d661-4598-dff5b54a6a36&quot;,&quot;status&quot;:&quot;BAD_REQUEST&quot;,&quot;errorMessages&quot;:[&quot;There were invalid or missing fields in this request. If this continues, please contact support&quot;],&quot;errors&quot;:{&quot;fieldErrors&quot;:{&quot;payload.duration&quot;:[&quot;may not be null&quot;],&quot;payload.endedAtTime&quot;:[&quot;may not be null&quot;],&quot;payload.normalScore&quot;:[&quot;may not be null&quot;]}},&quot;url&quot;:&quot;/learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events&quot;,&quot;hasErrors&quot;:true}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+	&quot;verb&quot;:&quot;activityCompleted&quot;,&#xd;
+&quot;sequence&quot;:1,&#xd;
+&quot;payload&quot;:{&#xd;
+ &#xd;
+ &#xd;
+}}</queryString>
+  <java.net.URL>https://connected-dev.cdiapps.com//learning-event-service/contexts/16066d65-0620-0a6c-02bc-0d3e42f46c85/events</java.net.URL>
+</httpSample>
+
+</testResults>

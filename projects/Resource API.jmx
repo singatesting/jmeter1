@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Run Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/gaurav_vishnoi/Downloads/apache-jmeter-2.11/projects</stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="set Environment" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ENVIRONMENT" elementType="Argument">
+            <stringProp name="Argument.name">ENVIRONMENT</stringProp>
+            <stringProp name="Argument.value">${__P(env,qa)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER" elementType="Argument">
+            <stringProp name="Argument.name">SERVER</stringProp>
+            <stringProp name="Argument.value">Apache</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Login Data Set Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-login.csv</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.group</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">username,password</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Server Config" enabled="false">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Individual Server Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth-individual.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Set default Accept and Content-Type" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Experience-API-Version</stringProp>
+            <stringProp name="Header.value">1.0.0</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Resource Test Plan" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1408385079000</longProp>
+        <longProp name="ThreadGroup.end_time">1408385079000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Self Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">Resource API.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Resource Test Fragment" enabled="true"/>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Login Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">${ENVIRONMENT}/jmeter-login.csv</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.group</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">username,password</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Test Plan" enabled="true"/>
+        <hashTree>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***RESOURCE*** - ${ENVIRONMENT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token"></stringProp>
+              <stringProp name="OAuthSampler.token_secret"></stringProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+  	
+  	</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Flow" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Book Id Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/bookID.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Resource library id Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/resourcelibrary.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Resource by Book ID" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${BOOK_ID}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Library Test Plan" enabled="true"/>
+        <hashTree>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***RESOURCE LIBRARY*** - ${ENVIRONMENT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token"></stringProp>
+              <stringProp name="OAuthSampler.token_secret"></stringProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+  	
+  	</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Library Flow" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Resource library id Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/resourcelibrary.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources browse" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources browse by locale" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?locale=AK</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verifies whether given locale asset has been returned." enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="497921536">&quot;province&quot;:&quot;AK&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources-specific number of resources" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?from=1&amp;to=9</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a type - Compound" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=COMPOUND</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Finds type &quot;COMPOUND&quot;" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="183286187">COMPOUND</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify response includes type called &quot;Compound&quot;</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a type - Image" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=IMG</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a type - Image and Locale" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=IMG&amp;locale=AK</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verifies whether given locale asset has been returned." enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="497921536">&quot;province&quot;:&quot;AK&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a tag" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a group" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a group by locale" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?group=A&amp;locale=AK</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query -Credit Seacrh" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID1}/search?query=credit&amp;textSection=CREDITS</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query- Title,Description,Credit Search" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID1}/search?query=Multiple&amp;textSection=CREDITS&amp;textSection=TITLE&amp;textSection=DESCRIPTION</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and group" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?from=1&amp;to=12&amp;group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and query" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?from=1&amp;to=15&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and tag" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?from=1&amp;to=8&amp;tag=4943</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and type" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?from=1&amp;to=10&amp;type=COMPOUND</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and group" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=COMPOUND&amp;group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and tag" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=COMPOUND&amp;tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and query" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?type=COMPOUND&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by group and tag" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?group=A&amp;tag=4943</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by group and query" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?group=A&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by tag and query" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?tag=4923&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by tag and query " enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/search?tag=4923&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+          </hashTree>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Resource Library Standard Flow" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Resource library id Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/resourcelibrary.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get Standards tied to Resources within Resource Library" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/standards</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify standards are returned" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1164099703">standardNum</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify standards appear in the response</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources to which the specified standards are associated" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/standards?standardId=${RESOURCE1_STANDARD1}&amp;standardId=${RESOURCE1_STANDARD2}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Resources are returned" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2914">[]</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify Resources appear in the response</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of specified number of Resources to which the specified standards are associated" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/${RESLIB_ID}/standards?standardId=${RESOURCE1_STANDARD1}&amp;standardId=${RESOURCE1_STANDARD2}&amp;from=1&amp;to=2</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify Resources are returned" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2914">[]</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify Resources appear in the response</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">20</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify 2 Resources are returned as specified" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-354752019">&quot;totalCount&quot;:2</stringProp>
+                </collectionProp>
+                <stringProp name="TestPlan.comments">Verify 2 Resources are returned as specified in request: &amp;from=1&amp;to=2</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Library Test Plan Multiple Resource nodes with same Content Area and target Audience-Browse " enabled="true">
+          <stringProp name="TestPlan.comments">Using OCR Resoucre Library Nodes</stringProp>
+        </GenericController>
+        <hashTree>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***RESOURCE*** - RESOURCE LIBRARY / MULTIPLE / BROWSE - ${ENVIRONMENT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token"></stringProp>
+              <stringProp name="OAuthSampler.token_secret"></stringProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+  	
+  	</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Multiple Resource Library Flow-Browse" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Resource library IDs Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/resourcelibraryIDs.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources browse-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources browse-Multiple by locale" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;locale=AK</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verifies whether given locale asset has been returned." enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="497921536">&quot;province&quot;:&quot;AK&quot;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.gui.JSONFormatterGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonformatter.JSONFormatter" testname="jp@gc - JSON Format Post Processor" enabled="false"/>
+              <hashTree/>
+            </hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;from=1&amp;to=9</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a type-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;type=COMPOUND</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a tag-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a group-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and group-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;from=1&amp;to=12&amp;group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and tag-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;from=1&amp;to=8&amp;tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and type-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;from=1&amp;to=10&amp;type=COMPOUND</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and group-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;type=COMPOUND&amp;group=A</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and tag-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;type=COMPOUND&amp;tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by group and tag-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/browse?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;group=A&amp;tag=4923</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Resource Library Test Plan Multiple Resource nodes with same Content Area and target Audience-Search" enabled="true">
+          <stringProp name="TestPlan.comments">Using OCR Resource Library Nodes</stringProp>
+        </GenericController>
+        <hashTree>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+          <hashTree>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***RESOURCE*** - RESOURCE LIBRARY / SEARCH - ${ENVIRONMENT}" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token"></stringProp>
+              <stringProp name="OAuthSampler.token_secret"></stringProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+  	
+  	</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Multiple Resource Library Flow-Search" enabled="true"/>
+          <hashTree>
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Resource library IDs Data Set Config" enabled="true">
+              <stringProp name="filename">${ENVIRONMENT}/resourcelibraryIDs.csv</stringProp>
+              <stringProp name="fileEncoding"></stringProp>
+              <stringProp name="variableNames"></stringProp>
+              <stringProp name="delimiter">,</stringProp>
+              <boolProp name="quotedData">false</boolProp>
+              <boolProp name="recycle">true</boolProp>
+              <boolProp name="stopThread">false</boolProp>
+              <stringProp name="shareMode">shareMode.all</stringProp>
+            </CSVDataSet>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;query=Card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query-Multiple(Credit Search)" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID4}&amp;resourceNodeId=${RESLIB_ID5}&amp;query=credit&amp;textSection=CREDITS</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by a query-Multiple- Title,Description,Credit Search" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID4}&amp;resourceNodeId=${RESLIB_ID5}&amp;query=Multiple&amp;textSection=CREDITS&amp;textSection=TITLE&amp;textSection=DESCRIPTION</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by from and query-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;from=1&amp;to=15&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by type and query-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;type=COMPOUND&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by group and query-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;group=A&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+            <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="Get list of Resources by tag and query-Multiple" enabled="true">
+              <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+              <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+              <boolProp name="OAuthSampler.url_encode">false</boolProp>
+              <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+              <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+              <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+              <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+              <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">api/v0.1/resource/search?resourceNodeId=${RESLIB_ID1}&amp;resourceNodeId=${RESLIB_ID2}&amp;resourceNodeId=${RESLIB_ID3}&amp;tag=4923&amp;query=card</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Save Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">../projects/results/results-${__time(yyyy-MM-dd-HH-mm-ss)}.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SplineVisualizer" testclass="ResultCollector" testname="Spline Visualizer" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">10</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="Test Plan" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

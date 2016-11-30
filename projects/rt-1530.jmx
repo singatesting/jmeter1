@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Run Test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">/Users/gaurav_vishnoi/Downloads/apache-jmeter-2.11/projects</stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="set Environment" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ENVIRONMENT" elementType="Argument">
+            <stringProp name="Argument.name">ENVIRONMENT</stringProp>
+            <stringProp name="Argument.value">${__P(env,dev)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER" elementType="Argument">
+            <stringProp name="Argument.name">SERVER</stringProp>
+            <stringProp name="Argument.value">Apache</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Server Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="OAuth Individual Server Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">${ENVIRONMENT}/jmeter-oauth-individual.csv</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">baseURL,basePort,consumerKey,consumerSecret</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Set default Accept and Content-Type" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-Experience-API-Version</stringProp>
+            <stringProp name="Header.value">1.0.0</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Standard Test Plan" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <longProp name="ThreadGroup.start_time">1408385079000</longProp>
+        <longProp name="ThreadGroup.end_time">1408385079000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Self Controller" enabled="true">
+          <stringProp name="IncludeController.includepath">rt-1530.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+      </hashTree>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Standard Test Fragment" enabled="true"/>
+      <hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Login Controller" enabled="true"/>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Login Data Set Config" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${ENVIRONMENT}/jmeter-login.csv</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">username,password</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="LOGIN API - ***STANDARD*** - ${ENVIRONMENT}" enabled="true">
+            <stringProp name="OAuthSampler.consumer_key">${consumerKey}</stringProp>
+            <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+            <boolProp name="OAuthSampler.url_encode">false</boolProp>
+            <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+            <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+            <stringProp name="OAuthSampler.oauth_token"></stringProp>
+            <stringProp name="OAuthSampler.token_secret"></stringProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;username&quot;:&quot;${username}&quot;,&quot;password&quot;:&quot;${password}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+            <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v0.1/session</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Extract Oauth Token" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">import com.eclipsesource.*;
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonValue;
+import org.apache.jmeter.util.JMeterUtils;
+
+
+
+	String loginString = prev.getResponseDataAsString();
+  	JsonObject jsonObject = JsonObject.readFrom(loginString);
+  	JsonValue id = jsonObject.get(&quot;oauth_token&quot;);
+  	vars.put(&quot;OAUTHTOKEN&quot;,id.asString());
+	id = jsonObject.get(&quot;oauth_token_secret&quot;);
+  	vars.put(&quot;OAUTHTOKENSECRET&quot;,id.asString());
+   
+  	
+  	</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="JWT-Authorize" enabled="true"/>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="PAY_LOAD" elementType="Argument">
+                <stringProp name="Argument.name">PAY_LOAD</stringProp>
+                <stringProp name="Argument.value">{\&quot;fizzzzzzzzzzzzzzzzzzzzzzzzz\&quot;:\&quot;buzzzzzzzzzzzzzzzzzzzzzz\&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="FIZZ" elementType="Argument">
+                <stringProp name="Argument.name">FIZZ</stringProp>
+                <stringProp name="Argument.value">fizzzzzzzzzzzzzzzzzzzzzzzzz</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="BUZZ" elementType="Argument">
+                <stringProp name="Argument.name">BUZZ</stringProp>
+                <stringProp name="Argument.value">buzzzzzzzzzzzzzzzzzzzzzz</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="CLASS_ID_WAIT" elementType="Argument">
+                <stringProp name="Argument.name">CLASS_ID_WAIT</stringProp>
+                <stringProp name="Argument.value">3000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="VIZ_REPORT_WAIT" elementType="Argument">
+                <stringProp name="Argument.name">VIZ_REPORT_WAIT</stringProp>
+                <stringProp name="Argument.value">5000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="SKILL_01" elementType="Argument">
+                <stringProp name="Argument.name">SKILL_01</stringProp>
+                <stringProp name="Argument.value">abcdefghijklmnop123_skill_01</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="SKILL_02" elementType="Argument">
+                <stringProp name="Argument.name">SKILL_02</stringProp>
+                <stringProp name="Argument.value">abcdefghijklmnop123_skill_02</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="SKILL_03" elementType="Argument">
+                <stringProp name="Argument.name">SKILL_03</stringProp>
+                <stringProp name="Argument.value">abcdefghijklmnop123_skill_03</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="JWT_Authorize" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+   &quot;ssoToken&quot; : &quot;${OAUTHTOKEN}&quot;,&#xd;
+    &quot;issuerId&quot;:&quot;1&quot;,&#xd;
+    &quot;payload&quot;:&quot;{&apos;${FIZZ}&apos;:&apos;${BUZZ}&apos;}&quot;,&#xd;
+     &quot;ttlOnMinutes&quot;:&quot;30&quot;&#xd;
+}&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/jwt-service/authorize/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+              <stringProp name="VAR">JWT_TOKEN</stringProp>
+              <stringProp name="JSONPATH">$.result</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Viz_Reporting_Tests_Other" enabled="true"/>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Two_Attempts_with_Partial_Second_Attempt_Same_Attempt_ID" enabled="true"/>
+          <hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Random Class ID" enabled="true"/>
+            <hashTree>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="Create_Random_Class_ID" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">vars.put(&quot;CLASS_ID_3&quot;,&quot;${__RandomString(26,ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,)}&quot;);
+
+</stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">${CLASS_ID_WAIT}</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+                <boolProp name="displayJMeterProperties">true</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySystemProperties">true</boolProp>
+              </DebugSampler>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Create_Context_Assessment" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_Context" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+&quot;id&quot; :&quot;id0987654321qwertyuiadafanberqwrvsfsdfs&quot;,&#xd;
+  &quot;edAppName&quot;: &quot;ReadingWonders2.0&quot;,&#xd;
+  &quot;edAppId&quot;: &quot;reading-wonders-2&quot;,&#xd;
+  &quot;activityId&quot;: &quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&#xd;
+  &quot;description&quot;: &quot;Dev Test using the user: FIONAW&quot;,&#xd;
+  &quot;assignmentId&quot;: &quot;Jmeter-Assign-001&quot;,&#xd;
+  &quot;districtId&quot;: &quot;districtId&quot;,&#xd;
+  &quot;schoolId&quot;: &quot;C3WZQGJMK9DXSOYMWO69GJ5TRE&quot;,&#xd;
+  &quot;classId&quot;: &quot;JCRMBCREO5WVFYTLZQF2MQF21Y&quot;,&#xd;
+  &quot;instructorIds&quot;: [&#xd;
+    &quot;instructorId&quot;&#xd;
+  ],&#xd;
+  &quot;userId&quot;: &quot;QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&#xd;
+  &quot;courseId&quot;: &quot;Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&#xd;
+  &quot;activityType&quot;: &quot;assessment&quot;,&#xd;
+  &quot;activityVendor&quot;: &quot;VSM&quot;,&#xd;
+  &quot;activityMode&quot;: &quot;assigned&quot;,&#xd;
+  &quot;gradeLevel&quot;: &quot;4&quot;,&#xd;
+  &quot;classGradeLevel&quot;: &quot;4&quot;,&#xd;
+  &quot;subject&quot;: &quot;lang&quot;,&#xd;
+  &quot;baseUrl&quot;: &quot;http://connected.mheducation.com/rw&quot;,&#xd;
+  &quot;activityStartTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;activityTitle&quot;: &quot;ASS-0512-009&quot;,&#xd;
+  &quot;activityMaxScore&quot;: 10,&#xd;
+  &quot;totalQuestions&quot;: 1,&#xd;
+  &quot;section&quot;: &quot;1&quot;,&#xd;
+  &quot;subsection&quot;: &quot;2&quot;&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/learning-event-service/contexts</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CONTEXT_ID_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.contextId</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CONTEXT_URL_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.contextUrl</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">SENSOR_URL_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.sensorUrl</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Check_Context_URL_Assessment" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Check_Context_Url" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${CONTEXT_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="edAppName" enabled="true">
+                  <stringProp name="JSON_PATH">$.edAppName</stringProp>
+                  <stringProp name="EXPECTED_VALUE">ReadingWonders2.0</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="edAppId" enabled="true">
+                  <stringProp name="JSON_PATH">$.edAppId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">reading-wonders-2</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityId" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">8D9B2QZWOC8BSMG5FKSDPDNTRO</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="description" enabled="true">
+                  <stringProp name="JSON_PATH">$.description</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Dev Test using the user: FIONAW</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assignmentId" enabled="true">
+                  <stringProp name="JSON_PATH">$.assignmentId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Jmeter-Assign-001</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="districtId" enabled="true">
+                  <stringProp name="JSON_PATH">$.districtId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">districtId</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="schoolId" enabled="true">
+                  <stringProp name="JSON_PATH">$.schoolId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">C3WZQGJMK9DXSOYMWO69GJ5TRE</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="classId" enabled="true">
+                  <stringProp name="JSON_PATH">$.classId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">${CLASS_ID_3}</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="instructorIds" enabled="true">
+                  <stringProp name="JSON_PATH">$.instructorIds</stringProp>
+                  <stringProp name="EXPECTED_VALUE">[&quot;instructorId&quot;]</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="courseId" enabled="true">
+                  <stringProp name="JSON_PATH">$.courseId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Y1JBYW7RHROCKKFCWE7SLQPD84</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityType" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">assessment</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityVendor" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityVendor</stringProp>
+                  <stringProp name="EXPECTED_VALUE">VSM</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="gradeLevel" enabled="true">
+                  <stringProp name="JSON_PATH">$.gradeLevel</stringProp>
+                  <stringProp name="EXPECTED_VALUE">4</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="baseUrl" enabled="true">
+                  <stringProp name="JSON_PATH">$.baseUrl</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://connected.mheducation.com/rw</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityTitle" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityTitle</stringProp>
+                  <stringProp name="EXPECTED_VALUE">ASS-0512-009</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityMaxScore" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityMaxScore</stringProp>
+                  <stringProp name="EXPECTED_VALUE">10</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityStartTime" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityStartTime</stringProp>
+                  <stringProp name="EXPECTED_VALUE"></stringProp>
+                  <boolProp name="JSONVALIDATION">false</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CLASS_ID</stringProp>
+                  <stringProp name="JSONPATH">$.classId</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Create_Events_Assessment" enabled="true"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityStarted_Event" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+  &quot;verb&quot;: &quot;activityStarted&quot;,&#xd;
+  &quot;payload&quot;: {&#xd;
+  &quot;title&quot;: &quot;ASS-0512991&quot;,&#xd;
+  &quot;description&quot;: &quot;Dev Test using the user: FIONAW&quot;,&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;totalQuestions&quot;: 1,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ]&#xd;
+  &#xd;
+}&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}?returnEvents=false</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityStarted</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmenStarted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentStarted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Started</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityItem_Event_FillinBlankResponse-1" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{  &quot;verb&quot;: &quot;activityItem&quot;,&#xd;
+ &quot;sequence&quot;: &quot;1&quot;,&#xd;
+&quot;payload&quot;: {&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;endedAtTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;eventTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;duration&quot;: &quot;P1Y1M2DT0H3M4S&quot;,&#xd;
+  &quot;itemId&quot;: &quot;06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ],&#xd;
+  &quot;correctResponsePattern&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;NumberLineResponse&quot;,&#xd;
+      &quot;mapped&quot;: true,&#xd;
+      &quot;caseSensitive&quot;: true,&#xd;
+      &quot;prompt&quot;: &quot;Question1-Attempt1&quot;,&#xd;
+      &quot;indicatorFormat&quot;: &quot;&lt;entry responseId=&apos;([A-z0-9]{1,10})&apos;/&gt;&quot;,&#xd;
+      &quot;answers&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;value&quot;: [&#xd;
+            &quot;25&quot;&#xd;
+          ]&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;score&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;results&quot;: [&#xd;
+            {&#xd;
+              &quot;value&quot;: &quot;25&quot;,&#xd;
+              &quot;points&quot;: 10&#xd;
+            }&#xd;
+          ]&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;studentResponse&quot;: [&#xd;
+    {&#xd;
+      &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+      &quot;value&quot;: [&#xd;
+        &quot;25&quot;&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;itemNumber&quot;: 1,&#xd;
+  &quot;displaySequence&quot;: 1,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;normalScore&quot;: 10,&#xd;
+  &quot;extraCreditScore&quot;: 0,&#xd;
+  &quot;scoredBy&quot;: &quot;SoftwareApplication&quot;,&#xd;
+  &quot;difficulty&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;blooms&quot;,&#xd;
+      &quot;content&quot;: &quot;Blooms&quot;,&#xd;
+      &quot;value&quot;: 500&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;lexile&quot;,&#xd;
+      &quot;content&quot;: &quot;Lexile&quot;,&#xd;
+      &quot;value&quot;: 1000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;comment&quot;: &quot;Pattern driven&quot;&#xd;
+ &#xd;
+ &#xd;
+}&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityItem</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemStarted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemStarted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Started</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemCompleted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemCompleted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Completed</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemGraded" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemGraded.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Graded</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityItem_Event_FillinBlankResponse-2" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{  &quot;verb&quot;: &quot;activityItem&quot;,&#xd;
+ &quot;sequence&quot;: &quot;1&quot;,&#xd;
+&quot;payload&quot;: {&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;endedAtTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;eventTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;duration&quot;: &quot;P1Y1M2DT0H3M4S&quot;,&#xd;
+  &quot;itemId&quot;: &quot;06c4b7cd-575a-4ce7-80cc-34174812345&quot;,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ],&#xd;
+  &quot;correctResponsePattern&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;NumberLineResponse&quot;,&#xd;
+      &quot;mapped&quot;: true,&#xd;
+      &quot;caseSensitive&quot;: true,&#xd;
+      &quot;prompt&quot;: &quot;Question2-Attempt1&quot;,&#xd;
+      &quot;indicatorFormat&quot;: &quot;&lt;entry responseId=&apos;([A-z0-9]{1,10})&apos;/&gt;&quot;,&#xd;
+      &quot;answers&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;value&quot;: [&#xd;
+            &quot;25&quot;&#xd;
+          ]&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;score&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;results&quot;: [&#xd;
+            {&#xd;
+              &quot;value&quot;: &quot;25&quot;,&#xd;
+              &quot;points&quot;: 10&#xd;
+            }&#xd;
+          ]&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;studentResponse&quot;: [&#xd;
+    {&#xd;
+      &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+      &quot;value&quot;: [&#xd;
+        &quot;25&quot;&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;itemNumber&quot;: 1,&#xd;
+  &quot;displaySequence&quot;: 1,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;normalScore&quot;: 10,&#xd;
+  &quot;extraCreditScore&quot;: 0,&#xd;
+  &quot;scoredBy&quot;: &quot;SoftwareApplication&quot;,&#xd;
+  &quot;difficulty&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;blooms&quot;,&#xd;
+      &quot;content&quot;: &quot;Blooms&quot;,&#xd;
+      &quot;value&quot;: 500&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;lexile&quot;,&#xd;
+      &quot;content&quot;: &quot;Lexile&quot;,&#xd;
+      &quot;value&quot;: 1000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;comment&quot;: &quot;Pattern driven&quot;&#xd;
+ &#xd;
+ &#xd;
+}&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityItem</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemStarted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemStarted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Started</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemCompleted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemCompleted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Completed</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemGraded" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemGraded.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Graded</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityCompleted_Event" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+	&quot;verb&quot;:&quot;activityCompleted&quot;,&#xd;
+&quot;sequence&quot;:1,&#xd;
+&quot;payload&quot;:{&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;endedAtTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;duration&quot;: &quot;P1Y1M2DT0H3M4S&quot;,&#xd;
+  &quot;normalScore&quot;: 10,&#xd;
+  &quot;scoredBy&quot;: &quot;SoftwareApplication&quot;,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+     &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ]&#xd;
+}}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityCompleted</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentSubmitted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentSubmitted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Submitted</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemGraded" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentGraded.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Graded</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Create_Context_Assessment" enabled="false"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_Context" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+ &quot;id&quot; :&quot;id0987654321qwertyuiadafanberqwrvsfsdfs&quot;,&#xd;
+  &quot;edAppName&quot;: &quot;ReadingWonders2.0&quot;,&#xd;
+  &quot;edAppId&quot;: &quot;reading-wonders-2&quot;,&#xd;
+  &quot;activityId&quot;: &quot;8D9B2QZWOC8BSMG5FKSDPDNTRO&quot;,&#xd;
+  &quot;description&quot;: &quot;Dev Test using the user: FIONAW&quot;,&#xd;
+  &quot;assignmentId&quot;: &quot;Jmeter-Assign-001&quot;,&#xd;
+  &quot;districtId&quot;: &quot;districtId&quot;,&#xd;
+  &quot;schoolId&quot;: &quot;C3WZQGJMK9DXSOYMWO69GJ5TRE&quot;,&#xd;
+  &quot;classId&quot;: &quot;${CLASS_ID_3}&quot;,&#xd;
+  &quot;instructorIds&quot;: [&#xd;
+    &quot;instructorId&quot;&#xd;
+  ],&#xd;
+  &quot;userId&quot;: &quot;3QBQ9DJM9ZSSD9NHBHTRJYLXY8&quot;,&#xd;
+  &quot;courseId&quot;: &quot;Y1JBYW7RHROCKKFCWE7SLQPD84&quot;,&#xd;
+  &quot;activityType&quot;: &quot;assessment&quot;,&#xd;
+  &quot;activityVendor&quot;: &quot;VSM&quot;,&#xd;
+  &quot;activityMode&quot;: &quot;assigned&quot;,&#xd;
+  &quot;gradeLevel&quot;: &quot;4&quot;,&#xd;
+  &quot;classGradeLevel&quot;: &quot;4&quot;,&#xd;
+  &quot;subject&quot;: &quot;lang&quot;,&#xd;
+  &quot;baseUrl&quot;: &quot;http://connected.mheducation.com/rw&quot;,&#xd;
+  &quot;activityStartTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;activityTitle&quot;: &quot;ASS-0512-009&quot;,&#xd;
+  &quot;activityMaxScore&quot;: 10,&#xd;
+  &quot;totalQuestions&quot;: 1,&#xd;
+  &quot;section&quot;: &quot;1&quot;,&#xd;
+  &quot;subsection&quot;: &quot;2&quot;&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/learning-event-service/contexts</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CONTEXT_ID_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.contextId</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CONTEXT_URL_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.contextUrl</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">SENSOR_URL_ASSESSMENT</stringProp>
+                  <stringProp name="JSONPATH">$.sensorUrl</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Check_Context_URL_Assessment" enabled="false"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Check_Context_Url" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${CONTEXT_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="edAppName" enabled="true">
+                  <stringProp name="JSON_PATH">$.edAppName</stringProp>
+                  <stringProp name="EXPECTED_VALUE">ReadingWonders2.0</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="edAppId" enabled="true">
+                  <stringProp name="JSON_PATH">$.edAppId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">reading-wonders-2</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityId" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">8D9B2QZWOC8BSMG5FKSDPDNTRO</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="description" enabled="true">
+                  <stringProp name="JSON_PATH">$.description</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Dev Test using the user: FIONAW</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assignmentId" enabled="true">
+                  <stringProp name="JSON_PATH">$.assignmentId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Jmeter-Assign-001</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="districtId" enabled="true">
+                  <stringProp name="JSON_PATH">$.districtId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">districtId</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="schoolId" enabled="true">
+                  <stringProp name="JSON_PATH">$.schoolId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">C3WZQGJMK9DXSOYMWO69GJ5TRE</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="classId" enabled="true">
+                  <stringProp name="JSON_PATH">$.classId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">${CLASS_ID_3}</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="instructorIds" enabled="true">
+                  <stringProp name="JSON_PATH">$.instructorIds</stringProp>
+                  <stringProp name="EXPECTED_VALUE">[&quot;instructorId&quot;]</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="courseId" enabled="true">
+                  <stringProp name="JSON_PATH">$.courseId</stringProp>
+                  <stringProp name="EXPECTED_VALUE">Y1JBYW7RHROCKKFCWE7SLQPD84</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityType" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">assessment</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityVendor" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityVendor</stringProp>
+                  <stringProp name="EXPECTED_VALUE">VSM</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="gradeLevel" enabled="true">
+                  <stringProp name="JSON_PATH">$.gradeLevel</stringProp>
+                  <stringProp name="EXPECTED_VALUE">4</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="baseUrl" enabled="true">
+                  <stringProp name="JSON_PATH">$.baseUrl</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://connected.mheducation.com/rw</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityTitle" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityTitle</stringProp>
+                  <stringProp name="EXPECTED_VALUE">ASS-0512-009</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityMaxScore" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityMaxScore</stringProp>
+                  <stringProp name="EXPECTED_VALUE">10</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="activityStartTime" enabled="true">
+                  <stringProp name="JSON_PATH">$.activityStartTime</stringProp>
+                  <stringProp name="EXPECTED_VALUE"></stringProp>
+                  <boolProp name="JSONVALIDATION">false</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="jp@gc - JSON Path Extractor" enabled="true">
+                  <stringProp name="VAR">CLASS_ID</stringProp>
+                  <stringProp name="JSONPATH">$.classId</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LES_Create_Events_Assessment" enabled="false"/>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${JWT_TOKEN}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityStarted_Event" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+  &quot;verb&quot;: &quot;activityStarted&quot;,&#xd;
+  &quot;payload&quot;: {&#xd;
+  &quot;title&quot;: &quot;ASS-0512991&quot;,&#xd;
+  &quot;description&quot;: &quot;Dev Test using the user: FIONAW&quot;,&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;totalQuestions&quot;: 1,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ]&#xd;
+  &#xd;
+}&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}?returnEvents=false</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityStarted</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmenStarted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentStarted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Started</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LES_Create_activityItem_Event_FillinBlankResponse-1" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{  &quot;verb&quot;: &quot;activityItem&quot;,&#xd;
+ &quot;sequence&quot;: &quot;1&quot;,&#xd;
+&quot;payload&quot;: {&#xd;
+  &quot;startedAtTime&quot;: &quot;2016-06-24T16:32:41.099Z&quot;,&#xd;
+  &quot;endedAtTime&quot;: &quot;2016-06-24T16:33:41.099Z&quot;,&#xd;
+  &quot;eventTime&quot;: &quot;2016-06-24T16:43:41.099Z&quot;,&#xd;
+  &quot;duration&quot;: 60000,&#xd;
+  &quot;itemId&quot;: &quot;06c4b7cd-575a-4ce7-80cc-3417486b3c86&quot;,&#xd;
+  &quot;learningObjectives&quot;: [&#xd;
+    &quot;_c566bc1f-72dc-483d-bb88-f802f9d62b7c&quot;,&#xd;
+    &quot;_d2301c7a-b174-4ba5-b6c7-4ebb6353fbb7&quot;,&#xd;
+    &quot;_3154813b-0b73-4a16-801f-d02f71f9c2a6&quot;&#xd;
+&#xd;
+  ],&#xd;
+  &quot;correctResponsePattern&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;NumberLineResponse&quot;,&#xd;
+      &quot;mapped&quot;: true,&#xd;
+      &quot;caseSensitive&quot;: true,&#xd;
+      &quot;prompt&quot;: &quot;Question1-Attempt2&quot;,&#xd;
+      &quot;indicatorFormat&quot;: &quot;&lt;entry responseId=&apos;([A-z0-9]{1,10})&apos;/&gt;&quot;,&#xd;
+      &quot;answers&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;value&quot;: [&#xd;
+            &quot;25&quot;&#xd;
+          ]&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;score&quot;: [&#xd;
+        {&#xd;
+          &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+          &quot;results&quot;: [&#xd;
+            {&#xd;
+              &quot;value&quot;: &quot;25&quot;,&#xd;
+              &quot;points&quot;: 10&#xd;
+            }&#xd;
+          ]&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;studentResponse&quot;: [&#xd;
+    {&#xd;
+      &quot;id&quot;: &quot;RESPONSE1&quot;,&#xd;
+      &quot;value&quot;: [&#xd;
+        &quot;25&quot;&#xd;
+      ]&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;itemNumber&quot;: 1,&#xd;
+  &quot;displaySequence&quot;: 1,&#xd;
+  &quot;maxScore&quot;: 10,&#xd;
+  &quot;normalScore&quot;: 0,&#xd;
+  &quot;extraCreditScore&quot;: 0,&#xd;
+  &quot;scoredBy&quot;: &quot;SoftwareApplication&quot;,&#xd;
+  &quot;difficulty&quot;: [&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;blooms&quot;,&#xd;
+      &quot;content&quot;: &quot;Blooms&quot;,&#xd;
+      &quot;value&quot;: 500&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;type&quot;: &quot;lexile&quot;,&#xd;
+      &quot;content&quot;: &quot;Lexile&quot;,&#xd;
+      &quot;value&quot;: 1000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;comment&quot;: &quot;Pattern driven&quot;&#xd;
+ &#xd;
+ &#xd;
+}&#xd;
+}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">${SENSOR_URL_ASSESSMENT}</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="eventType" enabled="true">
+                  <stringProp name="JSON_PATH">$.eventType</stringProp>
+                  <stringProp name="EXPECTED_VALUE">activityItem</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemStarted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemStarted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Started</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemCompleted" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemCompleted.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Completed</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="assessmentItemGraded" enabled="true">
+                  <stringProp name="JSON_PATH">$.events.assessmentItemGraded.action</stringProp>
+                  <stringProp name="EXPECTED_VALUE">http://purl.imsglobal.org/vocab/caliper/v1/action#Graded</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Viz-Reporting-Validation" enabled="true"/>
+            <hashTree>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">${VIZ_REPORT_WAIT}</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="1_Viz Reporting-Activities-Validations" enabled="true">
+                <stringProp name="OAuthSampler.consumer_key">${consumerKey</stringProp>
+                <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+                <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;classIds&quot;: [&quot;${CLASS_ID}&quot;],&quot;roster&quot;: [&quot;3QBQ9DJM9ZSSD9NHBHTRJYLXY8&quot;,&quot;QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;V4V4BOS24DNHLM95WK3Q41GVX1&quot;,&quot;VSSCFRMBP4XV6D8SEMT2RXGL91&quot;,&quot;W92NTOY141YC2V6SJHMZH8W3S8&quot;,&quot;Y3V4Y72D6LYZV327BEK5VYMNC8&quot;],&quot;skills&quot;:{},&quot;boundsLower&quot;: &quot;2016-06-22T04:00:00+00:00&quot;,&quot;boundsUpper&quot;: &quot;2016-06-25T03:59:59+00:00&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">viz-reporting-service/reports/classes/activities</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Json Response Validation" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-183890844">${CLASS_ID}</stringProp>
+                    <stringProp name="-1318677207">3QBQ9DJM9ZSSD9NHBHTRJYLXY8</stringProp>
+                    <stringProp name="-1241985759">2016-06-24T16:33:41.099Z</stringProp>
+                    <stringProp name="565468704">2016-06-24T16:32:41.099Z</stringProp>
+                    <stringProp name="1446848194">duration&quot;:60000,&quot;assessmentScore&quot;:{&quot;questionCount&quot;:1,&quot;possibleScore&quot;:10,&quot;actualScore&quot;:10</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <org.apache.jmeter.protocol.oauth.sampler.OAuthSampler guiclass="org.apache.jmeter.protocol.oauth.control.gui.OAuthSamplerGui" testclass="org.apache.jmeter.protocol.oauth.sampler.OAuthSampler" testname="1_Viz Reporting-Activity-Item-Validations" enabled="true">
+                <stringProp name="OAuthSampler.consumer_key">${consumerKey</stringProp>
+                <boolProp name="OAuthSampler.use_auth_header">true</boolProp>
+                <boolProp name="OAuthSampler.url_encode">false</boolProp>
+                <stringProp name="OAuthSampler.signature_method">HMAC-SHA1</stringProp>
+                <stringProp name="OAuthSampler.consumer_secret">${consumerSecret}</stringProp>
+                <stringProp name="OAuthSampler.oauth_token">${OAUTHTOKEN}</stringProp>
+                <stringProp name="OAuthSampler.token_secret">${OAUTHTOKENSECRET}</stringProp>
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;classIds&quot;: [&quot;${CLASS_ID}&quot;],&quot;roster&quot;: [&quot;3QBQ9DJM9ZSSD9NHBHTRJYLXY8&quot;,&quot;QBMHBHVW6SCZGER258LKNGTK6Q&quot;,&quot;V4V4BOS24DNHLM95WK3Q41GVX1&quot;,&quot;VSSCFRMBP4XV6D8SEMT2RXGL91&quot;,&quot;W92NTOY141YC2V6SJHMZH8W3S8&quot;,&quot;Y3V4Y72D6LYZV327BEK5VYMNC8&quot;],&quot;skills&quot;:{},&quot;boundsLower&quot;: &quot;2016-06-22T04:00:00+00:00&quot;,&quot;boundsUpper&quot;: &quot;2016-06-25T03:59:59+00:00&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${baseURL}</stringProp>
+                <stringProp name="HTTPSampler.port">${basePort}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">viz-reporting-service/reports/classes/activities?activityId=http://mheducation.com/connected/reading-wonders-2/assigned/Jmeter-Assign-001</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </org.apache.jmeter.protocol.oauth.sampler.OAuthSampler>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Json Response Validation" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-183890844">${CLASS_ID}</stringProp>
+                    <stringProp name="-558176826">Question1-Attempt1</stringProp>
+                    <stringProp name="-754690331">Question2-Attempt1</stringProp>
+                    <stringProp name="-1902916881">&quot;possibleScore&quot;:10,&quot;actualScore&quot;:10</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <boolProp name="Assertion.assume_success">true</boolProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <objProp>
+          <name></name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Save Results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <fileName>true</fileName>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\singaraju_kusampudi\Desktop\events_rejected</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SplineVisualizer" testclass="ResultCollector" testname="Spline Visualizer" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">10</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="Test Plan" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

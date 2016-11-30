@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1252" it="0" lt="1251" ts="1407707554663" s="true" lb="Login API" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:35 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707554&quot;, oauth_nonce=&quot;1407707554559993000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;aI8QOdvcBCACCiW3Hy0jsIzF%2FDo%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="90" it="0" lt="90" ts="1407707556464" s="true" lb="Create a New Program" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="670" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:35 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;title=TESTING_016&amp;url=TESTING_016
+Vary: Accept-Encoding
+Content-Length: 288
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707556&quot;, oauth_nonce=&quot;1407707556462371000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;8k7qFfiVRQHwdKqR%2BRu9wdgHDQM%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;amp;title=TESTING_016&amp;amp;url=TESTING_016&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">contentArea=BB&amp;title=TESTING_016&amp;url=TESTING_016</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;title=TESTING_016&amp;url=TESTING_016</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program?contentArea=BB&amp;title=TESTING_016&amp;url=TESTING_016</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707556571" s="false" lb="Get Program" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="948" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707556577" s="false" lb="Delete a Program" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1160" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}</java.net.URL>
+</httpSample>
+<httpSample t="87" it="0" lt="87" ts="1407707556586" s="true" lb="Get All Program for a given user" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="582" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:35 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?all=true
+Vary: Accept-Encoding
+Content-Length: 240
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:35 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707556&quot;, oauth_nonce=&quot;1407707556584394000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;iLxG5%2Blu5SKUo%2Bu1FKRORePRhpk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?all=true&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?all=true</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program?all=true</java.net.URL>
+</httpSample>
+<httpSample t="95" it="0" lt="95" ts="1407707556687" s="true" lb="Login API" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707556&quot;, oauth_nonce=&quot;1407707556685672000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Vh8qvPRj7LxWQzlXq9AFUDfEqDo%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="107" it="0" lt="107" ts="1407707556796" s="true" lb="Get User" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707556&quot;, oauth_nonce=&quot;1407707556795189000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;GfkP9R7wyqzF%2FiDssp3hjufo8oA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY</java.net.URL>
+</httpSample>
+<httpSample t="84" it="0" lt="84" ts="1407707556912" s="true" lb="Get classes for  user" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707556&quot;, oauth_nonce=&quot;1407707556911179000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lym9v9neLXjqs1MUnIHHdb1nsGI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes</java.net.URL>
+</httpSample>
+<httpSample t="93" it="0" lt="93" ts="1407707557007" s="true" lb="Login API" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557006068000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;G%2B2m%2FcJBPTDRXGKJSdkUEiaZb3E%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="98" it="0" lt="98" ts="1407707557113" s="true" lb="Delete Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557112220000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4H59TMyQYFqDMZRgmOPirhB0sRs%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="99" it="0" lt="99" ts="1407707557229" s="true" lb="Create Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557227722000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2FUYUyxAMaefal3H2cyqJASokSY8%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="80" ts="1407707557340" s="false" lb="Get Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="1" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Favorite is present in response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /FAVORITE/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557339253000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;K6w4Gus3NSBf3Jypd%2Fwi8bd3WIk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="96" it="0" lt="96" ts="1407707557432" s="true" lb="Delete Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557430963000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;0d1MlFdaHRFL0ILyGSbqXYljL4o%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="100" it="0" lt="100" ts="1407707557537" s="false" lb="Get Deleted Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="1" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /not.found/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:36 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:36 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557536598000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;O8w08fNIYqq2gFlPTYU7MRq2azk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="102" it="0" lt="102" ts="1407707557650" s="true" lb="Login API" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557649227000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;d5EC9sSPwfTJ2mf6%2Fxk%2FKzCgcJs%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="84" it="0" lt="84" ts="1407707557768" s="true" lb="Create Planner" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557767059000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2FnJg%2FTCh98YszaxNqi5D4DHchKs%3D&quot;
+Content-Length: 100
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;name&quot; : &quot;ProductionTest - test planner&quot;,&#xd;
+  &quot;description&quot; : &quot;ProductionTest - test planner&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner</java.net.URL>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ts="1407707557872" s="false" lb="Add Curriculam" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1168" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PostMethod.&lt;init&gt;(PostMethod.java:106)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:213)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum</java.net.URL>
+</httpSample>
+<httpSample t="83" it="0" lt="83" ts="1407707557880" s="true" lb="Exclude Unit Organizers" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="628" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Unit Organizer not in the results</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;from=2014-08-01
+Vary: Accept-Encoding
+Content-Length: 265
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707557&quot;, oauth_nonce=&quot;1407707557878981000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ebyztoB0%2F%2Bq3fifxAgEggiPT1nQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;amp;from=2014-08-01&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;from=2014-08-01</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/TL6OKM4SS1DLNF7PC1NKBBQ7OQ/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707557979" s="false" lb="Create Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1161" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PostMethod.&lt;init&gt;(PostMethod.java:106)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:213)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707557985" s="false" lb="Push  Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1163" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PutMethod.&lt;init&gt;(PutMethod.java:76)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:215)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707557992" s="false" lb="Pull  Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1163" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PutMethod.&lt;init&gt;(PutMethod.java:76)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:215)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558002" s="false" lb="Get Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="985" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558010" s="false" lb="Get Planner" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="948" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558021" s="false" lb="Get Planner Classess" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="956" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558034" s="false" lb="Delete Events" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=NVTZGTCXPB4NPRHZWHE1252HS1&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1201" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=NVTZGTCXPB4NPRHZWHE1252HS1&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=NVTZGTCXPB4NPRHZWHE1252HS1</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558042" s="false" lb="Delete Curriculam" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=NVTZGTCXPB4NPRHZWHE1252HS1&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1205" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=NVTZGTCXPB4NPRHZWHE1252HS1&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=NVTZGTCXPB4NPRHZWHE1252HS1</java.net.URL>
+</httpSample>
+<httpSample t="83" it="0" lt="83" ts="1407707558055" s="true" lb="Create a New Program" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="670" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;title=TESTING_042&amp;url=TESTING_042
+Vary: Accept-Encoding
+Content-Length: 288
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558053689000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2BD5TvzTDSYl%2BNtx7YgTFy5iP%2FX4%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;amp;title=TESTING_042&amp;amp;url=TESTING_042&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">contentArea=BB&amp;title=TESTING_042&amp;url=TESTING_042</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?contentArea=BB&amp;title=TESTING_042&amp;url=TESTING_042</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program?contentArea=BB&amp;title=TESTING_042&amp;url=TESTING_042</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558153" s="false" lb="Get Program" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="948" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707558161" s="false" lb="Delete a Program" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1160" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program/${PROGRAM_ID}</java.net.URL>
+</httpSample>
+<httpSample t="87" it="0" lt="87" ts="1407707558200" s="true" lb="Get All Program for a given user" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="582" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?all=true
+Vary: Accept-Encoding
+Content-Length: 240
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558199683000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;WwGZKDU6i1IPxF8DgseE09Y8XQo%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?all=true&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?all=true</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/program?all=true</java.net.URL>
+</httpSample>
+<httpSample t="98" it="0" lt="97" ts="1407707558311" s="true" lb="Get User" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558310477000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;q7u6X%2F5XJmVMNSil4uPwPO%2Bvb3A%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY</java.net.URL>
+</httpSample>
+<httpSample t="81" it="0" lt="81" ts="1407707558432" s="true" lb="Get classes for  user" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558431673000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;mpKVLWtsmcsaGkHL9d94IqHNVLU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes</java.net.URL>
+</httpSample>
+<httpSample t="84" it="0" lt="84" ts="1407707558537" s="true" lb="Delete Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:37 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:37 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558536096000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Z7cqPf%2FSz1bRFTSBrt0mrwlfLi8%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="87" it="0" lt="87" ts="1407707558645" s="true" lb="Create Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558644165000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;N4TyObts4SXaXjrqhurY1gV%2FKuU%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="82" it="0" lt="82" ts="1407707558756" s="false" lb="Get Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="1" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Favorite is present in response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /FAVORITE/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558755066000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;cu8NpPpiBSZuKTH1wBjz28x2RYw%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="87" it="0" lt="87" ts="1407707558864" s="true" lb="Delete Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="660" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY
+Vary: Accept-Encoding
+Content-Length: 266
+Content-Type: text/html; charset=iso-8859-1
+X-Pad: avoid browser bug
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558862925000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;DI0m1sSQ55TcVfLoHFJCVXmIWlg%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="86" it="0" lt="86" ts="1407707558976" s="false" lb="Get Deleted Favorite" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="1" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /not.found/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707558&quot;, oauth_nonce=&quot;1407707558975137000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;L4AbjOKncIpAW3QKmunET0Ffy3c%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="92" it="0" lt="92" ts="1407707559085" s="true" lb="Create Planner" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="564" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/
+Vary: Accept-Encoding
+Content-Length: 231
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707559&quot;, oauth_nonce=&quot;1407707559085202000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;PipJSPOyJV5DtDCRKDBu7oHBiGk%3D&quot;
+Content-Length: 100
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;name&quot; : &quot;ProductionTest - test planner&quot;,&#xd;
+  &quot;description&quot; : &quot;ProductionTest - test planner&quot;&#xd;
+}</queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559205" s="false" lb="Add Curriculam" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1168" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PostMethod.&lt;init&gt;(PostMethod.java:106)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:213)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/addCurriculum</java.net.URL>
+</httpSample>
+<httpSample t="85" it="0" lt="85" ts="1407707559230" s="true" lb="Exclude Unit Organizers" rc="302" rm="Found" tn="Regression Suite Prod 1-1" dt="text" de="iso-8859-1" by="628" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Unit Organizer not in the results</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+Date: Sun, 10 Aug 2014 21:52:38 GMT
+Server: Apache
+Location: http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;from=2014-08-01
+Vary: Accept-Encoding
+Content-Length: 265
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+Set-Cookie: PORTALLB=3910737068.55303.0000; expires=Sun, 10-Aug-2014 22:57:38 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;%24%7BOAUTHTOKEN%7D&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707559&quot;, oauth_nonce=&quot;1407707559229788000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;HalD2%2BCFXtdr8TSTpmKoXnic0Lc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-prod.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;302 Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Found&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;amp;from=2014-08-01&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <redirectLocation class="java.lang.String">http://connected-prod.cdiapps.com/construction/?to=2015-08-01&amp;from=2014-08-01</redirectLocation>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/TL6OKM4SS1DLNF7PC1NKBBQ7OQ/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559367" s="false" lb="Create Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1161" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PostMethod.&lt;init&gt;(PostMethod.java:106)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:213)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559395" s="false" lb="Push  Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1163" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PutMethod.&lt;init&gt;(PutMethod.java:76)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:215)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/push</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559424" s="false" lb="Pull  Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1163" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.commons.httpclient.methods.PutMethod.&lt;init&gt;(PutMethod.java:76)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:215)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events/pull</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559448" s="false" lb="Get Event" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="985" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559474" s="false" lb="Get Planner" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="948" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559499" s="false" lb="Get Planner Classess" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="956" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.GetMethod.&lt;init&gt;(GetMethod.java:89)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:230)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/classes</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559524" s="false" lb="Delete Events" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1201" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/events?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8</java.net.URL>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ts="1407707559546" s="false" lb="Delete Curriculam" rc="Non HTTP response code: java.lang.IllegalArgumentException" rm="Non HTTP response message: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&apos;: escaped absolute path not valid" tn="Regression Suite Prod 1-1" dt="text" de="" by="1205" sc="1" ec="1" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">java.lang.IllegalArgumentException: Invalid uri &apos;http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&apos;: escaped absolute path not valid
+	at org.apache.commons.httpclient.HttpMethodBase.&lt;init&gt;(HttpMethodBase.java:222)
+	at org.apache.commons.httpclient.methods.ExpectContinueMethod.&lt;init&gt;(ExpectContinueMethod.java:93)
+	at org.apache.commons.httpclient.methods.EntityEnclosingMethod.&lt;init&gt;(EntityEnclosingMethod.java:119)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl$2.&lt;init&gt;(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl.sample(HTTPHC3Impl.java:223)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSampler2.sample(HTTPSampler2.java:54)
+	at org.apache.jmeter.protocol.oauth.sampler.OAuthSampler.sample(OAuthSampler.java:157)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1105)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1094)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:429)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-prod.cdiapps.com/api/v0.1/planner/${PLANNER_ID}/curriculum?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8</java.net.URL>
+</httpSample>
+
+</testResults>

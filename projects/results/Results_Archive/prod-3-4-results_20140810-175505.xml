@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="165" it="0" lt="165" ts="1407707705385" s="true" lb="Login API" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707705&quot;, oauth_nonce=&quot;1407707705384522000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;cJsttzZ6MMTDKJ9A98juT%2BVTA4A%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;},&quot;oauth_token&quot;:&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;,&quot;oauth_token_secret&quot;:&quot;ef09f0c5-a7c6-4a8a-a648-b9a3f86a04ad&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="118" it="0" lt="118" ts="1407707705558" s="true" lb="Create a New Program" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="415" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Location: http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707705&quot;, oauth_nonce=&quot;1407707705558094000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;f4ufmvgjo4mYQ5E4AT2tVDxbhAY%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;4WJZ599Y48HE1KD4WZ422N6HBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_023&quot;,&quot;url&quot;:&quot;TESTING_023&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">contentArea=BB&amp;title=TESTING_023&amp;url=TESTING_023</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/program?contentArea=BB&amp;title=TESTING_023&amp;url=TESTING_023</java.net.URL>
+</httpSample>
+<httpSample t="112" it="0" lt="112" ts="1407707705682" s="true" lb="Get Program" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="512" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707705&quot;, oauth_nonce=&quot;1407707705682339000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lP4xaHCqBugOP8bQzMVG2ulBgl8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;4WJZ599Y48HE1KD4WZ422N6HBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_023&quot;,&quot;url&quot;:&quot;TESTING_023&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE</java.net.URL>
+</httpSample>
+<httpSample t="112" it="0" lt="0" ts="1407707705798" s="true" lb="Delete a Program" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707705&quot;, oauth_nonce=&quot;1407707705797779000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;UutvxwRwOnIzJJ8h4oHnWu89ZZ4%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE</java.net.URL>
+</httpSample>
+<httpSample t="131" it="0" lt="127" ts="1407707705913" s="true" lb="Get All Program for a given user" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="11414" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;e1ff3260-e9d9-4cf5-90c1-6ab1bc27d322&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707705&quot;, oauth_nonce=&quot;1407707705913115000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Z4Sj78jXFjMHNNFgtxKPQoB0nyM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;K9B6H73ZBWOSPKBMOLQRZEQFT1&quot;,&quot;contentArea&quot;:&quot;RD14&quot;,&quot;title&quot;:&quot;Readings Wonders 2014&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1&quot;}},{&quot;id&quot;:&quot;48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;,&quot;contentArea&quot;:&quot;EM4&quot;,&quot;title&quot;:&quot;Everyday Math 4&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;}},{&quot;id&quot;:&quot;E6MCLLQXGX1T873123J1PCEZO4&quot;,&quot;contentArea&quot;:&quot;NWBB&quot;,&quot;title&quot;:&quot;Number Worlds&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4&quot;}},{&quot;id&quot;:&quot;9CFD91C1KZ6KC93DNDZWV96HX8&quot;,&quot;contentArea&quot;:&quot;SPIRE&quot;,&quot;title&quot;:&quot;Music&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8&quot;}},{&quot;id&quot;:&quot;8LNVQOZGTW3HG1EPNOLS2YQWG4&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4&quot;}},{&quot;id&quot;:&quot;44YZ2P1BKERMSSMN17Q6LQG1NQ&quot;,&quot;contentArea&quot;:&quot;FLEX&quot;,&quot;title&quot;:&quot;Flex Literacy&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ&quot;}},{&quot;id&quot;:&quot;B5POO5B8TKS4RPWTY5HTMJP9W4&quot;,&quot;contentArea&quot;:&quot;WW&quot;,&quot;title&quot;:&quot;Writer&apos;s Workspace&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4&quot;}},{&quot;id&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;contentArea&quot;:&quot;OCR&quot;,&quot;title&quot;:&quot;Open Court Reading&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161&quot;}},{&quot;id&quot;:&quot;8W9FGFYKOFVCVR59YQ46NZ6XQE&quot;,&quot;contentArea&quot;:&quot;RD14&quot;,&quot;title&quot;:&quot;Reading Honders&quot;,&quot;url&quot;:&quot;https://www.mheonline.com/program/view/1/1/2729/READWONDER/&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE&quot;}},{&quot;id&quot;:&quot;OGR5YFTXXRGTN79ET9RFRLGB3E&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;nProd&quot;,&quot;url&quot;:&quot;http://prod-cw2.ced.emhe.mhc&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E&quot;}},{&quot;id&quot;:&quot;Z4CCM35PVHHD4FJW9BMMDFEGM8&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;Please Delete Me&quot;,&quot;url&quot;:&quot;Please Delete Me&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8&quot;}},{&quot;id&quot;:&quot;ZEYZYW7SS5JC9XMG9Y63V79T34&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_062&quot;,&quot;url&quot;:&quot;TESTING_062&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34&quot;}},{&quot;id&quot;:&quot;QV5VMBNBZPT4DNXG9DN6ZRZBPO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_064&quot;,&quot;url&quot;:&quot;TESTING_064&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO&quot;}},{&quot;id&quot;:&quot;N61NM1JSNWSRQ7LZLW969QLFPY&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_096&quot;,&quot;url&quot;:&quot;TESTING_096&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY&quot;}},{&quot;id&quot;:&quot;6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_100&quot;,&quot;url&quot;:&quot;TESTING_100&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;}},{&quot;id&quot;:&quot;RTFPNSLVXH8HHEYT2N7TZPJ9JO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_015&quot;,&quot;url&quot;:&quot;TESTING_015&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO&quot;}},{&quot;id&quot;:&quot;O2MXM9MGQMGEQ2CPZ6X8KG72MO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_082&quot;,&quot;url&quot;:&quot;TESTING_082&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO&quot;}},{&quot;id&quot;:&quot;8LGVBTCQ1NH79BQFDH3EPRRHDO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_011&quot;,&quot;url&quot;:&quot;TESTING_011&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO&quot;}},{&quot;id&quot;:&quot;GRD6L7OBDM1DRLSWWENMYKGVMM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_010&quot;,&quot;url&quot;:&quot;TESTING_010&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM&quot;}},{&quot;id&quot;:&quot;5BL1MCNRRXTDP9DGNX8XMTN7RE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_039&quot;,&quot;url&quot;:&quot;TESTING_039&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE&quot;}},{&quot;id&quot;:&quot;PJKQS1O397S9KRD556ZESVRVVE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_084&quot;,&quot;url&quot;:&quot;TESTING_084&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE&quot;}},{&quot;id&quot;:&quot;45Z13Y1MPZYKK7K15G3SKRPXVO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_027&quot;,&quot;url&quot;:&quot;TESTING_027&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO&quot;}},{&quot;id&quot;:&quot;7YWQCC2GLD9YZQKJQ265TKBCGO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_093&quot;,&quot;url&quot;:&quot;TESTING_093&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO&quot;}},{&quot;id&quot;:&quot;HR8GJLXKXLGMLP7TKTSC3CM42Y&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_028&quot;,&quot;url&quot;:&quot;TESTING_028&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y&quot;}},{&quot;id&quot;:&quot;2C33BQ9ZOHCH7HHLMVY6E38611&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_072&quot;,&quot;url&quot;:&quot;TESTING_072&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611&quot;}},{&quot;id&quot;:&quot;7MOH7YWXWJK28KQJHO4ZYWM731&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_059&quot;,&quot;url&quot;:&quot;TESTING_059&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731&quot;}},{&quot;id&quot;:&quot;M5S1VMWW3TNOO38J5XWSHKKLY8&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_080&quot;,&quot;url&quot;:&quot;TESTING_080&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8&quot;}},{&quot;id&quot;:&quot;7NMD7S4Y9D7B86K17QHHFBPS28&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_044&quot;,&quot;url&quot;:&quot;TESTING_044&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28&quot;}},{&quot;id&quot;:&quot;3Z63O4OSZ9NB36G4QDHBF4GMY4&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_088&quot;,&quot;url&quot;:&quot;TESTING_088&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4&quot;}},{&quot;id&quot;:&quot;JX9WQLWVW97B4JY5XOD448LQRM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_055&quot;,&quot;url&quot;:&quot;TESTING_055&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM&quot;}},{&quot;id&quot;:&quot;E26CGGGXLQ9P5WF4J8ZDFV53F1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_022&quot;,&quot;url&quot;:&quot;TESTING_022&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1&quot;}},{&quot;id&quot;:&quot;3L1P6ZVL2W38758N5W3CGHBVBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_045&quot;,&quot;url&quot;:&quot;TESTING_045&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE&quot;}},{&quot;id&quot;:&quot;JH7GHTCWTB82ME1MKL58TJEH2M&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_073&quot;,&quot;url&quot;:&quot;TESTING_073&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M&quot;}},{&quot;id&quot;:&quot;VKJONXNDD2SRFL2WPFOBSX1O5Q&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_081&quot;,&quot;url&quot;:&quot;TESTING_081&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q&quot;}},{&quot;id&quot;:&quot;37KNKN47R574PGFJ7BP5Y2DRT1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_053&quot;,&quot;url&quot;:&quot;TESTING_053&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1&quot;}},{&quot;id&quot;:&quot;DBFDQ5865C358PYCYW3BWTTQ5O&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_087&quot;,&quot;url&quot;:&quot;TESTING_087&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O&quot;}},{&quot;id&quot;:&quot;N5BZNP1BTTRPQ7TGJJ4J94MYPE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_099&quot;,&quot;url&quot;:&quot;TESTING_099&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE&quot;}},{&quot;id&quot;:&quot;T5GY9FNWTYG3CR9YVYVFTDSERM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_038&quot;,&quot;url&quot;:&quot;TESTING_038&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM&quot;}},{&quot;id&quot;:&quot;4WJZ599Y48HE1KD4WZ422N6HBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_023&quot;,&quot;url&quot;:&quot;TESTING_023&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE&quot;}}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/program?all=true</java.net.URL>
+</httpSample>
+<httpSample t="156" it="0" lt="156" ts="1407707706047" s="true" lb="Login API" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707706&quot;, oauth_nonce=&quot;1407707706047373000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;wCFWE6o0nUD%2FitdqvDGZNVFUkgE%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;508f96af-b51f-4c39-889b-d9486f3a0d96&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/508f96af-b51f-4c39-889b-d9486f3a0d96&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;},&quot;oauth_token&quot;:&quot;508f96af-b51f-4c39-889b-d9486f3a0d96&quot;,&quot;oauth_token_secret&quot;:&quot;decae34a-f173-472c-ac4b-c5ab4e24e742&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="144" it="0" lt="144" ts="1407707706212" s="true" lb="Get User" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="643" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;508f96af-b51f-4c39-889b-d9486f3a0d96&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707706&quot;, oauth_nonce=&quot;1407707706211632000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;FG9CgUhI80HE7NU9UQ49FHNJEtM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;FS5F7EBOVOV3M5LR26MOHDGXXY&quot;,&quot;connectedUserName&quot;:&quot;PRODS&quot;,&quot;firstName&quot;:&quot;Prod&quot;,&quot;lastName&quot;:&quot;S&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;gradeLevel&quot;:&quot;12&quot;,&quot;lastLoginDate&quot;:&quot;2014-03-18&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY&quot;,&quot;annotations&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/annotations&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/planners&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY</java.net.URL>
+</httpSample>
+<httpSample t="133" it="0" lt="133" ts="1407707706360" s="true" lb="Get classes for  user" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="1778" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:04 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;508f96af-b51f-4c39-889b-d9486f3a0d96&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707706&quot;, oauth_nonce=&quot;1407707706359538000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;JQYSstJyWEZHPHgQMANezaxsdk8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;2SD5TOR8JV22EYP38H7M3J66SO&quot;,&quot;teacherID&quot;:&quot;OHH4PH5L6DH566JVF2233HBJZY&quot;,&quot;schoolID&quot;:&quot;K4WJKZJZ2XGEM7D1TGJTRNQHP1&quot;,&quot;name&quot;:&quot;new_oct7&quot;,&quot;createdDate&quot;:&quot;2011-10-07&quot;,&quot;lastModDate&quot;:&quot;2011-10-07&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;3&quot;,&quot;courseID&quot;:&quot;5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO&quot;}},{&quot;id&quot;:&quot;V3QMH7W8LFR3B6DB31XRPOPZBM&quot;,&quot;teacherID&quot;:&quot;OHH4PH5L6DH566JVF2233HBJZY&quot;,&quot;schoolID&quot;:&quot;K4WJKZJZ2XGEM7D1TGJTRNQHP1&quot;,&quot;name&quot;:&quot;new2_oct7&quot;,&quot;createdDate&quot;:&quot;2011-10-07&quot;,&quot;lastModDate&quot;:&quot;2011-10-07&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;2&quot;,&quot;courseID&quot;:&quot;5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM&quot;}},{&quot;id&quot;:&quot;DOM5DNYFDRT58RYRQGD3GHTVF4&quot;,&quot;teacherID&quot;:&quot;18G6RRYNF32EB4CFPJZK83FPGE&quot;,&quot;schoolID&quot;:&quot;JRBZ53XF4HM684NP4YJTMZ8XO1&quot;,&quot;name&quot;:&quot;10-01&quot;,&quot;createdDate&quot;:&quot;2014-04-02&quot;,&quot;lastModDate&quot;:&quot;2014-05-21&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;10&quot;,&quot;iconID&quot;:10,&quot;shortCode&quot;:&quot;h9u6b&quot;,&quot;courseID&quot;:&quot;OGYVOC7XOE3BPNP7LVY3KR7N9Q&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/OGYVOC7XOE3BPNP7LVY3KR7N9Q&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4&quot;}}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes</java.net.URL>
+</httpSample>
+<httpSample t="173" it="0" lt="173" ts="1407707706967" s="true" lb="Login API" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:06 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707706&quot;, oauth_nonce=&quot;1407707706966394000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;PVPRoPxFZGWA2ijVqiYy9pPUTJE%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;},&quot;oauth_token&quot;:&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;,&quot;oauth_token_secret&quot;:&quot;e415b53b-ed50-45b1-9606-9672e2f2f457&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="110" it="0" lt="110" ts="1407707707459" s="true" lb="Delete Favorite" rc="404" rm="Not Found" tn="Regression Suite Prod 1-1" dt="text" de="" by="427" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Sun, 10 Aug 2014 21:55:06 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707707&quot;, oauth_nonce=&quot;1407707707457887000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;RvpnYCg1ud72qVvk5mQKK6MmH3o%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;99-2-52f3ca2a&quot;,&quot;message&quot;:&quot;Unable to locate Annotation with ID No annotation of type FAVORITE found for user/asset:DR8SOSZQMXYCZCWVKKZHT57CME/YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="127" it="0" lt="127" ts="1407707707576" s="true" lb="Create Favorite" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="846" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:06 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Location: http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite/Z1XN7XR7QVOKN1S6LSSSYWFEDQ
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707707&quot;, oauth_nonce=&quot;1407707707575588000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;tCv8NrGkOKtcexmu9yXfnviaOIs%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;Z1XN7XR7QVOKN1S6LSSSYWFEDQ&quot;,&quot;type&quot;:&quot;FAVORITE&quot;,&quot;userId&quot;:&quot;DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;assetId&quot;:&quot;YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;,&quot;productId&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;createTime&quot;:&quot;2014-08-10T21:55:06Z&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;asset&quot;:&quot;/api/v0.1/asset/YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;,&quot;self&quot;:&quot;/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite/Z1XN7XR7QVOKN1S6LSSSYWFEDQ&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="118" it="0" lt="117" ts="1407707707711" s="true" lb="Get Favorite" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="434" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Favorite is present in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:06 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707707&quot;, oauth_nonce=&quot;1407707707710337000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;RKFDFA%2BDC8iGlzG89NG3Wrl6wK8%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;Z1XN7XR7QVOKN1S6LSSSYWFEDQ&quot;,&quot;type&quot;:&quot;FAVORITE&quot;,&quot;userId&quot;:&quot;DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;assetId&quot;:&quot;YXDNCJ1ZOWH6VK6P8W1WWXW2H1&quot;,&quot;productId&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;createTime&quot;:&quot;2014-08-10T21:55:06Z&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="138" it="0" lt="0" ts="1407707707836" s="true" lb="Delete Favorite" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:06 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707707&quot;, oauth_nonce=&quot;1407707707835787000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;xCReNEA8FcnbB33mBchBsBSG1Ng%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=YXDNCJ1ZOWH6VK6P8W1WWXW2H1</java.net.URL>
+</httpSample>
+<httpSample t="108" it="0" lt="108" ts="1407707708264" s="true" lb="Get Deleted Favorite" rc="404" rm="Not Found" tn="Regression Suite Prod 1-1" dt="text" de="" by="392" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;b84e43f1-8210-47c5-9387-ed3e5dfb1d8e&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708263350000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;yY71QBf9S6IBYb8xofTyWsCO7NM%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;99-2-3605b26b&quot;,&quot;message&quot;:&quot;Unable to locate product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite with ID DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="158" it="0" lt="157" ts="1407707708382" s="true" lb="Login API" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708381711000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;vcNOLH1ubuVKzJnmU855GtGXNr4%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;},&quot;oauth_token&quot;:&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;,&quot;oauth_token_secret&quot;:&quot;398f4d9c-165c-42bd-b693-3c6845b5f120&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="141" it="0" lt="141" ts="1407707708552" s="true" lb="Create Planner" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="897" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Location: http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708551829000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;XqH92Bca3CBHn4Mj%2B4FWSDf9cS0%3D&quot;
+Content-Length: 100
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;LZ2CR5WGM8K37JOHJYDDQBPM2Q&quot;,&quot;name&quot;:&quot;ProductionTest - test planner&quot;,&quot;description&quot;:&quot;ProductionTest - test planner&quot;,&quot;locked&quot;:false,&quot;dayTypes&quot;:{&quot;MON&quot;:&quot;INSTRUCTIONAL&quot;,&quot;TUE&quot;:&quot;INSTRUCTIONAL&quot;,&quot;WED&quot;:&quot;INSTRUCTIONAL&quot;,&quot;THU&quot;:&quot;INSTRUCTIONAL&quot;,&quot;FRI&quot;:&quot;INSTRUCTIONAL&quot;,&quot;SAT&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;SUN&quot;:&quot;NONINSTRUCTIONAL&quot;},&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/classes&quot;,&quot;addCurriculum&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/addCurriculum&quot;,&quot;events&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events&quot;,&quot;self&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;name&quot; : &quot;ProductionTest - test planner&quot;,&#xd;
+  &quot;description&quot; : &quot;ProductionTest - test planner&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner</java.net.URL>
+</httpSample>
+<httpSample t="162" it="0" lt="0" ts="1407707708704" s="true" lb="Add Curriculam" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708704003000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lRr%2FN6CU4MQVXOH6%2FMj3iLFK6qc%3D&quot;
+Content-Length: 54
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">course=NVTZGTCXPB4NPRHZWHE1252HS1&amp;startDate=2014-08-20</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/addCurriculum?course=NVTZGTCXPB4NPRHZWHE1252HS1&amp;startDate=2014-08-20</java.net.URL>
+</httpSample>
+<httpSample t="112" it="0" lt="112" ts="1407707708874" s="true" lb="Exclude Unit Organizers" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="3502" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Unit Organizer not in the results</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708873512000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;2U%2FoidPCa6rj6Bev1UY5jDjJE98%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;926Z2XNCCQ5JKXN97N1EMCPVH1&quot;,&quot;date&quot;:&quot;2014-08-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XMME73EDVBSG75EMJ8Q623LXC8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MTL6H7JPKKHZBCJNOWEW5OY9HE&quot;}}]},{&quot;id&quot;:&quot;R7K7J8W9ZT22XW3L1CS36D4J84&quot;,&quot;date&quot;:&quot;2014-08-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;14M78QVTXC2R8556FODBWWWP3Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9T5PD6E8CFOHG65XEGFZTC29FE&quot;}}]},{&quot;id&quot;:&quot;M7QFVGW39E2QV5BOZXND392Z71&quot;,&quot;date&quot;:&quot;2014-08-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NFLZZRBYOJ5G6O9S9X3M75N4G4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MCYJCYR271LVOWPJENFTTVXRB4&quot;}}]},{&quot;id&quot;:&quot;K4MZCPDBGHKSTSPC7S7DZJWT4E&quot;,&quot;date&quot;:&quot;2014-08-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;J1HDQX45L311FY13KSQPWV7T5Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2BRQRLK2QBBKQLR5OJCYRGLW5M&quot;}}]},{&quot;id&quot;:&quot;NZBREMJTM7B3W4FC4L3WR4QYC4&quot;,&quot;date&quot;:&quot;2014-08-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HKFPJXM9WPTFKORQY713ECWOC4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NK36E1TWYL6VZWK9J758XRFCNQ&quot;}}]},{&quot;id&quot;:&quot;H66KOWPW8BFT8QRZBWY2FFKNLY&quot;,&quot;date&quot;:&quot;2014-08-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;6DN2K2FL2LY3KS73W97KHTEPN1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VJH6GL35RVH2J8XLM5TFXBR69M&quot;}}]},{&quot;id&quot;:&quot;8TZSXS169KRVDN3JOKDNQRSY41&quot;,&quot;date&quot;:&quot;2014-08-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MO95OCW3XK2KMZQSHBMJFPB758&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/85MLOH6FRP3VPHZZ2RO4P8SN84&quot;}}]},{&quot;id&quot;:&quot;MC6CJMPLOVBX3SQ47QRDD271N8&quot;,&quot;date&quot;:&quot;2014-08-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;S46JJKO2VNHW22WX7GWGXXE25M&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FM79CNPYNDSWV39LQGR4VDV974&quot;}}]},{&quot;id&quot;:&quot;6ON4GLNGCR3OG7O98R69HLF8WQ&quot;,&quot;date&quot;:&quot;2014-09-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DWFQOCT7J1RFC2XP1V4O31PBR8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/OVPOK2K8OH3KPNPEO7B1WL1XQ8&quot;}}]},{&quot;id&quot;:&quot;YTJ915C5HS1TFVEVEDVZB4T3R1&quot;,&quot;date&quot;:&quot;2014-09-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N5Z5EGG89ZRHMHC5N32N6PFQG1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YZ3V9YWFN7FVNQLKZBN9OT1Y91&quot;}}]},{&quot;id&quot;:&quot;EO3ZO98MEWLOL1PEZSBPLJHWVM&quot;,&quot;date&quot;:&quot;2014-09-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DJTNO2JKY7DZSPT96437HLO5CM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3GN3RXW8RLMC316O2RG1FS2YBE&quot;}}]},{&quot;id&quot;:&quot;R2H4CNWCFQD1G2PY1Q6L3L5OHY&quot;,&quot;date&quot;:&quot;2014-09-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N3JY5L3R1RQ3SG34KLV6KS5PF4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8RGC356HH8CEGOYPTOGK4JKEVE&quot;}}]},{&quot;id&quot;:&quot;YOH2TXPRE5E3915XX45JM4PV8Q&quot;,&quot;date&quot;:&quot;2014-09-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5EJK428BHFG2QH745MXEVYL1D1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2JVON8V7T7EWNQO67KTDJ8ZCNY&quot;}}]},{&quot;id&quot;:&quot;CKXD15B2WZDQF84WC5897P7DJE&quot;,&quot;date&quot;:&quot;2014-09-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N7X82FNRY3EOY48NB23D4XQY74&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/PC55X8SE1ZX7276XYMGNCQ7X98&quot;}}]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/TL6OKM4SS1DLNF7PC1NKBBQ7OQ/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="206" it="0" lt="0" ts="1407707708995" s="true" lb="Create Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:07 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707708&quot;, oauth_nonce=&quot;1407707708995207000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;u8u1PqWjMkbHaEKbVUI4duLgy%2BM%3D&quot;
+Content-Length: 527
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2013-11-04&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  }, {&#xd;
+    &quot;name&quot; : &quot;APlace in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 1&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2013-11-11&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place inOur World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events</java.net.URL>
+</httpSample>
+<httpSample t="228" it="0" lt="0" ts="1407707709209" s="true" lb="Push  Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707709&quot;, oauth_nonce=&quot;1407707709209136000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;frQqxrxrX3bzkyhUVXoP%2FOiWSpw%3D&quot;
+Content-Length: 258
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2014-08-20&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;NEW&quot;,&#xd;
+    &quot;type&quot; : &quot;NONINSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2014-08-21&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;NEW&quot;,&#xd;
+    &quot;type&quot; : &quot;NONINSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]&#xd;
+</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events/push</java.net.URL>
+</httpSample>
+<httpSample t="198" it="0" lt="0" ts="1407707709445" s="true" lb="Pull  Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707709&quot;, oauth_nonce=&quot;1407707709444907000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;mmwg3TqKIBuqcPJX2ckLRd%2BtW%2Bc%3D&quot;
+Content-Length: 527
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2013-11-04&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  }, {&#xd;
+    &quot;name&quot; : &quot;APlace in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 1&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2013-11-11&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place inOur World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events/pull</java.net.URL>
+</httpSample>
+<httpSample t="116" it="0" lt="115" ts="1407707709652" s="true" lb="Get Event" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="3638" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707709&quot;, oauth_nonce=&quot;1407707709651647000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Co9SDdxUC%2F%2FgYtQ7jla5DrLFRX4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;W3GK43ZTDP1GCX1X1FEHDZVL5E&quot;,&quot;date&quot;:&quot;2014-08-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NTHWYLF7MQDMKXSCDG45S9K2FO&quot;,&quot;name&quot;:&quot;NEW&quot;,&quot;fixed&quot;:true,&quot;instructional&quot;:false,&quot;type&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;seq&quot;:0}]},{&quot;id&quot;:&quot;RP9Y2QSVDWWNQL9V5X1LDKSD44&quot;,&quot;date&quot;:&quot;2014-08-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;T8DSO9JD7RMKGQ21M7W5PF49WQ&quot;,&quot;name&quot;:&quot;NEW&quot;,&quot;fixed&quot;:true,&quot;instructional&quot;:false,&quot;type&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;seq&quot;:0}]},{&quot;id&quot;:&quot;63VMKTQWTJQ37HQKF4NQ22W6O1&quot;,&quot;date&quot;:&quot;2014-08-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HEQC3F6P8XRZJXCPNBCWOGMR51&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9T5PD6E8CFOHG65XEGFZTC29FE&quot;}}]},{&quot;id&quot;:&quot;Q21ZLMF24P16XHQEE6C8J8PD5O&quot;,&quot;date&quot;:&quot;2014-08-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;Z2JQ7HYSRT6961Q1EOXWYERJZQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MCYJCYR271LVOWPJENFTTVXRB4&quot;}}]},{&quot;id&quot;:&quot;BDDH9MQR7DZEXY1M9S2X8OQD4E&quot;,&quot;date&quot;:&quot;2014-08-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;53WLDHQQXXWW16GPJFLF8H21DQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2BRQRLK2QBBKQLR5OJCYRGLW5M&quot;}}]},{&quot;id&quot;:&quot;FWRHE73SG7YKJ2G7F5ES9KG16Y&quot;,&quot;date&quot;:&quot;2014-08-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;P98LGGQKKB3J2S8MN6LZVS7ENM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NK36E1TWYL6VZWK9J758XRFCNQ&quot;}}]},{&quot;id&quot;:&quot;QB7W6O2GLVPOO569RN7G2RSJJ8&quot;,&quot;date&quot;:&quot;2014-08-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;JT56HHHOJSEETSQ3C8ZLNGQM2Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VJH6GL35RVH2J8XLM5TFXBR69M&quot;}}]},{&quot;id&quot;:&quot;H7TH867SXJC7CSVTJH95M4RPDM&quot;,&quot;date&quot;:&quot;2014-08-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;F1FVVVS4EDWY3CE8GKKBGJ8J61&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/85MLOH6FRP3VPHZZ2RO4P8SN84&quot;}}]},{&quot;id&quot;:&quot;XK9CW94TWF21LNJZREOL9ME3PE&quot;,&quot;date&quot;:&quot;2014-08-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;VP9S1M5L3CT3HEDEFVCHZNHLDO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FM79CNPYNDSWV39LQGR4VDV974&quot;}}]},{&quot;id&quot;:&quot;HLK266RW47OP39LK8C4M85PJK4&quot;,&quot;date&quot;:&quot;2014-08-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;RZEON8OYGF7D1WDG7DY9KHN24E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/OVPOK2K8OH3KPNPEO7B1WL1XQ8&quot;}}]},{&quot;id&quot;:&quot;977S4FH16XPP862BW1MRE22P8Y&quot;,&quot;date&quot;:&quot;2014-09-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;6N6JJTRWEH56MX2YD8VXYD42N8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YZ3V9YWFN7FVNQLKZBN9OT1Y91&quot;}}]},{&quot;id&quot;:&quot;4S278XFPVNX2QLOZPDCV79ZBTE&quot;,&quot;date&quot;:&quot;2014-09-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;M56HOHFDCT74YQNXGQ499HEJ68&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3GN3RXW8RLMC316O2RG1FS2YBE&quot;}}]},{&quot;id&quot;:&quot;YE2BX64PXGNZM71YW16OOXM878&quot;,&quot;date&quot;:&quot;2014-09-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;QQ1WZLC6TEVJKE9S45F936B8W1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8RGC356HH8CEGOYPTOGK4JKEVE&quot;}}]},{&quot;id&quot;:&quot;XVHH6BGCOXBFOFY6R6OG4LJDH4&quot;,&quot;date&quot;:&quot;2014-09-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;LDNSX8WGYMMLPJ3C6B4LYNQY4Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2JVON8V7T7EWNQO67KTDJ8ZCNY&quot;}}]},{&quot;id&quot;:&quot;BQXXM9XJOV5YNLNNMDPYHE6634&quot;,&quot;date&quot;:&quot;2014-09-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;L8JG4QWNMTKBEM6L676YJKFBX4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/PC55X8SE1ZX7276XYMGNCQ7X98&quot;}}]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="102" it="0" lt="102" ts="1407707709776" s="true" lb="Get Planner" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="861" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707709&quot;, oauth_nonce=&quot;1407707709775896000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4ZaYNqBm9OyYHj3JUgUnmHUKQDE%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;LZ2CR5WGM8K37JOHJYDDQBPM2Q&quot;,&quot;name&quot;:&quot;ProductionTest - test planner&quot;,&quot;description&quot;:&quot;ProductionTest - test planner&quot;,&quot;locked&quot;:false,&quot;dayTypes&quot;:{&quot;MON&quot;:&quot;INSTRUCTIONAL&quot;,&quot;TUE&quot;:&quot;INSTRUCTIONAL&quot;,&quot;WED&quot;:&quot;INSTRUCTIONAL&quot;,&quot;THU&quot;:&quot;INSTRUCTIONAL&quot;,&quot;FRI&quot;:&quot;INSTRUCTIONAL&quot;,&quot;SAT&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;SUN&quot;:&quot;NONINSTRUCTIONAL&quot;},&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/classes&quot;,&quot;addCurriculum&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/addCurriculum&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/NVTZGTCXPB4NPRHZWHE1252HS1&quot;,&quot;events&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events&quot;,&quot;self&quot;:&quot;/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q</java.net.URL>
+</httpSample>
+<httpSample t="114" it="0" lt="113" ts="1407707709888" s="true" lb="Get Planner Classess" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="227" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707709&quot;, oauth_nonce=&quot;1407707709887704000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;xlDFzSXsG5YjK2dzF2hsdZ5zeBI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/classes</java.net.URL>
+</httpSample>
+<httpSample t="158" it="0" lt="0" ts="1407707710011" s="true" lb="Delete Events" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707710&quot;, oauth_nonce=&quot;1407707710010839000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lSYO%2F0EvRSmI9uYFqAYFYHGiIlM%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/events?course=NVTZGTCXPB4NPRHZWHE1252HS1</java.net.URL>
+</httpSample>
+<httpSample t="152" it="0" lt="0" ts="1407707710179" s="true" lb="Delete Curriculam" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:08 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707710&quot;, oauth_nonce=&quot;1407707710179000000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Eh8NoeOTNB6z3o3hJ01p6%2B4CST0%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/planner/LZ2CR5WGM8K37JOHJYDDQBPM2Q/curriculum?course=NVTZGTCXPB4NPRHZWHE1252HS1</java.net.URL>
+</httpSample>
+<httpSample t="581" it="0" lt="581" ts="1407707710342" s="true" lb="Create a New Program" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="415" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Location: http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707710&quot;, oauth_nonce=&quot;1407707710342304000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;alcXPmZPLfJp4txFQfrsIt0k740%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;XGW4CMKYYX4XQ5HT261DSMHWZ1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_058&quot;,&quot;url&quot;:&quot;TESTING_058&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">contentArea=BB&amp;title=TESTING_058&amp;url=TESTING_058</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/program?contentArea=BB&amp;title=TESTING_058&amp;url=TESTING_058</java.net.URL>
+</httpSample>
+<httpSample t="131" it="0" lt="130" ts="1407707710935" s="true" lb="Get Program" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="512" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707710&quot;, oauth_nonce=&quot;1407707710934486000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;KInapujk1511T6U1GDRovdos0i4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;XGW4CMKYYX4XQ5HT261DSMHWZ1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_058&quot;,&quot;url&quot;:&quot;TESTING_058&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1</java.net.URL>
+</httpSample>
+<httpSample t="102" it="0" lt="0" ts="1407707711075" s="true" lb="Delete a Program" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711075064000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4A6sjsWdQYi8iNvuGGnZSAFcAQE%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1</java.net.URL>
+</httpSample>
+<httpSample t="113" it="0" lt="110" ts="1407707711210" s="true" lb="Get All Program for a given user" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="11702" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711209844000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;y7HNYBVj6wagMxWqYS8CAk2lMZE%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;K9B6H73ZBWOSPKBMOLQRZEQFT1&quot;,&quot;contentArea&quot;:&quot;RD14&quot;,&quot;title&quot;:&quot;Readings Wonders 2014&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/K9B6H73ZBWOSPKBMOLQRZEQFT1&quot;}},{&quot;id&quot;:&quot;48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;,&quot;contentArea&quot;:&quot;EM4&quot;,&quot;title&quot;:&quot;Everyday Math 4&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/48GZXQ8TRPLPO4WGWOXGGJQM9O&quot;}},{&quot;id&quot;:&quot;E6MCLLQXGX1T873123J1PCEZO4&quot;,&quot;contentArea&quot;:&quot;NWBB&quot;,&quot;title&quot;:&quot;Number Worlds&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/E6MCLLQXGX1T873123J1PCEZO4&quot;}},{&quot;id&quot;:&quot;9CFD91C1KZ6KC93DNDZWV96HX8&quot;,&quot;contentArea&quot;:&quot;SPIRE&quot;,&quot;title&quot;:&quot;Music&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/9CFD91C1KZ6KC93DNDZWV96HX8&quot;}},{&quot;id&quot;:&quot;8LNVQOZGTW3HG1EPNOLS2YQWG4&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;Building Blocks&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8LNVQOZGTW3HG1EPNOLS2YQWG4&quot;}},{&quot;id&quot;:&quot;44YZ2P1BKERMSSMN17Q6LQG1NQ&quot;,&quot;contentArea&quot;:&quot;FLEX&quot;,&quot;title&quot;:&quot;Flex Literacy&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/44YZ2P1BKERMSSMN17Q6LQG1NQ&quot;}},{&quot;id&quot;:&quot;B5POO5B8TKS4RPWTY5HTMJP9W4&quot;,&quot;contentArea&quot;:&quot;WW&quot;,&quot;title&quot;:&quot;Writer&apos;s Workspace&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/B5POO5B8TKS4RPWTY5HTMJP9W4&quot;}},{&quot;id&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;contentArea&quot;:&quot;OCR&quot;,&quot;title&quot;:&quot;Open Court Reading&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/6YRX437T8MM8YDTRTZS81HJ161&quot;}},{&quot;id&quot;:&quot;8W9FGFYKOFVCVR59YQ46NZ6XQE&quot;,&quot;contentArea&quot;:&quot;RD14&quot;,&quot;title&quot;:&quot;Reading Honders&quot;,&quot;url&quot;:&quot;https://www.mheonline.com/program/view/1/1/2729/READWONDER/&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8W9FGFYKOFVCVR59YQ46NZ6XQE&quot;}},{&quot;id&quot;:&quot;OGR5YFTXXRGTN79ET9RFRLGB3E&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;nProd&quot;,&quot;url&quot;:&quot;http://prod-cw2.ced.emhe.mhc&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/OGR5YFTXXRGTN79ET9RFRLGB3E&quot;}},{&quot;id&quot;:&quot;Z4CCM35PVHHD4FJW9BMMDFEGM8&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;Please Delete Me&quot;,&quot;url&quot;:&quot;Please Delete Me&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/Z4CCM35PVHHD4FJW9BMMDFEGM8&quot;}},{&quot;id&quot;:&quot;ZEYZYW7SS5JC9XMG9Y63V79T34&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_062&quot;,&quot;url&quot;:&quot;TESTING_062&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/ZEYZYW7SS5JC9XMG9Y63V79T34&quot;}},{&quot;id&quot;:&quot;QV5VMBNBZPT4DNXG9DN6ZRZBPO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_064&quot;,&quot;url&quot;:&quot;TESTING_064&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/QV5VMBNBZPT4DNXG9DN6ZRZBPO&quot;}},{&quot;id&quot;:&quot;N61NM1JSNWSRQ7LZLW969QLFPY&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_096&quot;,&quot;url&quot;:&quot;TESTING_096&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/N61NM1JSNWSRQ7LZLW969QLFPY&quot;}},{&quot;id&quot;:&quot;6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_100&quot;,&quot;url&quot;:&quot;TESTING_100&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/6YPXCNYRYPHTVZ1FF54WZ1ZM58&quot;}},{&quot;id&quot;:&quot;RTFPNSLVXH8HHEYT2N7TZPJ9JO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_015&quot;,&quot;url&quot;:&quot;TESTING_015&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/RTFPNSLVXH8HHEYT2N7TZPJ9JO&quot;}},{&quot;id&quot;:&quot;O2MXM9MGQMGEQ2CPZ6X8KG72MO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_082&quot;,&quot;url&quot;:&quot;TESTING_082&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/O2MXM9MGQMGEQ2CPZ6X8KG72MO&quot;}},{&quot;id&quot;:&quot;8LGVBTCQ1NH79BQFDH3EPRRHDO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_011&quot;,&quot;url&quot;:&quot;TESTING_011&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/8LGVBTCQ1NH79BQFDH3EPRRHDO&quot;}},{&quot;id&quot;:&quot;GRD6L7OBDM1DRLSWWENMYKGVMM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_010&quot;,&quot;url&quot;:&quot;TESTING_010&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/GRD6L7OBDM1DRLSWWENMYKGVMM&quot;}},{&quot;id&quot;:&quot;5BL1MCNRRXTDP9DGNX8XMTN7RE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_039&quot;,&quot;url&quot;:&quot;TESTING_039&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/5BL1MCNRRXTDP9DGNX8XMTN7RE&quot;}},{&quot;id&quot;:&quot;PJKQS1O397S9KRD556ZESVRVVE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_084&quot;,&quot;url&quot;:&quot;TESTING_084&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/PJKQS1O397S9KRD556ZESVRVVE&quot;}},{&quot;id&quot;:&quot;45Z13Y1MPZYKK7K15G3SKRPXVO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_027&quot;,&quot;url&quot;:&quot;TESTING_027&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/45Z13Y1MPZYKK7K15G3SKRPXVO&quot;}},{&quot;id&quot;:&quot;7YWQCC2GLD9YZQKJQ265TKBCGO&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_093&quot;,&quot;url&quot;:&quot;TESTING_093&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7YWQCC2GLD9YZQKJQ265TKBCGO&quot;}},{&quot;id&quot;:&quot;HR8GJLXKXLGMLP7TKTSC3CM42Y&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_028&quot;,&quot;url&quot;:&quot;TESTING_028&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/HR8GJLXKXLGMLP7TKTSC3CM42Y&quot;}},{&quot;id&quot;:&quot;2C33BQ9ZOHCH7HHLMVY6E38611&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_072&quot;,&quot;url&quot;:&quot;TESTING_072&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/2C33BQ9ZOHCH7HHLMVY6E38611&quot;}},{&quot;id&quot;:&quot;7MOH7YWXWJK28KQJHO4ZYWM731&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_059&quot;,&quot;url&quot;:&quot;TESTING_059&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7MOH7YWXWJK28KQJHO4ZYWM731&quot;}},{&quot;id&quot;:&quot;M5S1VMWW3TNOO38J5XWSHKKLY8&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_080&quot;,&quot;url&quot;:&quot;TESTING_080&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/M5S1VMWW3TNOO38J5XWSHKKLY8&quot;}},{&quot;id&quot;:&quot;7NMD7S4Y9D7B86K17QHHFBPS28&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_044&quot;,&quot;url&quot;:&quot;TESTING_044&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/7NMD7S4Y9D7B86K17QHHFBPS28&quot;}},{&quot;id&quot;:&quot;3Z63O4OSZ9NB36G4QDHBF4GMY4&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_088&quot;,&quot;url&quot;:&quot;TESTING_088&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/3Z63O4OSZ9NB36G4QDHBF4GMY4&quot;}},{&quot;id&quot;:&quot;JX9WQLWVW97B4JY5XOD448LQRM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_055&quot;,&quot;url&quot;:&quot;TESTING_055&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/JX9WQLWVW97B4JY5XOD448LQRM&quot;}},{&quot;id&quot;:&quot;E26CGGGXLQ9P5WF4J8ZDFV53F1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_022&quot;,&quot;url&quot;:&quot;TESTING_022&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/E26CGGGXLQ9P5WF4J8ZDFV53F1&quot;}},{&quot;id&quot;:&quot;3L1P6ZVL2W38758N5W3CGHBVBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_045&quot;,&quot;url&quot;:&quot;TESTING_045&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/3L1P6ZVL2W38758N5W3CGHBVBE&quot;}},{&quot;id&quot;:&quot;JH7GHTCWTB82ME1MKL58TJEH2M&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_073&quot;,&quot;url&quot;:&quot;TESTING_073&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/JH7GHTCWTB82ME1MKL58TJEH2M&quot;}},{&quot;id&quot;:&quot;VKJONXNDD2SRFL2WPFOBSX1O5Q&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_081&quot;,&quot;url&quot;:&quot;TESTING_081&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/VKJONXNDD2SRFL2WPFOBSX1O5Q&quot;}},{&quot;id&quot;:&quot;37KNKN47R574PGFJ7BP5Y2DRT1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_053&quot;,&quot;url&quot;:&quot;TESTING_053&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/37KNKN47R574PGFJ7BP5Y2DRT1&quot;}},{&quot;id&quot;:&quot;DBFDQ5865C358PYCYW3BWTTQ5O&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_087&quot;,&quot;url&quot;:&quot;TESTING_087&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/DBFDQ5865C358PYCYW3BWTTQ5O&quot;}},{&quot;id&quot;:&quot;N5BZNP1BTTRPQ7TGJJ4J94MYPE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_099&quot;,&quot;url&quot;:&quot;TESTING_099&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/N5BZNP1BTTRPQ7TGJJ4J94MYPE&quot;}},{&quot;id&quot;:&quot;XGW4CMKYYX4XQ5HT261DSMHWZ1&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_058&quot;,&quot;url&quot;:&quot;TESTING_058&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/XGW4CMKYYX4XQ5HT261DSMHWZ1&quot;}},{&quot;id&quot;:&quot;T5GY9FNWTYG3CR9YVYVFTDSERM&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_038&quot;,&quot;url&quot;:&quot;TESTING_038&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/T5GY9FNWTYG3CR9YVYVFTDSERM&quot;}},{&quot;id&quot;:&quot;4WJZ599Y48HE1KD4WZ422N6HBE&quot;,&quot;contentArea&quot;:&quot;BB&quot;,&quot;title&quot;:&quot;TESTING_023&quot;,&quot;url&quot;:&quot;TESTING_023&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/product&quot;,&quot;addon&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE/addon&quot;,&quot;self&quot;:&quot;/api/v0.1/program/4WJZ599Y48HE1KD4WZ422N6HBE&quot;}}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/program?all=true</java.net.URL>
+</httpSample>
+<httpSample t="103" it="0" lt="103" ts="1407707711346" s="true" lb="Get User" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="643" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711345299000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;B%2BPjEetn9QpaAESKTX65xdoUvkc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;FS5F7EBOVOV3M5LR26MOHDGXXY&quot;,&quot;connectedUserName&quot;:&quot;PRODS&quot;,&quot;firstName&quot;:&quot;Prod&quot;,&quot;lastName&quot;:&quot;S&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;gradeLevel&quot;:&quot;12&quot;,&quot;lastLoginDate&quot;:&quot;2014-03-18&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY&quot;,&quot;annotations&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/annotations&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/planners&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY</java.net.URL>
+</httpSample>
+<httpSample t="108" it="0" lt="108" ts="1407707711471" s="true" lb="Get classes for  user" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="1778" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711470327000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ArQcsqZS8poa1UQfAtAbV19AUqk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;2SD5TOR8JV22EYP38H7M3J66SO&quot;,&quot;teacherID&quot;:&quot;OHH4PH5L6DH566JVF2233HBJZY&quot;,&quot;schoolID&quot;:&quot;K4WJKZJZ2XGEM7D1TGJTRNQHP1&quot;,&quot;name&quot;:&quot;new_oct7&quot;,&quot;createdDate&quot;:&quot;2011-10-07&quot;,&quot;lastModDate&quot;:&quot;2011-10-07&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;3&quot;,&quot;courseID&quot;:&quot;5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/2SD5TOR8JV22EYP38H7M3J66SO&quot;}},{&quot;id&quot;:&quot;V3QMH7W8LFR3B6DB31XRPOPZBM&quot;,&quot;teacherID&quot;:&quot;OHH4PH5L6DH566JVF2233HBJZY&quot;,&quot;schoolID&quot;:&quot;K4WJKZJZ2XGEM7D1TGJTRNQHP1&quot;,&quot;name&quot;:&quot;new2_oct7&quot;,&quot;createdDate&quot;:&quot;2011-10-07&quot;,&quot;lastModDate&quot;:&quot;2011-10-07&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;2&quot;,&quot;courseID&quot;:&quot;5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/5GQ18T7M9D4LRMCH8VYNJ5LJRY&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/V3QMH7W8LFR3B6DB31XRPOPZBM&quot;}},{&quot;id&quot;:&quot;DOM5DNYFDRT58RYRQGD3GHTVF4&quot;,&quot;teacherID&quot;:&quot;18G6RRYNF32EB4CFPJZK83FPGE&quot;,&quot;schoolID&quot;:&quot;JRBZ53XF4HM684NP4YJTMZ8XO1&quot;,&quot;name&quot;:&quot;10-01&quot;,&quot;createdDate&quot;:&quot;2014-04-02&quot;,&quot;lastModDate&quot;:&quot;2014-05-21&quot;,&quot;activeFlag&quot;:&quot;Y&quot;,&quot;grade&quot;:&quot;10&quot;,&quot;iconID&quot;:10,&quot;shortCode&quot;:&quot;h9u6b&quot;,&quot;courseID&quot;:&quot;OGYVOC7XOE3BPNP7LVY3KR7N9Q&quot;,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/OGYVOC7XOE3BPNP7LVY3KR7N9Q&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/DOM5DNYFDRT58RYRQGD3GHTVF4&quot;}}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/user/FS5F7EBOVOV3M5LR26MOHDGXXY/classes</java.net.URL>
+</httpSample>
+<httpSample t="115" it="0" lt="115" ts="1407707711602" s="true" lb="Delete Favorite" rc="404" rm="Not Found" tn="Regression Suite Prod 1-1" dt="text" de="" by="427" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711602093000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;xaqO81eHYFIXwqfSpoUmx%2B4ZCr4%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;00-4-7e904547&quot;,&quot;message&quot;:&quot;Unable to locate Annotation with ID No annotation of type FAVORITE found for user/asset:DR8SOSZQMXYCZCWVKKZHT57CME/WTTK1CDP1YOMC619KQQ4J9R1XY&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="128" it="0" lt="128" ts="1407707711740" s="true" lb="Create Favorite" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="846" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:10 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Location: http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite/P5741B21SOCZH8N8FNDYKBZ5V4
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711739599000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;1q75SEz3hwRBKCtv6H5FGvC%2Fqks%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;P5741B21SOCZH8N8FNDYKBZ5V4&quot;,&quot;type&quot;:&quot;FAVORITE&quot;,&quot;userId&quot;:&quot;DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;assetId&quot;:&quot;WTTK1CDP1YOMC619KQQ4J9R1XY&quot;,&quot;productId&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;createTime&quot;:&quot;2014-08-10T21:55:11Z&quot;,&quot;_links&quot;:{&quot;product&quot;:&quot;/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;asset&quot;:&quot;/api/v0.1/asset/WTTK1CDP1YOMC619KQQ4J9R1XY&quot;,&quot;self&quot;:&quot;/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite/P5741B21SOCZH8N8FNDYKBZ5V4&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="123" it="0" lt="123" ts="1407707711891" s="true" lb="Get Favorite" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="434" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Favorite is present in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:11 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707711&quot;, oauth_nonce=&quot;1407707711890842000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ldnqq4mNyW5OqHJRqo%2F2%2BoXfLHU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;P5741B21SOCZH8N8FNDYKBZ5V4&quot;,&quot;type&quot;:&quot;FAVORITE&quot;,&quot;userId&quot;:&quot;DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;assetId&quot;:&quot;WTTK1CDP1YOMC619KQQ4J9R1XY&quot;,&quot;productId&quot;:&quot;6YRX437T8MM8YDTRTZS81HJ161&quot;,&quot;createTime&quot;:&quot;2014-08-10T21:55:11Z&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="115" it="0" lt="0" ts="1407707712037" s="true" lb="Delete Favorite" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:11 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707712&quot;, oauth_nonce=&quot;1407707712037091000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;H%2Bcdjgfnb0%2FwSIv7PO8RrcoQT68%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite?assetId=WTTK1CDP1YOMC619KQQ4J9R1XY</java.net.URL>
+</httpSample>
+<httpSample t="105" it="0" lt="105" ts="1407707712175" s="true" lb="Get Deleted Favorite" rc="404" rm="Not Found" tn="Regression Suite Prod 1-1" dt="text" de="" by="391" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Not found Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Sun, 10 Aug 2014 21:55:11 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707712&quot;, oauth_nonce=&quot;1407707712175080000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ydyxJCIwbxwqXXOXYsl0py9cE0k%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;00-4-9971f7e&quot;,&quot;message&quot;:&quot;Unable to locate product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite with ID DR8SOSZQMXYCZCWVKKZHT57CME&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/product/6YRX437T8MM8YDTRTZS81HJ161/annotation/favorite</java.net.URL>
+</httpSample>
+<httpSample t="158" it="0" lt="158" ts="1407707712307" s="true" lb="Create Planner" rc="201" rm="Created" tn="Regression Suite Prod 1-1" dt="text" de="" by="897" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Sun, 10 Aug 2014 21:55:11 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Location: http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707712&quot;, oauth_nonce=&quot;1407707712302701000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;FalgWpWdR0MsbWLPVKXUawxgM4A%3D&quot;
+Content-Length: 100
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;LFV2SEX8VZKNED6F8MREWWX69Q&quot;,&quot;name&quot;:&quot;ProductionTest - test planner&quot;,&quot;description&quot;:&quot;ProductionTest - test planner&quot;,&quot;locked&quot;:false,&quot;dayTypes&quot;:{&quot;MON&quot;:&quot;INSTRUCTIONAL&quot;,&quot;TUE&quot;:&quot;INSTRUCTIONAL&quot;,&quot;WED&quot;:&quot;INSTRUCTIONAL&quot;,&quot;THU&quot;:&quot;INSTRUCTIONAL&quot;,&quot;FRI&quot;:&quot;INSTRUCTIONAL&quot;,&quot;SAT&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;SUN&quot;:&quot;NONINSTRUCTIONAL&quot;},&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/classes&quot;,&quot;addCurriculum&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/addCurriculum&quot;,&quot;events&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events&quot;,&quot;self&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;name&quot; : &quot;ProductionTest - test planner&quot;,&#xd;
+  &quot;description&quot; : &quot;ProductionTest - test planner&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner</java.net.URL>
+</httpSample>
+<httpSample t="532" it="0" lt="0" ts="1407707712489" s="true" lb="Add Curriculam" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:11 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707712&quot;, oauth_nonce=&quot;1407707712489175000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;XhMJQCnXxdUZzbkdxTJZyzGu0MQ%3D&quot;
+Content-Length: 54
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;startDate=2014-08-20</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/addCurriculum?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8&amp;startDate=2014-08-20</java.net.URL>
+</httpSample>
+<httpSample t="123" it="0" lt="122" ts="1407707713142" s="true" lb="Exclude Unit Organizers" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="3502" sc="1" ec="0" ng="1" na="1" hn="">
+  <assertionResult>
+    <name>Assert Unit Organizer not in the results</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:12 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707713&quot;, oauth_nonce=&quot;1407707713142152000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;MDai9nP%2FVPlba5s2oB4MXXot43Y%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;926Z2XNCCQ5JKXN97N1EMCPVH1&quot;,&quot;date&quot;:&quot;2014-08-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XMME73EDVBSG75EMJ8Q623LXC8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MTL6H7JPKKHZBCJNOWEW5OY9HE&quot;}}]},{&quot;id&quot;:&quot;R7K7J8W9ZT22XW3L1CS36D4J84&quot;,&quot;date&quot;:&quot;2014-08-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;14M78QVTXC2R8556FODBWWWP3Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9T5PD6E8CFOHG65XEGFZTC29FE&quot;}}]},{&quot;id&quot;:&quot;M7QFVGW39E2QV5BOZXND392Z71&quot;,&quot;date&quot;:&quot;2014-08-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NFLZZRBYOJ5G6O9S9X3M75N4G4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MCYJCYR271LVOWPJENFTTVXRB4&quot;}}]},{&quot;id&quot;:&quot;K4MZCPDBGHKSTSPC7S7DZJWT4E&quot;,&quot;date&quot;:&quot;2014-08-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;J1HDQX45L311FY13KSQPWV7T5Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2BRQRLK2QBBKQLR5OJCYRGLW5M&quot;}}]},{&quot;id&quot;:&quot;NZBREMJTM7B3W4FC4L3WR4QYC4&quot;,&quot;date&quot;:&quot;2014-08-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HKFPJXM9WPTFKORQY713ECWOC4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NK36E1TWYL6VZWK9J758XRFCNQ&quot;}}]},{&quot;id&quot;:&quot;H66KOWPW8BFT8QRZBWY2FFKNLY&quot;,&quot;date&quot;:&quot;2014-08-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;6DN2K2FL2LY3KS73W97KHTEPN1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VJH6GL35RVH2J8XLM5TFXBR69M&quot;}}]},{&quot;id&quot;:&quot;8TZSXS169KRVDN3JOKDNQRSY41&quot;,&quot;date&quot;:&quot;2014-08-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MO95OCW3XK2KMZQSHBMJFPB758&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/85MLOH6FRP3VPHZZ2RO4P8SN84&quot;}}]},{&quot;id&quot;:&quot;MC6CJMPLOVBX3SQ47QRDD271N8&quot;,&quot;date&quot;:&quot;2014-08-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;S46JJKO2VNHW22WX7GWGXXE25M&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FM79CNPYNDSWV39LQGR4VDV974&quot;}}]},{&quot;id&quot;:&quot;6ON4GLNGCR3OG7O98R69HLF8WQ&quot;,&quot;date&quot;:&quot;2014-09-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DWFQOCT7J1RFC2XP1V4O31PBR8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/OVPOK2K8OH3KPNPEO7B1WL1XQ8&quot;}}]},{&quot;id&quot;:&quot;YTJ915C5HS1TFVEVEDVZB4T3R1&quot;,&quot;date&quot;:&quot;2014-09-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N5Z5EGG89ZRHMHC5N32N6PFQG1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YZ3V9YWFN7FVNQLKZBN9OT1Y91&quot;}}]},{&quot;id&quot;:&quot;EO3ZO98MEWLOL1PEZSBPLJHWVM&quot;,&quot;date&quot;:&quot;2014-09-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DJTNO2JKY7DZSPT96437HLO5CM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3GN3RXW8RLMC316O2RG1FS2YBE&quot;}}]},{&quot;id&quot;:&quot;R2H4CNWCFQD1G2PY1Q6L3L5OHY&quot;,&quot;date&quot;:&quot;2014-09-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N3JY5L3R1RQ3SG34KLV6KS5PF4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8RGC356HH8CEGOYPTOGK4JKEVE&quot;}}]},{&quot;id&quot;:&quot;YOH2TXPRE5E3915XX45JM4PV8Q&quot;,&quot;date&quot;:&quot;2014-09-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5EJK428BHFG2QH745MXEVYL1D1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/2JVON8V7T7EWNQO67KTDJ8ZCNY&quot;}}]},{&quot;id&quot;:&quot;CKXD15B2WZDQF84WC5897P7DJE&quot;,&quot;date&quot;:&quot;2014-09-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;N7X82FNRY3EOY48NB23D4XQY74&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/PC55X8SE1ZX7276XYMGNCQ7X98&quot;}}]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/TL6OKM4SS1DLNF7PC1NKBBQ7OQ/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="177" it="0" lt="0" ts="1407707713301" s="true" lb="Create Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:12 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707713&quot;, oauth_nonce=&quot;1407707713300972000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;DEwuwomI%2BFCDj2y1KH0E6QlRkBc%3D&quot;
+Content-Length: 527
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2013-11-04&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  }, {&#xd;
+    &quot;name&quot; : &quot;APlace in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 1&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2013-11-11&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place inOur World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events</java.net.URL>
+</httpSample>
+<httpSample t="207" it="0" lt="0" ts="1407707713513" s="true" lb="Push  Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:12 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707713&quot;, oauth_nonce=&quot;1407707713513421000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;QzN8fyEj2m12g6gHv47i6Ny%2B1OE%3D&quot;
+Content-Length: 258
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2014-08-20&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;NEW&quot;,&#xd;
+    &quot;type&quot; : &quot;NONINSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2014-08-21&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;NEW&quot;,&#xd;
+    &quot;type&quot; : &quot;NONINSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]&#xd;
+</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events/push</java.net.URL>
+</httpSample>
+<httpSample t="228" it="0" lt="0" ts="1407707713784" s="true" lb="Pull  Event" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:12 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707713&quot;, oauth_nonce=&quot;1407707713784428000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;goXtUTbJafip9%2FRFxWLsIQABB5M%3D&quot;
+Content-Length: 527
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">[ {&#xd;
+  &quot;date&quot; : &quot;2013-11-04&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  }, {&#xd;
+    &quot;name&quot; : &quot;APlace in Our World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 1&#xd;
+  } ]&#xd;
+}, {&#xd;
+  &quot;date&quot; : &quot;2013-11-11&quot;,&#xd;
+  &quot;events&quot; : [ {&#xd;
+    &quot;name&quot; : &quot;A Place inOur World&quot;,&#xd;
+    &quot;fixed&quot; : false,&#xd;
+    &quot;instructional&quot; : true,&#xd;
+    &quot;type&quot; : &quot;INSTRUCTIONAL&quot;,&#xd;
+    &quot;seq&quot; : 0&#xd;
+  } ]&#xd;
+} ]</queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events/pull</java.net.URL>
+</httpSample>
+<httpSample t="239" it="0" lt="223" ts="1407707714034" s="true" lb="Get Event" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="31250" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:12 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707714&quot;, oauth_nonce=&quot;1407707714034315000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2FB4hdlPtxzbBJk7N6l0tNc8MIqY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;RRYKF9LO9VCDN2QM6VQW6YHJJE&quot;,&quot;date&quot;:&quot;2014-08-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4ZFRVT61RSGHG72Q8JF8Y2XRBE&quot;,&quot;name&quot;:&quot;NEW&quot;,&quot;fixed&quot;:true,&quot;instructional&quot;:false,&quot;type&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;seq&quot;:0}]},{&quot;id&quot;:&quot;7WPRDHM76QLQC6BNLZ1EDQSCT8&quot;,&quot;date&quot;:&quot;2014-08-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;TST3PLTKD6S4CSXJ61Z2YN31L8&quot;,&quot;name&quot;:&quot;NEW&quot;,&quot;fixed&quot;:true,&quot;instructional&quot;:false,&quot;type&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;seq&quot;:0}]},{&quot;id&quot;:&quot;4POODT1G8PF9Y58HBOJ83ZJN94&quot;,&quot;date&quot;:&quot;2014-08-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;Y13W83S3EPLKOGKRK4J11JO3PY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/7D341F43PXNS839PGFFR1EEM1Y&quot;}}]},{&quot;id&quot;:&quot;M8HTX7Z9ROOCKOQ2O15CZDY1CM&quot;,&quot;date&quot;:&quot;2014-08-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;63VMKTQWTJQ37HQKF4NQ22W6O1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/TYWJG579RFXNSMGL6F5ZND1G2M&quot;}}]},{&quot;id&quot;:&quot;PVDSXNR7P22F521XXZ8TFE5BZY&quot;,&quot;date&quot;:&quot;2014-08-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;Q21ZLMF24P16XHQEE6C8J8PD5O&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/EFSTSG9X4GECQFT1KDDKLQW958&quot;}}]},{&quot;id&quot;:&quot;8X79NKG1QC9Q27TY7KTLR3SR7Q&quot;,&quot;date&quot;:&quot;2014-08-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;BDDH9MQR7DZEXY1M9S2X8OQD4E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/14T168NXN8F2HY8M7KMT3D4LTE&quot;}}]},{&quot;id&quot;:&quot;C8TTRR9QHF741YXPQDWKFMY4B1&quot;,&quot;date&quot;:&quot;2014-08-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;FWRHE73SG7YKJ2G7F5ES9KG16Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZBVNMFNEPE9QH67TTTRY647GCE&quot;}}]},{&quot;id&quot;:&quot;4K2PMYDG4XTP3BCFMDDMZ76RJQ&quot;,&quot;date&quot;:&quot;2014-08-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;QB7W6O2GLVPOO569RN7G2RSJJ8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/16FCN1VFT87WNK9XVCO1DGQZTO&quot;}}]},{&quot;id&quot;:&quot;BHSWHBVBF6DVDVRGV3EDZS3SVM&quot;,&quot;date&quot;:&quot;2014-08-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;H7TH867SXJC7CSVTJH95M4RPDM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/1RWQDFPSX14DYD2PSO94M7LR6M&quot;}}]},{&quot;id&quot;:&quot;PHPYZB7TVJX319GRV65NOS8GRO&quot;,&quot;date&quot;:&quot;2014-08-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XK9CW94TWF21LNJZREOL9ME3PE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZXXLXB81X22XKNXTTVZYK4SCEO&quot;}}]},{&quot;id&quot;:&quot;EZYBZ92K89P3FG9WFKJPGO4KSM&quot;,&quot;date&quot;:&quot;2014-09-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HLK266RW47OP39LK8C4M85PJK4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/GSPJGTLTKH2DXZ2W7V239NRVNE&quot;}}]},{&quot;id&quot;:&quot;5KX66934VFXBJMHMNVW2VBCB1Q&quot;,&quot;date&quot;:&quot;2014-09-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;977S4FH16XPP862BW1MRE22P8Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VNVV88VHH6W3CE6MLM177N116O&quot;}}]},{&quot;id&quot;:&quot;9RB4HPKW3XRMOO56NX7W7WDGWO&quot;,&quot;date&quot;:&quot;2014-09-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4S278XFPVNX2QLOZPDCV79ZBTE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/42N999B31HZL8TV32TTO7GW421&quot;}}]},{&quot;id&quot;:&quot;FFMQGEM9G862B336OESDTDGXLY&quot;,&quot;date&quot;:&quot;2014-09-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;YE2BX64PXGNZM71YW16OOXM878&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BOBT6BDZTWJY6YNW93RWZMZ5BQ&quot;}}]},{&quot;id&quot;:&quot;2BNKO4R6VQ735G45XF37E9V6QY&quot;,&quot;date&quot;:&quot;2014-09-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XVHH6BGCOXBFOFY6R6OG4LJDH4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/HZ76Z3XJ1VB8Y32VPSD22PYNHQ&quot;}}]},{&quot;id&quot;:&quot;KLC1V21GQV85D6CS2MP7OQRGQQ&quot;,&quot;date&quot;:&quot;2014-09-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;BQXXM9XJOV5YNLNNMDPYHE6634&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8J37TO5T9YQJZJXQC7KN37DJME&quot;}}]},{&quot;id&quot;:&quot;SO52S89VBQPGVQOTXVTJ1YPQYO&quot;,&quot;date&quot;:&quot;2014-09-09&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5PLWRZKPG5PELKPHX13X693TZ4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BGS9E1EP9J8FDLC6BYDLL7HCC4&quot;}}]},{&quot;id&quot;:&quot;SDZ42FZGK13BD697VX7J5JZVJ8&quot;,&quot;date&quot;:&quot;2014-09-10&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4POODT1G8PF9Y58HBOJ83ZJN94&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/XYV45DG2YMRN3LHRP2QXJ64L4Q&quot;}}]},{&quot;id&quot;:&quot;5214RH2EJ8K5TW26MCYJ5TP33E&quot;,&quot;date&quot;:&quot;2014-09-11&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;M8HTX7Z9ROOCKOQ2O15CZDY1CM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FNKYFJSERPT183DHSEKREJKZ11&quot;}}]},{&quot;id&quot;:&quot;27ZFFLP5RYDWH2S6M3R9O9QZXE&quot;,&quot;date&quot;:&quot;2014-09-12&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;PVDSXNR7P22F521XXZ8TFE5BZY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/V5CFFCMM573SC7PT6NPLL7NT8E&quot;}}]},{&quot;id&quot;:&quot;EYD2WGTHR45XW2LVYP77GC3ZCE&quot;,&quot;date&quot;:&quot;2014-09-15&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;8X79NKG1QC9Q27TY7KTLR3SR7Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/QYQMHHC6W8QQ6XRJDS6XD79OPY&quot;}}]},{&quot;id&quot;:&quot;XME33LOYMS89L3YXRXT81WYF64&quot;,&quot;date&quot;:&quot;2014-09-16&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;C8TTRR9QHF741YXPQDWKFMY4B1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LONX72OE9528X7XSQWMYT4F1LM&quot;}}]},{&quot;id&quot;:&quot;B3BWJKPTB4EC1LX3K9S2P2SSWQ&quot;,&quot;date&quot;:&quot;2014-09-17&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4K2PMYDG4XTP3BCFMDDMZ76RJQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9WV7ZWWVST651R3NVCTR97N8H1&quot;}}]},{&quot;id&quot;:&quot;X1VX9KK31Z58QJSKR1CV8TKEZQ&quot;,&quot;date&quot;:&quot;2014-09-18&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;BHSWHBVBF6DVDVRGV3EDZS3SVM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/PNH1BG3CTOY3O8OKT3FJBOVQH1&quot;}}]},{&quot;id&quot;:&quot;L9F8ZBD4OJ7XYBHL6XGORN8G68&quot;,&quot;date&quot;:&quot;2014-09-19&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;PHPYZB7TVJX319GRV65NOS8GRO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YVZYEDG29O4ZMNZXQ2N1EWTWO1&quot;}}]},{&quot;id&quot;:&quot;K6LMOXT3W9N8L3QSX1KMJS3MBQ&quot;,&quot;date&quot;:&quot;2014-09-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;EZYBZ92K89P3FG9WFKJPGO4KSM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/E8M3QL1Q9X5BC6GTZ3RLZ71T6Q&quot;}}]},{&quot;id&quot;:&quot;93T2QL91MOZJEM28QB4C6WMXK1&quot;,&quot;date&quot;:&quot;2014-09-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5KX66934VFXBJMHMNVW2VBCB1Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/35T4DRMQF92PV8FXQMFVD5R6KM&quot;}}]},{&quot;id&quot;:&quot;27VY4DQ9VDNZLXTFW3ZOWX6Z2E&quot;,&quot;date&quot;:&quot;2014-09-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9RB4HPKW3XRMOO56NX7W7WDGWO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YCSWGVRFZR8YGYVG1FBGO4X1PQ&quot;}}]},{&quot;id&quot;:&quot;WG46VNXN55ZJCBQ9CYFE61NQD4&quot;,&quot;date&quot;:&quot;2014-09-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;FFMQGEM9G862B336OESDTDGXLY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/T9F4N8KNB4797TZJYX32TV4BHQ&quot;}}]},{&quot;id&quot;:&quot;4P69YXX32V1YQRSCKTOP3VSKJ1&quot;,&quot;date&quot;:&quot;2014-09-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;2BNKO4R6VQ735G45XF37E9V6QY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/GHN14YRZWHVDNMYSJ824CH9JQQ&quot;}}]},{&quot;id&quot;:&quot;ET18BE8GLS2V9H4W6MZBGH47G1&quot;,&quot;date&quot;:&quot;2014-09-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;KLC1V21GQV85D6CS2MP7OQRGQQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NLB2H66Z8V153Y54TRP1M16LFM&quot;}}]},{&quot;id&quot;:&quot;TCHRS7RRTYDRE38WG297P5DXM1&quot;,&quot;date&quot;:&quot;2014-09-30&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;SO52S89VBQPGVQOTXVTJ1YPQYO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZRRNHBKNHECWK37F8NEKW91JRQ&quot;}}]},{&quot;id&quot;:&quot;9ZQLGKGTT3XBYS1681KJPPPD2Y&quot;,&quot;date&quot;:&quot;2014-10-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;SDZ42FZGK13BD697VX7J5JZVJ8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/CHBYNTVDMN8Y4YBM1MXMC3TCQM&quot;}}]},{&quot;id&quot;:&quot;T62R925FNE756GS1XXWHK6FGKE&quot;,&quot;date&quot;:&quot;2014-10-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5214RH2EJ8K5TW26MCYJ5TP33E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/HPL8FPQNB5ELXOMW135FLYPQTM&quot;}}]},{&quot;id&quot;:&quot;DOLJXFNXEHLL487TERRZ8J3N9E&quot;,&quot;date&quot;:&quot;2014-10-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;27ZFFLP5RYDWH2S6M3R9O9QZXE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/SNBD4ZDTBWQ4DX4EKLEJE6QST4&quot;}}]},{&quot;id&quot;:&quot;4C51BHJ4TJOXWW89H2SCSHYMGE&quot;,&quot;date&quot;:&quot;2014-10-06&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;EYD2WGTHR45XW2LVYP77GC3ZCE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/SFZ76JXZ28S1DYDWERWVKEJDEM&quot;}}]},{&quot;id&quot;:&quot;ZD6B8J2ZVNK9EB7ST9LLRTPY3Q&quot;,&quot;date&quot;:&quot;2014-10-07&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XME33LOYMS89L3YXRXT81WYF64&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/6S8VT8L3R5QNFWNL97W6ZT9YSM&quot;}}]},{&quot;id&quot;:&quot;C4C5VYR2CECQHJVQ3G63GTGW9Q&quot;,&quot;date&quot;:&quot;2014-10-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;B3BWJKPTB4EC1LX3K9S2P2SSWQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/4MVZME5XL3OVGEY1LWVFGEGDBM&quot;}}]},{&quot;id&quot;:&quot;D9JL8B6S33POL95WY4OV9BGO7Q&quot;,&quot;date&quot;:&quot;2014-10-09&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;X1VX9KK31Z58QJSKR1CV8TKEZQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/1HSQSLGDZ94ZCXJFN8TT4YH42M&quot;}}]},{&quot;id&quot;:&quot;TYJCE6WYX93N86L6WTNLC5WJO8&quot;,&quot;date&quot;:&quot;2014-10-10&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;L9F8ZBD4OJ7XYBHL6XGORN8G68&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZKNJLHVCQH4FRKFPEDEJ1BJOT8&quot;}}]},{&quot;id&quot;:&quot;4Y2TGBHDZXBNYJLVJMVFYN1FP4&quot;,&quot;date&quot;:&quot;2014-10-13&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;K6LMOXT3W9N8L3QSX1KMJS3MBQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/WZ83SM38NO116PLZ8QQOP8PE61&quot;}}]},{&quot;id&quot;:&quot;JYMLL7GQGCTW9P3D17FWGD48KE&quot;,&quot;date&quot;:&quot;2014-10-14&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;93T2QL91MOZJEM28QB4C6WMXK1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9LEJ87Y7FDRZDJN3SWN4CQVVXO&quot;}}]},{&quot;id&quot;:&quot;F5RR4KC61KV4Y6ZK9HMSFT9YXY&quot;,&quot;date&quot;:&quot;2014-10-15&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;27VY4DQ9VDNZLXTFW3ZOWX6Z2E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NDYX67HGJBH11JGJTOD1B1OBK1&quot;}}]},{&quot;id&quot;:&quot;HMK5BKNQMVR5BH5LWQGPF37E9Y&quot;,&quot;date&quot;:&quot;2014-10-16&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;WG46VNXN55ZJCBQ9CYFE61NQD4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LMZNBSHV1LX18CM7Y89KW4396M&quot;}}]},{&quot;id&quot;:&quot;B2ZDPLHNT59P6586Z82E944BWY&quot;,&quot;date&quot;:&quot;2014-10-17&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4P69YXX32V1YQRSCKTOP3VSKJ1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/S5DJVB2RE9YHFC4B85WZ5XKFJY&quot;}}]},{&quot;id&quot;:&quot;SWM2ZHWMV6T9KM7X8LRTO6YFOM&quot;,&quot;date&quot;:&quot;2014-10-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;ET18BE8GLS2V9H4W6MZBGH47G1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/CV11OC4XV6PWCPJ9JK617CK711&quot;}}]},{&quot;id&quot;:&quot;MHBP6QJMY44QQBYYCQGTRK77O4&quot;,&quot;date&quot;:&quot;2014-10-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;TCHRS7RRTYDRE38WG297P5DXM1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/N3LQLCGMQQY5SCKF31BMO7CWQ4&quot;}}]},{&quot;id&quot;:&quot;HEE5LWXL7GNDPOQ8SD2GP4PQN8&quot;,&quot;date&quot;:&quot;2014-10-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9ZQLGKGTT3XBYS1681KJPPPD2Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/DTLM6L8P4GGSW31N54R9FRMDWE&quot;}}]},{&quot;id&quot;:&quot;OLX3EXDDEO9SKKCYNY4QEH9VPO&quot;,&quot;date&quot;:&quot;2014-10-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;T62R925FNE756GS1XXWHK6FGKE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/6G8OBG3SBGX2ZYW1S98NZ913S8&quot;}}]},{&quot;id&quot;:&quot;9LLDKWDT7OBVBOWLKK7XVSTJFO&quot;,&quot;date&quot;:&quot;2014-10-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DOLJXFNXEHLL487TERRZ8J3N9E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/K3W4NTYEPVR1CEHL7XBZ4FSXBE&quot;}}]},{&quot;id&quot;:&quot;JKMOB74E2NK58Q1H32XZ7ZLTT8&quot;,&quot;date&quot;:&quot;2014-10-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4C51BHJ4TJOXWW89H2SCSHYMGE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/7DDXMJ5GY6S7PX4R3L5ZEH7T74&quot;}}]},{&quot;id&quot;:&quot;1JE3MHEHJ8MLO435EP3B7GCS91&quot;,&quot;date&quot;:&quot;2014-10-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;ZD6B8J2ZVNK9EB7ST9LLRTPY3Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/GWV14TMWDHZJYJ2OX3LKODCH14&quot;}}]},{&quot;id&quot;:&quot;X6S4JNCCC8W22729F5995K6V11&quot;,&quot;date&quot;:&quot;2014-10-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;C4C5VYR2CECQHJVQ3G63GTGW9Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZZ7LM5JL9JZWBMRWCFJL7DEYMO&quot;}}]},{&quot;id&quot;:&quot;E1FRDPKOMT7WN9XLDKG1RR11GE&quot;,&quot;date&quot;:&quot;2014-10-30&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;D9JL8B6S33POL95WY4OV9BGO7Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/GK2YLPW47249VYBGPBJ7YVBHB4&quot;}}]},{&quot;id&quot;:&quot;DTGG8W4JKSQWBGSBO5JG4ER5Y4&quot;,&quot;date&quot;:&quot;2014-10-31&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;TYJCE6WYX93N86L6WTNLC5WJO8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8V7RPM9ZHSPF8KK7M7OCGKCMTQ&quot;}}]},{&quot;id&quot;:&quot;QFX76OF1SHXDVC78HLVQ7QGMM4&quot;,&quot;date&quot;:&quot;2014-11-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4Y2TGBHDZXBNYJLVJMVFYN1FP4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/B641B44T7K9RQ1OMVBVL46P8R4&quot;}}]},{&quot;id&quot;:&quot;DMRQJOTL72Y83JV3FHWO8DMS6M&quot;,&quot;date&quot;:&quot;2014-11-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;JYMLL7GQGCTW9P3D17FWGD48KE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BOPT7G59Q7ZXXCWYSDMRC72ZKE&quot;}}]},{&quot;id&quot;:&quot;91CMKM4D7O4Z931XM4NVPRQO38&quot;,&quot;date&quot;:&quot;2014-11-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;F5RR4KC61KV4Y6ZK9HMSFT9YXY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/C1D3Q5BEM65Q5H7WWMC32XSHHY&quot;}}]},{&quot;id&quot;:&quot;W2RZJ74T5VWSDLZQO5CZGO6HPQ&quot;,&quot;date&quot;:&quot;2014-11-06&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HMK5BKNQMVR5BH5LWQGPF37E9Y&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NHSSODH5BE4NER1Q686F7Z5SDE&quot;}}]},{&quot;id&quot;:&quot;VHYG5TNGCVG9YV3DJFWCZYGLGQ&quot;,&quot;date&quot;:&quot;2014-11-07&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;B2ZDPLHNT59P6586Z82E944BWY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3RD22TE5YX2BMK2LOGR46P9ME8&quot;}}]},{&quot;id&quot;:&quot;G8CP53OLGTNXFL1B6TCLRJGVBO&quot;,&quot;date&quot;:&quot;2014-11-10&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;SWM2ZHWMV6T9KM7X8LRTO6YFOM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/O1OPRN45FY3BS187FJQSWQ44V4&quot;}}]},{&quot;id&quot;:&quot;PNP79VGYNXF5OQ182W5J5SM8YQ&quot;,&quot;date&quot;:&quot;2014-11-11&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MHBP6QJMY44QQBYYCQGTRK77O4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/1VC94JFNJ42SD5GVTV7MT87NMQ&quot;}}]},{&quot;id&quot;:&quot;OHKTRGXJHEKRFOGY1V7TJZQ2LQ&quot;,&quot;date&quot;:&quot;2014-11-12&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HEE5LWXL7GNDPOQ8SD2GP4PQN8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BLMHP7OG2CK1CN44K71OR8NNXQ&quot;}}]},{&quot;id&quot;:&quot;TS6P2S4NRB1CMOT65GRZH2FRJO&quot;,&quot;date&quot;:&quot;2014-11-13&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;OLX3EXDDEO9SKKCYNY4QEH9VPO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VHXCBTXJ6CD3MTQMNTQ6YG5DJ1&quot;}}]},{&quot;id&quot;:&quot;HBF9E7R7JM4ZRZYK3TCPEM7FF1&quot;,&quot;date&quot;:&quot;2014-11-14&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9LLDKWDT7OBVBOWLKK7XVSTJFO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/RP6D5S18VEH4RHXBR9HNF4Z23O&quot;}}]},{&quot;id&quot;:&quot;JCJSH2NHQF6FCEOM2VSC1TL3E8&quot;,&quot;date&quot;:&quot;2014-11-17&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;JKMOB74E2NK58Q1H32XZ7ZLTT8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/4HXLO9XJKZT24WHE719HMBEY3O&quot;}}]},{&quot;id&quot;:&quot;NQC3FDKK7SBMY3OMR3X9Q4ZVD1&quot;,&quot;date&quot;:&quot;2014-11-18&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;1JE3MHEHJ8MLO435EP3B7GCS91&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/DGSE9MV48R22O18QD4RHXGP1TY&quot;}}]},{&quot;id&quot;:&quot;MDVCT3C7ZVOS9DWWLBLXPMTVG1&quot;,&quot;date&quot;:&quot;2014-11-19&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;X6S4JNCCC8W22729F5995K6V11&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/TW9HS5J6PD4DE9CEKXB6TPB2YY&quot;}}]},{&quot;id&quot;:&quot;5EJWWX8L692H8331DCRJQ7255E&quot;,&quot;date&quot;:&quot;2014-11-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;E1FRDPKOMT7WN9XLDKG1RR11GE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/QD93FFND4N8D7CHJ2DFK38V5K4&quot;}}]},{&quot;id&quot;:&quot;PHTR3DKVWYZSQT4HLNPWS7FL84&quot;,&quot;date&quot;:&quot;2014-11-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DTGG8W4JKSQWBGSBO5JG4ER5Y4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/D3TCP7L3YY3ND6KKJPM622MQHM&quot;}}]},{&quot;id&quot;:&quot;NPECHZOVHPBH8CVSGC9CK71SDM&quot;,&quot;date&quot;:&quot;2014-11-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;QFX76OF1SHXDVC78HLVQ7QGMM4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/58C2R7CZVXXMVY3VC1K7OFP141&quot;}}]},{&quot;id&quot;:&quot;FVMCHQ4OMZQND4J83O825NK5DQ&quot;,&quot;date&quot;:&quot;2014-11-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;DMRQJOTL72Y83JV3FHWO8DMS6M&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/HSZY1E4ELGTC88QM8O13LJONN8&quot;}}]},{&quot;id&quot;:&quot;Q5PNE383292GCK3O5BLLV443YE&quot;,&quot;date&quot;:&quot;2014-11-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;91CMKM4D7O4Z931XM4NVPRQO38&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/J1296DZVKNPDLZ3VJJH3G6C8WM&quot;}}]},{&quot;id&quot;:&quot;1HOBFNEH923X3OT8EKHK983XKO&quot;,&quot;date&quot;:&quot;2014-11-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;W2RZJ74T5VWSDLZQO5CZGO6HPQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YS5S77K7FWFDXDMTHKOP23Z928&quot;}}]},{&quot;id&quot;:&quot;WNTDDF2MWE87EPOKOXM7RFHDVO&quot;,&quot;date&quot;:&quot;2014-11-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;VHYG5TNGCVG9YV3DJFWCZYGLGQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/DBZWVX97YST45268WR4DXNPRP1&quot;}}]},{&quot;id&quot;:&quot;NV1YS2CM5G3JBB96M5YNDLP8WQ&quot;,&quot;date&quot;:&quot;2014-12-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;G8CP53OLGTNXFL1B6TCLRJGVBO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/Y8X993TPT54EKXT6R7OW9LKH51&quot;}}]},{&quot;id&quot;:&quot;EWO94XK4FRR6JX4JPR7E9FMYEO&quot;,&quot;date&quot;:&quot;2014-12-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;PNP79VGYNXF5OQ182W5J5SM8YQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/PRDJDV85OCVHL1HM46B71GNN48&quot;}}]},{&quot;id&quot;:&quot;VSDRX7SDR4DW6Y7BNFC241YVNO&quot;,&quot;date&quot;:&quot;2014-12-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;OHKTRGXJHEKRFOGY1V7TJZQ2LQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/1QM78WWJ7SE9NFB7KWRE6V5RFM&quot;}}]},{&quot;id&quot;:&quot;WM28KO5NX1WNR7WOK2TTZ1D2TM&quot;,&quot;date&quot;:&quot;2014-12-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;TS6P2S4NRB1CMOT65GRZH2FRJO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/5XCZDMZHSNB6B3JO2X3WJXYK4E&quot;}}]},{&quot;id&quot;:&quot;GZWZF3Y4DNYS66T7ZRZ5KFCF7O&quot;,&quot;date&quot;:&quot;2014-12-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HBF9E7R7JM4ZRZYK3TCPEM7FF1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/KNSVCW7P2S3HH9Q8N1ZRVLTH1E&quot;}}]},{&quot;id&quot;:&quot;7SQ4SQOW1L5NEK8P8J7M2SGPTE&quot;,&quot;date&quot;:&quot;2014-12-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;JCJSH2NHQF6FCEOM2VSC1TL3E8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VJPF6WHVKRN1XXCMWM1D2Q8XT4&quot;}}]},{&quot;id&quot;:&quot;XGMDY46YXVLWWLKB7TVLSFD9G1&quot;,&quot;date&quot;:&quot;2014-12-09&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NQC3FDKK7SBMY3OMR3X9Q4ZVD1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/QM31OCLXSFEEVTOERRRNSRSDM4&quot;}}]},{&quot;id&quot;:&quot;W1K478B617EKJ45QNLP4YONQGM&quot;,&quot;date&quot;:&quot;2014-12-10&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MDVCT3C7ZVOS9DWWLBLXPMTVG1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MW6HJMOXNCYZG86LHH6HT8NGEY&quot;}}]},{&quot;id&quot;:&quot;Q8O2OH24MJKZFW6W6MRQ6KP91O&quot;,&quot;date&quot;:&quot;2014-12-11&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5EJWWX8L692H8331DCRJQ7255E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/ZNP5VF3DPRZQ36S4RKEPNVDYG4&quot;}}]},{&quot;id&quot;:&quot;XQ1878LX4SSVO2JKTSC5ZKZXC4&quot;,&quot;date&quot;:&quot;2014-12-12&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;PHTR3DKVWYZSQT4HLNPWS7FL84&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/82CVSYV3S42M7RVV8POQ1HW7K1&quot;}}]},{&quot;id&quot;:&quot;SCE65ZZW3B2C613C16SC4KXJG1&quot;,&quot;date&quot;:&quot;2014-12-15&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NPECHZOVHPBH8CVSGC9CK71SDM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/5GWPW6NF4YPV3H86VE7V6EQS91&quot;}}]},{&quot;id&quot;:&quot;XOT3X5YVEEZGLL6JMPGZJSO6SE&quot;,&quot;date&quot;:&quot;2014-12-16&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;FVMCHQ4OMZQND4J83O825NK5DQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/KN5TELGHOR6E55V7F6ZDJLWTBY&quot;}}]},{&quot;id&quot;:&quot;9HWEFZCC8XQVZ7SS1V6B8OBFSE&quot;,&quot;date&quot;:&quot;2014-12-17&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;Q5PNE383292GCK3O5BLLV443YE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/X6SG4DTMRYH62Y1NS35GQSCWYE&quot;}}]},{&quot;id&quot;:&quot;MHG1FBN1PRKJD5F1HMNWT2FVL4&quot;,&quot;date&quot;:&quot;2014-12-18&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;1HOBFNEH923X3OT8EKHK983XKO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/5MEJDCKG94O4CNVDC6GBS77F1Q&quot;}}]},{&quot;id&quot;:&quot;VOFVO8PWRJ1FQKKRYYFWJL81Z1&quot;,&quot;date&quot;:&quot;2014-12-19&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;WNTDDF2MWE87EPOKOXM7RFHDVO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3TSEC75P33JT7WCM98GELJLTW4&quot;}}]},{&quot;id&quot;:&quot;6B2VHOEXSJRJTDR5DQ6DJ89YKY&quot;,&quot;date&quot;:&quot;2014-12-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NV1YS2CM5G3JBB96M5YNDLP8WQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/JLZDPP9JPX46BOR9173CEMX1EO&quot;}}]},{&quot;id&quot;:&quot;KED78FLZKERNFL4OKS3N8NM7DQ&quot;,&quot;date&quot;:&quot;2014-12-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;EWO94XK4FRR6JX4JPR7E9FMYEO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/YE37ESWKYSSVNE2VELJ5VDQ2Z1&quot;}}]},{&quot;id&quot;:&quot;EG7Z7ZJVZOZ5BRN2ZWJMOK9DW8&quot;,&quot;date&quot;:&quot;2014-12-24&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;VSDRX7SDR4DW6Y7BNFC241YVNO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/KOZW2HN3KO7F1YZ98LRW7FOPC1&quot;}}]},{&quot;id&quot;:&quot;QZO3DTVRF62G7GC77CF784VYC8&quot;,&quot;date&quot;:&quot;2014-12-25&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;WM28KO5NX1WNR7WOK2TTZ1D2TM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MSOJ2QZKY59DQ2XZKC418Z5161&quot;}}]},{&quot;id&quot;:&quot;VLGOCM5FYKN1FM45ZNCVS4OK81&quot;,&quot;date&quot;:&quot;2014-12-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;GZWZF3Y4DNYS66T7ZRZ5KFCF7O&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/4OMHCDFY4SQQ8NJY4G3D9NTHFQ&quot;}}]},{&quot;id&quot;:&quot;XB8NGLKMYF7M2NZ7Y6WT7EMJ4Q&quot;,&quot;date&quot;:&quot;2014-12-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;7SQ4SQOW1L5NEK8P8J7M2SGPTE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/9FPWOW3TYWGS73D5GTH81ONE4E&quot;}}]},{&quot;id&quot;:&quot;14PYM5W84P9D9Z9LLD5KSLRGBO&quot;,&quot;date&quot;:&quot;2014-12-30&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XGMDY46YXVLWWLKB7TVLSFD9G1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/366RW9T44FVP2TNWZZ2OX4KS6E&quot;}}]},{&quot;id&quot;:&quot;P8N3GHXC2ZGR7WCMZ6KJ389CPY&quot;,&quot;date&quot;:&quot;2014-12-31&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;W1K478B617EKJ45QNLP4YONQGM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LT6DMNRRXVKS5SF5L3OCXXKCOQ&quot;}}]},{&quot;id&quot;:&quot;NZL67EF7HPSN3ZYFG6F2OD11RY&quot;,&quot;date&quot;:&quot;2015-01-01&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;Q8O2OH24MJKZFW6W6MRQ6KP91O&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/6EHQX77RW22XTEJLPRBDQ7C7W1&quot;}}]},{&quot;id&quot;:&quot;L7Y5GQ2TX9H3D2FNJSCH6KZGRE&quot;,&quot;date&quot;:&quot;2015-01-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XQ1878LX4SSVO2JKTSC5ZKZXC4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8FNWVNDWPXZFGC83NHWNO1GRW4&quot;}}]},{&quot;id&quot;:&quot;JDV8OEYEH5YBRGN93TNC85DYDY&quot;,&quot;date&quot;:&quot;2015-01-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;SCE65ZZW3B2C613C16SC4KXJG1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/VR2R6QSD6XTG9ZWOOBSY2WX898&quot;}}]},{&quot;id&quot;:&quot;KKOCYHJZ3QYD4HW6DYOHJEPBMQ&quot;,&quot;date&quot;:&quot;2015-01-06&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XOT3X5YVEEZGLL6JMPGZJSO6SE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/8NX1QSGRBLLJSVZX9BYEY9G81Y&quot;}}]},{&quot;id&quot;:&quot;MZJ6XZLMWN6EYFCV9VD9J5CGCO&quot;,&quot;date&quot;:&quot;2015-01-07&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9HWEFZCC8XQVZ7SS1V6B8OBFSE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LNZLZEGVO4NS6JX6T1Y3V7DOR8&quot;}}]},{&quot;id&quot;:&quot;9GH2NQM2V2G4CO5YT5KJDTQVDQ&quot;,&quot;date&quot;:&quot;2015-01-08&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MHG1FBN1PRKJD5F1HMNWT2FVL4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/JQ8ZBTY2DO8W4OMLZZ4MPEG1TY&quot;}}]},{&quot;id&quot;:&quot;S755Z16J3YKWZKFMQRB5XMLWW4&quot;,&quot;date&quot;:&quot;2015-01-09&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;VOFVO8PWRJ1FQKKRYYFWJL81Z1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/6LTYLVSLBD2KB1LHGQBO3MQQFM&quot;}}]},{&quot;id&quot;:&quot;8FJ2N6Z8MQM1OFJWJV6VDDNEZM&quot;,&quot;date&quot;:&quot;2015-01-12&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;6B2VHOEXSJRJTDR5DQ6DJ89YKY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/1FCV1FYF8RWEQN512GDZDQE48Y&quot;}}]},{&quot;id&quot;:&quot;EWVWBM36FB5V6BN4EVRLEDX861&quot;,&quot;date&quot;:&quot;2015-01-13&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;KED78FLZKERNFL4OKS3N8NM7DQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/GDXD63RZKOFHPNE11WYR7F8TYY&quot;}}]},{&quot;id&quot;:&quot;8L8V7CF1ND6WYJO7B8XESNCPEE&quot;,&quot;date&quot;:&quot;2015-01-14&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;EG7Z7ZJVZOZ5BRN2ZWJMOK9DW8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/XWNKB8MNGBNDXL16PJ3JNPQHYE&quot;}}]},{&quot;id&quot;:&quot;3J2NF6678C6V79Q42HZH38PK18&quot;,&quot;date&quot;:&quot;2015-01-15&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;QZO3DTVRF62G7GC77CF784VYC8&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/DKYHMOXOZFRG6RHQVLONGKK79M&quot;}}]},{&quot;id&quot;:&quot;5EODWP4TOKXPM8JM2FF3O454KM&quot;,&quot;date&quot;:&quot;2015-01-16&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;VLGOCM5FYKN1FM45ZNCVS4OK81&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BRE6CDQE5BWOT4GK1DNOKEF6V8&quot;}}]},{&quot;id&quot;:&quot;HPK6XNFD23OPN1XY2OS7F7V3ZY&quot;,&quot;date&quot;:&quot;2015-01-19&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;XB8NGLKMYF7M2NZ7Y6WT7EMJ4Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/KPF16KCVOFB9CR6T9STHLLPNMM&quot;}}]},{&quot;id&quot;:&quot;2Z7WJZKVY227FRVM2BYS1MRZ1E&quot;,&quot;date&quot;:&quot;2015-01-20&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;14PYM5W84P9D9Z9LLD5KSLRGBO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FBL3HXBYZ79O381923JFKBFJD8&quot;}}]},{&quot;id&quot;:&quot;83YMKOF1894NMERCCPX5K47XFQ&quot;,&quot;date&quot;:&quot;2015-01-21&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;P8N3GHXC2ZGR7WCMZ6KJ389CPY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/JVYHCQ2M5J1XXMJHTHOH3RZSTY&quot;}}]},{&quot;id&quot;:&quot;GT6K3MG5SOPJESK341SN6XKMR4&quot;,&quot;date&quot;:&quot;2015-01-22&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;NZL67EF7HPSN3ZYFG6F2OD11RY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/JBSHO77J752VK1YNS8B3ODGE41&quot;}}]},{&quot;id&quot;:&quot;4B865VETFHP2L9PCLXXF6OWRL1&quot;,&quot;date&quot;:&quot;2015-01-23&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;L7Y5GQ2TX9H3D2FNJSCH6KZGRE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/Y95P4TLWS311K3POGBY3NPMCFO&quot;}}]},{&quot;id&quot;:&quot;F6R88TBXKBWNOZCCFV3FZKMJY4&quot;,&quot;date&quot;:&quot;2015-01-26&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;JDV8OEYEH5YBRGN93TNC85DYDY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/K6OJHW3T3TWFKFYZK3QYG4L86O&quot;}}]},{&quot;id&quot;:&quot;SXD8WZTGQZ36D2RDNXXSH6Z2VO&quot;,&quot;date&quot;:&quot;2015-01-27&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;KKOCYHJZ3QYD4HW6DYOHJEPBMQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/FG8JYQK1HLTQJKS6X1SPMWC7F4&quot;}}]},{&quot;id&quot;:&quot;9QFWV1BY99FMG9428PYR9F5N9Q&quot;,&quot;date&quot;:&quot;2015-01-28&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;MZJ6XZLMWN6EYFCV9VD9J5CGCO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/MWVML5TXQH5G5PRJRTN3O9NYP1&quot;}}]},{&quot;id&quot;:&quot;7SKK4WVNCNXMDLES31EEWTYCJE&quot;,&quot;date&quot;:&quot;2015-01-29&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9GH2NQM2V2G4CO5YT5KJDTQVDQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/72CD88SXMYVV4EFWJYFCNVH95O&quot;}}]},{&quot;id&quot;:&quot;9FF8FB4LDGLN17OXJSPE8277WO&quot;,&quot;date&quot;:&quot;2015-01-30&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;S755Z16J3YKWZKFMQRB5XMLWW4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/351YWB2R752LK4PQ6MN4VXKLCO&quot;}}]},{&quot;id&quot;:&quot;K1FHLJRXRRJ2HVOCD8B95HNTJY&quot;,&quot;date&quot;:&quot;2015-02-02&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;8FJ2N6Z8MQM1OFJWJV6VDDNEZM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/7CK7L371PMLEMMBV2FL8T2BDVY&quot;}}]},{&quot;id&quot;:&quot;4ZFRVT61RSGHG72Q8JF8Y2XRBE&quot;,&quot;date&quot;:&quot;2015-02-03&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;EWVWBM36FB5V6BN4EVRLEDX861&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/14KWNP76XZCJR3XM9ZMQKEGSE1&quot;}}]},{&quot;id&quot;:&quot;TST3PLTKD6S4CSXJ61Z2YN31L8&quot;,&quot;date&quot;:&quot;2015-02-04&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;8L8V7CF1ND6WYJO7B8XESNCPEE&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/7SDN9WC9NM7C67KLHFT9XQBM38&quot;}}]},{&quot;id&quot;:&quot;2VES4OLKJ48STDB4XEG9TKH3MY&quot;,&quot;date&quot;:&quot;2015-02-05&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;3J2NF6678C6V79Q42HZH38PK18&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/NLJEYTK8R2R8OQNRV5K8ELCW74&quot;}}]},{&quot;id&quot;:&quot;LSXJS8BWWCMGF9WQ5NSERX1498&quot;,&quot;date&quot;:&quot;2015-02-06&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;5EODWP4TOKXPM8JM2FF3O454KM&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/HCS32FQXBRDWR2CM1QCV1DHEPQ&quot;}}]},{&quot;id&quot;:&quot;DZ46FVMT6YKL46SCYBML29CV8Q&quot;,&quot;date&quot;:&quot;2015-02-09&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;HPK6XNFD23OPN1XY2OS7F7V3ZY&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/H7RROGPCTH73YWO8JEGO7L2KZ8&quot;}}]},{&quot;id&quot;:&quot;J6X436M8S8WQSHLCM4YEEX8GW8&quot;,&quot;date&quot;:&quot;2015-02-10&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;2Z7WJZKVY227FRVM2BYS1MRZ1E&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/5JT6WD1PY8Q53CB5TLS78TTJ31&quot;}}]},{&quot;id&quot;:&quot;NW5BWSYZW9HC6YGCTQ3GB4SEMM&quot;,&quot;date&quot;:&quot;2015-02-11&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;83YMKOF1894NMERCCPX5K47XFQ&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LH5TZXTZGLV5RXMV2T382ERHZO&quot;}}]},{&quot;id&quot;:&quot;TWNVN4RQZ9K5X53JLJMS7VZ6PY&quot;,&quot;date&quot;:&quot;2015-02-12&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;GT6K3MG5SOPJESK341SN6XKMR4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/6LECZQGRWZELZX5ODW52CG8FEE&quot;}}]},{&quot;id&quot;:&quot;ETKCCW3D32ZFMWNB71XTSBZSV4&quot;,&quot;date&quot;:&quot;2015-02-13&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;4B865VETFHP2L9PCLXXF6OWRL1&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/3BRVVN87E94NCND7Z8RR2ZG86Y&quot;}}]},{&quot;id&quot;:&quot;7Y7QEZOZTPP9T5GR4NGG1NG6CY&quot;,&quot;date&quot;:&quot;2015-02-16&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;F6R88TBXKBWNOZCCFV3FZKMJY4&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/LL1SM6C8GQWPK5YQQ56QPCJRRM&quot;}}]},{&quot;id&quot;:&quot;Y8T3JHPCQETR3T2BPB72K4WOZ4&quot;,&quot;date&quot;:&quot;2015-02-17&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;SXD8WZTGQZ36D2RDNXXSH6Z2VO&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/BG5LFXRO6YWWYFXMSDX3VFSHVY&quot;}}]},{&quot;id&quot;:&quot;Y86Q1459FYV7C5XDRRVOJNGF6O&quot;,&quot;date&quot;:&quot;2015-02-18&quot;,&quot;events&quot;:[{&quot;id&quot;:&quot;9QFWV1BY99FMG9428PYR9F5N9Q&quot;,&quot;fixed&quot;:false,&quot;instructional&quot;:true,&quot;type&quot;:&quot;INSTRUCTIONAL&quot;,&quot;seq&quot;:0,&quot;_links&quot;:{&quot;lesson&quot;:&quot;/api/v0.1/asset/DW85WNQDJWCZK4LNV2W3HJE5QO&quot;}}]}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events?to=2015-08-01&amp;from=2014-08-01</java.net.URL>
+</httpSample>
+<httpSample t="101" it="0" lt="100" ts="1407707714312" s="true" lb="Get Planner" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="861" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:13 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707714&quot;, oauth_nonce=&quot;1407707714311492000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2FiU3fvsSMCgDMC0lN9ehYPmHhRc%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;LFV2SEX8VZKNED6F8MREWWX69Q&quot;,&quot;name&quot;:&quot;ProductionTest - test planner&quot;,&quot;description&quot;:&quot;ProductionTest - test planner&quot;,&quot;locked&quot;:false,&quot;dayTypes&quot;:{&quot;MON&quot;:&quot;INSTRUCTIONAL&quot;,&quot;TUE&quot;:&quot;INSTRUCTIONAL&quot;,&quot;WED&quot;:&quot;INSTRUCTIONAL&quot;,&quot;THU&quot;:&quot;INSTRUCTIONAL&quot;,&quot;FRI&quot;:&quot;INSTRUCTIONAL&quot;,&quot;SAT&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;SUN&quot;:&quot;NONINSTRUCTIONAL&quot;},&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/classes&quot;,&quot;addCurriculum&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/addCurriculum&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/ZCN2VELSKGXON6Q8Y7KXEKXJT8&quot;,&quot;events&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events&quot;,&quot;self&quot;:&quot;/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q</java.net.URL>
+</httpSample>
+<httpSample t="103" it="0" lt="101" ts="1407707714452" s="true" lb="Get Planner Classess" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="227" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sun, 10 Aug 2014 21:55:13 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707714&quot;, oauth_nonce=&quot;1407707714451743000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;ie3gf%2BkUkXIZgayylIc7cqWnE1U%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/classes</java.net.URL>
+</httpSample>
+<httpSample t="836" it="0" lt="0" ts="1407707714630" s="true" lb="Delete Events" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:13 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707714&quot;, oauth_nonce=&quot;1407707714629883000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;TBzpBa3IhQvfHifvmviiOZCJK9g%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/events?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8</java.net.URL>
+</httpSample>
+<httpSample t="264" it="0" lt="0" ts="1407707715512" s="true" lb="Delete Curriculam" rc="204" rm="No Content" tn="Regression Suite Prod 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Sun, 10 Aug 2014 21:55:15 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 4
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;55584f27-2727-40ea-99ac-e7b0f8f562fd&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407707715&quot;, oauth_nonce=&quot;1407707715512043000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;kgsPi4VeEQ5nwjbAALV0fpUI0Ac%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw4.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://prod-cw4.ced.emhe.mhc:1999/api/v0.1/planner/LFV2SEX8VZKNED6F8MREWWX69Q/curriculum?course=ZCN2VELSKGXON6Q8Y7KXEKXJT8</java.net.URL>
+</httpSample>
+
+</testResults>

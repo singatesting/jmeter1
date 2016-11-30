@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="93" it="0" lt="93" ts="1424382798491" s="true" lb="LOGIN API - XAPI" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="628" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 19 Feb 2015 21:52:50 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 19-Feb-2015 22:54:21 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424382798&quot;, oauth_nonce=&quot;24072581907357&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;dOziF3G6%2FCe3jaaD8tAz6Kt4chI%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;id&quot;:&quot;15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;,&quot;oauth_token&quot;:&quot;15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;,&quot;oauth_token_secret&quot;:&quot;003014ca-eec6-4bbc-b0d1-bf8671c365a8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="187" it="0" lt="0" ts="1424382798604" s="true" lb="Create State" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Thu, 19 Feb 2015 21:52:50 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 19-Feb-2015 22:54:22 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424382798&quot;, oauth_nonce=&quot;24072694783392&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;S8GHeU7%2BrSYwf7uWogHnHcqKQpw%3D&quot;
+Content-Length: 166
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">&lt;table style=&quot;width:300px&quot;&gt;&#xd;
+&lt;tr&gt;&#xd;
+  &lt;td&gt;Jill&lt;/td&gt;&#xd;
+  &lt;td&gt;Smith&lt;/td&gt; &#xd;
+  &lt;td&gt;50&lt;/td&gt;&#xd;
+&lt;/tr&gt;&#xd;
+&lt;tr&gt;&#xd;
+  &lt;td&gt;Eve&lt;/td&gt;&#xd;
+  &lt;td&gt;Jackson&lt;/td&gt; &#xd;
+  &lt;td&gt;94&lt;/td&gt;&#xd;
+&lt;/tr&gt;&#xd;
+&lt;/table&gt;</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+<httpSample t="170" it="0" lt="169" ts="1424382798798" s="true" lb="Get State" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="503" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Thu, 19 Feb 2015 21:52:50 GMT
+Content-Type: application/json
+Content-Length: 166
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Thu, 19-Feb-2015 22:54:22 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424382798&quot;, oauth_nonce=&quot;24072888457034&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;c45%2FOHqif32tAkjiw4FUb7mrwHI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;table style=&quot;width:300px&quot;&gt;&#xd;
+&lt;tr&gt;&#xd;
+  &lt;td&gt;Jill&lt;/td&gt;&#xd;
+  &lt;td&gt;Smith&lt;/td&gt; &#xd;
+  &lt;td&gt;50&lt;/td&gt;&#xd;
+&lt;/tr&gt;&#xd;
+&lt;tr&gt;&#xd;
+  &lt;td&gt;Eve&lt;/td&gt;&#xd;
+  &lt;td&gt;Jackson&lt;/td&gt; &#xd;
+  &lt;td&gt;94&lt;/td&gt;&#xd;
+&lt;/tr&gt;&#xd;
+&lt;/table&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+<httpSample t="84" it="0" lt="0" ts="1424382798975" s="true" lb="Delete State" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Thu, 19 Feb 2015 21:52:51 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Thu, 19-Feb-2015 22:54:22 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;15c35b7f-38e6-4d61-8bef-bd045b6d5469&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424382798&quot;, oauth_nonce=&quot;24073065322295&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;SpXUbZ52uTnp%2FyDfTpO%2BVzHqWVg%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+
+</testResults>

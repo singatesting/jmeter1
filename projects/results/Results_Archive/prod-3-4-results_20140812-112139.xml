@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="801" it="0" lt="801" ts="1407856899698" s="true" lb="Login API" rc="200" rm="OK" tn="XAPI Test Plan 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="OH05HCJFD56">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Tue, 12 Aug 2014 15:21:37 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;pl7Ej5DZAqWft1p4&quot;, oauth_timestamp=&quot;1407856899&quot;, oauth_nonce=&quot;1407856899697201000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Xiqeudxsvyw9mM%2BN7V%2BULULtASk%3D&quot;
+Content-Length: 44
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: uat-bw1.edmz.mcgraw-hill.com:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;,&quot;user&quot;:&quot;/api/v0.1/user/NGDBNR218BEOJXTE87GWO444YQ&quot;},&quot;oauth_token&quot;:&quot;70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;,&quot;oauth_token_secret&quot;:&quot;1d255a98-48e0-4646-bace-ca98e026d288&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;GAURAVV&quot;,&quot;password&quot;:&quot;gaura401&quot;}</queryString>
+  <java.net.URL>http://uat-bw1.edmz.mcgraw-hill.com:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="342" it="0" lt="342" ts="1407856900511" s="false" lb="Create State" rc="404" rm="Not Found" tn="XAPI Test Plan 1-1" dt="text" de="" by="325" sc="1" ec="1" ng="1" na="1" hn="OH05HCJFD56">
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Tue, 12 Aug 2014 15:21:37 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;, oauth_consumer_key=&quot;pl7Ej5DZAqWft1p4&quot;, oauth_timestamp=&quot;1407856900&quot;, oauth_nonce=&quot;1407856900509547000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2BOpYNQQhAeW3pwyHvSQCbHzJ0D0%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: uat-bw1.edmz.mcgraw-hill.com:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;28-8-3343b871&quot;,&quot;message&quot;:&quot;Unable to locate state with ID jmeterId&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://uat-bw1.edmz.mcgraw-hill.com:1999/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+<httpSample t="275" it="0" lt="275" ts="1407856900859" s="false" lb="Get State" rc="404" rm="Not Found" tn="XAPI Test Plan 1-1" dt="text" de="" by="325" sc="1" ec="1" ng="1" na="1" hn="OH05HCJFD56">
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Tue, 12 Aug 2014 15:21:37 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;, oauth_consumer_key=&quot;pl7Ej5DZAqWft1p4&quot;, oauth_timestamp=&quot;1407856900&quot;, oauth_nonce=&quot;1407856900857154000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;oZ6eHGc5GsA6PrrRBWCxasxu%2Bck%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: uat-bw1.edmz.mcgraw-hill.com:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;28-9-2d393a10&quot;,&quot;message&quot;:&quot;Unable to locate state with ID jmeterId&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://uat-bw1.edmz.mcgraw-hill.com:1999/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+<httpSample t="195" it="0" lt="0" ts="1407856901140" s="true" lb="Delete State" rc="204" rm="No Content" tn="XAPI Test Plan 1-1" dt="text" de="" by="195" sc="1" ec="0" ng="1" na="1" hn="OH05HCJFD56">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Tue, 12 Aug 2014 15:21:37 GMT
+Server: Apache-Coyote/1.1
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+X-Experience-API-Version: 1.0.0
+Accept: application/json
+Content-Type: application/json
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;70e26db1-c3e0-4b04-a9f7-7f9fcb9723c8&quot;, oauth_consumer_key=&quot;pl7Ej5DZAqWft1p4&quot;, oauth_timestamp=&quot;1407856901&quot;, oauth_nonce=&quot;1407856901138395000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;CiWeUSe7c2sVK9hwcwY%2Bg5AFPbY%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: uat-bw1.edmz.mcgraw-hill.com:1999
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://uat-bw1.edmz.mcgraw-hill.com:1999/api/v0.1/xapi/activities/state?activityId=QSLERLNSH35YWEHR3DRD1GG9S8&amp;agent=%7B%22objectType%22%3A%22Agent%22%2C%22name%22%3A%22Ayan%20Dave%22%2C%22account%22%3A%7B%22homePage%22%3A%22http%3A%2F%2Fconnected-uat.cdiapps.com%22%2C%22name%22%3A%22GDHM93ROZJOQ4VN9SSHN341151%22%7D%7D&amp;stateId=jmeterId</java.net.URL>
+</httpSample>
+
+</testResults>

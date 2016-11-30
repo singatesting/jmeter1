@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="b.css"?>
+<testResults version="1.2">
+<httpSample t="134" it="0" lt="134" ts="1407619579872" s="true" lb="Login API" rc="200" rm="OK" tn="Regression Suite Prod 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="OH05HCJFD56">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Sat, 09 Aug 2014 21:26:17 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 3
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;OlvZoGWq3o4W3mGh&quot;, oauth_timestamp=&quot;1407619579&quot;, oauth_nonce=&quot;1407619579871969000&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;Bol84sb8hjynlr8%2BvcQG3m8rE6I%3D&quot;
+Content-Length: 48
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: prod-cw3.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;1f567259-b3a4-4656-abfa-cf7edbfa6698&quot;,&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/1f567259-b3a4-4656-abfa-cf7edbfa6698&quot;,&quot;user&quot;:&quot;/api/v0.1/user/DR8SOSZQMXYCZCWVKKZHT57CME&quot;},&quot;oauth_token&quot;:&quot;1f567259-b3a4-4656-abfa-cf7edbfa6698&quot;,&quot;oauth_token_secret&quot;:&quot;e789ec98-75e9-4878-bd53-44670a05ea72&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;CMSEDITOR&quot;,&quot;password&quot;:&quot;testing123&quot;}</queryString>
+  <java.net.URL>http://prod-cw3.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+
+
+</testResults>

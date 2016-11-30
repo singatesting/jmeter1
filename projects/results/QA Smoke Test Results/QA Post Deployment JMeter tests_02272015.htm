@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>JQuery Easy XML Read Example</title>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	</head>
+	<body>
+		<div id="getFile">
+    <input type="text" name="filename" id="filename"/>
+    <input type="button" id="go" value="GO"/>
+</div>
+<br/>
+
+<br/>
+
+<br/>
+	<div id="ContentArea"></div>
+	</body>
+</html>
+<script>
+$("#go").click(function(){ 
+	var xmlFileName = $("#filename").val();
+
+	// Open the students.xml file
+	$.get(xmlFileName,{},function(xml){
+      	
+		// Build an HTML string
+		myHTMLOutput = '';
+	 	myHTMLOutput += '<table id ="data" border="1" cellpadding="0" cellspacing="0">';
+	  	myHTMLOutput += '<th>Name</th><th>Request</th><th>Response</th>';
+	  	
+		// Run the function for each student tag in the XML file
+		$('httpSample',xml).each(function(i) {
+			name = $(this).attr("lb");
+			url = $(this).find("java\\.net\\.URL").text();
+			queryString = $(this).find("queryString").text();
+			response = $(this).find("responseData").text();
+			method = $(this).find("method").text();
+			requestHeader = $(this).find("requestHeader").text(); 
+			
+			// Build row HTML data and store in string
+			mydata = BuildStudentHTML(url,queryString,response,method,requestHeader,name);
+			myHTMLOutput = myHTMLOutput + mydata;
+		});
+		myHTMLOutput += '</table>';
+		// Update the DIV called Content Area with the HTML string
+		$("#ContentArea").append(myHTMLOutput);
+	});
+});
+ 
+ 
+ 
+ function BuildStudentHTML(url,queryString,response,method,requestHeader,name){
+
+	// Build HTML string and return
+	output = '';
+	output += '<tr>';
+	output += '<td>'+ name +'</td>';
+	output += '<td>'+ method  + '<br/>'+ '<br/>' +url+ '<br/>'+ '<br/>' + queryString+'</td>';
+	output += '<td>'+ response +'</td>';
+	output += '</tr>';
+	return output;
+}
+</script>
+
+<style type="text/css">
+
+#data{
+	 table-layout: fixed; 
+	 width: 100%;
+}
+
+th ,td{
+    border: 2px solid orange;
+    word-wrap: break-word;
+    padding: 10px;
+}
+</style>
+
+	 

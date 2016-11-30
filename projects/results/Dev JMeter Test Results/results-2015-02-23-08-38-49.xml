@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="93" it="0" lt="93" ts="1424698729832" s="true" lb="LOGIN API - CLASS / OCR Student" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="667" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:25 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:43 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698729&quot;, oauth_nonce=&quot;339918015098615&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;KGOs9G%2F9wZULdYk1me7qwkFS%2Fl0%3D&quot;
+Content-Length: 47
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/71245486-94a5-47d0-9f58-b062d5fb55ae&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E8WJKD7FVC9DTG6MFSKQZS29MY&quot;},&quot;id&quot;:&quot;71245486-94a5-47d0-9f58-b062d5fb55ae&quot;,&quot;oauth_token&quot;:&quot;71245486-94a5-47d0-9f58-b062d5fb55ae&quot;,&quot;oauth_token_secret&quot;:&quot;aa467d9b-9191-444d-b398-cd1009d68258&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;mahocrs&quot;,&quot;password&quot;:&quot;newPassword&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="93" it="0" lt="93" ts="1424698729952" s="true" lb="Get Class - Student Role" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1007" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:43 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;71245486-94a5-47d0-9f58-b062d5fb55ae&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698729&quot;, oauth_nonce=&quot;339918133996079&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;gZ06w88lc8qDBnXXqYUuFlBKJYk%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;schoolID&quot;:&quot;WX3N781D743Y6E299GEG22C9KM&quot;,&quot;name&quot;:&quot;KEVINT4 EM4 Test Class 11&quot;,&quot;createdDate&quot;:&quot;2014-09-02&quot;,&quot;lastModDate&quot;:&quot;2014-09-02&quot;,&quot;grade&quot;:&quot;1&quot;,&quot;courseID&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;studentCount&quot;:3,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8&quot;,&quot;teacher&quot;:&quot;/api/v0.1/user/MLOEPF6D8YK9OY2T8CNKFZJBS8&quot;,&quot;password&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/password&quot;,&quot;groups&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/groups&quot;},&quot;id&quot;:&quot;7V2OD2JDTNGTTXR7DPJ4JYDVJ8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8</java.net.URL>
+</httpSample>
+<httpSample t="106" it="0" lt="106" ts="1424698730118" s="true" lb="LOGIN API - CLASS / TEACHER" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="668" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339918299920061&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;nPzGA5mEtRh%2BI2JzwcNhQpxuEHE%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;id&quot;:&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;,&quot;oauth_token&quot;:&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;,&quot;oauth_token_secret&quot;:&quot;cba84f93-6b52-4f84-82ac-3892a16dbb06&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ts="1424698730249" s="true" lb="Get Existing Class" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1006" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339918431560177&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;zvoigBgA1UQ8jYzGnpOfqcLhaEA%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;schoolID&quot;:&quot;WX3N781D743Y6E299GEG22C9KM&quot;,&quot;name&quot;:&quot;KEVINT4 EM4 Test Class 11&quot;,&quot;createdDate&quot;:&quot;2014-09-02&quot;,&quot;lastModDate&quot;:&quot;2014-09-02&quot;,&quot;grade&quot;:&quot;1&quot;,&quot;courseID&quot;:&quot;1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;studentCount&quot;:3,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8&quot;,&quot;teacher&quot;:&quot;/api/v0.1/user/MLOEPF6D8YK9OY2T8CNKFZJBS8&quot;,&quot;password&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/password&quot;,&quot;groups&quot;:&quot;/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/groups&quot;},&quot;id&quot;:&quot;7V2OD2JDTNGTTXR7DPJ4JYDVJ8&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8</java.net.URL>
+</httpSample>
+<httpSample t="85" it="0" lt="85" ts="1424698730321" s="true" lb="Get Planner associated to a Class" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="991" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339918503386649&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;2wUQxTbXtmZxPZ69jMi0s0UtsoI%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;name&quot;:&quot;planner for KEVINT4 EM4 Test Class 11&quot;,&quot;locked&quot;:false,&quot;startDate&quot;:&quot;2014-09-02&quot;,&quot;endDate&quot;:&quot;2015-06-15&quot;,&quot;dayTypes&quot;:{&quot;MON&quot;:&quot;INSTRUCTIONAL&quot;,&quot;TUE&quot;:&quot;INSTRUCTIONAL&quot;,&quot;WED&quot;:&quot;INSTRUCTIONAL&quot;,&quot;THU&quot;:&quot;INSTRUCTIONAL&quot;,&quot;FRI&quot;:&quot;INSTRUCTIONAL&quot;,&quot;SAT&quot;:&quot;NONINSTRUCTIONAL&quot;,&quot;SUN&quot;:&quot;NONINSTRUCTIONAL&quot;},&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/planner/ON8PWCR5SEVCP8BRHZD4LSJXMQ/classes&quot;,&quot;addCurriculum&quot;:&quot;/api/v0.1/planner/ON8PWCR5SEVCP8BRHZD4LSJXMQ/addCurriculum&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/1OGLMH9XQGWYKHHLSGKO5CS59O&quot;,&quot;events&quot;:&quot;/api/v0.1/planner/ON8PWCR5SEVCP8BRHZD4LSJXMQ/events&quot;,&quot;self&quot;:&quot;/api/v0.1/planner/ON8PWCR5SEVCP8BRHZD4LSJXMQ&quot;},&quot;id&quot;:&quot;ON8PWCR5SEVCP8BRHZD4LSJXMQ&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/7V2OD2JDTNGTTXR7DPJ4JYDVJ8/planner</java.net.URL>
+</httpSample>
+<httpSample t="140" it="0" lt="140" ts="1424698730423" s="true" lb="Create Class" rc="201" rm="Created" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1121" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 201 Created
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Location: http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339918605617896&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;bMBM09JdCEJtUUh89pNVcXvhFWg%3D&quot;
+Content-Length: 84
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;schoolID&quot;:&quot;WCKJTVWEHBBNJL79F52H8FDZS8&quot;,&quot;name&quot;:&quot;Test Class&quot;,&quot;createdDate&quot;:&quot;2015-02-23&quot;,&quot;lastModDate&quot;:&quot;2015-02-23&quot;,&quot;grade&quot;:&quot;2&quot;,&quot;description&quot;:&quot;Test Class Description&quot;,&quot;courseID&quot;:&quot;WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;studentCount&quot;:0,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1&quot;,&quot;teacher&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;password&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password&quot;,&quot;groups&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/groups&quot;},&quot;id&quot;:&quot;8NLO21NL89ZMTLKYQCBE9SRER1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+&quot;description&quot;:&quot;Test Class Description&quot;,&#xd;
+&quot;name&quot;:&quot;Test Class&quot;,&#xd;
+&quot;grade&quot;:&quot;2&quot;&#xd;
+}&#xd;
+&#xd;
+</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class?course=WKPJJHCWYORZ21GS95J23ZSR51</java.net.URL>
+</httpSample>
+<httpSample t="325" it="0" lt="0" ts="1424698730509" s="true" lb="Add Students Request" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Mon, 23 Feb 2015 13:38:26 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339918768491822&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;q7Le9CO6q0KRzg4XNqy1ioPO3%2F0%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students?studentId=3BCQN51OTXN32Q94L2BNDMHE1O&amp;studentId=OSHC9FDLGOZ7SVZEDDW1ZN6868&amp;studentId=Z1N39PLPOXW1PSEE3ZZ4G6DMXO&amp;studentId=CESSX5JMB23DGJ1XLEEMCD9DFQ&amp;studentId=T9D4MPTE8BT6FWTBT6FKSNV8FO&amp;studentId=WY432SNBQZCE2CQSCO4ZOPXR7Y&amp;studentId=3Q6LE65P28QBJ6K8WOCNVLVYXO&amp;studentId=2M3B2QT2SLVY1KKJXKJ7L1LV9Y&amp;studentId=8HQE1KK7SZQZG742O7DF27N1JQ&amp;studentId=OTOWKW5D51GLO4961T6OSEXTOY&amp;studentId=6MORKKV5TTRRK17ZG84T71BG4O&amp;studentId=8PFEKB6C7MWF8H9QXP3734VCOY</java.net.URL>
+</httpSample>
+<httpSample t="85" it="0" lt="0" ts="1424698730852" s="true" lb="Delete Students Request" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:44 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339919111819690&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;mwdUVR3HPU21SKyPlOVwCwX%2Fuj4%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students?studentId=T9D4MPTE8BT6FWTBT6FKSNV8FO</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="0" ts="1424698730955" s="true" lb="Delete Students Request" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="314" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Length: 0
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698730&quot;, oauth_nonce=&quot;339919214617691&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;prRWu3xYuvSVvlHoF1bZ0hHRka0%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students?studentId=WY432SNBQZCE2CQSCO4ZOPXR7Y</java.net.URL>
+</httpSample>
+<httpSample t="98" it="0" lt="76" ts="1424698731051" s="true" lb="Get Students" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="5705" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify deleted student not in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919311594585&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;%2FAO9mdutSOZMfpJJ2q0I02tI9vQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;connectedUserName&quot;:&quot;DANSTUDENT22&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;B&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/8HQE1KK7SZQZG742O7DF27N1JQ/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/8HQE1KK7SZQZG742O7DF27N1JQ&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/8HQE1KK7SZQZG742O7DF27N1JQ/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/8HQE1KK7SZQZG742O7DF27N1JQ/planners&quot;},&quot;id&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;},{&quot;connectedUserName&quot;:&quot;ARAMAMURTHI&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;J&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2015-02-20&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:20,&quot;studentIdForEngrade&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/2M3B2QT2SLVY1KKJXKJ7L1LV9Y/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/2M3B2QT2SLVY1KKJXKJ7L1LV9Y/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/2M3B2QT2SLVY1KKJXKJ7L1LV9Y/planners&quot;},&quot;id&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;},{&quot;connectedUserName&quot;:&quot;THREET1&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;c&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/3BCQN51OTXN32Q94L2BNDMHE1O/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/3BCQN51OTXN32Q94L2BNDMHE1O&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/3BCQN51OTXN32Q94L2BNDMHE1O/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/3BCQN51OTXN32Q94L2BNDMHE1O/planners&quot;},&quot;id&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;},{&quot;connectedUserName&quot;:&quot;BLESSANB16&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-06-30&quot;,&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/CESSX5JMB23DGJ1XLEEMCD9DFQ/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/CESSX5JMB23DGJ1XLEEMCD9DFQ/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/CESSX5JMB23DGJ1XLEEMCD9DFQ/planners&quot;},&quot;id&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;},{&quot;connectedUserName&quot;:&quot;MIKEB&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-22&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/OSHC9FDLGOZ7SVZEDDW1ZN6868/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/OSHC9FDLGOZ7SVZEDDW1ZN6868/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/OSHC9FDLGOZ7SVZEDDW1ZN6868/planners&quot;},&quot;id&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;},{&quot;connectedUserName&quot;:&quot;SARAH&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/Z1N39PLPOXW1PSEE3ZZ4G6DMXO/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/Z1N39PLPOXW1PSEE3ZZ4G6DMXO/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/Z1N39PLPOXW1PSEE3ZZ4G6DMXO/planners&quot;},&quot;id&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT9&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-09-03&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/8PFEKB6C7MWF8H9QXP3734VCOY/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/8PFEKB6C7MWF8H9QXP3734VCOY&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/8PFEKB6C7MWF8H9QXP3734VCOY/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/8PFEKB6C7MWF8H9QXP3734VCOY/planners&quot;},&quot;id&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT5&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/6MORKKV5TTRRK17ZG84T71BG4O/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/6MORKKV5TTRRK17ZG84T71BG4O&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/6MORKKV5TTRRK17ZG84T71BG4O/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/6MORKKV5TTRRK17ZG84T71BG4O/planners&quot;},&quot;id&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;},{&quot;connectedUserName&quot;:&quot;JHANNA&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/OTOWKW5D51GLO4961T6OSEXTOY/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/OTOWKW5D51GLO4961T6OSEXTOY&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/OTOWKW5D51GLO4961T6OSEXTOY/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/OTOWKW5D51GLO4961T6OSEXTOY/planners&quot;},&quot;id&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;},{&quot;connectedUserName&quot;:&quot;JORDAND&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-08-16&quot;,&quot;iconID&quot;:23,&quot;studentIdForEngrade&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;,&quot;_links&quot;:{&quot;classes&quot;:&quot;/api/v0.1/user/3Q6LE65P28QBJ6K8WOCNVLVYXO/classes&quot;,&quot;self&quot;:&quot;/api/v0.1/user/3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;,&quot;groups&quot;:&quot;/api/v0.1/user/3Q6LE65P28QBJ6K8WOCNVLVYXO/groups&quot;,&quot;planners&quot;:&quot;/api/v0.1/user/3Q6LE65P28QBJ6K8WOCNVLVYXO/planners&quot;},&quot;id&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students</java.net.URL>
+</httpSample>
+<httpSample t="78" it="0" lt="77" ts="1424698731167" s="true" lb="Update Class" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1039" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919427059976&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;JpjPMjLiVWRkC5V%2FDuTJxdbaSpM%3D&quot;
+Content-Length: 97
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;schoolID&quot;:&quot;WCKJTVWEHBBNJL79F52H8FDZS8&quot;,&quot;name&quot;:&quot;Performnce_Test&quot;,&quot;createdDate&quot;:&quot;2015-02-23&quot;,&quot;lastModDate&quot;:&quot;2015-02-23&quot;,&quot;grade&quot;:&quot;2&quot;,&quot;description&quot;:&quot;Updated Class Description&quot;,&quot;courseID&quot;:&quot;WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;studentCount&quot;:10,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1&quot;,&quot;teacher&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;password&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password&quot;,&quot;groups&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/groups&quot;},&quot;id&quot;:&quot;8NLO21NL89ZMTLKYQCBE9SRER1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">{&#xd;
+   &quot;description&quot;:&quot;Updated Class Description&quot;,&#xd;
+   &quot;name&quot;:&quot;Performnce_Test&quot;,&#xd;
+   &quot;grade&quot;:&quot;2&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="60" ts="1424698731261" s="true" lb="Get Class" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1039" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify Updated Class Description in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919521698772&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;bYd%2Bc4F2qCXqfYwfVEIgGBoO6iY%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;schoolID&quot;:&quot;WCKJTVWEHBBNJL79F52H8FDZS8&quot;,&quot;name&quot;:&quot;Performnce_Test&quot;,&quot;createdDate&quot;:&quot;2015-02-23&quot;,&quot;lastModDate&quot;:&quot;2015-02-23&quot;,&quot;grade&quot;:&quot;2&quot;,&quot;description&quot;:&quot;Updated Class Description&quot;,&quot;courseID&quot;:&quot;WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;studentCount&quot;:10,&quot;_links&quot;:{&quot;students&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/students&quot;,&quot;courseRoot&quot;:&quot;/api/v0.1/asset/WKPJJHCWYORZ21GS95J23ZSR51&quot;,&quot;planner&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/planner&quot;,&quot;self&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1&quot;,&quot;teacher&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;password&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password&quot;,&quot;groups&quot;:&quot;/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/groups&quot;},&quot;id&quot;:&quot;8NLO21NL89ZMTLKYQCBE9SRER1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1</java.net.URL>
+</httpSample>
+<httpSample t="118" it="0" lt="118" ts="1424698731340" s="true" lb="Get Password" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="3446" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919599980766&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;MiVyCH2rvPv6y75FAI015fYvGc4%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;connectedUserName&quot;:&quot;DANSTUDENT22&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;B&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;,&quot;id&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;},{&quot;connectedUserName&quot;:&quot;ARAMAMURTHI&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;J&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2015-02-20&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:20,&quot;password&quot;:&quot;conne724&quot;,&quot;studentIdForEngrade&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;,&quot;id&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;},{&quot;connectedUserName&quot;:&quot;THREET1&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;c&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;newPassword&quot;,&quot;studentIdForEngrade&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;,&quot;id&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;},{&quot;connectedUserName&quot;:&quot;BLESSANB16&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-06-30&quot;,&quot;iconID&quot;:23,&quot;password&quot;:&quot;bless960&quot;,&quot;studentIdForEngrade&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;id&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;},{&quot;connectedUserName&quot;:&quot;MIKEB&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-22&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;newPassword&quot;,&quot;studentIdForEngrade&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;,&quot;id&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;},{&quot;connectedUserName&quot;:&quot;SARAH&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;sara829&quot;,&quot;studentIdForEngrade&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;,&quot;id&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT9&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-09-03&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;,&quot;id&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT5&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;,&quot;id&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;},{&quot;connectedUserName&quot;:&quot;JHANNA&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;jh12345&quot;,&quot;studentIdForEngrade&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;,&quot;id&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;},{&quot;connectedUserName&quot;:&quot;JORDAND&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-08-16&quot;,&quot;iconID&quot;:23,&quot;password&quot;:&quot;password1&quot;,&quot;studentIdForEngrade&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;,&quot;id&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password</java.net.URL>
+</httpSample>
+<httpSample t="101" it="0" lt="0" ts="1424698731476" s="true" lb="Update Password" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919735817750&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;FJ%2F0VC65at96ESq%2B9GuBcsIOq1I%3D&quot;
+Content-Length: 60
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">PUT</method>
+  <queryString class="java.lang.String">{&quot;id&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;,&quot;password&quot;:&quot;newPassword&quot;}</queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password</java.net.URL>
+</httpSample>
+<httpSample t="110" it="0" lt="110" ts="1424698731594" s="true" lb="Get Password" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="3447" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify new password updated</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Type: application/json
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919854213840&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;EZzgzM0xQvjQY9PXCWO9i1o2QtQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;connectedUserName&quot;:&quot;DANSTUDENT22&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;B&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;,&quot;id&quot;:&quot;8HQE1KK7SZQZG742O7DF27N1JQ&quot;},{&quot;connectedUserName&quot;:&quot;ARAMAMURTHI&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;J&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2015-02-20&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:20,&quot;password&quot;:&quot;conne724&quot;,&quot;studentIdForEngrade&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;,&quot;id&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;},{&quot;connectedUserName&quot;:&quot;THREET1&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;middleName&quot;:&quot;c&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;newPassword&quot;,&quot;studentIdForEngrade&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;,&quot;id&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;},{&quot;connectedUserName&quot;:&quot;BLESSANB16&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-06-30&quot;,&quot;iconID&quot;:23,&quot;password&quot;:&quot;bless960&quot;,&quot;studentIdForEngrade&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;id&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;},{&quot;connectedUserName&quot;:&quot;MIKEB&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-22&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;newPassword&quot;,&quot;studentIdForEngrade&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;,&quot;id&quot;:&quot;OSHC9FDLGOZ7SVZEDDW1ZN6868&quot;},{&quot;connectedUserName&quot;:&quot;SARAH&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;FEMALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;sara829&quot;,&quot;studentIdForEngrade&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;,&quot;id&quot;:&quot;Z1N39PLPOXW1PSEE3ZZ4G6DMXO&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT9&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-09-03&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;,&quot;id&quot;:&quot;8PFEKB6C7MWF8H9QXP3734VCOY&quot;},{&quot;connectedUserName&quot;:&quot;STUDENT5&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;a123456&quot;,&quot;studentIdForEngrade&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;,&quot;id&quot;:&quot;6MORKKV5TTRRK17ZG84T71BG4O&quot;},{&quot;connectedUserName&quot;:&quot;JHANNA&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;creationSourceCode&quot;:&quot;BULK&quot;,&quot;restrictions&quot;:[&quot;USER_DONOTEDIT_BULK&quot;],&quot;iconID&quot;:23,&quot;password&quot;:&quot;jh12345&quot;,&quot;studentIdForEngrade&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;,&quot;id&quot;:&quot;OTOWKW5D51GLO4961T6OSEXTOY&quot;},{&quot;connectedUserName&quot;:&quot;JORDAND&quot;,&quot;firstName&quot;:&quot;firstPerf&quot;,&quot;lastName&quot;:&quot;lastPerf&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;lastModified&quot;:&quot;2014-07-21&quot;,&quot;lastLoginDate&quot;:&quot;2014-08-16&quot;,&quot;iconID&quot;:23,&quot;password&quot;:&quot;password1&quot;,&quot;studentIdForEngrade&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;,&quot;id&quot;:&quot;3Q6LE65P28QBJ6K8WOCNVLVYXO&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1/password</java.net.URL>
+</httpSample>
+<httpSample t="158" it="0" lt="0" ts="1424698731721" s="true" lb="Delete Class" rc="204" rm="No Content" tn="Driver Script Thread Group 1-1" dt="text" de="" by="315" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Content-Length: 0
+X-Apache-Host: 1
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/plain
+Connection: close
+Set-Cookie: PORTALLB=3517389484.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339919981555597&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;uXCjQx6PcisdIxxwJ0yjYDJbx30%3D&quot;
+Content-Length: 0
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">DELETE</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1</java.net.URL>
+</httpSample>
+<httpSample t="73" it="0" lt="73" ts="1424698731895" s="true" lb="Get Class - verify deleted" rc="404" rm="Not Found" tn="Driver Script Thread Group 1-1" dt="text" de="" by="462" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify 404</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion - Verify Deleted Class NOT in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 404 Not Found
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: PORTALLB=363272876.55303.0000; expires=Mon, 23-Feb-2015 14:39:45 GMT; path=/
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339920155611795&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;CmqnzUox0rNG2gpC7ajOuDmFfWs%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: connected-dev.cdiapps.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;15-3-687d840a&quot;,&quot;message&quot;:&quot;Unable to locate class with ID 8NLO21NL89ZMTLKYQCBE9SRER1&quot;,&quot;code&quot;:&quot;not.found&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://connected-dev.cdiapps.com/api/v0.1/class/8NLO21NL89ZMTLKYQCBE9SRER1</java.net.URL>
+</httpSample>
+<httpSample t="175" it="0" lt="175" ts="1424698732305" s="true" lb="CMR Health Check" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="274" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:27 GMT
+Server: Apache-Coyote/1.1
+Content-Type: text/plain
+Content-Length: 24
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Keep-Alive: timeout=10, max=2000
+Connection: Keep-Alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;ca8dc9cd-ed5a-41ae-b693-566ed6ccdc76&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698731&quot;, oauth_nonce=&quot;339920155611795&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;CmqnzUox0rNG2gpC7ajOuDmFfWs%3D&quot;
+Host: dev-cw2.ced.emhe.mhc:1999
+User-Agent: Apache-HttpClient/4.2.6 (java 1.5)
+</requestHeader>
+  <responseData class="java.lang.String">This application is UP&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/seg/internal/health</java.net.URL>
+</httpSample>
+<httpSample t="182" it="0" lt="182" ts="1424698732493" s="true" lb="LOGIN API - CONTEXT SERVICE" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="509" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698732&quot;, oauth_nonce=&quot;339920753230516&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;B%2B%2BNNLiW5b5p1VJZwqLm8dNssak%3D&quot;
+Content-Length: 43
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;_links&quot;:{&quot;self&quot;:&quot;/api/v0.1/session/fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;,&quot;user&quot;:&quot;/api/v0.1/user/E59NZ3C4T17W3Q5SSELPL17581&quot;},&quot;id&quot;:&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;,&quot;oauth_token&quot;:&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;,&quot;oauth_token_secret&quot;:&quot;eb41cc93-0fe8-4c76-bfb9-cab2018a3329&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;username&quot;:&quot;KEVINC&quot;,&quot;password&quot;:&quot;kevin751&quot;}</queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/session</java.net.URL>
+</httpSample>
+<httpSample t="262" it="0" lt="262" ts="1424698732730" s="true" lb="Create New Context" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="400" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698732&quot;, oauth_nonce=&quot;339920991379713&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;JzIoyXBxzfJOASwZ2Qxel87pi3Q%3D&quot;
+Content-Length: 157
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;0af45970-c430-4131-abfa-f25cc09147b3&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_15648&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;userID&quot; : &quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&#xd;
+  &quot;RANDOMTEXT1&quot; : &quot;CONTEXT1_6181&quot;,&#xd;
+  &quot;RANDOMTEXT2&quot; : &quot;CONTEXT2_15648&quot;,&#xd;
+  &quot;RANDOMTEXT3&quot; : &quot;CONTEXT3_26182&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/context</java.net.URL>
+</httpSample>
+<httpSample t="359" it="0" lt="359" ts="1424698733014" s="true" lb="Get Context by custom Key &amp; Value" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="1986" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Verify Context Value in response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698732&quot;, oauth_nonce=&quot;339921274341248&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;4bmsMOFCFCpcepRUOqvFcdjOxbU%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;id&quot;:&quot;0af45970-c430-4131-abfa-f25cc09147b3&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_15648&quot;},{&quot;id&quot;:&quot;3205d163-6460-43ff-8d8d-36ba0aa19de3&quot;,&quot;userID&quot;:&quot;WY432SNBQZCE2CQSCO4ZOPXR7Y&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_13839&quot;},{&quot;id&quot;:&quot;955e2413-07b9-4135-b009-490949de0fab&quot;,&quot;userID&quot;:&quot;5FEN3VS4XRKORTVBJDG6ZVBHF1&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_11385&quot;},{&quot;id&quot;:&quot;962022e5-63f8-4186-9ea1-af1018856259&quot;,&quot;userID&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_10598&quot;},{&quot;id&quot;:&quot;9b8e9f7f-bbe2-4ed8-a414-77e6d974666f&quot;,&quot;userID&quot;:&quot;2M3B2QT2SLVY1KKJXKJ7L1LV9Y&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_16527&quot;},{&quot;id&quot;:&quot;ac15bac7-c64d-4287-8450-b6d9e5bbe51c&quot;,&quot;userID&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_11280&quot;},{&quot;id&quot;:&quot;ad646049-049c-41e0-9f92-1e5b3ad03ac9&quot;,&quot;userID&quot;:&quot;3BCQN51OTXN32Q94L2BNDMHE1O&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_17279&quot;},{&quot;id&quot;:&quot;bea0d894-c483-480a-9461-28ddb721d3d7&quot;,&quot;userID&quot;:&quot;5FEN3VS4XRKORTVBJDG6ZVBHF1&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_16174&quot;},{&quot;id&quot;:&quot;c292448e-a034-4890-9bbb-6f727e0b8b39&quot;,&quot;userID&quot;:&quot;CESSX5JMB23DGJ1XLEEMCD9DFQ&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_15751&quot;},{&quot;id&quot;:&quot;f1947dba-a8f4-44a3-9bd9-9e473ccb65ea&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_16673&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/context?RANDOMTEXT1=CONTEXT1_6181</java.net.URL>
+</httpSample>
+<httpSample t="61" it="0" lt="61" ts="1424698733379" s="true" lb="Get New Context by ID" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="400" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698733&quot;, oauth_nonce=&quot;339921640023780&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;lAdxx6hMh4qu50hA1NMfydA9w4g%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;0af45970-c430-4131-abfa-f25cc09147b3&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;CONTEXT1_6181&quot;,&quot;RANDOMTEXT3&quot;:&quot;CONTEXT3_26182&quot;,&quot;RANDOMTEXT2&quot;:&quot;CONTEXT2_15648&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/context/0af45970-c430-4131-abfa-f25cc09147b3</java.net.URL>
+</httpSample>
+<httpSample t="89" it="0" lt="89" ts="1424698733457" s="true" lb="Create New Context - Updated Text" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="345" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698733&quot;, oauth_nonce=&quot;339921717636008&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;IWELTjOqw2vajzA2SwtNe7XJK6Y%3D&quot;
+Content-Length: 90
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;54ad5295-6e4d-47f2-92f6-ef0fadb9e2f9&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;context_text_Updated&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;userID&quot; : &quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&#xd;
+  &quot;RANDOMTEXT1&quot; : &quot;context_text_Updated&quot;&#xd;
+}</queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/context</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ts="1424698733568" s="true" lb="Get New Context - Verify Context Text Updated" rc="200" rm="OK" tn="Driver Script Thread Group 1-1" dt="text" de="" by="345" sc="1" ec="0" ng="1" na="1" hn="OH05-7D5CYZ1">
+  <assertionResult>
+    <name>Response Assertion - Verify Original Text No Longer Appears</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion - Verify Updated Text Appears</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Mon, 23 Feb 2015 13:38:28 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/json
+X-Apache-Host: 2
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept: application/json
+Content-Type: application/json
+X-Experience-API-Version: 1.0.0
+Authorization: OAuth realm=&quot;&quot;, oauth_signature_method=&quot;HMAC-SHA1&quot;, oauth_token=&quot;fd8778d3-7964-4400-aba5-6dc9a8699fe5&quot;, oauth_consumer_key=&quot;5x33u1FXargdynkK&quot;, oauth_timestamp=&quot;1424698733&quot;, oauth_nonce=&quot;339921828317249&quot;, oauth_version=&quot;1.0&quot;, oauth_signature=&quot;YMSE%2F08tlsnyZSfbMYWm5SZ2yZQ%3D&quot;
+User-Agent: Jakarta Commons-HttpClient/3.1
+Host: dev-cw2.ced.emhe.mhc:1999
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;id&quot;:&quot;54ad5295-6e4d-47f2-92f6-ef0fadb9e2f9&quot;,&quot;userID&quot;:&quot;E59NZ3C4T17W3Q5SSELPL17581&quot;,&quot;RANDOMTEXT1&quot;:&quot;context_text_Updated&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://dev-cw2.ced.emhe.mhc:1999/api/v0.1/context/54ad5295-6e4d-47f2-92f6-ef0fadb9e2f9</java.net.URL>
+</httpSample>
+
+</testResults>
