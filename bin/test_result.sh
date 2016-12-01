@@ -1,5 +1,5 @@
 #!/bin/bash
-emails=$(grep -oP '(?<=failure>)[^<]+' "../projects/"ABCD.xml")
+emails=$(grep -oP '(?<=failure>)[^<]+' "../projects/ABCD.xml")
 
 for i in ${!emails[*]}
 do
