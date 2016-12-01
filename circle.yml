@@ -10,8 +10,6 @@ general:
 
 test:
   post:
-  - cd bin
-  - echo "singa"
-  - sh jmeter.sh -n -t ../projects/"ABCD.jmx" -l ../projects/"ABCD.xml" -Djmeter.save.saveservice.output_format=xml -Jenv=QA
+  - sh cirle_jmeter.sh
   - cat ../projects/ABCD.xml
   - exit (cat ../projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
