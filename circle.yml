@@ -10,6 +10,6 @@ general:
 
 test:
   post:
-  - sh cirle_jmeter.sh
+  - sh circle_jmeter.sh
   - cat ../projects/ABCD.xml
   - exit (cat ../projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
