@@ -11,6 +11,6 @@ general:
 test:
   post:
   - sh circle_jmeter.sh
-  - VAR=$(cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+");echo $VAR;if ["$VAR" = "true"] ;then exit 0; else exit 1 ;fi
-  - VAR1=$(ls -1); echo $VAR1
+  - VAR=$(cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+");echo $VAR;if [$VAR = "true"] ;then exit 0; else exit 1 ;fi
+
 
