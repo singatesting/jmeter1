@@ -11,7 +11,8 @@ general:
 test:
   post:
   - sh circle_jmeter.sh
-  - ABV=$(cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
+  - echo (cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
+  - ABV=(cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
   - echo $ABV
   - if [$ABV="true"] ;then exit 0; else exit 1 ;fi
 
