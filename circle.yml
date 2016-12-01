@@ -12,5 +12,5 @@ test:
   post:
   - sh circle_jmeter.sh
   - cat projects/ABCD.xml
-  - if ["S"="s"] ;then exit 0; else exit 1 ;fi
+  - if [grep -oP '(?<=<title>).*?(?=</title>)' projects/ABCD.xml] ;then exit 0; else exit 1 ;fi
 
