@@ -1,8 +1,8 @@
 #!/bin/bash
 emails=$(grep -oP '(?<=failure>)[^<]+' "../projects/ABCD.xml")
+echo ${emails[0]}
 
-for i in ${!emails[*]}
-do
-  echo "$i" "${emails[$i]}"
-  # instead of echo use the values to send emails, etc
-done
+ if [ ${emails[0]} = true ]; then
+        ex=1
+    fi
+sleep 5
