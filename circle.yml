@@ -11,6 +11,6 @@ general:
 test:
   post:
   - sh circle_jmeter.sh
-  - ab=cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+"
+  - ab=$(cat projects/ABCD.xml | grep -oPm1 "(?<=<failure>)[^<]+")
   - if [$ab] ;then exit 0; else exit 1 ;fi
 
