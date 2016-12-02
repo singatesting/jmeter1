@@ -12,4 +12,4 @@ test:
   post:
   - sh circle_jmeter.sh
   - cat projects/ABCD.xml
-  - VAR=$(cat projects/ABCD.xml | grep "<failure>");echo $VAR;if [ $VAR = "<failure>true</failure>" ] ;then exit 0; else exit 1 ;fi
+  - VAR=$(cat projects/ABCD.xml | grep "<failure>");echo $VAR;if [ $VAR = "<failure>false</failure>" ] ;then exit 0; else exit 1 ;fi
