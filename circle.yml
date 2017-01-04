@@ -11,4 +11,4 @@ general:
 test:
   post:
   - sh circle_jmeter.sh
-  - java -jar jtl2junit.jar --input projects/ABCD.jtl --output <junit.xml> [--testSuiteName Hackathon]
+  - java -jar jtl2junit.jar --input projects/ABCD.jtl --output junit.xml [--testSuiteName Hackathon]
